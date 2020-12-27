@@ -25,5 +25,27 @@ public class Player : MonoBehaviour {
 		}
 
 		_body.velocity = new Vector2(_horizontal * runSpeed, _vertical * runSpeed);
+
+		RayCastSonar();
+	}
+
+	private void RayCastSonar() {
+		float currentAngle = 0; //TODO for Paul, use current rotation here
+
+		int maxDistance = 10;
+		int numRays = 24;
+
+		Vector2 pos = new Vector2(transform.position.x, transform.position.y) + _body.velocity; //TODO velocity might need to be removed, was added to make debug visualization smoother, must be tested with actual sounds
+
+		for(int i = 0; i < numRays; i++) {
+			float angle = currentAngle + 360f/(float)numRays * ((float)i+0.5f);
+			float radians = angle * Mathf.Deg2Rad; 
+			Vector2 direction = new Vector2(Mathf.Sin(radians), Mathf.Cos(radians));
+						
+			RaycastHit2D rayHit = Physics2D.Raycast(pos, direction, maxDistance, 1 << LayerMask.NameToLayer("Walls"));
+			if(rayHit.collider) {
+				Debug.DrawRay(pos, rayHit.point - pos, Color.red);
+			}
+		}
 	}
 }
