@@ -55,6 +55,7 @@ public class DistanceNoiser : MonoBehaviour
         }
         if (distance <= triggerDistance && !wallNoise.isPlaying)
         {
+            
             wallNoise.Play();
         }
         if(currentPitch != associatedPitch)
