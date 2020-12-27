@@ -18,6 +18,8 @@ public class Player : MonoBehaviour {
 		_vertical = Input.GetAxisRaw("Vertical");
 	}
 
+
+
 	private void FixedUpdate() {
 		if (Mathf.Abs(_horizontal + _vertical) > 1.1f) {
 			_horizontal *= moveLimiter;
