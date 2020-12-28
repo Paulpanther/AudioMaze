@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
 
 	private void RayCastSonar()
 	{
-		float currentAngle = 0; //TODO for Paul, use current rotation here
+		float currentAngle = transform.rotation.eulerAngles.z;
 
 		int maxDistance = 10;
 		int numRays = 24;
