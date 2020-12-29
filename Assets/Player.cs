@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
 		_horizontal = Input.GetAxisRaw("Horizontal");
 		_vertical = Input.GetAxisRaw("Vertical");
 
-		cam.position.Set(transform.position.x, transform.position.y, -1);
+		cam.position = new Vector3(transform.position.x, transform.position.y, -1);
 	}
 
 	private void FixedUpdate()
