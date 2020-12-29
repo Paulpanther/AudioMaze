@@ -77,7 +77,7 @@ public class DistanceNoiser : MonoBehaviour
         int hitnum = 0;
         for(int i = 0; i < 4; i++)
         {
-            Debug.DrawRay(new Vector3(transform.position.x, transform.position.y,0),directions[i]* triggerDistance, Color.red,3);
+            Debug.DrawRay(new Vector3(transform.position.x, transform.position.y,0),directions[i]* triggerDistance, Color.red);
             //Debug.Log(i + " casting ray in direction" + directions[i] + " from "+ gameObject.transform.position);
             RaycastHit2D hit = Physics2D.Raycast(transform.position, directions[i],triggerDistance);
             if (hit)
