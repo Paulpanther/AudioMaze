@@ -36,14 +36,14 @@ public class Player : MonoBehaviour
 
 	private void RayCastSonar()
 	{
-		float currentAngle = transform.rotation.eulerAngles.z;
+		float currentAngle = -transform.rotation.eulerAngles.z;
 
 		int maxDistance = 10;
 		int numRays = 24;
 
 		Vector2
-			pos = new Vector2(transform.position.x, transform.position.y) +
-			      _body.velocity; //TODO velocity might need to be removed, was added to make debug visualization smoother, must be tested with actual sounds
+			pos = new Vector2(transform.position.x, transform.position.y)
+				;// +  _body.velocity; //TODO velocity might need to be removed, was added to make debug visualization smoother, must be tested with actual sounds
 
 		for (int i = 0; i < numRays; i++)
 		{
