@@ -28,10 +28,11 @@ public class DistanceNoiser : MonoBehaviour
 	{
 		wallNoise = new AudioSource[numRays];
         for(int i = 0; i < numRays; i++) {
-            float associatedPitch = 1.4f - 0.8f * ((float)i / (float)numRays);
+            Vector2 direction = Direction(i);
             AudioSource audioSource = gameObject.AddComponent<AudioSource>();
             audioSource.clip = wallSound;
-            audioSource.pitch = associatedPitch;
+            audioSource.pitch = 1.0f + direction.y * 0.5f;
+            audioSource.panStereo = direction.x;
             wallNoise[i] = audioSource;
         }
 	}

@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
 		_body.AddTorque(-_horizontal * rotationAcceleration);
 		_body.AddRelativeForce(new Vector2(0, _vertical * movementAcceleration));
 
-		RayCastSonar();
+		//RayCastSonar();
 	}
 
 	private void RayCastSonar()
