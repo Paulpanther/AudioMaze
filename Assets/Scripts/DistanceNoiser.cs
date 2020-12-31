@@ -13,7 +13,7 @@ using UnityEngine;
 public class DistanceNoiser : MonoBehaviour
 {
 
-    public int numDirections = 4;
+    public int numRays = 12;
 
     //For mixing purposes, multiply volume with volume constant 
     public float volumeConstant = 1;
@@ -24,18 +24,11 @@ public class DistanceNoiser : MonoBehaviour
     //distance where sound begins to play
     public float triggerDistance;
 
-    //Direction Vectors
-    private static Vector3 up = new Vector3(0, 1, 0);
-    private static Vector3 down = new Vector3(0, -1, 0);
-    private static Vector3 left = new Vector3(1, 0, 0);
-    private static Vector3 right = new Vector3(-1, 0, 0);
-    private Vector3[] directions = new Vector3[]{up,down,left,right };
-
 	private void Start()
 	{
-		wallNoise = new AudioSource[numDirections];
-        for(int i = 0; i < numDirections; i++) {
-            float associatedPitch = 1.4f - 0.2f * (float)i;
+		wallNoise = new AudioSource[numRays];
+        for(int i = 0; i < numRays; i++) {
+            float associatedPitch = 1.4f - 0.8f * ((float)i / (float)numRays);
             AudioSource audioSource = gameObject.AddComponent<AudioSource>();
             audioSource.clip = wallSound;
             audioSource.pitch = associatedPitch;
@@ -61,20 +54,24 @@ public class DistanceNoiser : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        RaycastHit hitup = new RaycastHit();
-        RaycastHit hitdown = new RaycastHit();
-        RaycastHit hitleft = new RaycastHit();
-        RaycastHit hitright = new RaycastHit();
-
-        RaycastHit[] hits = new RaycastHit[] {hitup, hitdown, hitleft, hitright};
-        for(int i = 0; i < numDirections; i++)
+        for(int i = 0; i < numRays; i++)
         {
             //Debug.Log(i + " casting ray in direction" + directions[i] + " from "+ gameObject.transform.position);
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, directions[i], 100, 1 << LayerMask.NameToLayer("Walls"));
-            Debug.DrawRay(new Vector3(transform.position.x, transform.position.y,0), directions[i].normalized * triggerDistance, hit.distance <= triggerDistance ? Color.red : Color.green);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Direction(i), 100, 1 << LayerMask.NameToLayer("Walls"));
+            Debug.DrawRay(new Vector3(transform.position.x, transform.position.y,0), Direction(i).normalized * triggerDistance, hit.distance <= triggerDistance ? Color.red : Color.green);
             playSound(i, hit.distance);
         
         }
 
+    }
+
+    Vector2 Direction(int rayIndex) {
+		float currentAngle = -transform.rotation.eulerAngles.z;
+		Vector2 pos = new Vector2(transform.position.x, transform.position.y);
+
+        float angle = currentAngle + 360f / (float) numRays * ((float) rayIndex + 0.5f);
+        float radians = angle * Mathf.Deg2Rad;
+        Vector2 direction = new Vector2(Mathf.Sin(radians), Mathf.Cos(radians));
+        return direction;
     }
 }
