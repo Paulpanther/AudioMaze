@@ -9630,7 +9630,6 @@ MonoBehaviour:
   numRays: 12
   volumeConstant: 1
   wallSound: {fileID: 8300000, guid: c90194cdacf50ea4984c384005dde213, type: 3}
-  triggerDistance: 0.7
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

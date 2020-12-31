@@ -13,16 +13,22 @@ using UnityEngine;
 public class DistanceNoiser : MonoBehaviour
 {
 
+    //Resolution of Ray casting
     public int numRays = 12;
 
     //For mixing purposes, multiply volume with volume constant 
     public float volumeConstant = 1;
-    //Audio Clip for Wall Noise
-    public AudioClip wallSound;
-    //Audio Source for wall Noise
-    private AudioSource[] wallNoise;
     //distance where sound begins to play
-    public float triggerDistance;
+    public float triggerDistance = 10;
+    //Way how wall distance is mapped to sound volume
+    public DistanceMapping distanceMapping = DistanceMapping.INVERSE_QUADRATIC;
+
+   //Audio Clip for Wall Noise
+    public AudioClip wallSound;
+    //Audio Sources for directions of wall noise
+    private AudioSource[] wallNoise;
+
+    private float playerRadius = 0.2f; //TODO make dynamic
 
 	private void Start()
 	{
@@ -37,12 +43,12 @@ public class DistanceNoiser : MonoBehaviour
         }
 	}
 
-    void playSound(int direction, float distance)
+    void playSound(int rayIndex, float distance)
     {
-        AudioSource noiseOfDirection = wallNoise[direction];
+        AudioSource noiseOfDirection = wallNoise[rayIndex];
         if (distance <= triggerDistance)
-        {            
-            noiseOfDirection.volume = 1 - distance*volumeConstant;
+        {
+            noiseOfDirection.volume = mapDistance(distance);
             if(!noiseOfDirection.isPlaying) noiseOfDirection.Play();
         } 
         else 
@@ -55,18 +61,26 @@ public class DistanceNoiser : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+		Vector2 pos = new Vector2(transform.position.x, transform.position.y);
         for(int i = 0; i < numRays; i++)
         {
-            //Debug.Log(i + " casting ray in direction" + directions[i] + " from "+ gameObject.transform.position);
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Direction(i), 100, 1 << LayerMask.NameToLayer("Walls"));
-            Debug.DrawRay(new Vector3(transform.position.x, transform.position.y,0), Direction(i).normalized * triggerDistance, hit.distance <= triggerDistance ? Color.red : Color.green);
+            Vector2 direction = Direction(i);
+            Vector2 rayStart = pos + direction*playerRadius;
+            RaycastHit2D hit = Physics2D.Raycast(rayStart, direction, 100, 1 << LayerMask.NameToLayer("Walls"));
+            Debug.DrawRay(rayStart, direction * triggerDistance, Color.red);
             playSound(i, hit.distance);
+            
+            if (hit.collider && hit.distance <= triggerDistance)
+			{
+				Debug.DrawRay(rayStart, hit.point - rayStart, Color.green);
+			}
         
         }
 
     }
 
-    Vector2 Direction(int rayIndex) {
+    Vector2 Direction(int rayIndex) 
+    {
 		float currentAngle = -transform.rotation.eulerAngles.z;
 		Vector2 pos = new Vector2(transform.position.x, transform.position.y);
 
@@ -74,5 +88,25 @@ public class DistanceNoiser : MonoBehaviour
         float radians = angle * Mathf.Deg2Rad;
         Vector2 direction = new Vector2(Mathf.Sin(radians), Mathf.Cos(radians));
         return direction;
+    }
+
+    public enum DistanceMapping 
+    {
+        LINEAR_DECREASE, INVERSE_LINEAR, INVERSE_QUADRATIC
+    }
+
+    private float mapDistance(float distance) 
+    {
+        switch(distanceMapping) 
+        {
+            case DistanceMapping.LINEAR_DECREASE : 
+                return 1f - (distance/triggerDistance) * volumeConstant;
+            
+            case DistanceMapping.INVERSE_LINEAR : 
+                return 1f / (distance + 1f);
+            
+            case DistanceMapping.INVERSE_QUADRATIC : default :
+                return 1f / (distance * distance + 1f);
+        }
     }
 }
