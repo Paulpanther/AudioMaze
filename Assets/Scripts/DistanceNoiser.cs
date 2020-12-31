@@ -27,7 +27,6 @@ public class DistanceNoiser : MonoBehaviour
     private static Vector3 left = new Vector3(1, 0, 0);
     private static Vector3 right = new Vector3(-1, 0, 0);
     private Vector3[] directions = new Vector3[]{up,down,left,right };
-    public int wallLayer = 8;
 
 
     void playSound(int direction, float distance)
@@ -79,7 +78,7 @@ public class DistanceNoiser : MonoBehaviour
         {
             Debug.DrawRay(new Vector3(transform.position.x, transform.position.y,0),directions[i]* triggerDistance, Color.red);
             //Debug.Log(i + " casting ray in direction" + directions[i] + " from "+ gameObject.transform.position);
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, directions[i],triggerDistance);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, directions[i],triggerDistance, 1 << LayerMask.NameToLayer("Walls"));
             if (hit)
             {
                 //Debug.Log(hit.collider.gameObject);
