@@ -11,11 +11,13 @@ public class Player : MonoBehaviour
 	public Transform cam;
 
 	private Rigidbody2D _body;
+	private WalkingSound _walkingSound;
 	private float _horizontal, _vertical;
 
 	private void Start()
 	{
 		_body = GetComponent<Rigidbody2D>();
+		_walkingSound = GetComponent<WalkingSound>();
 	}
 
 	private void Update()
@@ -31,6 +33,7 @@ public class Player : MonoBehaviour
 		_body.AddTorque(-_horizontal * rotationAcceleration);
 		_body.AddRelativeForce(new Vector2(0, _vertical * movementAcceleration));
 
+		_walkingSound.SetWalking(_vertical != 0); // _body.velocity.magnitude
 		//RayCastSonar();
 	}
 
@@ -41,9 +44,8 @@ public class Player : MonoBehaviour
 		int maxDistance = 10;
 		int numRays = 24;
 
-		Vector2
-			pos = new Vector2(transform.position.x, transform.position.y)
-				;// +  _body.velocity; //TODO velocity might need to be removed, was added to make debug visualization smoother, must be tested with actual sounds
+		Vector2 pos = new Vector2(transform.position.x, transform.position.y); // +  _body.velocity;
+        // TODO velocity might need to be removed, was added to make debug visualization smoother, must be tested with actual sounds
 
 		for (int i = 0; i < numRays; i++)
 		{
