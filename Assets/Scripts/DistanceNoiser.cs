@@ -7,7 +7,7 @@ using UnityEngine;
  * 
  * Then: Apply this script to the player object
  * Create an audio source
- * Fine tune the values for triggerDistance and volumeConstant
+ * Fine tune the values for triggerDistance and soundVolume
  * */
 
 public class DistanceNoiser : MonoBehaviour
@@ -17,7 +17,7 @@ public class DistanceNoiser : MonoBehaviour
     public int numRays = 12;
 
     //For mixing purposes, multiply volume with volume constant 
-    public float volumeConstant = 1;
+    public float soundVolume = 1;
     //distance where sound begins to play
     public float triggerDistance = 10;
     //Way how wall distance is mapped to sound volume
@@ -48,7 +48,7 @@ public class DistanceNoiser : MonoBehaviour
         AudioSource noiseOfDirection = wallNoise[rayIndex];
         if (distance <= triggerDistance)
         {
-            noiseOfDirection.volume = mapDistance(distance) * volumeConstant;
+            noiseOfDirection.volume = mapDistance(distance) * soundVolume;
             if(!noiseOfDirection.isPlaying) noiseOfDirection.Play();
         } 
         else 
