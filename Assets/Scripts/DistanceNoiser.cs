@@ -48,7 +48,7 @@ public class DistanceNoiser : MonoBehaviour
         AudioSource noiseOfDirection = wallNoise[rayIndex];
         if (distance <= triggerDistance)
         {
-            noiseOfDirection.volume = mapDistance(distance);
+            noiseOfDirection.volume = mapDistance(distance) * volumeConstant;
             if(!noiseOfDirection.isPlaying) noiseOfDirection.Play();
         } 
         else 
@@ -100,7 +100,7 @@ public class DistanceNoiser : MonoBehaviour
         switch(distanceMapping) 
         {
             case DistanceMapping.LINEAR_DECREASE : 
-                return 1f - (distance/triggerDistance) * volumeConstant;
+                return (1f - distance/triggerDistance);
             
             case DistanceMapping.INVERSE_LINEAR : 
                 return 1f / (distance + 1f);
