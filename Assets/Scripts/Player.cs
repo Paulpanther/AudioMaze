@@ -11,13 +11,13 @@ public class Player : MonoBehaviour
 	public Transform cam;
 
 	private Rigidbody2D _body;
-	private WalkingSound _walkingSound;
+	// private WalkingSound _walkingSound;
 	private float _horizontal, _vertical;
 
 	private void Start()
 	{
 		_body = GetComponent<Rigidbody2D>();
-		_walkingSound = GetComponent<WalkingSound>();
+		// _walkingSound = GetComponent<WalkingSound>();
 	}
 
 	private void Update()
@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
 		_body.AddTorque(-_horizontal * rotationAcceleration);
 		_body.AddRelativeForce(new Vector2(0, _vertical * movementAcceleration));
 
-		_walkingSound.SetWalking(_vertical != 0); // _body.velocity.magnitude
+		// _walkingSound.SetWalking(_vertical != 0); // _body.velocity.magnitude
 		//RayCastSonar();
 	}
 
