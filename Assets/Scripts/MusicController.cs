@@ -6,7 +6,7 @@ public class MusicController : MonoBehaviour
 {
     public AudioSource[] sources;
 
-    private int currentCheckpoint = 1;
+    private int currentCheckpoint = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,8 @@ public class MusicController : MonoBehaviour
             sources[i].volume = 0;
 
         }
-        sources[0].volume = 1;
+        //Only for now
+        sources[currentCheckpoint].volume = 1;
         
     }
 
@@ -36,11 +37,14 @@ public class MusicController : MonoBehaviour
                 sources[i].volume = 1;
                 RemoveFx(sources[i].gameObject);
             }
-            currentCheckpoint = checkNum +1;
-            if(currentCheckpoint < sources.Length)
+            currentCheckpoint = checkNum;
+
+            if (currentCheckpoint < sources.Length)
             {
-                //This is just for this version, later the volume will slide in.
+                Debug.Log("Starting to play next CP audio");
                 sources[currentCheckpoint].volume = 1;
+                //This is just for this version, later the volume will slide in.
+
             }
             
         }
