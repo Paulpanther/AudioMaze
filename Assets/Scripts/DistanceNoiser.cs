@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Audio;
 /*To make this work you have to have the player object be unaffected by raycasts, put the player object 
  * in the 'ignore raycasts' layer and make sure the objects you want to detect are tagged wall
  * 
@@ -25,6 +25,7 @@ public class DistanceNoiser : MonoBehaviour
 
    //Audio Clip for Wall Noise
     public AudioClip wallSound;
+    public AudioMixerGroup group;
     //Audio Sources for directions of wall noise
     private AudioSource[] wallNoise;
 
@@ -36,10 +37,12 @@ public class DistanceNoiser : MonoBehaviour
         for(int i = 0; i < numRays; i++) {
             Vector2 direction = Direction(i);
             AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.outputAudioMixerGroup = group;
             audioSource.clip = wallSound;
             audioSource.pitch = 1.0f + direction.y * 0.5f;
             audioSource.panStereo = direction.x;
             wallNoise[i] = audioSource;
+            
         }
 	}
 

@@ -11,7 +11,7 @@ public class Win : MonoBehaviour
 	{
 		Debug.Log("Enter");
 		IsWin = true;
-		SceneManager.LoadScene("MenuScene");
-	}
+    //SceneManager.LoadScene("MenuScene");
+    }
 }
 
