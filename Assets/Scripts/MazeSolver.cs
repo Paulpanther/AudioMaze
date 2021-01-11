@@ -84,9 +84,6 @@ public class MazeSolver : MonoBehaviour
             // Calculate Distances
             CalculateDistances(start, obj);
         }
-        
-        Debug.Log(GetDistanceFrom(startObjects[0], new Vector3(0, 0, 0)));
-        Debug.Log(GetDistanceFrom(startObjects[0], new Vector3(-25, -12, 0)));
     }
 
     public int GetDistanceFrom(Transform obj, Vector3 worldPos)

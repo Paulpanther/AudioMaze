@@ -12,6 +12,5 @@ public class GoalDistanceNoiser : MonoBehaviour
     private void Update()
     {
         var distance = maze.GetDistanceFrom(goal, transform.position);
-        Debug.Log(distance);
     }
 }
