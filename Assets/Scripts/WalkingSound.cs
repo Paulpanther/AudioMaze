@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using Random = System.Random;
+﻿using UnityEngine;
 
 public class WalkingSound : MonoBehaviour
 {
@@ -13,8 +11,6 @@ public class WalkingSound : MonoBehaviour
     private bool _isWalking = true;
 
     private AudioSource _audioSource;
-
-    private readonly Random _random = new Random();
 
     void Start()
     {
@@ -29,7 +25,7 @@ public class WalkingSound : MonoBehaviour
     {
         if (_isWalking && !_audioSource.isPlaying)
         {
-            var clipIndex = _random.Next(0, audioClips.Length);
+            var clipIndex = Random.Range(0, audioClips.Length);
             // Debug.Log("Play walking clip #" + clipIndex);
             _audioSource.PlayOneShot(audioClips[clipIndex]);
         }
