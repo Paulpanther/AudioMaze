@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7901202489303195946}
   - component: {fileID: 7666991174493272065}
   - component: {fileID: 8304336110037822309}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: AreaCaveSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
