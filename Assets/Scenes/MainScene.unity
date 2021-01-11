@@ -9442,6 +9442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 328039769}
   - component: {fileID: 328039768}
+  - component: {fileID: 328039770}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -9476,6 +9477,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &328039770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328039767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56adeb4cc6b1b994cbe55e26e5bc917d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startObjects:
+  - {fileID: 1541490681}
 --- !u!1 &451097805
 GameObject:
   m_ObjectHideFlags: 0
@@ -9490,6 +9505,7 @@ GameObject:
   - component: {fileID: 451097806}
   - component: {fileID: 451097811}
   - component: {fileID: 451097808}
+  - component: {fileID: 451097812}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -9632,6 +9648,21 @@ MonoBehaviour:
   triggerDistance: 10
   distanceMapping: 2
   wallSound: {fileID: 8300000, guid: c90194cdacf50ea4984c384005dde213, type: 3}
+  group: {fileID: 0}
+--- !u!114 &451097812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451097805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6addf4ce66c87a74b8dba750c3a39c0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maze: {fileID: 328039770}
+  goal: {fileID: 1541490681}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
