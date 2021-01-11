@@ -9490,6 +9490,7 @@ GameObject:
   - component: {fileID: 451097806}
   - component: {fileID: 451097811}
   - component: {fileID: 451097808}
+  - component: {fileID: 451097812}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -9632,6 +9633,25 @@ MonoBehaviour:
   triggerDistance: 10
   distanceMapping: 2
   wallSound: {fileID: 8300000, guid: c90194cdacf50ea4984c384005dde213, type: 3}
+  group: {fileID: 0}
+--- !u!114 &451097812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451097805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80cf5561566610243bc87adf6dec6802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundVolume: 0.5
+  audioClips:
+  - {fileID: 8300000, guid: 7f3e8512cc6726047876035d28d596ce, type: 3}
+  - {fileID: 8300000, guid: 6a9b93592d4e9294f8fc8a41b4460848, type: 3}
+  - {fileID: 8300000, guid: 6b330c311b9e3b8408d488e42ef95a9f, type: 3}
+  - {fileID: 8300000, guid: 53370afddab2c8046b3a1155b094b112, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
