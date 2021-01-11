@@ -9522,6 +9522,7 @@ GameObject:
   - component: {fileID: 451097808}
   - component: {fileID: 451097812}
   - component: {fileID: 451097813}
+  - component: {fileID: 451097814}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -9697,6 +9698,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maze: {fileID: 328039770}
   goal: {fileID: 1541490681}
+--- !u!81 &451097814
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451097805}
+  m_Enabled: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -9707,7 +9716,6 @@ GameObject:
   m_Component:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
-  - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   m_Layer: 2
   m_Name: Camera
@@ -9716,14 +9724,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &519420029
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
