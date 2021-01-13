@@ -9525,7 +9525,7 @@ GameObject:
   - component: {fileID: 451097814}
   m_Layer: 9
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9684,6 +9684,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6a9b93592d4e9294f8fc8a41b4460848, type: 3}
   - {fileID: 8300000, guid: 6b330c311b9e3b8408d488e42ef95a9f, type: 3}
   - {fileID: 8300000, guid: 53370afddab2c8046b3a1155b094b112, type: 3}
+  audioOut: {fileID: 1828909881449967563, guid: dfd2f4652d53b5c42864b479a68b8f6c,
+    type: 2}
 --- !u!114 &451097813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9994,6 +9996,7 @@ GameObject:
   - component: {fileID: 869580364}
   - component: {fileID: 869580363}
   - component: {fileID: 869580362}
+  - component: {fileID: 869580365}
   m_Layer: 0
   m_Name: CheckPoint6
   m_TagString: Checkpoint
@@ -10138,6 +10141,19 @@ Transform:
   m_Father: {fileID: 849070670}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &869580365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869580361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c2ffbce7d65a24e81d789d03790643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckPointNumber: 6
 --- !u!1 &1074779290
 GameObject:
   m_ObjectHideFlags: 0
@@ -10149,6 +10165,7 @@ GameObject:
   - component: {fileID: 1074779292}
   - component: {fileID: 1074779291}
   - component: {fileID: 1074779293}
+  - component: {fileID: 1074779294}
   m_Layer: 0
   m_Name: CheckPoint4
   m_TagString: Checkpoint
@@ -10293,6 +10310,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1074779294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074779290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c2ffbce7d65a24e81d789d03790643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckPointNumber: 4
 --- !u!1 &1083999639
 GameObject:
   m_ObjectHideFlags: 0
@@ -10304,6 +10334,7 @@ GameObject:
   - component: {fileID: 1083999641}
   - component: {fileID: 1083999640}
   - component: {fileID: 1083999642}
+  - component: {fileID: 1083999643}
   m_Layer: 0
   m_Name: CheckPoint5
   m_TagString: Checkpoint
@@ -10448,6 +10479,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1083999643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083999639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c2ffbce7d65a24e81d789d03790643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckPointNumber: 5
 --- !u!1001 &1336032535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10524,6 +10568,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AreaCaveSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453859020518095393, guid: 74454a978cd25be459aeeb1e1f26d34e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74454a978cd25be459aeeb1e1f26d34e, type: 3}
@@ -10608,6 +10657,7 @@ GameObject:
   - component: {fileID: 1686378093}
   - component: {fileID: 1686378092}
   - component: {fileID: 1686378094}
+  - component: {fileID: 1686378095}
   m_Layer: 0
   m_Name: CheckPoint3
   m_TagString: Checkpoint
@@ -10752,6 +10802,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1686378095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686378091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c2ffbce7d65a24e81d789d03790643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckPointNumber: 3
 --- !u!1 &1848596077
 GameObject:
   m_ObjectHideFlags: 0
@@ -10793,6 +10856,7 @@ GameObject:
   - component: {fileID: 1851448192}
   - component: {fileID: 1851448191}
   - component: {fileID: 1851448193}
+  - component: {fileID: 1851448194}
   m_Layer: 0
   m_Name: CheckPoint2
   m_TagString: Checkpoint
@@ -10937,6 +11001,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1851448194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851448190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c2ffbce7d65a24e81d789d03790643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckPointNumber: 2
 --- !u!1 &1852030746
 GameObject:
   m_ObjectHideFlags: 0
@@ -10948,6 +11025,7 @@ GameObject:
   - component: {fileID: 1852030748}
   - component: {fileID: 1852030747}
   - component: {fileID: 1852030749}
+  - component: {fileID: 1852030750}
   m_Layer: 0
   m_Name: CheckPoint1
   m_TagString: Checkpoint
@@ -11004,7 +11082,7 @@ AudioSource:
   m_GameObject: {fileID: 1852030746}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: dfd2f4652d53b5c42864b479a68b8f6c,
+  OutputAudioMixerGroup: {fileID: 6053968783954582990, guid: dfd2f4652d53b5c42864b479a68b8f6c,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 01905548adc37084a82f6ddddfad0382, type: 3}
   m_PlayOnAwake: 1
@@ -11092,3 +11170,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1852030750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852030746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c2ffbce7d65a24e81d789d03790643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckPointNumber: 1

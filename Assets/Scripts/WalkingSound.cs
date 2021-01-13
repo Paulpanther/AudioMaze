@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 
 public class WalkingSound : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class WalkingSound : MonoBehaviour
     
     // all available clips for walking (will choose 1 of them randomly)
     public AudioClip[] audioClips;
-    
+    public AudioMixerGroup audioOut;
     private bool _isWalking = true;
 
     private AudioSource _audioSource;
@@ -19,6 +20,7 @@ public class WalkingSound : MonoBehaviour
         _audioSource.spatialize = false;
         _audioSource.reverbZoneMix = 1.0f;
         _audioSource.volume = soundVolume;
+        _audioSource.outputAudioMixerGroup = audioOut;
     }
 
     void Update()
