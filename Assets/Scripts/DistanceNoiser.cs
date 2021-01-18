@@ -29,9 +29,9 @@ public class DistanceNoiser : MonoBehaviour
 
     private float playerRadius = 0.2f; //TODO make dynamic
 
-	private void Start()
-	{
-		wallNoise = new AudioSource[numRays];
+    private void Start()
+    {
+        wallNoise = new AudioSource[numRays];
         for(int i = 0; i < numRays; i++) {
             Vector2 direction = Direction(i);
             AudioSource audioSource = gameObject.AddComponent<AudioSource>();
@@ -42,7 +42,7 @@ public class DistanceNoiser : MonoBehaviour
             wallNoise[i] = audioSource;
             
         }
-	}
+    }
 
     void playSound(int rayIndex, float distance)
     {
@@ -62,7 +62,7 @@ public class DistanceNoiser : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-		Vector2 pos = new Vector2(transform.position.x, transform.position.y);
+        Vector2 pos = new Vector2(transform.position.x, transform.position.y);
         for(int i = 0; i < numRays; i++)
         {
             Vector2 direction = Direction(i);
@@ -72,9 +72,9 @@ public class DistanceNoiser : MonoBehaviour
             playSound(i, hit.distance);
             
             if (hit.collider && hit.distance <= triggerDistance)
-			{
-				Debug.DrawRay(rayStart, hit.point - rayStart, Color.green);
-			}
+            {
+                Debug.DrawRay(rayStart, hit.point - rayStart, Color.green);
+            }
         
         }
 
@@ -82,8 +82,8 @@ public class DistanceNoiser : MonoBehaviour
 
     Vector2 Direction(int rayIndex) 
     {
-		float currentAngle = -transform.rotation.eulerAngles.z;
-		Vector2 pos = new Vector2(transform.position.x, transform.position.y);
+        float currentAngle = -transform.rotation.eulerAngles.z;
+        Vector2 pos = new Vector2(transform.position.x, transform.position.y);
 
         float angle = currentAngle + 360f / (float) numRays * ((float) rayIndex + 0.5f);
         float radians = angle * Mathf.Deg2Rad;
