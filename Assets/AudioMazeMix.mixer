@@ -16,9 +16,23 @@ AudioMixerGroupController:
   m_Effects:
   - {fileID: -4384544225121602507}
   m_UserColorIndex: 0
-  m_Mute: 0
+  m_Mute: 1
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &-6611534777364113387
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 6cff0333971921347bd2985d69fdc6a7
+  m_EffectName: Attenuation
+  m_MixLevel: 2122ef949ea5c924ea40394400036b4d
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &-6449671861226058181
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -108,6 +122,25 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!243 &-3617272507252947060
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Eastereggs
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 111f91d95f71f6a44a8fedc0d81dee17
+  m_Children: []
+  m_Volume: 5af8bbc1ea16c2c45860281734c612ed
+  m_Pitch: 9dead8c23fc0d4b48a8c5e6f9586fe9a
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -6611534777364113387}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!243 &-3396731213451485408
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -166,6 +199,7 @@ AudioMixerController:
     - 7cdd903d0005e2c4d8ae21f47e6ef189
     - 147a032d0dc9c21468bcdfa3423ad69f
     - 0c099ca787fbf394cb1e742aa0a16aca
+    - 111f91d95f71f6a44a8fedc0d81dee17
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -185,6 +219,7 @@ AudioMixerGroupController:
   - {fileID: 3221698111316123180}
   - {fileID: -3396731213451485408}
   - {fileID: -9176226099141616442}
+  - {fileID: -3617272507252947060}
   m_Volume: b36fff276c2bfeb4eaf98dcf4f393c77
   m_Pitch: 4fbafda4a85bc844ca853d7cbad73e38
   m_Send: 00000000000000000000000000000000

@@ -77,8 +77,11 @@ public class AreaTriggeredSound : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Player entered area \"" + areaName + "\"");
-        var clipIndex = Random.Range(0, enteringAudioClips.Length);
-        _audioSource.PlayOneShot(enteringAudioClips[clipIndex]);
+        if(enteringAudioClips.Length > 0)
+        {
+            var clipIndex = Random.Range(0, enteringAudioClips.Length);
+            _audioSource.PlayOneShot(enteringAudioClips[clipIndex]);
+        }
         RequestNextIdleSound();
     }
 
@@ -86,8 +89,12 @@ public class AreaTriggeredSound : MonoBehaviour
     {
         if (!_audioSource.isPlaying && Time.fixedTime > _timeOfNextIdleSound)
         {
-            var clipIndex = Random.Range(0, idlingAudioClips.Length);
-            _audioSource.PlayOneShot(idlingAudioClips[clipIndex]);
+            if (idlingAudioClips.Length > 0)
+            {
+                var clipIndex = Random.Range(0, idlingAudioClips.Length);
+                _audioSource.PlayOneShot(idlingAudioClips[clipIndex]);
+            }
+
             Debug.Log("Player listens to area \"" + areaName + "\"");
             RequestNextIdleSound();
         }
@@ -96,7 +103,10 @@ public class AreaTriggeredSound : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         Debug.Log("Player left area \"" + areaName + "\"");
-        var clipIndex = Random.Range(0, leavingAudioClips.Length);
-        _audioSource.PlayOneShot(leavingAudioClips[clipIndex]);
+        if (leavingAudioClips.Length > 0)
+        {
+            var clipIndex = Random.Range(0, leavingAudioClips.Length);
+            _audioSource.PlayOneShot(leavingAudioClips[clipIndex]);
+        }
     }
 }
