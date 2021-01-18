@@ -7,16 +7,20 @@ public abstract class AbstractSoundGenerator : MonoBehaviour
 {
     public int sampleRate = 44100;
 
-    [Range(0, 1)] public float baseAmplitude = 0.2f;
-
     public int channels = 1;
 
     private List<Action> _preReadActions = new List<Action>();
 
     private void Start()
     {
-        AudioClip myClip = AudioClip.Create("SynthesizerGenerated", sampleRate * 2, channels, sampleRate, true,
-            OnAudioRead);
+        AudioClip myClip = AudioClip.Create(
+            "SynthesizerGenerated",
+            sampleRate * 2,
+            channels,
+            sampleRate,
+            true,
+            OnAudioRead
+        );
         AudioSource aud = GetComponent<AudioSource>();
         aud.clip = myClip;
         aud.Play();
@@ -28,7 +32,7 @@ public abstract class AbstractSoundGenerator : MonoBehaviour
         {
             action();
         }
-        
+
         CalculateIncrement();
 
         for (int i = 0; i < data.Length; i += channels)
@@ -44,7 +48,7 @@ public abstract class AbstractSoundGenerator : MonoBehaviour
     {
         _preReadActions.Add(action);
     }
-    
+
     public void RemovePreReadAction(Action action)
     {
         _preReadActions.Remove(action);
