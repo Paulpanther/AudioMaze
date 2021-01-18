@@ -38,9 +38,9 @@ public class AreaTriggeredSound : MonoBehaviour
         // _audioSource.spatialize = false;
         // _audioSource.reverbZoneMix = 1.0f;
 
-        var x = new GameObject("Audio Offset Marker");
-        x.transform.parent = transform;
-        var audioSourceOffsetSprite = x.AddComponent<SpriteRenderer>();
+        var audioLocationMarker = new GameObject("Audio Offset Marker");
+        audioLocationMarker.transform.parent = transform;
+        var audioSourceOffsetSprite = audioLocationMarker.AddComponent<SpriteRenderer>();
         audioSourceOffsetSprite.sprite = crosshairSprite;
         audioSourceOffsetSprite.transform.localPosition = relativeAudioSourceOffset;
 
