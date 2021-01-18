@@ -12,12 +12,11 @@ using UnityEngine.Audio;
 
 public class DistanceNoiser : MonoBehaviour
 {
+    public AudioMixerGroup audioOut;
 
     //Resolution of Ray casting
     public int numRays = 12;
 
-    //For mixing purposes, multiply volume with volume constant 
-    public float soundVolume = 1;
     //distance where sound begins to play
     public float triggerDistance = 10;
     //Way how wall distance is mapped to sound volume
@@ -25,7 +24,6 @@ public class DistanceNoiser : MonoBehaviour
 
    //Audio Clip for Wall Noise
     public AudioClip wallSound;
-    public AudioMixerGroup group;
     //Audio Sources for directions of wall noise
     private AudioSource[] wallNoise;
 
@@ -37,7 +35,7 @@ public class DistanceNoiser : MonoBehaviour
         for(int i = 0; i < numRays; i++) {
             Vector2 direction = Direction(i);
             AudioSource audioSource = gameObject.AddComponent<AudioSource>();
-            audioSource.outputAudioMixerGroup = group;
+            audioSource.outputAudioMixerGroup = audioOut;
             audioSource.clip = wallSound;
             audioSource.pitch = 1.0f + direction.y * 0.5f;
             audioSource.panStereo = direction.x;
@@ -51,7 +49,7 @@ public class DistanceNoiser : MonoBehaviour
         AudioSource noiseOfDirection = wallNoise[rayIndex];
         if (distance <= triggerDistance)
         {
-            noiseOfDirection.volume = mapDistance(distance) * soundVolume;
+            noiseOfDirection.volume = mapDistance(distance);
             if(!noiseOfDirection.isPlaying) noiseOfDirection.Play();
         } 
         else 

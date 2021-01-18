@@ -3,12 +3,11 @@ using UnityEngine.Audio;
 
 public class WalkingSound : MonoBehaviour
 {
-    // sound volume of walking sound
-    public float soundVolume = 0.5f;
+    public AudioMixerGroup audioOut;
     
     // all available clips for walking (will choose 1 of them randomly)
     public AudioClip[] audioClips;
-    public AudioMixerGroup audioOut;
+    
     private bool _isWalking = true;
 
     private AudioSource _audioSource;
@@ -19,7 +18,6 @@ public class WalkingSound : MonoBehaviour
         _audioSource.loop = false;
         _audioSource.spatialize = false;
         _audioSource.reverbZoneMix = 1.0f;
-        _audioSource.volume = soundVolume;
         _audioSource.outputAudioMixerGroup = audioOut;
     }
 

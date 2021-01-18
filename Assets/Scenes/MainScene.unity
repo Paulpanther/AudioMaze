@@ -9517,9 +9517,9 @@ GameObject:
   - component: {fileID: 451097810}
   - component: {fileID: 451097809}
   - component: {fileID: 451097807}
+  - component: {fileID: 451097808}
   - component: {fileID: 451097806}
   - component: {fileID: 451097811}
-  - component: {fileID: 451097808}
   - component: {fileID: 451097812}
   - component: {fileID: 451097813}
   - component: {fileID: 451097814}
@@ -9660,12 +9660,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec15d762f88b80046927ff3d4716a0d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioOut: {fileID: -4247693331714297064, guid: dfd2f4652d53b5c42864b479a68b8f6c,
+    type: 2}
   numRays: 12
-  soundVolume: 1
   triggerDistance: 10
   distanceMapping: 2
   wallSound: {fileID: 8300000, guid: c90194cdacf50ea4984c384005dde213, type: 3}
-  group: {fileID: -4247693331714297064, guid: dfd2f4652d53b5c42864b479a68b8f6c, type: 2}
 --- !u!114 &451097812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9678,14 +9678,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80cf5561566610243bc87adf6dec6802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundVolume: 0.5
+  audioOut: {fileID: 1828909881449967563, guid: dfd2f4652d53b5c42864b479a68b8f6c,
+    type: 2}
   audioClips:
   - {fileID: 8300000, guid: 7f3e8512cc6726047876035d28d596ce, type: 3}
   - {fileID: 8300000, guid: 6a9b93592d4e9294f8fc8a41b4460848, type: 3}
   - {fileID: 8300000, guid: 6b330c311b9e3b8408d488e42ef95a9f, type: 3}
   - {fileID: 8300000, guid: 53370afddab2c8046b3a1155b094b112, type: 3}
-  audioOut: {fileID: 1828909881449967563, guid: dfd2f4652d53b5c42864b479a68b8f6c,
-    type: 2}
 --- !u!114 &451097813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10572,7 +10571,12 @@ PrefabInstance:
     - target: {fileID: 1453859020518095393, guid: 74454a978cd25be459aeeb1e1f26d34e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304336110037822309, guid: 74454a978cd25be459aeeb1e1f26d34e,
+        type: 3}
+      propertyPath: areaName
+      value: MC Cave Area
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74454a978cd25be459aeeb1e1f26d34e, type: 3}

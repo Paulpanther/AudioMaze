@@ -1,9 +1,13 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.Audio;
+using Random = UnityEngine.Random;
 
 public class AreaTriggeredSound : MonoBehaviour
 {
-    // sound volume of area sound
-    public float soundVolume = 0.5f;
+    public AudioMixerGroup audioOut;
+
+    public String areaName;
 
     public Vector3 relativeAudioSourceOffset = new Vector3(0, 1, 0);
 
@@ -30,9 +34,9 @@ public class AreaTriggeredSound : MonoBehaviour
     {
         _audioSource = gameObject.AddComponent<AudioSource>();
         _audioSource.loop = false;
+        _audioSource.outputAudioMixerGroup = audioOut;
         // _audioSource.spatialize = false;
         // _audioSource.reverbZoneMix = 1.0f;
-        _audioSource.volume = soundVolume;
 
         var x = new GameObject("Audio Offset Marker");
         x.transform.parent = transform;
@@ -72,6 +76,7 @@ public class AreaTriggeredSound : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("Player entered area \"" + areaName + "\"");
         var clipIndex = Random.Range(0, enteringAudioClips.Length);
         _audioSource.PlayOneShot(enteringAudioClips[clipIndex]);
         RequestNextIdleSound();
@@ -83,12 +88,14 @@ public class AreaTriggeredSound : MonoBehaviour
         {
             var clipIndex = Random.Range(0, idlingAudioClips.Length);
             _audioSource.PlayOneShot(idlingAudioClips[clipIndex]);
+            Debug.Log("Player listens to area \"" + areaName + "\"");
             RequestNextIdleSound();
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
+        Debug.Log("Player left area \"" + areaName + "\"");
         var clipIndex = Random.Range(0, leavingAudioClips.Length);
         _audioSource.PlayOneShot(leavingAudioClips[clipIndex]);
     }

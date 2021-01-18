@@ -122,6 +122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundVolume: 0.5
+  audioOut: {fileID: 3221698111316123180, guid: dfd2f4652d53b5c42864b479a68b8f6c,
+    type: 2}
   relativeAudioSourceOffset: {x: 0, y: 0, z: 0}
   enteringAudioClips:
   - {fileID: 8300000, guid: 34e6104632a15a8429392e299e146f2f, type: 3}
