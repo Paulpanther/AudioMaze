@@ -7,6 +7,12 @@ public abstract class AbstractSoundGenerator : MonoBehaviour
 {
     public int sampleRate = 44100;
 
+    /**
+     * Used by the Synthesizer
+     * Do not use for volume control - add a AudioMixerGroup to your AudioSource instead!
+     */
+    [Range(0, 1)] public float baseAmplitude = 1.0f;
+    
     public int channels = 1;
 
     private List<Action> _preReadActions = new List<Action>();
