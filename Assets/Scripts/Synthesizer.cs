@@ -47,5 +47,5 @@ public class Synthesizer : AbstractSoundGenerator
         }
     }
 
-    protected override float NextSample() => frequencies.Select(f => f.NextSample() * baseAmplitude).Sum();
+    protected override float NextSample() => frequencies.Select(f => f.NextSample()).Sum() * baseAmplitude;
 }
