@@ -16,8 +16,11 @@ public class WalkingSound : MonoBehaviour
     {
         _audioSource = gameObject.AddComponent<AudioSource>();
         _audioSource.loop = false;
-        _audioSource.spatialize = false;
-        _audioSource.reverbZoneMix = 1.0f;
+        _audioSource.spatialize = true;
+        _audioSource.spatialBlend = 1f;
+        _audioSource.transform.Translate(0, -0.5f, 0);
+        _audioSource.minDistance = 0.5f;
+        _audioSource.maxDistance = 1f;
         _audioSource.outputAudioMixerGroup = audioOut;
     }
 
