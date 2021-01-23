@@ -1,29 +1,28 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
+using static Synthesizer;
 
 public class SingleSoundDistanceNoiser : MonoBehaviour
 {
 
-    public MazeSolver maze;
-    public Transform goal;
+    private Player _player;
+    private Synthesizer _synthesizer;
 
-    private float? _lastDistance;
+    private Frequency[] _frequencies = {new Frequency(100, 0)};
     
+    private void Start()
+    {
+        _player = GetComponentInParent<Player>();
+        _synthesizer = GetComponent<Synthesizer>();
+    }
+
     private void Update()
     {
-        var distance = maze.GetAccurateDistanceFrom(goal, transform.position);
-        var delta = (distance - _lastDistance) ?? 0;
-        Debug.Log(delta);
-        // if (delta > 0.01)
-        // {
-        //     Debug.Log("Yay");
-        // }
-        // else
-        // {
-        //     Debug.Log("Nay");
-        // }
-        _lastDistance = distance;
+        if (_player.distanceChange > 0)
+        {
+        }
     }
 }
