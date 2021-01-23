@@ -9506,6 +9506,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startObjects:
   - {fileID: 1541490681}
+  - {fileID: 1852030748}
+  - {fileID: 1851448192}
+  - {fileID: 1686378093}
+  - {fileID: 1074779292}
+  - {fileID: 1083999641}
+  - {fileID: 869580364}
 --- !u!1 &451097805
 GameObject:
   m_ObjectHideFlags: 0
@@ -9654,7 +9660,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451097805}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec15d762f88b80046927ff3d4716a0d9, type: 3}
   m_Name: 
@@ -9691,7 +9697,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451097805}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6addf4ce66c87a74b8dba750c3a39c0f, type: 3}
   m_Name: 
@@ -9811,7 +9817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &630641729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9976,6 +9982,7 @@ Transform:
   m_LocalPosition: {x: -12.250848, y: -2.343269, z: -2.0546875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1153060027}
   - {fileID: 1852030748}
   - {fileID: 1851448192}
   - {fileID: 1686378093}
@@ -10139,7 +10146,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 849070670}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &869580365
 MonoBehaviour:
@@ -10154,6 +10161,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CheckPointNumber: 6
+  goal: {fileID: 1541490681}
+  prevCheckpoint: {fileID: 1083999643}
+  maze: {fileID: 328039770}
+  player: {fileID: 451097806}
 --- !u!1 &1011950108
 GameObject:
   m_ObjectHideFlags: 0
@@ -10169,7 +10180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1011950109
 Transform:
   m_ObjectHideFlags: 0
@@ -10248,7 +10259,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 849070670}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1074779293
 AudioSource:
@@ -10360,6 +10371,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CheckPointNumber: 4
+  goal: {fileID: 1541490681}
+  prevCheckpoint: {fileID: 1686378095}
+  maze: {fileID: 328039770}
+  player: {fileID: 451097806}
 --- !u!1 &1083999639
 GameObject:
   m_ObjectHideFlags: 0
@@ -10417,7 +10432,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 849070670}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1083999642
 AudioSource:
@@ -10529,6 +10544,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CheckPointNumber: 5
+  goal: {fileID: 1541490681}
+  prevCheckpoint: {fileID: 1074779294}
+  maze: {fileID: 328039770}
+  player: {fileID: 451097806}
 --- !u!1001 &1132252536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10677,6 +10696,179 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.5
+--- !u!1 &1153060023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1153060027}
+  - component: {fileID: 1153060026}
+  - component: {fileID: 1153060025}
+  - component: {fileID: 1153060024}
+  m_Layer: 0
+  m_Name: CheckPoint0
+  m_TagString: Checkpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1153060024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153060023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c2ffbce7d65a24e81d789d03790643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckPointNumber: 0
+  goal: {fileID: 1541490681}
+  prevCheckpoint: {fileID: 0}
+  maze: {fileID: 328039770}
+  player: {fileID: 451097806}
+--- !u!82 &1153060025
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153060023}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 6053968783954582990, guid: dfd2f4652d53b5c42864b479a68b8f6c,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 01905548adc37084a82f6ddddfad0382, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!61 &1153060026
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153060023}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.21860504, y: -0.005084038}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4372101, y: 2.1896152}
+  m_EdgeRadius: 0
+--- !u!4 &1153060027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153060023}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.26, y: 2.34, z: 2.0546875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 849070670}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1336032535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10757,7 +10949,7 @@ PrefabInstance:
     - target: {fileID: 1453859020518095393, guid: 74454a978cd25be459aeeb1e1f26d34e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8304336110037822309, guid: 74454a978cd25be459aeeb1e1f26d34e,
         type: 3}
@@ -10945,6 +11137,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerFollowingSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936401880616765279, guid: d99dcc15d9910594f9fa9ea72526b0a4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6949519934965619160, guid: d99dcc15d9910594f9fa9ea72526b0a4,
         type: 3}
@@ -11278,7 +11475,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 849070670}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1686378094
 AudioSource:
@@ -11390,6 +11587,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CheckPointNumber: 3
+  goal: {fileID: 1541490681}
+  prevCheckpoint: {fileID: 1851448194}
+  maze: {fileID: 328039770}
+  player: {fileID: 451097806}
 --- !u!1 &1851448190
 GameObject:
   m_ObjectHideFlags: 0
@@ -11447,7 +11648,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 849070670}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1851448193
 AudioSource:
@@ -11559,6 +11760,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CheckPointNumber: 2
+  goal: {fileID: 1541490681}
+  prevCheckpoint: {fileID: 1852030750}
+  maze: {fileID: 328039770}
+  player: {fileID: 451097806}
 --- !u!1 &1852030746
 GameObject:
   m_ObjectHideFlags: 0
@@ -11616,7 +11821,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 849070670}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1852030749
 AudioSource:
@@ -11728,6 +11933,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CheckPointNumber: 1
+  goal: {fileID: 1541490681}
+  prevCheckpoint: {fileID: 1153060024}
+  maze: {fileID: 328039770}
+  player: {fileID: 451097806}
 --- !u!1001 &1887411404
 PrefabInstance:
   m_ObjectHideFlags: 0
