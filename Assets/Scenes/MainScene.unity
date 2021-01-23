@@ -9537,6 +9537,7 @@ GameObject:
   - component: {fileID: 451097812}
   - component: {fileID: 451097813}
   - component: {fileID: 451097814}
+  - component: {fileID: 451097815}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -9722,6 +9723,29 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451097805}
   m_Enabled: 1
+--- !u!114 &451097815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451097805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18ca78f679e2d454c88337c34bcf23bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioOut: {fileID: -4247693331714297064, guid: dfd2f4652d53b5c42864b479a68b8f6c,
+    type: 2}
+  audioClips:
+  - {fileID: 8300000, guid: f14b86fe622529c418a9a726462b430c, type: 3}
+  - {fileID: 8300000, guid: 0076967eda2a0d64980c18ab3e60a454, type: 3}
+  - {fileID: 8300000, guid: 50ab70e9bfb61214398fc08a8a31b847, type: 3}
+  - {fileID: 8300000, guid: dd58ed3ce50ee0941bf765fb746032b3, type: 3}
+  - {fileID: 8300000, guid: e48dfd4a34af03d40972c30286ff20a5, type: 3}
+  - {fileID: 8300000, guid: 758b136e175c07a4a89aaf2ca9de0abb, type: 3}
+  - {fileID: 8300000, guid: 266012d74f7301f49b61c946cb04d7a8, type: 3}
+  - {fileID: 8300000, guid: 0344eedf7144b6346990e2703240e7df, type: 3}
 --- !u!4 &513961093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1407657134046191464, guid: 74454a978cd25be459aeeb1e1f26d34e,
