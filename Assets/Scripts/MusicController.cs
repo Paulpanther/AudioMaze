@@ -41,12 +41,6 @@ public class MusicController : MonoBehaviour
         currentEch.wetMix = (1 - updateVal);
         currentLP.cutoffFrequency = 18000*updateVal;
         currentHP.cutoffFrequency = goodBassCutoff * (1-updateVal);
-        
-
-
-
-
-
     }
 
     // Update is called once per frame
