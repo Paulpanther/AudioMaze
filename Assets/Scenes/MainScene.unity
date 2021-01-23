@@ -9536,12 +9536,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAcceleration: 1
   movementAcceleration: 30
-<<<<<<< HEAD
   moveLimiter: 0.7
   musMaster: {fileID: 849070671}
-=======
-  maxSpeed: 1.5
->>>>>>> f9153dc21bb8f68d763e9bb47796317fd102ae9e
   cam: {fileID: 519420032}
 --- !u!212 &451097807
 SpriteRenderer:
