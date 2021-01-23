@@ -34,7 +34,6 @@ public class MusicController : MonoBehaviour
         //Call update based on currentCheckpoint to make current CheckpointMusic Louder 
 
         float updateVal = currentUpdate.GetVolume();
-        Debug.Log("Update Val" + updateVal);
         sources[currentCheckpoint].volume = updateVal;
         currentDist.distortionLevel = 1 - updateVal;
         currentEch.dryMix = updateVal;
