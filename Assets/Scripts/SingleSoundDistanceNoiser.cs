@@ -17,12 +17,11 @@ public class SingleSoundDistanceNoiser : MonoBehaviour
     {
         _player = GetComponentInParent<Player>();
         _synthesizer = GetComponent<Synthesizer>();
+        _synthesizer.frequencies = _frequencies;
     }
 
     private void Update()
     {
-        if (_player.distanceChange > 0)
-        {
-        }
+        _frequencies[0].amplitude = _player.distanceChange > 0 ? 1 : 0;
     }
 }
