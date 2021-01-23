@@ -17,7 +17,7 @@ public abstract class AbstractSoundGenerator : MonoBehaviour
 
     private List<Action> _preReadActions = new List<Action>();
 
-    private void Start()
+    public void Start()
     {
         AudioClip myClip = AudioClip.Create(
             "SynthesizerGenerated",

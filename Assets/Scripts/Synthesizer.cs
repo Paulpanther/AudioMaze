@@ -8,8 +8,8 @@ public class Synthesizer : AbstractSoundGenerator
         [Range(50, 500)] public float frequency;
         [Range(0, 1)] public float amplitude;
 
-        private float phase = 0;
-        private float increment = 0;
+        protected float phase = 0;
+        protected float increment = 0;
 
         public Frequency(float frequency, float amplitude)
         {
@@ -17,16 +17,16 @@ public class Synthesizer : AbstractSoundGenerator
             this.amplitude = amplitude;
         }
 
-        public void CalculateIncrement(float sampleRate)
+        public virtual void CalculateIncrement(float sampleRate)
         {
-            increment = frequency * 2 * Mathf.PI / (float) sampleRate;
+            increment = frequency * 2f * Mathf.PI / (float) sampleRate;
         }
 
-        public float NextSample()
+        public virtual float NextSample()
         {
             phase += increment;
             float nextSample = Mathf.Sin(phase) * amplitude;
-            phase %= 2 * Mathf.PI;
+            phase %= 2f * Mathf.PI;
             return nextSample;
         }
     }
