@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -10,14 +11,31 @@ public class Player : MonoBehaviour
 
     public Transform cam;
 
+    public MazeSolver maze;
+    public Transform goal;
+
+    public float distanceChange;
+
     private Rigidbody2D _body;
     private WalkingSound _walkingSound;
     private float _horizontal, _vertical;
+    
+    private float? _lastDistance;
 
-    private void Start()
+    private async void Start()
     {
         _body = GetComponent<Rigidbody2D>();
         _walkingSound = GetComponent<WalkingSound>();
+        
+        while (true)
+        {
+            var distance = maze.GetAccurateDistanceFrom(goal, transform.position);
+            var delta = (distance - _lastDistance) ?? 0;
+            distanceChange = -delta;
+
+            _lastDistance = distance;
+            await Task.Delay(100);
+        }
     }
 
     private void Update()
@@ -35,7 +53,6 @@ public class Player : MonoBehaviour
 
         _walkingSound.SetWalking(_body.velocity.magnitude / maxSpeed);
         //RayCastSonar();
-
     }
 
     private void RayCastSonar()
