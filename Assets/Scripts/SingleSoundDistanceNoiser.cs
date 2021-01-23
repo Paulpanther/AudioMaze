@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoalDistanceNoiser : MonoBehaviour
+public class SingleSoundDistanceNoiser : MonoBehaviour
 {
 
     public MazeSolver maze;
@@ -11,6 +11,7 @@ public class GoalDistanceNoiser : MonoBehaviour
     
     private void Update()
     {
-        var distance = maze.GetDistanceFrom(goal, transform.position);
+        var distance = maze.GetAccurateDistanceFrom(goal, transform.position);
+        Debug.Log(distance);
     }
 }
