@@ -21,13 +21,13 @@ public class ShepardsScale : Synthesizer
         }
         
 
-        public new void CalculateIncrement(float sampleRate)
+        public override void CalculateIncrement(float sampleRate)
         {
             this.sampleRate = sampleRate;
             base.CalculateIncrement(sampleRate);
         }
 
-        public new float NextSample()
+        public override float NextSample()
         {
             shiftPhase = (shiftPhase + this.scale.shift / sampleRate + 1f) % 1f;
             frequency = scale.frequencyPerRelativeFrequency(shiftPhase);
