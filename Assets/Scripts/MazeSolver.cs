@@ -86,9 +86,57 @@ public class MazeSolver : MonoBehaviour
         }
     }
 
+    public float GetAccurateDistanceFrom(Transform obj, Vector3 worldPos)
+    {
+        var cell = _map.WorldToCell(worldPos);
+        var nullableCellDistance = GetDistanceFrom(obj, cell);
+        if (nullableCellDistance == null) return float.MaxValue;
+        var cellDistance = (int) nullableCellDistance;
+        
+        var neighborCells = _relativeNeighbors.Select(n => n + cell).ToList();
+        var neighborPositions = neighborCells.Select(n => _map.CellToWorld(n));
+        var neighborDistances = neighborCells.Select(n => GetDistanceFrom(obj, n));
+        var cellSize = neighborPositions.Select(n => (n - worldPos).magnitude).Max();
+        var cellWorldPos = _map.CellToWorld(cell);
+        var internalPosition = (worldPos - cellWorldPos) / cellSize;
+        float[] interpolationComponents = {
+            Mathf.Max(internalPosition.y, 0),
+            Mathf.Max(internalPosition.x, 0),
+            Mathf.Max(-internalPosition.y, 0),
+            Mathf.Max(-internalPosition.x, 0)
+        };
+        var interpolatedDistances = neighborDistances.Select((distance, index) => {
+            if (interpolationComponents[index] < 0)
+            {
+                return (float?) null;
+            }
+            return Mathf.Lerp(cellDistance, distance ?? cellDistance, interpolationComponents[index]);
+        }).Where(d => d != null).ToList();
+
+        if (interpolatedDistances.Count == 0)
+        {
+            return cellDistance;
+        }
+
+        return Mathf.Sqrt(interpolatedDistances.Select(d => d * d ?? 0).Sum());
+    }
+
     public int GetDistanceFrom(Transform obj, Vector3 worldPos)
     {
         var pos = _map.WorldToCell(worldPos);
+        var distance = GetDistanceFrom(obj, pos);
+
+        if (distance != null)
+        {
+            return (int) distance;
+        }
+        
+        Debug.LogError("No distance found");
+        return int.MaxValue;
+    }
+
+    private int? GetDistanceFrom(Transform obj, Vector3Int pos)
+    {
         if (_nodes.ContainsKey(pos))
         {
             var node = _nodes[pos];
@@ -96,15 +144,11 @@ public class MazeSolver : MonoBehaviour
             {
                 return node.distances[obj].distance;
             }
-            else
-            {
-                Debug.LogError("No distance found");
-                return int.MaxValue;
-            }
+
+            return null;
         }
-        
-        Debug.LogError("No distance found");
-        return int.MaxValue;
+
+        return null;
     }
 
     private List<SpaceNode> GetNeighborsOf(Vector3Int pos)
