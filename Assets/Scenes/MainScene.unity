@@ -9558,7 +9558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAcceleration: 1
   movementAcceleration: 30
-  moveLimiter: 0.7
+  maxSpeed: 1.5
   cam: {fileID: 519420032}
 --- !u!212 &451097807
 SpriteRenderer:
@@ -9693,6 +9693,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioOut: {fileID: 1828909881449967563, guid: dfd2f4652d53b5c42864b479a68b8f6c,
     type: 2}
+  maxStepSize: 1.5
+  stopSpeed: 0.1
   audioClips:
   - {fileID: 8300000, guid: 7f3e8512cc6726047876035d28d596ce, type: 3}
   - {fileID: 8300000, guid: 6a9b93592d4e9294f8fc8a41b4460848, type: 3}

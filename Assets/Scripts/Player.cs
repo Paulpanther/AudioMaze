@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
     // Change rotation and movement max speed through Rigidbody linear drag and angular drag
     public float rotationAcceleration = 1f;
     public float movementAcceleration = 30f;
-    public float moveLimiter = 0.7f;
+    public float maxSpeed = 1.5f;
 
     public Transform cam;
 
@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
         _body.AddTorque(-_horizontal * rotationAcceleration);
         _body.AddRelativeForce(new Vector2(0, _vertical * movementAcceleration));
 
-        _walkingSound.SetWalking(_vertical != 0); // _body.velocity.magnitude
+        _walkingSound.SetWalking(_body.velocity.magnitude / maxSpeed);
         //RayCastSonar();
     }
 
@@ -60,5 +60,4 @@ public class Player : MonoBehaviour
             }
         }
     }
-
 }

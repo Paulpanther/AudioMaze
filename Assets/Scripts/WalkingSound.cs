@@ -4,13 +4,18 @@ using UnityEngine.Audio;
 public class WalkingSound : MonoBehaviour
 {
     public AudioMixerGroup audioOut;
-    
+
+    public float maxStepSize = 1.5f;
+    public float stopSpeed = 0.1f;
+
     // all available clips for walking (will choose 1 of them randomly)
     public AudioClip[] audioClips;
-    
-    private bool _isWalking = true;
+
+    private float _walkingSpeed;
 
     private AudioSource _audioSource;
+
+    private float _timeOfLastStep;
 
     void Start()
     {
@@ -22,20 +27,26 @@ public class WalkingSound : MonoBehaviour
         _audioSource.minDistance = 0.5f;
         _audioSource.maxDistance = 1f;
         _audioSource.outputAudioMixerGroup = audioOut;
+
+        _timeOfLastStep = Time.fixedTime;
     }
 
     void Update()
     {
-        if (_isWalking && !_audioSource.isPlaying)
+        if (_walkingSpeed > stopSpeed && !_audioSource.isPlaying)
         {
-            var clipIndex = Random.Range(0, audioClips.Length);
-            // Debug.Log("Play walking clip #" + clipIndex);
-            _audioSource.PlayOneShot(audioClips[clipIndex]);
+            if (_timeOfLastStep + maxStepSize * (1 - _walkingSpeed) <= Time.fixedTime)
+            {
+                var clipIndex = Random.Range(0, audioClips.Length);
+                // Debug.Log("Play walking clip #" + clipIndex);
+                _audioSource.PlayOneShot(audioClips[clipIndex]);
+                _timeOfLastStep = Time.fixedTime;
+            }
         }
     }
 
-    public void SetWalking(bool walking)
+    public void SetWalking(float walkingSpeed)
     {
-        _isWalking = walking;
+        _walkingSpeed = walkingSpeed;
     }
 }
