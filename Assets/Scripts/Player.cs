@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public float movementAcceleration = 30f;
     public float moveLimiter = 0.7f;
 
+    public MusicMasterController musMaster;
+
     public Transform cam;
 
     private Rigidbody2D _body;
@@ -26,6 +28,10 @@ public class Player : MonoBehaviour
         _vertical = Input.GetAxisRaw("Vertical");
 
         cam.position = new Vector3(transform.position.x, transform.position.y, -1);
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            musMaster.directionChange();
+        }
     }
 
     private void FixedUpdate()
@@ -34,6 +40,7 @@ public class Player : MonoBehaviour
         _body.AddRelativeForce(new Vector2(0, _vertical * movementAcceleration));
 
         _walkingSound.SetWalking(_vertical != 0); // _body.velocity.magnitude
+        
         //RayCastSonar();
     }
 
