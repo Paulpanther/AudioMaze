@@ -13,6 +13,7 @@ public class CallUpdate : MonoBehaviour
     public CallUpdate prevCheckpoint;
     public MazeSolver maze;
     public Player player;
+    public int goodCutOff;
 
     private bool _firstPass = false;
     
@@ -27,7 +28,7 @@ public class CallUpdate : MonoBehaviour
         if (isPassed && !_firstPass)
         {
             _firstPass = true;
-            mus.CheckpointReached(CheckPointNumber);
+            mus.CheckpointReached(CheckPointNumber, goodCutOff);
         }
         return isPassed;
     }

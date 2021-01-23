@@ -9491,6 +9491,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startObjects:
+  - {fileID: 1153060027}
+  - {fileID: 1852030748}
+  - {fileID: 1851448192}
+  - {fileID: 1686378093}
+  - {fileID: 1074779292}
+  - {fileID: 1083999641}
+  - {fileID: 869580364}
   - {fileID: 1541490681}
 --- !u!114 &328039771
 MonoBehaviour:
@@ -9511,6 +9518,7 @@ MonoBehaviour:
   - {fileID: 1686378093}
   - {fileID: 1074779292}
   - {fileID: 1083999641}
+  - {fileID: 869580364}
   - {fileID: 869580364}
 --- !u!1 &451097805
 GameObject:
@@ -10165,6 +10173,7 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 1083999643}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
+  goodCutOff: 3000
 --- !u!1 &1011950108
 GameObject:
   m_ObjectHideFlags: 0
@@ -10375,6 +10384,7 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 1686378095}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
+  goodCutOff: 4000
 --- !u!1 &1083999639
 GameObject:
   m_ObjectHideFlags: 0
@@ -10548,6 +10558,7 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 1074779294}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
+  goodCutOff: 4000
 --- !u!1001 &1132252536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10732,6 +10743,7 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 0}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
+  goodCutOff: 5000
 --- !u!82 &1153060025
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10743,7 +10755,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 6053968783954582990, guid: dfd2f4652d53b5c42864b479a68b8f6c,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 01905548adc37084a82f6ddddfad0382, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -11591,6 +11603,7 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 1851448194}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
+  goodCutOff: 600
 --- !u!1 &1851448190
 GameObject:
   m_ObjectHideFlags: 0
@@ -11764,6 +11777,7 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 1852030750}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
+  goodCutOff: 300
 --- !u!1 &1852030746
 GameObject:
   m_ObjectHideFlags: 0
@@ -11937,6 +11951,7 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 1153060024}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
+  goodCutOff: 300
 --- !u!1001 &1887411404
 PrefabInstance:
   m_ObjectHideFlags: 0
