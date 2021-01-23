@@ -17,12 +17,12 @@ public class Synthesizer : AbstractSoundGenerator
             this.amplitude = amplitude;
         }
 
-        public virtual void CalculateIncrement(float sampleRate)
+        public void CalculateIncrement(float sampleRate)
         {
             increment = frequency * 2f * Mathf.PI / (float) sampleRate;
         }
 
-        public virtual float NextSample()
+        public float NextSample()
         {
             phase += increment;
             float nextSample = Mathf.Sin(phase) * amplitude;

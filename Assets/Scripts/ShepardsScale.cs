@@ -21,13 +21,13 @@ public class ShepardsScale : Synthesizer
         }
         
 
-        public override void CalculateIncrement(float sampleRate)
+        public new void CalculateIncrement(float sampleRate)
         {
             this.sampleRate = sampleRate;
             base.CalculateIncrement(sampleRate);
         }
 
-        public override float NextSample()
+        public new float NextSample()
         {
             shiftPhase = (shiftPhase + this.scale.shift / sampleRate + 1f) % 1f;
             frequency = scale.frequencyPerRelativeFrequency(shiftPhase);
@@ -46,13 +46,11 @@ public class ShepardsScale : Synthesizer
     public float baseFrequency = 50;
     public float totaloctaves = 3;
     public int numTones = 1;
-
-    private float phase = 0f;
     public float shift = 0.2f;
 
 
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
         baseAmplitude = 1f / numTones;
         frequencies = new Frequency[numTones];
