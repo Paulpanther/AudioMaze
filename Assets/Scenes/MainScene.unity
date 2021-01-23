@@ -9479,11 +9479,11 @@ MonoBehaviour:
   sampleRate: 44100
   baseAmplitude: 1
   channels: 1
-  baseFrequency: 50
-  totaloctaves: 3
-  numTones: 1
+  baseFrequency: 30
+  totaloctaves: 8
+  numTones: 8
   shift: 0.2
-  conversionFactor: 0.02
+  conversionFactor: 0.2
 --- !u!82 &317294379
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9688,7 +9688,7 @@ MonoBehaviour:
   maxSpeed: 1.5
   cam: {fileID: 519420032}
   maze: {fileID: 328039770}
-  goal: {fileID: 0}
+  goal: {fileID: 1541490681}
   distanceChange: 0
 --- !u!212 &451097807
 SpriteRenderer:
@@ -11240,8 +11240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6addf4ce66c87a74b8dba750c3a39c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maze: {fileID: 328039770}
-  goal: {fileID: 1541490681}
 --- !u!114 &1262208892
 MonoBehaviour:
   m_ObjectHideFlags: 0
