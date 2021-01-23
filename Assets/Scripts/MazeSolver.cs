@@ -86,39 +86,33 @@ public class MazeSolver : MonoBehaviour
         }
     }
 
+    private Vector3 CellCenterToWorld(Vector3Int cell)
+    {
+        return _map.LocalToWorld(_map.CellToLocalInterpolated(cell + new Vector3(0.5f, 0.5f, 0)));
+    }
+
     public float GetAccurateDistanceFrom(Transform obj, Vector3 worldPos)
     {
         var cell = _map.WorldToCell(worldPos);
         var nullableCellDistance = GetDistanceFrom(obj, cell);
         if (nullableCellDistance == null) return float.MaxValue;
         var cellDistance = (int) nullableCellDistance;
-        
-        var neighborCells = _relativeNeighbors.Select(n => n + cell).ToList();
-        var neighborPositions = neighborCells.Select(n => _map.CellToWorld(n));
-        var neighborDistances = neighborCells.Select(n => GetDistanceFrom(obj, n));
-        var cellSize = neighborPositions.Select(n => (n - worldPos).magnitude).Max();
-        var cellWorldPos = _map.CellToWorld(cell);
-        var internalPosition = (worldPos - cellWorldPos) / cellSize;
-        float[] interpolationComponents = {
-            Mathf.Max(internalPosition.y, 0),
-            Mathf.Max(internalPosition.x, 0),
-            Mathf.Max(-internalPosition.y, 0),
-            Mathf.Max(-internalPosition.x, 0)
-        };
-        var interpolatedDistances = neighborDistances.Select((distance, index) => {
-            if (interpolationComponents[index] < 0)
-            {
-                return (float?) null;
-            }
-            return Mathf.Lerp(cellDistance, distance ?? cellDistance, interpolationComponents[index]);
-        }).Where(d => d != null).ToList();
+        var size = _map.cellSize.x;
 
-        if (interpolatedDistances.Count == 0)
-        {
-            return cellDistance;
-        }
+        var neighborCells = GetNeighborsOf(worldPos);
+        // neighborCells.ForEach(HighlightCell);
+        var neighborDistances = neighborCells.Select(n => GetDistanceFrom(obj, n) ?? cellDistance).ToList();
+        var relativeOffset = (worldPos - CellCenterToWorld(neighborCells[0])) / size;
+        var relativeDistance = Blerp(neighborDistances[0], neighborDistances[1], neighborDistances[2],
+            neighborDistances[3], relativeOffset.x, relativeOffset.y);
+        return relativeDistance;
+    }
 
-        return Mathf.Sqrt(interpolatedDistances.Select(d => d * d ?? 0).Sum());
+    private void HighlightCell(Vector3Int pos)
+    {
+        var worldPos = CellCenterToWorld(pos);
+        Debug.DrawLine(worldPos - new Vector3(0.2f, 0), worldPos + new Vector3(0.2f, 0), Color.cyan);
+        Debug.DrawLine(worldPos - new Vector3(0, 0.2f), worldPos + new Vector3(0, 0.2f), Color.cyan);
     }
 
     public int GetDistanceFrom(Transform obj, Vector3 worldPos)
@@ -149,6 +143,22 @@ public class MazeSolver : MonoBehaviour
         }
 
         return null;
+    }
+
+    private float Blerp(float c00, float c10, float c01, float c11, float tx, float ty)
+    {
+        return Mathf.Lerp(Mathf.Lerp(c00, c10, tx), Mathf.Lerp(c01, c11, tx), ty);
+    }
+
+    private List<Vector3Int> GetNeighborsOf(Vector3 pos)
+    {
+        Vector3[] corners = {
+            new Vector3(-1, -1),
+            new Vector3(1, -1),
+            new Vector3(-1, 1),
+            new Vector3(1, 1)
+        };
+        return corners.Select(c => _map.WorldToCell(c / 2 + pos)).ToList();
     }
 
     private List<SpaceNode> GetNeighborsOf(Vector3Int pos)
