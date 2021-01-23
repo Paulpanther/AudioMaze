@@ -10,7 +10,7 @@ using UnityEngine.Audio;
  * Fine tune the values for triggerDistance and soundVolume
  * */
 
-public class DistanceNoiser : MonoBehaviour
+public class WallDistanceNoiser : MonoBehaviour
 {
     public AudioMixerGroup audioOut;
 
@@ -31,10 +31,12 @@ public class DistanceNoiser : MonoBehaviour
 
     private void Start()
     {
+        var audioGroup = new GameObject("Wall Distance Audio Group");
+        audioGroup.transform.parent = transform;
         wallNoise = new AudioSource[numRays];
         for(int i = 0; i < numRays; i++) {
             Vector2 direction = Direction(i);
-            AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+            AudioSource audioSource = audioGroup.AddComponent<AudioSource>();
             audioSource.outputAudioMixerGroup = audioOut;
             audioSource.clip = wallSound;
             audioSource.pitch = 1.0f + direction.y * 0.5f;
