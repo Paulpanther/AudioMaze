@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
 
     public float distanceChange;
 
+    public bool useWasd = false;
+
     private Rigidbody2D _body;
     private WalkingSound _walkingSound;
     private float _horizontal, _vertical;
@@ -48,8 +50,23 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _body.AddTorque(-_horizontal * rotationAcceleration);
-        _body.AddRelativeForce(new Vector2(0, _vertical * movementAcceleration));
+        if (useWasd)
+        {
+            if (_horizontal != 0 || _vertical != 0)
+            {
+                _body.AddForce((new Vector2(_horizontal, 0) + new Vector2(0, _vertical)).normalized * movementAcceleration);
+            }
+            if (_body.velocity.magnitude > Mathf.Epsilon)
+            {
+                var velocityNormalized = _body.velocity.normalized;
+                _body.SetRotation(Mathf.Atan2(velocityNormalized.y, velocityNormalized.x) * Mathf.Rad2Deg - 90);
+            }
+        }
+        else
+        {
+            _body.AddTorque(-_horizontal * rotationAcceleration);
+            _body.AddRelativeForce(new Vector2(0, _vertical * movementAcceleration));
+        }
 
         _walkingSound.SetWalking(_body.velocity.magnitude / maxSpeed);
         //RayCastSonar();
