@@ -9536,9 +9536,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAcceleration: 1
   movementAcceleration: 30
-  moveLimiter: 0.7
-  musMaster: {fileID: 849070671}
+  maxSpeed: 1.5
   cam: {fileID: 519420032}
+  maze: {fileID: 0}
+  goal: {fileID: 0}
+  distanceChange: 0
 --- !u!212 &451097807
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10107,7 +10109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &849070669
 MonoBehaviour:
   m_ObjectHideFlags: 0
