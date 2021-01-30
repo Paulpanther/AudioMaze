@@ -9688,6 +9688,7 @@ MonoBehaviour:
   maze: {fileID: 328039770}
   goal: {fileID: 1541490681}
   distanceChange: 0
+  useWasd: 0
 --- !u!212 &451097807
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9898,6 +9899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualization: 2
+  sizeOnOnlyPlayer: 2
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
