@@ -50,8 +50,8 @@ public class CallUpdate : MonoBehaviour
     public float? InterpolateBetweenPrevAndPlayer()
     {
         var distanceToPrev = DistanceToPrevCheckpoint();
+        Debug.Log(distanceToPrev);
         if (distanceToPrev == null) return null;
-
         return Mathf.Clamp01((float) (1 - DistanceToPlayer() / distanceToPrev));
     }
 

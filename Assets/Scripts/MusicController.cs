@@ -34,6 +34,7 @@ public class MusicController : MonoBehaviour
         //Call update based on currentCheckpoint to make current CheckpointMusic Louder 
 
         float updateVal = currentUpdate.GetVolume();
+        Debug.Log(updateVal);
         sources[currentCheckpoint].volume = updateVal;
         currentDist.distortionLevel = 1 - updateVal;
         currentEch.dryMix = updateVal;
@@ -48,11 +49,17 @@ public class MusicController : MonoBehaviour
         if (checkNum > currentCheckpoint)
         {
             //Remove the sound effects effecting current checkpoint audio
-            RemoveFx();
-            for (int i = currentCheckpoint;i<checkNum && i < sources.Length; i++)
+            for (int i = 0;i<checkNum && i < sources.Length; i++)
             {
                 sources[i].volume = 1;
+                if (i < checkNum - 1)
+                {
+                    sources[i].gameObject.transform.position = sources[checkNum].gameObject.transform.position;
+                }
             }
+            
+            RemoveFx(sources[currentCheckpoint].gameObject);
+
             currentCheckpoint = checkNum;
             goodBassCutoff = goodCutOff;
 
@@ -60,7 +67,6 @@ public class MusicController : MonoBehaviour
             {
                 Debug.Log("Starting to play next CP audio");
                 AddFX(sources[currentCheckpoint].gameObject);
-                //This is just for this version, later the volume will slide in.
                 currentUpdate = sources[currentCheckpoint].gameObject.GetComponent<CallUpdate>();
                 
                 
@@ -82,12 +88,12 @@ public class MusicController : MonoBehaviour
 
 
     }
-    public void RemoveFx()
+    public void RemoveFx(GameObject gObj)
     {
-        currentDist.distortionLevel = 0;
-        currentHP.cutoffFrequency = 0;
-        currentLP.cutoffFrequency = 18000;
-        currentEch.wetMix = 0;
+;       Destroy(sources[currentCheckpoint].GetComponent<AudioDistortionFilter>());
+        Destroy(sources[currentCheckpoint].GetComponent<AudioEchoFilter>());
+        Destroy(sources[currentCheckpoint].GetComponent<AudioLowPassFilter>());
+        Destroy(sources[currentCheckpoint].GetComponent<AudioHighPassFilter>());
     }
 
 }
