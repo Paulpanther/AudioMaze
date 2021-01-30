@@ -31,7 +31,7 @@ public class SmackYourFace : MonoBehaviour
         if (audioClips.Length > 0)
         {
             var clipIndex = Random.Range(0, audioClips.Length);
-            _audioSource.transform.position = location;
+            // _audioSource.transform.position = location;
             _audioSource.PlayOneShot(audioClips[clipIndex]);
         }
     }
