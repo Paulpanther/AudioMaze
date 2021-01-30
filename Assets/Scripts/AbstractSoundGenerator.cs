@@ -21,7 +21,7 @@ public abstract class AbstractSoundGenerator : MonoBehaviour
     {
         AudioClip myClip = AudioClip.Create(
             "SynthesizerGenerated",
-            sampleRate * 2,
+            SampleLength(),
             channels,
             sampleRate,
             true,
@@ -63,4 +63,8 @@ public abstract class AbstractSoundGenerator : MonoBehaviour
     protected abstract void CalculateIncrement();
 
     protected abstract float NextSample();
+
+    protected int SampleLength() {
+        return sampleRate * 2;
+    }
 }
