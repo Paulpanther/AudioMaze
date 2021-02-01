@@ -6,9 +6,10 @@ using UnityEngine.Audio;
 public class MusicMasterController : MonoBehaviour
 {
     public AudioMixer mixer;
+    public Player pl;
     private int distanceMul;
     private bool wrongDirection = false;
-    private string[] parameters = new string[] { "MusicLP", "MusicHP", "MusicDist","MusicThresh" };
+    private string[] parameters = new string[] { "MusicLP", "MusicHP", "MusicDist","MusicThrsh" };
     private float[] wrongGoals = new float[] { 8000.00f, 500.0f,0.93f,-32.00f};
     private float[] rightGoals = new float[] { 20000.00f, 10.0f,0.0f,0.0f};
     //Initialise to rightGoals values
@@ -20,6 +21,8 @@ public class MusicMasterController : MonoBehaviour
     //Initialise to all true
     private bool[] goalsReached = new bool[] { true, true,true,true};
     private int size = 4;
+    private bool wrongDirectionChanged = false;
+    private bool rightDirectionChanged = false;
     
 
 
@@ -49,6 +52,18 @@ public class MusicMasterController : MonoBehaviour
 
     private void Update()
     {
+        if(pl.distanceChange<0 && !wrongDirectionChanged)
+        {
+            wrongDirectionChanged = true;
+            rightDirectionChanged = false;
+            directionChange();
+        }else if (pl.distanceChange>0 && !rightDirectionChanged)
+        {
+            rightDirectionChanged = true;
+            wrongDirectionChanged = false;
+            directionChange();
+        }
+
         for (int i = 0; i < size; i++)
         {
             if(!goalsReached[i] && (currentVals[i]>=currentGoals[i]-sensitivity[i]) && (currentVals[i] <= currentGoals[i] + sensitivity[i]))
