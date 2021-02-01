@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public Transform goal;
 
     public float distanceChange;
+    public float speed;
 
     public bool useWasd = false;
 
@@ -67,8 +68,8 @@ public class Player : MonoBehaviour
             _body.AddTorque(-_horizontal * rotationAcceleration);
             _body.AddRelativeForce(new Vector2(0, _vertical * movementAcceleration));
         }
-
-        _walkingSound.SetWalking(_body.velocity.magnitude / maxSpeed);
+        speed = _body.velocity.magnitude;
+        _walkingSound.SetWalking(speed / maxSpeed);
         //RayCastSonar();
     }
 
