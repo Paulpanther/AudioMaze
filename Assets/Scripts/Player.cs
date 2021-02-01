@@ -21,14 +21,18 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D _body;
     private WalkingSound _walkingSound;
+    private RotationClicker _rotationClicker;
     private float _horizontal, _vertical;
     
     private float? _lastDistance;
+
+    private DateTime _nextAllowedRotationTime = DateTime.MinValue;
 
     private async void Start()
     {
         _body = GetComponent<Rigidbody2D>();
         _walkingSound = GetComponent<WalkingSound>();
+        _rotationClicker = GetComponentInChildren<RotationClicker>();
         
         while (true)
         {
@@ -65,7 +69,13 @@ public class Player : MonoBehaviour
         }
         else
         {
-            _body.AddTorque(-_horizontal * rotationAcceleration);
+            //_body.AddTorque(-_horizontal * rotationAcceleration);
+            if (Mathf.Abs(_horizontal) > 0 && DateTime.Now >= _nextAllowedRotationTime) {
+                transform.Rotate(0, 0, - 30 * _horizontal);
+                _nextAllowedRotationTime = DateTime.Now.AddMilliseconds(200);
+                _rotationClicker.RotationChanged((int) Mathf.Round(transform.rotation.eulerAngles.z));;
+            }
+
             _body.AddRelativeForce(new Vector2(0, _vertical * movementAcceleration));
         }
         speed = _body.velocity.magnitude;

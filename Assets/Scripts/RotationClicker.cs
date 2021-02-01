@@ -2,24 +2,31 @@
 
 public class RotationClicker : MonoBehaviour
 {
-    public int majorTickCount = 4;
-    public int minorTickCount = 12;
 
-    private float prevTime = 0; 
-    void FixedUpdate()
+    [Range(0, 1)] public float strongClickVolume;
+    [Range(-3, 3)] public float strongClickPitch;
+    [Range(0, 1)] public float normalClickVolume;
+    [Range(-3, 3)] public float normalClickPitch;
+
+    private AudioSource _audioSource;
+
+    void Start()
     {
-        // 0 = 360 is north, 90 is west, 180 is south, 270 is east
-        var degree = transform.rotation.eulerAngles.z;
-        if (Time.fixedTime - prevTime > 0.5)
-        {
-            Debug.Log(GetNearestTick(degree, majorTickCount));
-            Debug.Log(GetNearestTick(degree, minorTickCount));
-            prevTime = Time.fixedTime;
+        
+        _audioSource = GetComponent<AudioSource>();
+    }
+
+    public void RotationChanged(int newRotation)
+    {
+        Debug.Log(newRotation);
+        if(newRotation % 90 == 0) {
+            _audioSource.pitch = strongClickPitch;
+            _audioSource.volume = strongClickVolume;
+        } else {
+            _audioSource.pitch = normalClickPitch;
+            _audioSource.volume = normalClickVolume;
         }
+        _audioSource.Play();
     }
 
-    private float GetNearestTick(float degree, int tickCount)
-    {
-        return degree / (360f / tickCount);
-    }
 }
