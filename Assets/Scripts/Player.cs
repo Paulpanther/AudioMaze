@@ -72,7 +72,7 @@ public class Player : MonoBehaviour
             {
                 _body.AddForce((new Vector2(_horizontal, 0) + new Vector2(0, _vertical)).normalized * movementAcceleration);
             }
-            if (_body.velocity.magnitude > Mathf.Epsilon)
+            if (_body.velocity.magnitude > 0.5)
             {
                 var velocityNormalized = _body.velocity.normalized;
                 _body.SetRotation(Mathf.Atan2(velocityNormalized.y, velocityNormalized.x) * Mathf.Rad2Deg - 90);
