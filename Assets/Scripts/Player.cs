@@ -61,6 +61,11 @@ public class Player : MonoBehaviour
             useWasd = !useWasd;
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         cam.position = new Vector3(transform.position.x, transform.position.y, -1);
     }
 
