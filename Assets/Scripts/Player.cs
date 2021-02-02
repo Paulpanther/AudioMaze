@@ -56,6 +56,11 @@ public class Player : MonoBehaviour
         _horizontal = Input.GetAxisRaw("Horizontal");
         _vertical = Input.GetAxisRaw("Vertical");
 
+        if (Input.GetKeyDown("m"))
+        {
+            useWasd = !useWasd;
+        }
+
         cam.position = new Vector3(transform.position.x, transform.position.y, -1);
     }
 
