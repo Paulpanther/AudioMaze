@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public Transform goal;
 
     public float distanceChange;
+    public float distancePercentage = 1;
     public float speed;
 
     public bool useWasd = false;
@@ -28,17 +29,21 @@ public class Player : MonoBehaviour
 
     private DateTime _nextAllowedRotationTime = DateTime.MinValue;
 
+    private float _startGoalDistance;
+
     private async void Start()
     {
         _body = GetComponent<Rigidbody2D>();
         _walkingSound = GetComponent<WalkingSound>();
         _rotationClicker = GetComponentInChildren<RotationClicker>();
+        _startGoalDistance = maze.GetAccurateDistanceFrom(goal, transform.position);
         
         while (true)
         {
             var distance = maze.GetAccurateDistanceFrom(goal, transform.position);
             var delta = (distance - _lastDistance) ?? 0;
             distanceChange = -delta;
+            distancePercentage = distance / _startGoalDistance;
 
             _lastDistance = distance;
             await Task.Delay(100);
