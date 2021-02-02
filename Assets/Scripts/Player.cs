@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     public float speed;
 
     public bool useWasd = false;
+    public bool walkingAgainstWall = false;
 
     private Rigidbody2D _body;
     private WalkingSound _walkingSound;
@@ -71,6 +72,7 @@ public class Player : MonoBehaviour
                 var velocityNormalized = _body.velocity.normalized;
                 _body.SetRotation(Mathf.Atan2(velocityNormalized.y, velocityNormalized.x) * Mathf.Rad2Deg - 90);
             }
+            walkingAgainstWall = (_horizontal != 0 || _vertical != 0) && _body.velocity.magnitude < 0.01;
         }
         else
         {
@@ -82,6 +84,9 @@ public class Player : MonoBehaviour
             }
 
             _body.AddRelativeForce(new Vector2(0, _vertical * movementAcceleration));
+            
+            walkingAgainstWall = _vertical != 0 && _body.velocity.magnitude < 0.01;
+
         }
         speed = _body.velocity.magnitude;
         _walkingSound.SetWalking(speed / maxSpeed);
