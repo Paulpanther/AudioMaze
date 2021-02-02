@@ -11777,7 +11777,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be67e933670d1e648915abcca35dd93b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strongClickVolume: 1
+  veryStrongClickVolume: 1
+  veryStrongClickPitch: 0.5
+  strongClickVolume: 0.804
   strongClickPitch: 0.75
   normalClickVolume: 0.75
   normalClickPitch: 1
