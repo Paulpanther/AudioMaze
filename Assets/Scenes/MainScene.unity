@@ -9809,7 +9809,6 @@ GameObject:
   - component: {fileID: 451097807}
   - component: {fileID: 451097808}
   - component: {fileID: 451097806}
-  - component: {fileID: 451097811}
   - component: {fileID: 451097812}
   - component: {fileID: 451097814}
   - component: {fileID: 451097815}
@@ -9948,24 +9947,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &451097811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451097805}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec15d762f88b80046927ff3d4716a0d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioOut: {fileID: -4247693331714297064, guid: dfd2f4652d53b5c42864b479a68b8f6c,
-    type: 2}
-  numRays: 12
-  triggerDistance: 10
-  distanceMapping: 2
-  wallSound: {fileID: 8300000, guid: c90194cdacf50ea4984c384005dde213, type: 3}
 --- !u!114 &451097812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10007,17 +9988,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18ca78f679e2d454c88337c34bcf23bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scrapingDelay: 0.02
+  hitCooldown: 0.1
+  scrapingSpeedCutoff: 0.15
+  scrapingMinSpeedPitch: 0.25
+  scrapingMaxSpeedPitch: 1
+  minCollisionPointDistance: 0.1
+  hitVolume: 1
+  scapeVolume: 0.75
   audioOut: {fileID: -4247693331714297064, guid: dfd2f4652d53b5c42864b479a68b8f6c,
     type: 2}
-  audioClips:
-  - {fileID: 8300000, guid: f14b86fe622529c418a9a726462b430c, type: 3}
-  - {fileID: 8300000, guid: 0076967eda2a0d64980c18ab3e60a454, type: 3}
-  - {fileID: 8300000, guid: 50ab70e9bfb61214398fc08a8a31b847, type: 3}
-  - {fileID: 8300000, guid: dd58ed3ce50ee0941bf765fb746032b3, type: 3}
-  - {fileID: 8300000, guid: e48dfd4a34af03d40972c30286ff20a5, type: 3}
-  - {fileID: 8300000, guid: 758b136e175c07a4a89aaf2ca9de0abb, type: 3}
-  - {fileID: 8300000, guid: 266012d74f7301f49b61c946cb04d7a8, type: 3}
-  - {fileID: 8300000, guid: 0344eedf7144b6346990e2703240e7df, type: 3}
+  hitAudioClips:
+  - {fileID: 8300000, guid: 4d8f189bad8ece049a861836b20f6ad0, type: 3}
+  - {fileID: 8300000, guid: 9ede3107efb24224894ac1d882c33dce, type: 3}
+  - {fileID: 8300000, guid: 19e4252e5cb70ee428fcc5ff1aba5d82, type: 3}
+  - {fileID: 8300000, guid: 70369028fc09e5946b9e7105fe9bac03, type: 3}
+  - {fileID: 8300000, guid: c21c5d720b72b864b8145ea445c19458, type: 3}
+  - {fileID: 8300000, guid: 0197d96d99c222143aa7c8f51bac6f01, type: 3}
+  - {fileID: 8300000, guid: aeb4e11aa240259468d379b7ee17c95f, type: 3}
+  - {fileID: 8300000, guid: 396ece22860c3e344984e74ef8ca9e52, type: 3}
+  scrapeAudioClips:
+  - {fileID: 8300000, guid: a74fc53a63e146a4eb7b547ca2e7a7bd, type: 3}
+  - {fileID: 8300000, guid: 780951f2bc31bd448afa3cfe379c7643, type: 3}
+  - {fileID: 8300000, guid: 25f2238fc86ca03499f55ab2553c910b, type: 3}
 --- !u!4 &513961093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1407657134046191464, guid: 74454a978cd25be459aeeb1e1f26d34e,
