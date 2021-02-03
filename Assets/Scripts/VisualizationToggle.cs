@@ -36,15 +36,21 @@ public class VisualizationToggle : MonoBehaviour
         {
             visualization = NextVisualization(visualization);
         }
+        if (Input.GetKeyDown("c"))
+        {
+            visualization = visualization == VisualizationMode.Everything
+                ? VisualizationMode.Nothing
+                : VisualizationMode.Everything;
+        }
     }
 
     private VisualizationMode NextVisualization(VisualizationMode v)
     {
         switch (v)
         {
-            case VisualizationMode.Everything: return VisualizationMode.OnlyPlayer;
             case VisualizationMode.OnlyPlayer: return VisualizationMode.Nothing;
-            case VisualizationMode.Nothing: return VisualizationMode.Everything;
+            case VisualizationMode.Nothing: return VisualizationMode.OnlyPlayer;
+            case VisualizationMode.Everything: return VisualizationMode.Nothing;
             default: throw new Exception();
         }
     }
