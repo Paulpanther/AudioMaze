@@ -68,7 +68,7 @@ public class MusicMasterController : MonoBehaviour
         {
             if(!goalsReached[i] && (currentVals[i]>=currentGoals[i]-sensitivity[i]) && (currentVals[i] <= currentGoals[i] + sensitivity[i]))
             {
-                Debug.Log(parameters[i] + "reached goal");
+                // Debug.Log(parameters[i] + " reached goal");
                 goalsReached[i] = true;
                 currentVals[i] = currentGoals[i];
                 mixer.SetFloat(parameters[i], currentVals[i]);

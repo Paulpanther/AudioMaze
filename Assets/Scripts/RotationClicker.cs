@@ -20,7 +20,7 @@ public class RotationClicker : MonoBehaviour
 
     public void RotationChanged(int newRotation)
     {
-        Debug.Log(newRotation);
+        // Debug.Log(newRotation);
         if(newRotation % 360 == 0) {
             _audioSource.pitch = veryStrongClickPitch;
             _audioSource.volume = veryStrongClickVolume;
