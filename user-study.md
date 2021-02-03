@@ -1,8 +1,9 @@
 # User-Study Protocol
 
-Video Deutsch: https://youtu.be/Qv0aGDJyq7k   
-Video Englisch: https://youtu.be/zuWcftY0LPI   
+Video Deutsch: https://youtu.be/qmhbymScHrs   
+Video Englisch: https://youtu.be/fAhjyH6txvM   
 Survey: https://forms.gle/tzeq2FU12upVqY4m8   
+Release: https://github.com/Paulpanther/AudioMaze/releases/tag/v1.0.0  
 
 #### Keys:
 - p -> zeige prozent distanz zu ziel (erst nach survey)
