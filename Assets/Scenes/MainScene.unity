@@ -9629,8 +9629,8 @@ MonoBehaviour:
   baseAmplitude: 1
   channels: 1
   baseFrequency: 30
-  totaloctaves: 7
-  numTones: 8
+  totaloctaves: 6
+  numTones: 6
   shift: 0.2
   conversionFactor: 0.2
 --- !u!82 &317294379
