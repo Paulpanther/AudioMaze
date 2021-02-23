@@ -309,6 +309,20 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters:
+  - guid: a2fbf54953bfc364ab99195f1fbd5a06
+    name: AgainstWallVolume
+  - guid: 501ac3cf3016b68489ecc0ad044fc925
+    name: AmbientVolume
+  - guid: b4e9b8212454d3b458c7823ab6b1f4b2
+    name: AreaVolume
+  - guid: 16a2a1d0e34138d4c988949586019061
+    name: DraughtVolume
+  - guid: 9616fcf10f0eee547b0dbad7a9166555
+    name: FootstepsVolume
+  - guid: b36fff276c2bfeb4eaf98dcf4f393c77
+    name: MasterVolume
+  - guid: be157399891373d46aa38fb241981f9a
+    name: MusicVolume
   - guid: 10fece569b5ab5a4990b200d59dec4ad
     name: MusicThrsh
   - guid: 257ed69fecc1bb34290128ca34c87831
@@ -317,6 +331,12 @@ AudioMixerController:
     name: MusicHP
   - guid: 4c00f40346703a64097c0d14c4645344
     name: MusicLP
+  - guid: e5b231e94f749394f90c1c4cd61b90e0
+    name: RotationVolume
+  - guid: 19a52b593031d2a4280ff05a86b42388
+    name: ShepardVolume
+  - guid: a20786a4425fd5446a72a1a08e5c6544
+    name: WallVolume
   m_AudioMixerGroupViews:
   - guids:
     - 38a889e4331dd47499d0a14dbe7fb69f
