@@ -16,6 +16,7 @@ An audio game for the Data Sonification & Opportunities of Sound Seminar, winter
 - `p` : shows the percentage of progress towards the exit
 - `v` : shows the player rotation
 - `c` : shows the whole maze
+- `b` : shows audio mixer
 - `m` : toggles movement from rotation-based to absolute-direction-based
 
 ## Related Work
