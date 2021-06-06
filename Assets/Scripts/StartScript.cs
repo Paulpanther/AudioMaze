@@ -16,16 +16,16 @@ public class StartScript : MonoBehaviour
 
     void Start()
     {
-        if (Win.IsWin)
-        {
-            title.text = winTitleText;
-            button.GetComponentInChildren<TextMeshProUGUI>().text = winButtonText;
-        }
+        // if (Win.IsWin)
+        // {
+        //     title.text = winTitleText;
+        //     button.GetComponentInChildren<TextMeshProUGUI>().text = winButtonText;
+        // }
     }
 
     public void OnClick()
     {
-        Win.IsWin = false;
-        SceneManager.LoadScene("MainScene");
+        // Win.IsWin = false;
+        SceneManager.LoadScene("NewMainScene");
     }
 }
