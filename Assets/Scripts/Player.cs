@@ -16,16 +16,23 @@ public class Player : MonoBehaviour
 
     public float distanceChange;
     public float distancePercentage = 1;
+
+    private float _previousSpeed;
     public float speed;
 
-    public bool useWasd = false;
+    public enum ControlSystem {
+        Relative, // rotate and forward
+        Absolute // directional movement
+    }
+
+    public ControlSystem controlSystem = ControlSystem.Relative;
     public bool walkingAgainstWall = false;
 
     private Rigidbody2D _body;
     private WalkingSound _walkingSound;
     private RotationClicker _rotationClicker;
     private float _horizontal, _vertical;
-    
+
     private float? _lastDistance;
 
     private DateTime _nextAllowedRotationTime = DateTime.MinValue;
@@ -38,7 +45,8 @@ public class Player : MonoBehaviour
         _walkingSound = GetComponent<WalkingSound>();
         _rotationClicker = GetComponentInChildren<RotationClicker>();
         _startGoalDistance = maze.GetAccurateDistanceFrom(goal, transform.position);
-        
+        MovementEvent.previousPosition = new Vector2(transform.position.x, transform.position.y);
+
         while (true)
         {
             var distance = maze.GetAccurateDistanceFrom(goal, transform.position);
@@ -56,9 +64,14 @@ public class Player : MonoBehaviour
         _horizontal = Input.GetAxisRaw("Horizontal");
         _vertical = Input.GetAxisRaw("Vertical");
 
+        var hEvt = KeyEvent.getKeyEventForAxis(_horizontal, KeyCode.LeftArrow, KeyCode.RightArrow, KeyCode.A, KeyCode.D);
+        if (hEvt != null) EventLogging.logEvent(hEvt);
+        var vEvt = KeyEvent.getKeyEventForAxis(_vertical, KeyCode.UpArrow, KeyCode.DownArrow, KeyCode.W, KeyCode.S);
+        if (vEvt != null) EventLogging.logEvent(vEvt);
+
         if (Input.GetKeyDown("m"))
         {
-            useWasd = !useWasd;
+            controlSystem = (controlSystem == ControlSystem.Relative) ? ControlSystem.Absolute : ControlSystem.Relative;
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -71,7 +84,9 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (useWasd)
+        var position = new Vector2(transform.position.x, transform.position.y);
+
+        if (controlSystem == ControlSystem.Absolute)
         {
             if (_horizontal != 0 || _vertical != 0)
             {
@@ -87,18 +102,41 @@ public class Player : MonoBehaviour
         else
         {
             //_body.AddTorque(-_horizontal * rotationAcceleration);
-            if (Mathf.Abs(_horizontal) > 0 && DateTime.Now >= _nextAllowedRotationTime) {
-                transform.Rotate(0, 0, - 30 * _horizontal);
+            if (Mathf.Abs(_horizontal) > 0 && DateTime.Now >= _nextAllowedRotationTime)
+            {
+                transform.Rotate(0, 0, -30 * _horizontal);
                 _nextAllowedRotationTime = DateTime.Now.AddMilliseconds(200);
-                _rotationClicker.RotationChanged((int) Mathf.Round(transform.rotation.eulerAngles.z));;
+                _rotationClicker.RotationChanged((int)Mathf.Round(transform.rotation.eulerAngles.z)); ;
             }
 
             _body.AddRelativeForce(new Vector2(0, _vertical * movementAcceleration));
-            
+
             walkingAgainstWall = _vertical != 0 && _body.velocity.magnitude < 0.01;
 
         }
+        _previousSpeed = speed;
         speed = _body.velocity.magnitude;
+
+        if (speed > 0)
+        {
+            if (_previousSpeed == 0)
+            {
+                EventLogging.logEvent(new MovementEvent(AbstractEvent.Action.Started, position, position));
+            }
+            else if ((MovementEvent.previousPosition - position).sqrMagnitude > 0.01)
+            {
+                EventLogging.logEvent(new MovementEvent(AbstractEvent.Action.Progessing, MovementEvent.previousPosition, position));
+                MovementEvent.previousPosition = position;
+            }
+        }
+        else
+        {
+            if (_previousSpeed > 0)
+            {
+                EventLogging.logEvent(new MovementEvent(AbstractEvent.Action.Stopped, position, position));
+            }
+        }
+
         _walkingSound.SetWalking(speed / maxSpeed);
     }
 }

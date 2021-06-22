@@ -11,6 +11,7 @@ public class Draught : MonoBehaviour
 
     public Player player;
     public Tilemap map;
+    private float Volume;
 
     public bool useTilesForPosition;
 

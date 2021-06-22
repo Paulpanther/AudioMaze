@@ -9811,7 +9811,7 @@ GameObject:
   - component: {fileID: 451097806}
   - component: {fileID: 451097812}
   - component: {fileID: 451097814}
-  - component: {fileID: 451097815}
+  - component: {fileID: 451097811}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -9947,6 +9947,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &451097811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451097805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2970c24333da294e85dcea1d9ebbad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &451097812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9963,11 +9975,7 @@ MonoBehaviour:
     type: 2}
   maxStepSize: 1.5
   stopSpeed: 0.1
-  audioClips:
-  - {fileID: 8300000, guid: 7f3e8512cc6726047876035d28d596ce, type: 3}
-  - {fileID: 8300000, guid: 6a9b93592d4e9294f8fc8a41b4460848, type: 3}
-  - {fileID: 8300000, guid: 6b330c311b9e3b8408d488e42ef95a9f, type: 3}
-  - {fileID: 8300000, guid: 53370afddab2c8046b3a1155b094b112, type: 3}
+  footsteps: event:/Footsteps
 --- !u!81 &451097814
 AudioListener:
   m_ObjectHideFlags: 0
@@ -9976,41 +9984,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451097805}
   m_Enabled: 1
---- !u!114 &451097815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451097805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18ca78f679e2d454c88337c34bcf23bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrapingDelay: 0.02
-  hitCooldown: 0.1
-  scrapingSpeedCutoff: 0.15
-  scrapingMinSpeedPitch: 0.25
-  scrapingMaxSpeedPitch: 1
-  minCollisionPointDistance: 0.1
-  hitVolume: 1
-  scapeVolume: 0.75
-  audioOut: {fileID: -4247693331714297064, guid: dfd2f4652d53b5c42864b479a68b8f6c,
-    type: 2}
-  hitAudioClips:
-  - {fileID: 8300000, guid: 4d8f189bad8ece049a861836b20f6ad0, type: 3}
-  - {fileID: 8300000, guid: 9ede3107efb24224894ac1d882c33dce, type: 3}
-  - {fileID: 8300000, guid: 19e4252e5cb70ee428fcc5ff1aba5d82, type: 3}
-  - {fileID: 8300000, guid: 70369028fc09e5946b9e7105fe9bac03, type: 3}
-  - {fileID: 8300000, guid: c21c5d720b72b864b8145ea445c19458, type: 3}
-  - {fileID: 8300000, guid: 0197d96d99c222143aa7c8f51bac6f01, type: 3}
-  - {fileID: 8300000, guid: aeb4e11aa240259468d379b7ee17c95f, type: 3}
-  - {fileID: 8300000, guid: 396ece22860c3e344984e74ef8ca9e52, type: 3}
-  scrapeAudioClips:
-  - {fileID: 8300000, guid: a74fc53a63e146a4eb7b547ca2e7a7bd, type: 3}
-  - {fileID: 8300000, guid: 780951f2bc31bd448afa3cfe379c7643, type: 3}
-  - {fileID: 8300000, guid: 25f2238fc86ca03499f55ab2553c910b, type: 3}
 --- !u!4 &513961093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1407657134046191464, guid: 74454a978cd25be459aeeb1e1f26d34e,
@@ -10561,6 +10534,7 @@ GameObject:
   - component: {fileID: 849070670}
   - component: {fileID: 849070669}
   - component: {fileID: 849070671}
+  - component: {fileID: 849070672}
   m_Layer: 0
   m_Name: CheckPointManager
   m_TagString: Untagged
@@ -10575,7 +10549,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849070668}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb564aabe4fae06429bf1c63b15a3406, type: 3}
   m_Name: 
@@ -10616,13 +10590,35 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849070668}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bba04ad8059e5de428cb343f92600ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: dfd2f4652d53b5c42864b479a68b8f6c, type: 2}
   pl: {fileID: 451097806}
+--- !u!114 &849070672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849070668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c7afb2c2452a346b200a5fe9b5c69e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: event:/MainMusic
+  sources:
+  - {fileID: 1852030750}
+  - {fileID: 1851448194}
+  - {fileID: 1686378095}
+  - {fileID: 1074779294}
+  - {fileID: 1083999643}
+  - {fileID: 869580365}
+  - {fileID: 1776823769}
+  cachedRigidBody: {fileID: 451097809}
 --- !u!1 &869580361
 GameObject:
   m_ObjectHideFlags: 0
@@ -10649,7 +10645,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869580361}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 6053968783954582990, guid: dfd2f4652d53b5c42864b479a68b8f6c,
     type: 2}
@@ -10796,7 +10792,6 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 1083999643}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
-  goodCutOff: 3000
 --- !u!1 &1011950108
 GameObject:
   m_ObjectHideFlags: 0
@@ -10900,7 +10895,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074779290}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 6053968783954582990, guid: dfd2f4652d53b5c42864b479a68b8f6c,
     type: 2}
@@ -11007,7 +11002,6 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 1686378095}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
-  goodCutOff: 4000
 --- !u!1 &1083999639
 GameObject:
   m_ObjectHideFlags: 0
@@ -11074,7 +11068,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083999639}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 6053968783954582990, guid: dfd2f4652d53b5c42864b479a68b8f6c,
     type: 2}
@@ -11181,7 +11175,6 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 1074779294}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
-  goodCutOff: 4000
 --- !u!1001 &1132252536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11366,7 +11359,6 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 0}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
-  goodCutOff: 5000
 --- !u!82 &1153060025
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11374,7 +11366,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153060023}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 6053968783954582990, guid: dfd2f4652d53b5c42864b479a68b8f6c,
     type: 2}
@@ -12497,7 +12489,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686378091}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 6053968783954582990, guid: dfd2f4652d53b5c42864b479a68b8f6c,
     type: 2}
@@ -12604,7 +12596,6 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 1851448194}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
-  goodCutOff: 600
 --- !u!1 &1776823767
 GameObject:
   m_ObjectHideFlags: 0
@@ -12655,7 +12646,6 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 0}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
-  goodCutOff: 5000
 --- !u!82 &1776823770
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12663,7 +12653,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776823767}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 6053968783954582990, guid: dfd2f4652d53b5c42864b479a68b8f6c,
     type: 2}
@@ -12845,7 +12835,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851448190}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 6053968783954582990, guid: dfd2f4652d53b5c42864b479a68b8f6c,
     type: 2}
@@ -12952,7 +12942,6 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 1852030750}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
-  goodCutOff: 300
 --- !u!1 &1852030746
 GameObject:
   m_ObjectHideFlags: 0
@@ -13019,7 +13008,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852030746}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 6053968783954582990, guid: dfd2f4652d53b5c42864b479a68b8f6c,
     type: 2}
@@ -13126,7 +13115,6 @@ MonoBehaviour:
   prevCheckpoint: {fileID: 1153060024}
   maze: {fileID: 328039770}
   player: {fileID: 451097806}
-  goodCutOff: 300
 --- !u!1001 &1887411404
 PrefabInstance:
   m_ObjectHideFlags: 0
