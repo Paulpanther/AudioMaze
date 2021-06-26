@@ -5,20 +5,20 @@ using UnityEngine;
 public class CallUpdate : MonoBehaviour
 {
     // Start is called before the first frame update
-    private MusicController mus;
+    private MusicControllerFMOD mus;
     public int CheckPointNumber;
     
     public Transform goal;
     public CallUpdate prevCheckpoint;
     public MazeSolver maze;
     public Player player;
-    public int goodCutOff;
+    //public int goodCutOff;
 
     private bool _firstPass = false;
     
     private void Start()
     {
-        mus = GetComponentInParent<MusicController>();
+        mus = GetComponentInParent<MusicControllerFMOD>();
     }
 
     public bool HasPassedCheckpoint()
@@ -27,7 +27,7 @@ public class CallUpdate : MonoBehaviour
         if (isPassed && !_firstPass)
         {
             _firstPass = true;
-            mus.CheckpointReached(CheckPointNumber, goodCutOff);
+            mus.CheckpointReached(CheckPointNumber);
         }
         return isPassed;
     }

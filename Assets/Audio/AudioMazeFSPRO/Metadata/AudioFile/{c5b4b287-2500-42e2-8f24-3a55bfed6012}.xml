@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{c5b4b287-2500-42e2-8f24-3a55bfed6012}">
+		<property name="assetPath">
+			<value>WallSounds/HitWood-short-4.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.15040816326530612</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c37b5142-0064-4054-aed1-c8579c898976}</destination>
+		</relationship>
+	</object>
+</objects>
