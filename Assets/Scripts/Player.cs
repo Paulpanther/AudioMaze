@@ -80,7 +80,6 @@ public class Player : MonoBehaviour
         }
 
         cam.position = new Vector3(transform.position.x, transform.position.y, -1);
-        cam.rotation = transform.rotation;
     }
 
     private void FixedUpdate()
