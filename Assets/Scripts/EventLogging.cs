@@ -1,17 +1,58 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO.TextWriter;
+using System.IO.StreamWriter;
 using UnityEngine;
 
+public class EventLogging : MonoBehaviour {
+    public bool log2Console = false;
+    public string logFile = "log.json";
+    public bool verboseLogging = true;
+    public HashSet<string> consoleEnabledEvents = new HashSet<string> { "KeyEvent", "MovementEvent" };
 
-class EventLogging
-{
-    public static HashSet<string> enabledEvents = new HashSet<string> { "KeyEvent", "MovementEvent" };
+    private StreamWriter _logOut;
+
+    public static EventLogging INSTANCE = null;
+
+    private void Start()
+    {
+        INSTANCE = this;
+        _logOut = TextWriter.Synchronized(new StreamWriter(logFile));
+        _logOut.writeLine("{");
+        _logOut.writeLine("level:\"TODO\",");
+        _logOut.writeLine("messages:[");
+    }
+
+    private void OnDestroy()
+    {
+        _logOut.writeLine("]");
+        _logOut.writeLine("}");
+        _logOut.close();
+    }
+
+    public void logToConsole(AbstractEvent evt, bool verbose)
+    {
+        if (verbose || consoleEnabledEvents.Contains(evt.getName())){
+            Debug.Log(evt.message());
+        }
+    }
+
+    public void logToFile(AbstractEvent evt)
+    {
+        evt.writeAsJson(_logOut);
+        _logOut.writeLine(",");
+    }
+
+    public void logEvent(AbstractEvent evt)
+    {
+        if(log2Console) {
+            logToConsole(evt, verboseLogging);
+        }
+    }
 
     public static void logEvent(AbstractEvent evt)
     {
-        if (enabledEvents.Contains(evt.getName())){
-            Debug.Log(evt.message());
-        }
+        INSTANCE.logEvent(evt);
     }
 }
 
@@ -45,6 +86,17 @@ public abstract class AbstractEvent
     public virtual string message()
     {
         return creationTimeAsString() + " [" + name + "]: " + _message();
+    }
+
+    protected abstract void _writeJson(TextWriter out);
+
+    public virtual void writeAsJson(TextWriter out)
+    {
+        out.writeLine("{");
+        out.writeLine("name:{0},", name);
+        out.writeLine("createdAt:{0},", creationTime);
+        _json(out);
+        out.write("}");
     }
 
     public string creationTimeAsString()
@@ -101,6 +153,12 @@ class KeyEvent : AbstractEvent
         this.keyCode = keyCode;
     }
 
+    protected override void _writeJson(TextWriter out)
+    {
+        out.writeLine("action:{0},", action);
+        out.writeLine("keyCode:{0},", keyCode);
+    }
+
     protected override string _message()
     {
         return "key " + (action == KeyAction.KeyDown ? "pressed" : "released") + ": " + keyCode;
@@ -119,6 +177,13 @@ class MovementEvent : AbstractEvent
         this.action = action;
         this.startPos = startPos;
         this.endPos = endPos;
+    }
+
+    protected override void _writeJson(TextWriter out)
+    {
+        out.writeLine("action:{0},", action);
+        out.writeLine("startPos:{0},", startPos);
+        out.writeLine("endPos:{0},", endPos);
     }
 
     protected override string _message()
