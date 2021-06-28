@@ -746,12 +746,6 @@
 		<property name="maximumDistance">
 			<value>950</value>
 		</property>
-		<property name="extentMode">
-			<value>1</value>
-		</property>
-		<property name="userStereoSeparation">
-			<value>0</value>
-		</property>
 	</object>
 	<object class="AutomationCurve" id="{4e976d31-ff97-48cc-8fdf-4fb9dcf45dde}">
 		<relationship name="parameter">
