@@ -29,5 +29,6 @@ public class LevelManager : MonoBehaviour
 		currentLevel = Instantiate(levels[++currentLevelIndex]);
 		currentLevel.win.RegisterWinCallback(NextLevel);
 		player.RegisterLevel(currentLevel);
+        EventLogging.logEvent(new LevelEvent(currentLevel.name));
 	}
 }

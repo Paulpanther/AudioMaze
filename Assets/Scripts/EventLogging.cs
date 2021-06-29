@@ -18,7 +18,6 @@ public class EventLogging : MonoBehaviour {
         INSTANCE = this;
         _logOut = TextWriter.Synchronized(new StreamWriter(logFile));
         _logOut.WriteLine("[");
-        logToFile(new LevelEvent("Level"));
     }
 
     private void OnDestroy()
