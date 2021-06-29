@@ -131,8 +131,8 @@ public class Player : MonoBehaviour
             else if ((MovementEvent.previousPosition - position).sqrMagnitude > 0.01)
             {
                 EventLogging.logEvent(new MovementEvent(AbstractEvent.Action.Progessing, MovementEvent.previousPosition, position));
-                MovementEvent.previousPosition = position;
             }
+            MovementEvent.previousPosition = position;
         }
         else
         {
