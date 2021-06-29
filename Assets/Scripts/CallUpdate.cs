@@ -8,10 +8,12 @@ public class CallUpdate : MonoBehaviour
     private MusicControllerFMOD mus;
     public int CheckPointNumber;
     
-    public Transform goal;
     public CallUpdate prevCheckpoint;
-    public MazeSolver maze;
-    public Player player;
+    public Level level;
+    private Transform goal => level.win.transform;
+    private MazeSolver maze => level.mazeSolver;
+
+    private Player player => level.player;
     //public int goodCutOff;
 
     private bool _firstPass = false;

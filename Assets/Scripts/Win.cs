@@ -6,12 +6,17 @@ public class Win : MonoBehaviour
 {
 
     public static bool IsWin = false;
+    private Action winCallback = () => {};
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Enter");
         IsWin = true;
-        SceneManager.LoadScene("MenuScene");
+        winCallback();
+    }
+
+    public void RegisterWinCallback(Action winCallback)
+    {
+        this.winCallback = winCallback;
     }
 }
 

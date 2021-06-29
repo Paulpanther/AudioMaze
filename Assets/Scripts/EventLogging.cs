@@ -10,7 +10,7 @@ class EventLogging
     public static void logEvent(AbstractEvent evt)
     {
         if (enabledEvents.Contains(evt.getName())){
-            Debug.Log(evt.message());
+            // Debug.Log(evt.message());
         }
     }
 }

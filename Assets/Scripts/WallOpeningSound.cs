@@ -18,8 +18,8 @@ internal class Side
 public class WallOpeningSound : MonoBehaviour
 {
 	public Player player;
-	public Tilemap map;
 
+	private Tilemap map => player.map;
 	private FMODUnity.StudioEventEmitter emitter;
 	private Side[] sides;
 

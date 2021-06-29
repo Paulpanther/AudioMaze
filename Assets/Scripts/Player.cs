@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class Player : MonoBehaviour
 {
@@ -11,14 +12,18 @@ public class Player : MonoBehaviour
 
     public Transform cam;
 
-    public MazeSolver maze;
-    public Transform goal;
+    public MazeSolver maze => level.mazeSolver;
+    public Tilemap map => level.map;
+    public Win win => level.win;
+    public Transform goal => level.win.transform;
 
     public float distanceChange;
     public float distancePercentage = 1;
 
     private float _previousSpeed;
     public float speed;
+
+    private Level level;
 
     public enum ControlSystem {
         Relative, // rotate and forward
@@ -138,5 +143,12 @@ public class Player : MonoBehaviour
         }
 
         _walkingSound.SetWalking(speed / maxSpeed);
+    }
+
+    public void RegisterLevel(Level level)
+    {
+        this.level = level;
+        level.player = this;
+        transform.position = Vector3.zero;
     }
 }

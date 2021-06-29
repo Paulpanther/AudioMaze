@@ -38,10 +38,14 @@ public class MazeSolver : MonoBehaviour
         new Vector3Int(0, -1, 0),
         new Vector3Int(-1, 0, 0),
     };
-    
-    private void Start()
+
+    private void Awake()
     {
         _map = GetComponentInChildren<Tilemap>();
+    }
+
+    private void Start()
+    {
         var origin = _map.origin;
         var size = _map.size;
         
