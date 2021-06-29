@@ -154,6 +154,7 @@ MonoBehaviour:
   menu: MenuScene
   levels:
   - {fileID: 2385848506745926316, guid: bdbc23540df47234ab037a8a3159f2a3, type: 3}
+  - {fileID: 7741322123542669762, guid: c029443755a09484e9e8b43a64fb95a6, type: 3}
 --- !u!4 &50078799
 Transform:
   m_ObjectHideFlags: 0

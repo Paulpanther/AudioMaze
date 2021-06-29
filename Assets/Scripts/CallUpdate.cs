@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,10 +7,11 @@ public class CallUpdate : MonoBehaviour
 {
     // Start is called before the first frame update
     private MusicControllerFMOD mus;
-    public int CheckPointNumber;
-    
-    public CallUpdate prevCheckpoint;
-    public Level level;
+
+    [NonSerialized] public int CheckPointNumber;
+    [NonSerialized] public CallUpdate prevCheckpoint;
+    [NonSerialized] public Level level;
+
     private Transform goal => level.win.transform;
     private MazeSolver maze => level.mazeSolver;
 
