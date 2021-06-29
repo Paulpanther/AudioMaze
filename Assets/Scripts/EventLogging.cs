@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.IO.TextWriter;
-using System.IO.StreamWriter;
+using System.IO;
 using UnityEngine;
 
 public class EventLogging : MonoBehaviour {
@@ -10,7 +9,7 @@ public class EventLogging : MonoBehaviour {
     public bool verboseLogging = true;
     public HashSet<string> consoleEnabledEvents = new HashSet<string> { "KeyEvent", "MovementEvent" };
 
-    private StreamWriter _logOut;
+    private TextWriter _logOut;
 
     public static EventLogging INSTANCE = null;
 
@@ -18,16 +17,15 @@ public class EventLogging : MonoBehaviour {
     {
         INSTANCE = this;
         _logOut = TextWriter.Synchronized(new StreamWriter(logFile));
-        _logOut.writeLine("{");
-        _logOut.writeLine("level:\"TODO\",");
-        _logOut.writeLine("messages:[");
+        _logOut.WriteLine("[");
+        logToFile(new LevelEvent("Level"));
     }
 
     private void OnDestroy()
     {
-        _logOut.writeLine("]");
-        _logOut.writeLine("}");
-        _logOut.close();
+        _logOut.WriteLine("]");
+        _logOut.Close();
+        Debug.Log("Written event log to file \"" + logFile + "\"");
     }
 
     public void logToConsole(AbstractEvent evt, bool verbose)
@@ -40,19 +38,20 @@ public class EventLogging : MonoBehaviour {
     public void logToFile(AbstractEvent evt)
     {
         evt.writeAsJson(_logOut);
-        _logOut.writeLine(",");
+        _logOut.WriteLine(",");
     }
 
-    public void logEvent(AbstractEvent evt)
+    public void _logEvent(AbstractEvent evt)
     {
         if(log2Console) {
             logToConsole(evt, verboseLogging);
         }
+        logToFile(evt);
     }
 
     public static void logEvent(AbstractEvent evt)
     {
-        INSTANCE.logEvent(evt);
+        INSTANCE._logEvent(evt);
     }
 }
 
@@ -88,15 +87,15 @@ public abstract class AbstractEvent
         return creationTimeAsString() + " [" + name + "]: " + _message();
     }
 
-    protected abstract void _writeJson(TextWriter out);
+    protected abstract void _writeJson(TextWriter output);
 
-    public virtual void writeAsJson(TextWriter out)
+    public virtual void writeAsJson(TextWriter output)
     {
-        out.writeLine("{");
-        out.writeLine("name:{0},", name);
-        out.writeLine("createdAt:{0},", creationTime);
-        _json(out);
-        out.write("}");
+        output.WriteLine("{");
+        output.WriteLine("name:\"{0}\",", name);
+        output.WriteLine("createdAt:{0},", creationTime);
+        _writeJson(output);
+        output.Write("}");
     }
 
     public string creationTimeAsString()
@@ -108,6 +107,26 @@ public abstract class AbstractEvent
         return minutes.ToString().PadLeft(3, '0') + ":"
         + seconds.ToString().PadLeft(2, '0') + "."
         + ms.ToString().PadLeft(3, '0');
+    }
+}
+
+class LevelEvent : AbstractEvent
+{
+    protected string levelName;
+
+    public LevelEvent(string levelName) : base("LevelEvent")
+    {
+        this.levelName = levelName;
+    }
+
+    protected override void _writeJson(TextWriter output)
+    {
+        output.WriteLine("levelName:\"{0}\",", levelName);
+    }
+
+    protected override string _message()
+    {
+        return "level changed to \"" + levelName + "\"";
     }
 }
 
@@ -153,10 +172,10 @@ class KeyEvent : AbstractEvent
         this.keyCode = keyCode;
     }
 
-    protected override void _writeJson(TextWriter out)
+    protected override void _writeJson(TextWriter output)
     {
-        out.writeLine("action:{0},", action);
-        out.writeLine("keyCode:{0},", keyCode);
+        output.WriteLine("action:\"{0}\",", action);
+        output.WriteLine("keyCode:\"{0}\",", keyCode);
     }
 
     protected override string _message()
@@ -179,11 +198,11 @@ class MovementEvent : AbstractEvent
         this.endPos = endPos;
     }
 
-    protected override void _writeJson(TextWriter out)
+    protected override void _writeJson(TextWriter output)
     {
-        out.writeLine("action:{0},", action);
-        out.writeLine("startPos:{0},", startPos);
-        out.writeLine("endPos:{0},", endPos);
+        output.WriteLine("action:\"{0}\",", action);
+        output.WriteLine("startPos:{{x:{0},y:{1}}},", startPos.x, startPos.y);
+        output.WriteLine("endPos:{{x:{0},y:{1}}},", endPos.x, endPos.y);
     }
 
     protected override string _message()
