@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{f09cea5a-05be-4ca2-8c4b-9a95e3166b2f}">
+		<property name="assetPath">
+			<value>MangoGame_Insert 7.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>25.378299319727891</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c37b5142-0064-4054-aed1-c8579c898976}</destination>
+		</relationship>
+	</object>
+</objects>

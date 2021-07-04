@@ -77,11 +77,7 @@
 			<destination>{cd018148-fdf0-4b65-8fa8-f43edded35f8}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{7b0f58a9-8632-45e5-8941-09d984b0da40}">
-		<property name="isProxyEnabled">
-			<value>false</value>
-		</property>
-	</object>
+	<object class="Timeline" id="{7b0f58a9-8632-45e5-8941-09d984b0da40}" />
 	<object class="ActionSheet" id="{9eea90be-70df-45dd-bd41-c96226499d88}">
 		<relationship name="modules">
 			<destination>{d5964119-bfc1-4771-813e-0c86789e4509}</destination>
@@ -130,17 +126,11 @@
 	</object>
 	<object class="MixerBusPanner" id="{0a50f5f8-7105-41a1-babc-2184d6afd6d1}" />
 	<object class="SingleSound" id="{cb368506-6a96-4646-8e81-70b8ce02a5e5}">
-		<property name="start">
-			<value>1</value>
-		</property>
 		<relationship name="audioFile">
 			<destination>{29c104c9-16c4-4459-bf02-a72d3cfd43ad}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{2997cd4f-5101-47cc-966f-7c054b28db60}">
-		<property name="start">
-			<value>1</value>
-		</property>
 		<property name="volume">
 			<value>-4</value>
 		</property>
@@ -149,9 +139,6 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{077466e8-d779-4503-8bd9-047be48aa67f}">
-		<property name="start">
-			<value>1</value>
-		</property>
 		<relationship name="audioFile">
 			<destination>{517297c5-5876-49cb-8f1d-624c2616c08f}</destination>
 		</relationship>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{40e406b3-3f1e-4e46-aa0f-25f501ffe479}">
+		<property name="name">
+			<value>OpenLeft</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3b5e9de5-3c63-48f9-aff0-8cd40ca91b85}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{354b68d1-c84c-4b7a-a09d-1b8b4419668a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{354b68d1-c84c-4b7a-a09d-1b8b4419668a}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
 	public Player player;
 	public string menu;
 	public Level[] levels;
-
+	public MusicControllerFMOD fmodmusic;
 	private int currentLevelIndex = -1;
 	private Level currentLevel = null;
 
@@ -22,6 +22,7 @@ public class LevelManager : MonoBehaviour
 		if (currentLevelIndex + 1 >= levels.Length)
 		{
 			SceneManager.LoadScene(menu);
+			fmodmusic.Instantiate(null,null);
 			return;
 		}
 
@@ -30,5 +31,6 @@ public class LevelManager : MonoBehaviour
 		currentLevel.win.RegisterWinCallback(NextLevel);
 		player.RegisterLevel(currentLevel);
         EventLogging.logEvent(new LevelEvent(currentLevel.name));
+		fmodmusic.Instantiate(currentLevel.music, currentLevel.player);
 	}
 }
