@@ -121,24 +121,27 @@ public class Player : MonoBehaviour
         }
         _previousSpeed = speed;
         speed = _body.velocity.magnitude;
+        var tilePos = (Vector2Int) this.map.WorldToCell(transform.position);
 
         if (speed > 0)
         {
             if (_previousSpeed == 0)
             {
-                EventLogging.logEvent(new MovementEvent(AbstractEvent.Action.Started, position, position));
+                EventLogging.logEvent(new MovementEvent(AbstractEvent.Action.Started, tilePos, position, position));
+                MovementEvent.previousPosition = position;
             }
             else if ((MovementEvent.previousPosition - position).sqrMagnitude > 0.01)
             {
-                EventLogging.logEvent(new MovementEvent(AbstractEvent.Action.Progessing, MovementEvent.previousPosition, position));
+                EventLogging.logEvent(new MovementEvent(AbstractEvent.Action.Progessing, tilePos, MovementEvent.previousPosition, position));
+                MovementEvent.previousPosition = position;
             }
-            MovementEvent.previousPosition = position;
         }
         else
         {
             if (_previousSpeed > 0)
             {
-                EventLogging.logEvent(new MovementEvent(AbstractEvent.Action.Stopped, position, position));
+                EventLogging.logEvent(new MovementEvent(AbstractEvent.Action.Stopped, tilePos, position, position));
+                MovementEvent.previousPosition = position;
             }
         }
 

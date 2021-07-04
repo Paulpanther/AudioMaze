@@ -129,6 +129,63 @@ class LevelEvent : AbstractEvent
     }
 }
 
+abstract class SoundEvent : AbstractEvent
+{
+    protected string soundName;
+
+    protected SoundEvent(string soundName) : base("SoundEvent")
+    {
+        this.soundName = soundName;
+    }
+
+    protected override void _writeJson(TextWriter output)
+    {
+        output.WriteLine("soundName:\"{0}\",", soundName);
+    }
+
+    class Oneshot : SoundEvent
+    {
+        public Oneshot(string soundName) : base(soundName) {}
+        
+        protected override void _writeJson(TextWriter output)
+        {
+            output.WriteLine("type:\"ONESHOT\",");
+            base._writeJson(output);
+        }
+
+        protected override string _message()
+        {
+            return "audio oneshot \"" + soundName + "\"";
+        }
+    }
+
+    class Loop : SoundEvent
+    {
+        protected Action action;
+
+        public Loop(string soundName, Action action) : base(soundName)
+        {
+            this.action = action;
+        }
+        
+        protected override void _writeJson(TextWriter output)
+        {
+            output.WriteLine("type:\"LOOP\",");
+            output.WriteLine("action:\"{0}\",", action);
+            base._writeJson(output);
+        }
+
+        protected override string _message()
+        {
+            if(action == Action.Started) {
+                return "audio loop \"" + soundName + "\" started";
+            } else {
+                return "audio loop \"" + soundName + "\" stopped";
+            }
+        }
+    }
+}
+
 class KeyEvent : AbstractEvent
 {
     public enum KeyAction
@@ -189,10 +246,12 @@ class MovementEvent : AbstractEvent
 
     protected Action action;
     protected Vector2 startPos, endPos;
+    protected Vector2Int tilePos;
 
-    public MovementEvent(Action action, Vector2 startPos, Vector2 endPos) : base("MovementEvent")
+    public MovementEvent(Action action, Vector2Int tilePos, Vector2 startPos, Vector2 endPos) : base("MovementEvent")
     {
         this.action = action;
+        this.tilePos = tilePos;
         this.startPos = startPos;
         this.endPos = endPos;
     }
@@ -200,6 +259,7 @@ class MovementEvent : AbstractEvent
     protected override void _writeJson(TextWriter output)
     {
         output.WriteLine("action:\"{0}\",", action);
+        output.WriteLine("tilePos:{{x:{0},y:{1}}},", tilePos.x, tilePos.y);
         output.WriteLine("startPos:{{x:{0},y:{1}}},", startPos.x, startPos.y);
         output.WriteLine("endPos:{{x:{0},y:{1}}},", endPos.x, endPos.y);
     }
@@ -208,11 +268,11 @@ class MovementEvent : AbstractEvent
     {
         if (action == Action.Progessing)
         {
-            return "movement " + action + " from " + startPos + " to " + endPos;
+            return "movement " + action + " from " + startPos + " to " + endPos + " tp " + tilePos;
         }
         else
         {
-            return "movement " + action + " at " + startPos;
+            return "movement " + action + " at " + startPos + " tp " + tilePos;
         }
     }
 }
