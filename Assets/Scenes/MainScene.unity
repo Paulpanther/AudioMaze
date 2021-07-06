@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 50078799}
   - component: {fileID: 50078798}
+  - component: {fileID: 50078800}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -155,6 +156,7 @@ MonoBehaviour:
   levels:
   - {fileID: 2385848506745926316, guid: bdbc23540df47234ab037a8a3159f2a3, type: 3}
   - {fileID: 7741322123542669762, guid: c029443755a09484e9e8b43a64fb95a6, type: 3}
+  fmodmusic: {fileID: 50078800}
 --- !u!4 &50078799
 Transform:
   m_ObjectHideFlags: 0
@@ -169,6 +171,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &50078800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50078797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c7afb2c2452a346b200a5fe9b5c69e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: 
+  cachedRigidBody: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &234525388
 GameObject:
   m_ObjectHideFlags: 0

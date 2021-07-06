@@ -7,10 +7,9 @@ public class MusicControllerFMOD : MonoBehaviour
 {
     // Start is called before the first frame update
     public string music;
-    public Rigidbody2D cachedRigidBody;
-    public Level level;
+    private Rigidbody2D cachedRigidBody;
     public Player player;
-    [NonSerialized] private CallUpdate[] sources;
+    
 
     FMOD.Studio.EventInstance musicEV;
     //private int currentCheckpoint = 0;
@@ -18,47 +17,47 @@ public class MusicControllerFMOD : MonoBehaviour
     //private CallUpdate currentUpdate;
     FMOD.Studio.PLAYBACK_STATE plb;
 
-    public void Instantiate(string musicStr, Player pl)
+    public void NewMusicLevel(string musicStr, Player pl)
     {
+        Debug.Log("instantiating music");
+
         if (plb != FMOD.Studio.PLAYBACK_STATE.STOPPED) {
             musicEV.stop(0);
         }
-        if (music != null)
+        if (musicStr != null)
         {
+
+            Debug.Log(musicStr, pl);
             music = musicStr;
             player = pl;
-            AssignChildren();
-            musicEV = FMODUnity.RuntimeManager.CreateInstance(music);
+            cachedRigidBody = pl.GetComponent<Rigidbody2D>();
+            //musicEV.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(pl.gameObject, cachedRigidBody));
+            musicEV = FMODUnity.RuntimeManager.CreateInstance(musicStr);
             musicEV.start();
             musicEV.getPlaybackState(out plb);
+            Debug.Log(plb);
         }
     }
     void Start()
     {
         //Debug.Log(plb);
-        //musicEV.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(sources[currentCheckpoint+1].gameObject, cachedRigidBody));
+        //
     }
 
-    private void AssignChildren()
-    {
-        var children = GetComponentsInChildren<CallUpdate>();
-        sources = children;
-        CallUpdate lastChild = null;
-        for (var i = 0; i < children.Length; i++)
-        {
-            var child = children[i];
-            child.level = level;
-            child.prevCheckpoint = lastChild;
-            child.CheckPointNumber = i;
-            lastChild = child;
-        }
-    }
+   
 
     // Update is called once per frame
     void Update()
     {
-    
-        musicEV.setParameterByName("Progress", player.distancePercentage);
+
+        // Debug.Log(musicEV);
+        if (player != null)
+        {
+            
+            //Debug.Log(player);
+            Debug.Log(player.distancePercentage);
+            musicEV.setParameterByName("progress", player.distancePercentage);
+        }
 
     }
 

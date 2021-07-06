@@ -12,7 +12,8 @@ public class Level : MonoBehaviour
 
 	public string music;
 
-	[NonSerialized] public Player player;
+	//[NonSerialized] 
+	public Player player;
 
 	public void Destroy()
 	{

@@ -31,7 +31,7 @@ public class CallUpdate : MonoBehaviour
         if (isPassed && !_firstPass)
         {
             _firstPass = true;
-            mus.CheckpointReached(CheckPointNumber);
+            //mus.CheckpointReached(CheckPointNumber);
         }
         return isPassed;
     }

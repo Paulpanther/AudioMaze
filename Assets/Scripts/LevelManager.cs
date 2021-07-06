@@ -19,18 +19,25 @@ public class LevelManager : MonoBehaviour
 
 	private void NextLevel()
 	{
+		Debug.Log("Next Level");
 		if (currentLevelIndex + 1 >= levels.Length)
 		{
 			SceneManager.LoadScene(menu);
-			fmodmusic.Instantiate(null,null);
+			Debug.Log("loading menu");
+			fmodmusic.NewMusicLevel(null,null);
 			return;
 		}
 
-		if (currentLevel != null) currentLevel.Destroy();
+		if (currentLevel != null) 
+		{ 
+			currentLevel.Destroy(); 
+		}
 		currentLevel = Instantiate(levels[++currentLevelIndex]);
+		Debug.Log("calling music inst");
+		fmodmusic.NewMusicLevel(currentLevel.music, player);
 		currentLevel.win.RegisterWinCallback(NextLevel);
 		player.RegisterLevel(currentLevel);
         EventLogging.logEvent(new LevelEvent(currentLevel.name));
-		fmodmusic.Instantiate(currentLevel.music, currentLevel.player);
+		
 	}
 }
