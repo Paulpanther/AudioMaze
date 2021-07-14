@@ -148,6 +148,15 @@ public class Player : MonoBehaviour
         _walkingSound.SetWalking(speed / maxSpeed);
     }
 
+    public float GoalOrientation {
+        get {
+            var dir = maze.GetBestDirectionFor(goal, transform.position);
+            var angle = Vector3.Angle(transform.up, dir);
+            // Debug.Log(angle);
+            return 180 / angle;
+        }
+    }
+
     public void RegisterLevel(Level level)
     {
         this.level = level;

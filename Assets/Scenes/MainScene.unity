@@ -156,6 +156,7 @@ MonoBehaviour:
   levels:
   - {fileID: 2385848506745926316, guid: bdbc23540df47234ab037a8a3159f2a3, type: 3}
   - {fileID: 7741322123542669762, guid: c029443755a09484e9e8b43a64fb95a6, type: 3}
+  - {fileID: 4230833137422956955, guid: 771c5ca59a2fc8549a16235d75c2da16, type: 3}
   fmodmusic: {fileID: 50078800}
 --- !u!4 &50078799
 Transform:
@@ -184,7 +185,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: 
-  cachedRigidBody: {fileID: 0}
   player: {fileID: 0}
 --- !u!1 &234525388
 GameObject:

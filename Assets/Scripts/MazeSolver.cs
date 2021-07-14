@@ -32,12 +32,19 @@ public class MazeSolver : MonoBehaviour
     private Tilemap _map;
     private readonly Dictionary<Vector3Int, SpaceNode> _nodes = new Dictionary<Vector3Int, SpaceNode>();
 
-    private readonly Vector3Int[] _relativeNeighbors = {
+    private static readonly Vector3Int[] _relativeNeighbors = {
         new Vector3Int(0, 1, 0),
         new Vector3Int(1, 0, 0),
         new Vector3Int(0, -1, 0),
         new Vector3Int(-1, 0, 0),
     };
+
+    private static readonly Vector3Int[] _extendedRelativeNeighbors = new [] {
+        new Vector3Int(1, 1, 0),
+        new Vector3Int(1, -1, 0),
+        new Vector3Int(-1, 1, 0),
+        new Vector3Int(-1, -1, 0),
+    }.Concat(_relativeNeighbors).ToArray();
 
     private void Awake()
     {
@@ -93,6 +100,16 @@ public class MazeSolver : MonoBehaviour
     private Vector3 CellCenterToWorld(Vector3Int cell)
     {
         return _map.LocalToWorld(_map.CellToLocalInterpolated(cell + new Vector3(0.5f, 0.5f, 0)));
+    }
+
+    public Vector3 GetBestDirectionFor(Transform obj, Vector3 worldPos)
+    {
+        var cell = _map.WorldToCell(worldPos);
+        var neighbors = _extendedRelativeNeighbors.Select(n => cell + n).ToList();
+        var neighborScores = neighbors.Select(n => GetDistanceFrom(obj, n) ?? int.MaxValue).ToList();
+        var min = neighborScores.Min();
+        var index = neighborScores.IndexOf(min);
+        return neighbors[index] - cell;
     }
 
     public float GetAccurateDistanceFrom(Transform obj, Vector3 worldPos)

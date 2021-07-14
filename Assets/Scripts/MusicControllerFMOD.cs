@@ -57,6 +57,7 @@ public class MusicControllerFMOD : MonoBehaviour
             //Debug.Log(player);
             Debug.Log(player.distancePercentage);
             musicEV.setParameterByName("progress", player.distancePercentage);
+            musicEV.setParameterByName("orientation", player.GoalOrientation);
         }
 
     }
