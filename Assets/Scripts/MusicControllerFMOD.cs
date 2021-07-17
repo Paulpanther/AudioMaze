@@ -9,9 +9,9 @@ public class MusicControllerFMOD : MonoBehaviour
     public string music;
     private Rigidbody2D cachedRigidBody;
     public Player player;
-    
+    public WallOpeningSound wos;
 
-    FMOD.Studio.EventInstance musicEV;
+    public FMOD.Studio.EventInstance musicEV;
     //private int currentCheckpoint = 0;
     //string[] parameters= { "checkpoint1", "checkpoint2", "checkpoint3", "checkpoint4", "checkpoint5", "checkpoint6","emptyParam"};
     //private CallUpdate currentUpdate;
@@ -55,11 +55,15 @@ public class MusicControllerFMOD : MonoBehaviour
         {
             
             //Debug.Log(player);
-            Debug.Log(player.distancePercentage);
-            musicEV.setParameterByName("progress", player.distancePercentage);
+            //Debug.Log(player.GoalOrientation);
+            musicEV.setParameterByName("progress", 1-player.distancePercentage);
             musicEV.setParameterByName("orientation", player.GoalOrientation);
-        }
 
+
+        }
+        wos.UpdateBools(out var left, out var right);
+        musicEV.setParameterByName("OpenLeft", left?1:0);
+        musicEV.setParameterByName("OpenRight", right?1:0);
     }
 
     /*

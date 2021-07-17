@@ -44,26 +44,21 @@ public class Player : MonoBehaviour
 
     private float _startGoalDistance;
 
-    private async void Start()
+    private void Start()
     {
         _body = GetComponent<Rigidbody2D>();
         _walkingSound = GetComponent<WalkingSound>();
         _rotationClicker = GetComponentInChildren<RotationClicker>();
+        
+    }
+    private void LevelChange()
+    {
         _startGoalDistance = maze.GetAccurateDistanceFrom(goal, transform.position);
+        Debug.Log(_startGoalDistance);
         MovementEvent.previousPosition = new Vector2(transform.position.x, transform.position.y);
 
-        while (true)
-        {
-            var distance = maze.GetAccurateDistanceFrom(goal, transform.position);
-            var delta = (distance - _lastDistance) ?? 0;
-            distanceChange = -delta;
-            distancePercentage = distance / _startGoalDistance;
-
-            _lastDistance = distance;
-            await Task.Delay(100);
-        }
+        
     }
-
     private void Update()
     {
         _horizontal = Input.GetAxisRaw("Horizontal");
@@ -144,7 +139,12 @@ public class Player : MonoBehaviour
                 MovementEvent.previousPosition = position;
             }
         }
+        var distance = maze.GetAccurateDistanceFrom(goal, transform.position);
+        var delta = (distance - _lastDistance) ?? 0;
+        distanceChange = -delta;
+        distancePercentage = distance / _startGoalDistance;
 
+        _lastDistance = distance;
         _walkingSound.SetWalking(speed / maxSpeed);
     }
 
@@ -153,7 +153,7 @@ public class Player : MonoBehaviour
             var dir = maze.GetBestDirectionFor(goal, transform.position);
             var angle = Vector3.Angle(transform.up, dir);
             // Debug.Log(angle);
-            return 180 / angle;
+            return angle / 180;
         }
     }
 
@@ -162,5 +162,6 @@ public class Player : MonoBehaviour
         this.level = level;
         level.player = this;
         transform.position = Vector3.zero;
+        LevelChange();
     }
 }

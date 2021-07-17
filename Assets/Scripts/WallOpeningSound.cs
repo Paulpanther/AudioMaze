@@ -27,26 +27,24 @@ public class WallOpeningSound : MonoBehaviour
 	{
 		emitter = GetComponent<FMODUnity.StudioEventEmitter>();
 		sides = new[] {
-			new Side(() => -player.transform.right + player.transform.position, "HoleLeft"),
-			new Side(() => player.transform.right + player.transform.position, "HoleRight"),
-			new Side(() => player.transform.up + player.transform.position, "HoleFront")
+			new Side(() => -player.transform.right + player.transform.position, "OpenLeft"),
+			new Side(() => player.transform.right + player.transform.position, "OpenRight"),
+			//new Side(() => player.transform.up + player.transform.position, "HoleFront")
 		};
 	}
 
-	private void Update()
+	public void UpdateBools(out bool left, out bool right)
 	{
-		foreach (var side in sides)
-		{
-			var hasHole = HasHole(side.position());
-			if (hasHole != side.lastValue)
-			{
-				emitter.SetParameter(side.key, hasHole ? 1 : 0);
-				side.lastValue = hasHole;
-			}
-		}
+		left = Holy(sides[0]);
+		right = Holy(sides[1]);
 		// Debug.Log(map.WorldToCell(sides[0].position()) + " " + map.WorldToCell(sides[1].position())+ " " + map.WorldToCell(sides[2].position()));
 	}
 
+	private bool Holy(Side side)
+    {
+		var hasHole = HasHole(side.position());
+		return hasHole;
+	}
 	private bool HasHole(Vector3 worldPos)
 	{
 		return !map.HasTile(map.WorldToCell(worldPos));

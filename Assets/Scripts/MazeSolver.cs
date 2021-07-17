@@ -46,13 +46,10 @@ public class MazeSolver : MonoBehaviour
         new Vector3Int(-1, -1, 0),
     }.Concat(_relativeNeighbors).ToArray();
 
+
     private void Awake()
     {
         _map = GetComponentInChildren<Tilemap>();
-    }
-
-    private void Start()
-    {
         var origin = _map.origin;
         var size = _map.size;
         
@@ -117,6 +114,7 @@ public class MazeSolver : MonoBehaviour
         var cell = _map.WorldToCell(worldPos);
         var nullableCellDistance = GetDistanceFrom(obj, cell);
         if (nullableCellDistance == null) return float.MaxValue;
+      
         var cellDistance = (int) nullableCellDistance;
         var size = _map.cellSize.x;
 
