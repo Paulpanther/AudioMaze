@@ -127,7 +127,7 @@ public class Player : MonoBehaviour
             }
             else if ((MovementEvent.previousPosition - position).sqrMagnitude > 0.01)
             {
-                EventLogging.logEvent(new MovementEvent(AbstractEvent.Action.Progessing, tilePos, MovementEvent.previousPosition, position));
+                EventLogging.logEvent(new MovementEvent(AbstractEvent.Action.Progressing, tilePos, MovementEvent.previousPosition, position));
                 MovementEvent.previousPosition = position;
             }
         }

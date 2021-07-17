@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Globalization;
+using System;
 using UnityEngine;
+using SimpleJson;
 
 public class EventLogging : MonoBehaviour {
     public bool log2Console = false;
@@ -9,22 +12,19 @@ public class EventLogging : MonoBehaviour {
     public bool verboseLogging = true;
     public HashSet<string> consoleEnabledEvents = new HashSet<string> { "KeyEvent", "MovementEvent" };
 
-    private TextWriter _logOut;
-
+    private SimpleJsonWriter _jsonOut;
+    
     public static EventLogging INSTANCE = null;
 
-    private void Start()
+    private void Awake()
     {
         INSTANCE = this;
-        _logOut = TextWriter.Synchronized(new StreamWriter(logFile));
-        _logOut.WriteLine("[");
+        _jsonOut = SimpleJsonFileWriter.openJsonWriter(/*Application.persistentDataPath +*/ logFile).WriteArrayScope();
     }
 
     private void OnDestroy()
     {
-        _logOut.WriteLine("]");
-        _logOut.Close();
-        Debug.Log("Written event log to file \"" + logFile + "\"");
+        _jsonOut.Dispose();
     }
 
     public void logToConsole(AbstractEvent evt, bool verbose)
@@ -36,8 +36,7 @@ public class EventLogging : MonoBehaviour {
 
     public void logToFile(AbstractEvent evt)
     {
-        evt.writeAsJson(_logOut);
-        _logOut.WriteLine(",");
+        evt.writeAsJson(_jsonOut);
     }
 
     public void _logEvent(AbstractEvent evt)
@@ -54,11 +53,186 @@ public class EventLogging : MonoBehaviour {
     }
 }
 
+namespace SimpleJson {
+    public interface SimpleJsonWriter : IDisposable {
+
+        void Flush();
+
+        SimpleJsonWriter WriteArrayScope(string key = null);
+        SimpleJsonWriter WriteObjectScope(string key = null);
+
+        void WriteKeyNull(string key);
+        void WriteKeyValue(string key, float value);
+        void WriteKeyValue(string key, int value);
+        void WriteKeyValue(string key, string value);
+    }
+
+    public class SimpleJsonScope : SimpleJsonWriter {
+        private bool _hadPreviousEntry = false;
+
+        protected SimpleJsonFileWriter _writer;
+        private SimpleJsonScope _parentScope;
+
+        public SimpleJsonScope(SimpleJsonFileWriter writer, SimpleJsonScope parentScope = null) {
+            _writer = writer;
+            _parentScope = parentScope;
+        }
+        public virtual void Dispose() {
+            if(_parentScope == null) {
+                _writer.Dispose();
+            } else {
+                Flush();
+            }
+        }
+
+        public void Flush() {
+            _writer.Flush();
+        }
+
+        protected void WriteKey(string key = null) {
+            if(_hadPreviousEntry) {
+                _writer.WriteEntrySeparator();
+            }
+            if(key != null) {
+                _writer.WriteStringLiteral(key);
+                _writer.WriteKeyValueSeparator();
+            }
+            _hadPreviousEntry = true;
+        }
+        
+        public SimpleJsonWriter WriteArrayScope(string key = null) {
+            WriteKey(key);
+            _writer.WriteOpenArrayLiteral();
+            return new SimpleJsonArrayScope(_writer, this);
+        }
+
+        public SimpleJsonWriter WriteObjectScope(string key = null) {
+            WriteKey(key);
+            _writer.WriteOpenObjectLiteral();
+            return new SimpleJsonObjectScope(_writer, this);
+        }
+
+        public void WriteKeyNull(string key) {
+            WriteKey(key);
+            _writer.WriteNullLiteral();
+        }
+        public void WriteKeyValue(string key, float value) {
+            WriteKey(key);
+            _writer.WriteFloatLiteral(value);
+        }
+        public void WriteKeyValue(string key, int value) {
+            WriteKey(key);
+            _writer.WriteIntLiteral(value);
+        }
+        public void WriteKeyValue(string key, string value) {
+            WriteKey(key);
+            _writer.WriteStringLiteral(value);
+        }
+
+        public class SimpleJsonArrayScope : SimpleJsonScope {
+            public SimpleJsonArrayScope(SimpleJsonFileWriter writer, SimpleJsonScope parentScope) : base(writer, parentScope) {}
+            public override void Dispose() {
+                _writer.WriteCloseArrayLiteral();
+                base.Dispose();
+            }
+        }
+
+        public class SimpleJsonObjectScope : SimpleJsonScope {
+            public SimpleJsonObjectScope(SimpleJsonFileWriter writer, SimpleJsonScope parentScope) : base(writer, parentScope) {}
+            public override void Dispose() {
+                _writer.WriteCloseObjectLiteral();
+                base.Dispose();
+            }
+        }
+    }
+
+    public class SimpleJsonFileWriter : IDisposable {
+        private TextWriter _out;
+
+        private class SimpleStreamWriter : StreamWriter {
+            public SimpleStreamWriter(string path) : base(path) {}
+            private readonly IFormatProvider formatProvider = CultureInfo.InvariantCulture;
+            public override IFormatProvider FormatProvider {
+                get {
+                    return this.formatProvider;
+                }
+            }
+        }
+
+        public class SimpleAutoclosingJsonScope : SimpleJsonScope {
+            public SimpleAutoclosingJsonScope(SimpleJsonFileWriter writer) : base(writer, null) {}
+            public new SimpleJsonWriter WriteArrayScope() {
+                _writer.WriteOpenArrayLiteral();
+                return new SimpleJsonArrayScope(_writer, null);
+            }
+            public new SimpleJsonWriter WriteObjectScope() {
+                _writer.WriteOpenObjectLiteral();
+                return new SimpleJsonObjectScope(_writer, null);
+            }
+        }
+
+        private SimpleJsonFileWriter(string filePath) {
+            _logFile = filePath;
+            Debug.Log("Starting log into file \"" + _logFile + "\"");
+            _out = TextWriter.Synchronized(new SimpleStreamWriter(filePath));
+        }
+
+        private readonly string _logFile;
+
+        public static SimpleAutoclosingJsonScope openJsonWriter(string filePath) {
+            SimpleJsonFileWriter _this = new SimpleJsonFileWriter(filePath);
+            return new SimpleAutoclosingJsonScope(_this);
+        }
+
+        public void Dispose() {
+            _out.Close();
+            Debug.Log("Stopping log into file \"" + _logFile + "\"");
+        }
+
+        public void Flush() {
+            _out.Flush();
+        }
+
+        public void WriteEntrySeparator() {
+            _out.WriteLine(",");
+        }
+        public void WriteKeyValueSeparator() {
+            _out.Write(": ");
+        }
+
+        public void WriteNullLiteral() {
+            _out.Write("null");
+        }
+        public void WriteFloatLiteral(float value) {
+            _out.Write(value);
+        }
+        public void WriteIntLiteral(int value) {
+            _out.Write(value);
+        }
+        public void WriteStringLiteral(string value) {
+            _out.Write("\"{0}\"", value);
+        }
+
+        public void WriteOpenArrayLiteral() {
+            _out.WriteLine("[");
+        }
+        public void WriteCloseArrayLiteral() {
+            _out.Write("\n]");
+        }
+        public void WriteOpenObjectLiteral() {
+            _out.WriteLine("{");
+        }
+        public void WriteCloseObjectLiteral() {
+            _out.Write("\n}");
+        }
+    }
+}
+
 public abstract class AbstractEvent
 {
     public enum Action
     {
-        Started, Progessing, Stopped
+        Started, Progressing, Stopped
     }
 
     protected float creationTime = Time.time;
@@ -86,15 +260,16 @@ public abstract class AbstractEvent
         return creationTimeAsString() + " [" + name + "]: " + _message();
     }
 
-    protected abstract void _writeJson(TextWriter output);
+    protected abstract void _writeJson(SimpleJsonWriter evtScope);
 
-    public virtual void writeAsJson(TextWriter output)
+    public virtual void writeAsJson(SimpleJsonWriter output)
     {
-        output.WriteLine("{");
-        output.WriteLine("name:\"{0}\",", name);
-        output.WriteLine("createdAt:{0},", creationTime);
-        _writeJson(output);
-        output.Write("}");
+        using(SimpleJsonWriter evtScope = output.WriteObjectScope()) {
+            evtScope.WriteKeyValue("name", name);
+            evtScope.WriteKeyValue("createdAt", creationTime);
+            _writeJson(evtScope);
+        }
+        output.Flush();
     }
 
     public string creationTimeAsString()
@@ -118,9 +293,9 @@ class LevelEvent : AbstractEvent
         this.levelName = levelName;
     }
 
-    protected override void _writeJson(TextWriter output)
+    protected override void _writeJson(SimpleJsonWriter evtScope)
     {
-        output.WriteLine("levelName:\"{0}\",", levelName);
+        evtScope.WriteKeyValue("levelName", levelName);
     }
 
     protected override string _message()
@@ -138,19 +313,19 @@ abstract class SoundEvent : AbstractEvent
         this.soundName = soundName;
     }
 
-    protected override void _writeJson(TextWriter output)
+    protected override void _writeJson(SimpleJsonWriter evtScope)
     {
-        output.WriteLine("soundName:\"{0}\",", soundName);
+        evtScope.WriteKeyValue("soundName", soundName);
     }
 
     class Oneshot : SoundEvent
     {
         public Oneshot(string soundName) : base(soundName) {}
         
-        protected override void _writeJson(TextWriter output)
+        protected override void _writeJson(SimpleJsonWriter evtScope)
         {
-            output.WriteLine("type:\"ONESHOT\",");
-            base._writeJson(output);
+            evtScope.WriteKeyValue("type", "ONESHOT");
+            base._writeJson(evtScope);
         }
 
         protected override string _message()
@@ -168,11 +343,11 @@ abstract class SoundEvent : AbstractEvent
             this.action = action;
         }
         
-        protected override void _writeJson(TextWriter output)
+        protected override void _writeJson(SimpleJsonWriter evtScope)
         {
-            output.WriteLine("type:\"LOOP\",");
-            output.WriteLine("action:\"{0}\",", action);
-            base._writeJson(output);
+            evtScope.WriteKeyValue("type", "LOOP");
+            evtScope.WriteKeyValue("action", action.ToString());
+            base._writeJson(evtScope);
         }
 
         protected override string _message()
@@ -228,10 +403,10 @@ class KeyEvent : AbstractEvent
         this.keyCode = keyCode;
     }
 
-    protected override void _writeJson(TextWriter output)
+    protected override void _writeJson(SimpleJsonWriter evtScope)
     {
-        output.WriteLine("action:\"{0}\",", action);
-        output.WriteLine("keyCode:\"{0}\",", keyCode);
+        evtScope.WriteKeyValue("action", action.ToString());
+        evtScope.WriteKeyValue("keyCode", keyCode.ToString());
     }
 
     protected override string _message()
@@ -256,17 +431,26 @@ class MovementEvent : AbstractEvent
         this.endPos = endPos;
     }
 
-    protected override void _writeJson(TextWriter output)
+    protected override void _writeJson(SimpleJsonWriter evtScope)
     {
-        output.WriteLine("action:\"{0}\",", action);
-        output.WriteLine("tilePos:{{x:{0},y:{1}}},", tilePos.x, tilePos.y);
-        output.WriteLine("startPos:{{x:{0},y:{1}}},", startPos.x, startPos.y);
-        output.WriteLine("endPos:{{x:{0},y:{1}}},", endPos.x, endPos.y);
+        evtScope.WriteKeyValue("action", action.ToString());
+        using(SimpleJsonWriter tilePosScope = evtScope.WriteObjectScope("tilePos")) {
+            tilePosScope.WriteKeyValue("x", tilePos.x);
+            tilePosScope.WriteKeyValue("y", tilePos.y);
+        }
+        using(SimpleJsonWriter startPosScope = evtScope.WriteObjectScope("startPos")) {
+            startPosScope.WriteKeyValue("x", startPos.x);
+            startPosScope.WriteKeyValue("y", startPos.y);
+        }
+        using(SimpleJsonWriter endPosScope = evtScope.WriteObjectScope("endPos")) {
+            endPosScope.WriteKeyValue("x", endPos.x);
+            endPosScope.WriteKeyValue("y", endPos.y);
+        }
     }
 
     protected override string _message()
     {
-        if (action == Action.Progessing)
+        if (action == Action.Progressing)
         {
             return "movement " + action + " from " + startPos + " to " + endPos + " tp " + tilePos;
         }
