@@ -1,2724 +1,5009 @@
 [
 {
-name:"KeyEvent",
-createdAt:2.398637,
-action:"KeyDown",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:2.42,
-action:"Started",
-tilePos:{x:0,y:0},
-startPos:{x:0,y:0.008571428},
-endPos:{x:0,y:0.008571428},
-},
-{
-name:"MovementEvent",
-createdAt:2.52,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:0,y:0.008571428},
-endPos:{x:0,y:0.1149608},
-},
-{
-name:"MovementEvent",
-createdAt:2.6,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:0,y:0.1149608},
-endPos:{x:0,y:0.2275929},
-},
-{
-name:"MovementEvent",
-createdAt:2.68,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:0,y:0.2275929},
-endPos:{x:0,y:0.3456749},
-},
-{
-name:"MovementEvent",
-createdAt:2.76,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:0,y:0.3456749},
-endPos:{x:0,y:0.4651757},
-},
-{
-name:"MovementEvent",
-createdAt:2.84,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:0,y:0.4651757},
-endPos:{x:0,y:0.5850458},
-},
-{
-name:"MovementEvent",
-createdAt:2.92,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:0,y:0.5850458},
-endPos:{x:0,y:0.705012},
-},
-{
-name:"MovementEvent",
-createdAt:3,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:0,y:0.705012},
-endPos:{x:0,y:0.8250031},
-},
-{
-name:"MovementEvent",
-createdAt:3.08,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:0,y:0.8250031},
-endPos:{x:0,y:0.9450009},
-},
-{
-name:"MovementEvent",
-createdAt:3.16,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:0,y:0.9450009},
-endPos:{x:0,y:1.065},
-},
-{
-name:"MovementEvent",
-createdAt:3.24,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:0,y:1.065},
-endPos:{x:0,y:1.185},
-},
-{
-name:"MovementEvent",
-createdAt:3.32,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:0,y:1.185},
-endPos:{x:0,y:1.305},
-},
-{
-name:"MovementEvent",
-createdAt:3.4,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:0,y:1.305},
-endPos:{x:0,y:1.425},
-},
-{
-name:"MovementEvent",
-createdAt:3.48,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:0,y:1.425},
-endPos:{x:0,y:1.545},
-},
-{
-name:"MovementEvent",
-createdAt:3.56,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:0,y:1.545},
-endPos:{x:0,y:1.665},
-},
-{
-name:"MovementEvent",
-createdAt:3.64,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:0,y:1.665},
-endPos:{x:0,y:1.785},
-},
-{
-name:"MovementEvent",
-createdAt:3.72,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:0,y:1.785},
-endPos:{x:0,y:1.904999},
-},
-{
-name:"MovementEvent",
-createdAt:3.8,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:0,y:1.904999},
-endPos:{x:0,y:2.024999},
-},
-{
-name:"MovementEvent",
-createdAt:3.88,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:0,y:2.024999},
-endPos:{x:0,y:2.144999},
-},
-{
-name:"MovementEvent",
-createdAt:3.96,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:0,y:2.144999},
-endPos:{x:0,y:2.264999},
-},
-{
-name:"MovementEvent",
-createdAt:4.04,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:0,y:2.264999},
-endPos:{x:0,y:2.384999},
-},
-{
-name:"MovementEvent",
-createdAt:4.12,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:0,y:2.384999},
-endPos:{x:0,y:2.504999},
-},
-{
-name:"MovementEvent",
-createdAt:4.2,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:0,y:2.504999},
-endPos:{x:0,y:2.624999},
-},
-{
-name:"MovementEvent",
-createdAt:4.28,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:0,y:2.624999},
-endPos:{x:0,y:2.744999},
-},
-{
-name:"MovementEvent",
-createdAt:4.36,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:0,y:2.744999},
-endPos:{x:0,y:2.864999},
-},
-{
-name:"MovementEvent",
-createdAt:4.44,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:0,y:2.864999},
-endPos:{x:0,y:2.984998},
-},
-{
-name:"KeyEvent",
-createdAt:4.500888,
-action:"KeyDown",
-keyCode:"D",
-},
-{
-name:"MovementEvent",
-createdAt:4.52,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:0,y:2.984998},
-endPos:{x:0,y:3.104998},
-},
-{
-name:"MovementEvent",
-createdAt:4.6,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:0,y:3.104998},
-endPos:{x:0.02116618,y:3.219327},
-},
-{
-name:"KeyEvent",
-createdAt:4.600515,
-action:"KeyUp",
-keyCode:"D",
-},
-{
-name:"MovementEvent",
-createdAt:4.68,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:0.02116618,y:3.219327},
-endPos:{x:0.07105742,y:3.325958},
-},
-{
-name:"MovementEvent",
-createdAt:4.76,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:0.07105742,y:3.325958},
-endPos:{x:0.128426,y:3.430587},
-},
-{
-name:"MovementEvent",
-createdAt:4.84,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:0.128426,y:3.430587},
-endPos:{x:0.187741,y:3.534694},
-},
-{
-name:"MovementEvent",
-createdAt:4.92,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:0.187741,y:3.534694},
-endPos:{x:0.2475627,y:3.638665},
-},
-{
-name:"MovementEvent",
-createdAt:5,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:0.2475627,y:3.638665},
-endPos:{x:0.3075163,y:3.7426},
-},
-{
-name:"MovementEvent",
-createdAt:5.08,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:0.3075163,y:3.7426},
-endPos:{x:0.3675043,y:3.846526},
-},
-{
-name:"MovementEvent",
-createdAt:5.16,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:0.3675043,y:3.846526},
-endPos:{x:0.4275011,y:3.95045},
-},
-{
-name:"MovementEvent",
-createdAt:5.24,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:0.4275011,y:3.95045},
-endPos:{x:0.4875003,y:4.054374},
-},
-{
-name:"KeyEvent",
-createdAt:5.260137,
-action:"KeyDown",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:5.32,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:0.4875003,y:4.054374},
-endPos:{x:0.5432144,y:4.159446},
-},
-{
-name:"KeyEvent",
-createdAt:5.366481,
-action:"KeyUp",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:5.4,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:0.5432144,y:4.159446},
-endPos:{x:0.5630276,y:4.274137},
-},
-{
-name:"MovementEvent",
-createdAt:5.48,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:0.5630276,y:4.274137},
-endPos:{x:0.568185,y:4.392755},
-},
-{
-name:"MovementEvent",
-createdAt:5.56,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:0.568185,y:4.392755},
-endPos:{x:0.5695276,y:4.512395},
-},
-{
-name:"MovementEvent",
-createdAt:5.64,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:0.5695276,y:4.512395},
-endPos:{x:0.569877,y:4.632301},
-},
-{
-name:"MovementEvent",
-createdAt:5.72,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:0.569877,y:4.632301},
-endPos:{x:0.569968,y:4.752276},
-},
-{
-name:"MovementEvent",
-createdAt:5.8,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:0.569968,y:4.752276},
-endPos:{x:0.5699917,y:4.87227},
-},
-{
-name:"MovementEvent",
-createdAt:5.88,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:0.5699917,y:4.87227},
-endPos:{x:0.5699979,y:4.992269},
-},
-{
-name:"MovementEvent",
-createdAt:5.96,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:0.5699979,y:4.992269},
-endPos:{x:0.5699995,y:5.112267},
-},
-{
-name:"MovementEvent",
-createdAt:6.04,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:0.5699995,y:5.112267},
-endPos:{x:0.5699999,y:5.232267},
-},
-{
-name:"MovementEvent",
-createdAt:6.12,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:0.5699999,y:5.232267},
-endPos:{x:0.57,y:5.352268},
-},
-{
-name:"MovementEvent",
-createdAt:6.2,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:0.57,y:5.352268},
-endPos:{x:0.57,y:5.472269},
-},
-{
-name:"MovementEvent",
-createdAt:6.28,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:0.57,y:5.472269},
-endPos:{x:0.57,y:5.59227},
-},
-{
-name:"MovementEvent",
-createdAt:6.36,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:0.57,y:5.59227},
-endPos:{x:0.57,y:5.712271},
-},
-{
-name:"MovementEvent",
-createdAt:6.44,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:0.57,y:5.712271},
-endPos:{x:0.57,y:5.832272},
-},
-{
-name:"MovementEvent",
-createdAt:6.52,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:0.57,y:5.832272},
-endPos:{x:0.57,y:5.952272},
-},
-{
-name:"MovementEvent",
-createdAt:6.6,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:0.57,y:5.952272},
-endPos:{x:0.57,y:6.072273},
-},
-{
-name:"MovementEvent",
-createdAt:6.68,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:0.57,y:6.072273},
-endPos:{x:0.57,y:6.192274},
-},
-{
-name:"MovementEvent",
-createdAt:6.76,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:0.57,y:6.192274},
-endPos:{x:0.57,y:6.312275},
-},
-{
-name:"MovementEvent",
-createdAt:6.84,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:0.57,y:6.312275},
-endPos:{x:0.57,y:6.432276},
-},
-{
-name:"MovementEvent",
-createdAt:6.92,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:0.57,y:6.432276},
-endPos:{x:0.57,y:6.552277},
-},
-{
-name:"MovementEvent",
-createdAt:7,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:0.57,y:6.552277},
-endPos:{x:0.57,y:6.672277},
-},
-{
-name:"MovementEvent",
-createdAt:7.08,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:0.57,y:6.672277},
-endPos:{x:0.57,y:6.792278},
-},
-{
-name:"MovementEvent",
-createdAt:7.16,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:0.57,y:6.792278},
-endPos:{x:0.57,y:6.912279},
-},
-{
-name:"MovementEvent",
-createdAt:7.24,
-action:"Progessing",
-tilePos:{x:0,y:7},
-startPos:{x:0.57,y:6.912279},
-endPos:{x:0.57,y:7.03228},
-},
-{
-name:"MovementEvent",
-createdAt:7.32,
-action:"Progessing",
-tilePos:{x:0,y:7},
-startPos:{x:0.57,y:7.03228},
-endPos:{x:0.57,y:7.152281},
-},
-{
-name:"MovementEvent",
-createdAt:7.4,
-action:"Progessing",
-tilePos:{x:0,y:7},
-startPos:{x:0.57,y:7.152281},
-endPos:{x:0.57,y:7.272282},
-},
-{
-name:"KeyEvent",
-createdAt:7.414547,
-action:"KeyUp",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:7.6,
-action:"Progessing",
-tilePos:{x:0,y:7},
-startPos:{x:0.57,y:7.272282},
-endPos:{x:0.57,y:7.373652},
-},
-{
-name:"MovementEvent",
-createdAt:8.2,
-action:"Stopped",
-tilePos:{x:0,y:7},
-startPos:{x:0.57,y:7.377281},
-endPos:{x:0.57,y:7.377281},
-},
-{
-name:"KeyEvent",
-createdAt:9.194415,
-action:"KeyDown",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:9.22,
-action:"Started",
-tilePos:{x:0,y:7},
-startPos:{x:0.57,y:7.385852},
-endPos:{x:0.57,y:7.385852},
-},
-{
-name:"MovementEvent",
-createdAt:9.32,
-action:"Progessing",
-tilePos:{x:0,y:7},
-startPos:{x:0.57,y:7.385852},
-endPos:{x:0.57,y:7.492242},
-},
-{
-name:"MovementEvent",
-createdAt:9.4,
-action:"Progessing",
-tilePos:{x:0,y:7},
-startPos:{x:0.57,y:7.492242},
-endPos:{x:0.57,y:7.604874},
-},
-{
-name:"MovementEvent",
-createdAt:9.48,
-action:"Progessing",
-tilePos:{x:0,y:7},
-startPos:{x:0.57,y:7.604874},
-endPos:{x:0.57,y:7.722956},
-},
-{
-name:"LevelEvent",
-createdAt:9.48,
-levelName:"Level2(Clone)",
-},
-{
-name:"KeyEvent",
-createdAt:9.555532,
-action:"KeyUp",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:9.58,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:0,y:0},
-endPos:{x:2.967846E-09,y:0.111072},
-},
-{
-name:"KeyEvent",
-createdAt:9.896281,
-action:"KeyDown",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:9.98,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:2.967846E-09,y:0.111072},
-endPos:{x:6.118276E-09,y:0.2289771},
-},
-{
-name:"MovementEvent",
-createdAt:10.06,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:6.118276E-09,y:0.2289771},
-endPos:{x:8.940075E-09,y:0.3345833},
-},
-{
-name:"MovementEvent",
-createdAt:10.14,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:8.940075E-09,y:0.3345833},
-endPos:{x:1.204636E-08,y:0.4508365},
-},
-{
-name:"MovementEvent",
-createdAt:10.22,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:1.204636E-08,y:0.4508365},
-endPos:{x:1.522671E-08,y:0.5698612},
-},
-{
-name:"MovementEvent",
-createdAt:10.3,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:1.522671E-08,y:0.5698612},
-endPos:{x:1.842633E-08,y:0.6896073},
-},
-{
-name:"MovementEvent",
-createdAt:10.38,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:1.842633E-08,y:0.6896073},
-endPos:{x:2.163097E-08,y:0.8095412},
-},
-{
-name:"MovementEvent",
-createdAt:10.46,
-action:"Progessing",
-tilePos:{x:0,y:0},
-startPos:{x:2.163097E-08,y:0.8095412},
-endPos:{x:2.483691E-08,y:0.929524},
-},
-{
-name:"MovementEvent",
-createdAt:10.54,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:2.483691E-08,y:0.929524},
-endPos:{x:2.804319E-08,y:1.04952},
-},
-{
-name:"MovementEvent",
-createdAt:10.62,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:2.804319E-08,y:1.04952},
-endPos:{x:3.124956E-08,y:1.169518},
-},
-{
-name:"MovementEvent",
-createdAt:10.7,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:3.124956E-08,y:1.169518},
-endPos:{x:3.445596E-08,y:1.289518},
-},
-{
-name:"MovementEvent",
-createdAt:10.78,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:3.445596E-08,y:1.289518},
-endPos:{x:3.766235E-08,y:1.409518},
-},
-{
-name:"MovementEvent",
-createdAt:10.86,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:3.766235E-08,y:1.409518},
-endPos:{x:4.086876E-08,y:1.529518},
-},
-{
-name:"MovementEvent",
-createdAt:10.94,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:4.086876E-08,y:1.529518},
-endPos:{x:4.407517E-08,y:1.649518},
-},
-{
-name:"MovementEvent",
-createdAt:11.02,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:4.407517E-08,y:1.649518},
-endPos:{x:4.728158E-08,y:1.769518},
-},
-{
-name:"MovementEvent",
-createdAt:11.1,
-action:"Progessing",
-tilePos:{x:0,y:1},
-startPos:{x:4.728158E-08,y:1.769518},
-endPos:{x:5.048799E-08,y:1.889518},
-},
-{
-name:"MovementEvent",
-createdAt:11.18,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:5.048799E-08,y:1.889518},
-endPos:{x:5.36944E-08,y:2.009517},
-},
-{
-name:"MovementEvent",
-createdAt:11.26,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:5.36944E-08,y:2.009517},
-endPos:{x:5.690081E-08,y:2.129517},
-},
-{
-name:"MovementEvent",
-createdAt:11.34,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:5.690081E-08,y:2.129517},
-endPos:{x:6.010722E-08,y:2.249517},
-},
-{
-name:"MovementEvent",
-createdAt:11.42,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:6.010722E-08,y:2.249517},
-endPos:{x:6.331361E-08,y:2.369517},
-},
-{
-name:"MovementEvent",
-createdAt:11.5,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:6.331361E-08,y:2.369517},
-endPos:{x:6.652001E-08,y:2.489517},
-},
-{
-name:"MovementEvent",
-createdAt:11.58,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:6.652001E-08,y:2.489517},
-endPos:{x:6.97264E-08,y:2.609517},
-},
-{
-name:"MovementEvent",
-createdAt:11.66,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:6.97264E-08,y:2.609517},
-endPos:{x:7.29328E-08,y:2.729517},
-},
-{
-name:"MovementEvent",
-createdAt:11.74,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:7.29328E-08,y:2.729517},
-endPos:{x:7.613919E-08,y:2.849517},
-},
-{
-name:"MovementEvent",
-createdAt:11.82,
-action:"Progessing",
-tilePos:{x:0,y:2},
-startPos:{x:7.613919E-08,y:2.849517},
-endPos:{x:7.934559E-08,y:2.969517},
-},
-{
-name:"MovementEvent",
-createdAt:11.9,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:7.934559E-08,y:2.969517},
-endPos:{x:8.255198E-08,y:3.089516},
-},
-{
-name:"MovementEvent",
-createdAt:11.98,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:8.255198E-08,y:3.089516},
-endPos:{x:8.575838E-08,y:3.209516},
-},
-{
-name:"MovementEvent",
-createdAt:12.06,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:8.575838E-08,y:3.209516},
-endPos:{x:8.896478E-08,y:3.329516},
-},
-{
-name:"MovementEvent",
-createdAt:12.14,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:8.896478E-08,y:3.329516},
-endPos:{x:9.217117E-08,y:3.449516},
-},
-{
-name:"MovementEvent",
-createdAt:12.22,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:9.217117E-08,y:3.449516},
-endPos:{x:9.537757E-08,y:3.569516},
-},
-{
-name:"MovementEvent",
-createdAt:12.3,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:9.537757E-08,y:3.569516},
-endPos:{x:9.858396E-08,y:3.689516},
-},
-{
-name:"MovementEvent",
-createdAt:12.38,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:9.858396E-08,y:3.689516},
-endPos:{x:1.017904E-07,y:3.809516},
-},
-{
-name:"MovementEvent",
-createdAt:12.46,
-action:"Progessing",
-tilePos:{x:0,y:3},
-startPos:{x:1.017904E-07,y:3.809516},
-endPos:{x:1.049968E-07,y:3.929516},
-},
-{
-name:"MovementEvent",
-createdAt:12.54,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:1.049968E-07,y:3.929516},
-endPos:{x:1.082031E-07,y:4.049516},
-},
-{
-name:"MovementEvent",
-createdAt:12.62,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:1.082031E-07,y:4.049516},
-endPos:{x:1.114095E-07,y:4.169517},
-},
-{
-name:"MovementEvent",
-createdAt:12.7,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:1.114095E-07,y:4.169517},
-endPos:{x:1.146159E-07,y:4.289517},
-},
-{
-name:"MovementEvent",
-createdAt:12.78,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:1.146159E-07,y:4.289517},
-endPos:{x:1.178223E-07,y:4.409518},
-},
-{
-name:"MovementEvent",
-createdAt:12.86,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:1.178223E-07,y:4.409518},
-endPos:{x:1.210287E-07,y:4.529519},
-},
-{
-name:"MovementEvent",
-createdAt:12.94,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:1.210287E-07,y:4.529519},
-endPos:{x:1.242352E-07,y:4.64952},
-},
-{
-name:"MovementEvent",
-createdAt:13.02,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:1.242352E-07,y:4.64952},
-endPos:{x:1.274416E-07,y:4.769521},
-},
-{
-name:"MovementEvent",
-createdAt:13.1,
-action:"Progessing",
-tilePos:{x:0,y:4},
-startPos:{x:1.274416E-07,y:4.769521},
-endPos:{x:1.30648E-07,y:4.889522},
-},
-{
-name:"MovementEvent",
-createdAt:13.18,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:1.30648E-07,y:4.889522},
-endPos:{x:1.338544E-07,y:5.009522},
-},
-{
-name:"MovementEvent",
-createdAt:13.26,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:1.338544E-07,y:5.009522},
-endPos:{x:1.370609E-07,y:5.129523},
-},
-{
-name:"MovementEvent",
-createdAt:13.34,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:1.370609E-07,y:5.129523},
-endPos:{x:1.402673E-07,y:5.249524},
-},
-{
-name:"MovementEvent",
-createdAt:13.42,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:1.402673E-07,y:5.249524},
-endPos:{x:1.434737E-07,y:5.369525},
-},
-{
-name:"MovementEvent",
-createdAt:13.5,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:1.434737E-07,y:5.369525},
-endPos:{x:1.466801E-07,y:5.489526},
-},
-{
-name:"MovementEvent",
-createdAt:13.58,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:1.466801E-07,y:5.489526},
-endPos:{x:1.498866E-07,y:5.609527},
-},
-{
-name:"KeyEvent",
-createdAt:13.62242,
-action:"KeyDown",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:13.66,
-action:"Progessing",
-tilePos:{x:0,y:5},
-startPos:{x:1.498866E-07,y:5.609527},
-endPos:{x:1.53093E-07,y:5.729527},
-},
-{
-name:"MovementEvent",
-createdAt:13.74,
-action:"Progessing",
-tilePos:{x:-1,y:5},
-startPos:{x:1.53093E-07,y:5.729527},
-endPos:{x:-0.0322614,y:5.840883},
-},
-{
-name:"MovementEvent",
-createdAt:13.82,
-action:"Progessing",
-tilePos:{x:-1,y:5},
-startPos:{x:-0.0322614,y:5.840883},
-endPos:{x:-0.08504085,y:5.946741},
-},
-{
-name:"MovementEvent",
-createdAt:13.9,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:-0.08504085,y:5.946741},
-endPos:{x:-0.1462986,y:6.04803},
-},
-{
-name:"KeyEvent",
-createdAt:13.97243,
-action:"KeyUp",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:13.98,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:-0.1462986,y:6.04803},
-endPos:{x:-0.2352282,y:6.122666},
-},
-{
-name:"MovementEvent",
-createdAt:14.06,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:-0.2352282,y:6.122666},
-endPos:{x:-0.3352483,y:6.186476},
-},
-{
-name:"MovementEvent",
-createdAt:14.14,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:-0.3352483,y:6.186476},
-endPos:{x:-0.4381554,y:6.247468},
-},
-{
-name:"MovementEvent",
-createdAt:14.22,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:-0.4381554,y:6.247468},
-endPos:{x:-0.541814,y:6.307725},
-},
-{
-name:"MovementEvent",
-createdAt:14.3,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:-0.541814,y:6.307725},
-endPos:{x:-0.6456681,y:6.367793},
-},
-{
-name:"MovementEvent",
-createdAt:14.38,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:-0.6456681,y:6.367793},
-endPos:{x:-0.7495733,y:6.42781},
-},
-{
-name:"MovementEvent",
-createdAt:14.46,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:-0.7495733,y:6.42781},
-endPos:{x:-0.8534917,y:6.487814},
-},
-{
-name:"KeyEvent",
-createdAt:14.47283,
-action:"KeyDown",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:14.54,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:-0.8534917,y:6.487814},
-endPos:{x:-0.9605305,y:6.536183},
-},
-{
-name:"KeyEvent",
-createdAt:14.59379,
-action:"KeyUp",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:14.62,
-action:"Progessing",
-tilePos:{x:-2,y:6},
-startPos:{x:-0.9605305,y:6.536183},
-endPos:{x:-1.076738,y:6.550335},
-},
-{
-name:"MovementEvent",
-createdAt:14.7,
-action:"Progessing",
-tilePos:{x:-2,y:6},
-startPos:{x:-1.076738,y:6.550335},
-endPos:{x:-1.195751,y:6.55402},
-},
-{
-name:"MovementEvent",
-createdAt:14.78,
-action:"Progessing",
-tilePos:{x:-2,y:6},
-startPos:{x:-1.195751,y:6.55402},
-endPos:{x:-1.315494,y:6.554979},
-},
-{
-name:"MovementEvent",
-createdAt:14.86,
-action:"Progessing",
-tilePos:{x:-2,y:6},
-startPos:{x:-1.315494,y:6.554979},
-endPos:{x:-1.435427,y:6.555228},
-},
-{
-name:"MovementEvent",
-createdAt:14.94,
-action:"Progessing",
-tilePos:{x:-2,y:6},
-startPos:{x:-1.435427,y:6.555228},
-endPos:{x:-1.55541,y:6.555294},
-},
-{
-name:"MovementEvent",
-createdAt:15.02,
-action:"Progessing",
-tilePos:{x:-2,y:6},
-startPos:{x:-1.55541,y:6.555294},
-endPos:{x:-1.675405,y:6.555311},
-},
-{
-name:"MovementEvent",
-createdAt:15.1,
-action:"Progessing",
-tilePos:{x:-2,y:6},
-startPos:{x:-1.675405,y:6.555311},
-endPos:{x:-1.795404,y:6.555315},
-},
-{
-name:"MovementEvent",
-createdAt:15.18,
-action:"Progessing",
-tilePos:{x:-2,y:6},
-startPos:{x:-1.795404,y:6.555315},
-endPos:{x:-1.915404,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:15.26,
-action:"Progessing",
-tilePos:{x:-3,y:6},
-startPos:{x:-1.915404,y:6.555316},
-endPos:{x:-2.035404,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:15.34,
-action:"Progessing",
-tilePos:{x:-3,y:6},
-startPos:{x:-2.035404,y:6.555316},
-endPos:{x:-2.155404,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:15.42,
-action:"Progessing",
-tilePos:{x:-3,y:6},
-startPos:{x:-2.155404,y:6.555316},
-endPos:{x:-2.275404,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:15.5,
-action:"Progessing",
-tilePos:{x:-3,y:6},
-startPos:{x:-2.275404,y:6.555316},
-endPos:{x:-2.395404,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:15.58,
-action:"Progessing",
-tilePos:{x:-3,y:6},
-startPos:{x:-2.395404,y:6.555316},
-endPos:{x:-2.515404,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:15.66,
-action:"Progessing",
-tilePos:{x:-3,y:6},
-startPos:{x:-2.515404,y:6.555316},
-endPos:{x:-2.635403,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:15.74,
-action:"Progessing",
-tilePos:{x:-3,y:6},
-startPos:{x:-2.635403,y:6.555316},
-endPos:{x:-2.755403,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:15.82,
-action:"Progessing",
-tilePos:{x:-3,y:6},
-startPos:{x:-2.755403,y:6.555316},
-endPos:{x:-2.875403,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:15.9,
-action:"Progessing",
-tilePos:{x:-3,y:6},
-startPos:{x:-2.875403,y:6.555316},
-endPos:{x:-2.995403,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:15.98,
-action:"Progessing",
-tilePos:{x:-4,y:6},
-startPos:{x:-2.995403,y:6.555316},
-endPos:{x:-3.115403,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:16.06,
-action:"Progessing",
-tilePos:{x:-4,y:6},
-startPos:{x:-3.115403,y:6.555316},
-endPos:{x:-3.235403,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:16.14,
-action:"Progessing",
-tilePos:{x:-4,y:6},
-startPos:{x:-3.235403,y:6.555316},
-endPos:{x:-3.355403,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:16.22,
-action:"Progessing",
-tilePos:{x:-4,y:6},
-startPos:{x:-3.355403,y:6.555316},
-endPos:{x:-3.475403,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:16.3,
-action:"Progessing",
-tilePos:{x:-4,y:6},
-startPos:{x:-3.475403,y:6.555316},
-endPos:{x:-3.595402,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:16.38,
-action:"Progessing",
-tilePos:{x:-4,y:6},
-startPos:{x:-3.595402,y:6.555316},
-endPos:{x:-3.715402,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:16.46,
-action:"Progessing",
-tilePos:{x:-4,y:6},
-startPos:{x:-3.715402,y:6.555316},
-endPos:{x:-3.835402,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:16.54,
-action:"Progessing",
-tilePos:{x:-4,y:6},
-startPos:{x:-3.835402,y:6.555316},
-endPos:{x:-3.955402,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:16.62,
-action:"Progessing",
-tilePos:{x:-5,y:6},
-startPos:{x:-3.955402,y:6.555316},
-endPos:{x:-4.075403,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:16.7,
-action:"Progessing",
-tilePos:{x:-5,y:6},
-startPos:{x:-4.075403,y:6.555316},
-endPos:{x:-4.195404,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:16.78,
-action:"Progessing",
-tilePos:{x:-5,y:6},
-startPos:{x:-4.195404,y:6.555316},
-endPos:{x:-4.315404,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:16.86,
-action:"Progessing",
-tilePos:{x:-5,y:6},
-startPos:{x:-4.315404,y:6.555316},
-endPos:{x:-4.435405,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:16.94,
-action:"Progessing",
-tilePos:{x:-5,y:6},
-startPos:{x:-4.435405,y:6.555316},
-endPos:{x:-4.555406,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:17.02,
-action:"Progessing",
-tilePos:{x:-5,y:6},
-startPos:{x:-4.555406,y:6.555316},
-endPos:{x:-4.675407,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:17.1,
-action:"Progessing",
-tilePos:{x:-5,y:6},
-startPos:{x:-4.675407,y:6.555316},
-endPos:{x:-4.795408,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:17.18,
-action:"Progessing",
-tilePos:{x:-5,y:6},
-startPos:{x:-4.795408,y:6.555316},
-endPos:{x:-4.915409,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:17.26,
-action:"Progessing",
-tilePos:{x:-6,y:6},
-startPos:{x:-4.915409,y:6.555316},
-endPos:{x:-5.035409,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:17.34,
-action:"Progessing",
-tilePos:{x:-6,y:6},
-startPos:{x:-5.035409,y:6.555316},
-endPos:{x:-5.15541,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:17.42,
-action:"Progessing",
-tilePos:{x:-6,y:6},
-startPos:{x:-5.15541,y:6.555316},
-endPos:{x:-5.275411,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:17.5,
-action:"Progessing",
-tilePos:{x:-6,y:6},
-startPos:{x:-5.275411,y:6.555316},
-endPos:{x:-5.395412,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:17.58,
-action:"Progessing",
-tilePos:{x:-6,y:6},
-startPos:{x:-5.395412,y:6.555316},
-endPos:{x:-5.515413,y:6.555316},
-},
-{
-name:"MovementEvent",
-createdAt:17.66,
-action:"Progessing",
-tilePos:{x:-6,y:6},
-startPos:{x:-5.515413,y:6.555316},
-endPos:{x:-5.635414,y:6.555316},
-},
-{
-name:"LevelEvent",
-createdAt:17.72,
-levelName:"Level3(Clone)",
-},
-{
-name:"MovementEvent",
-createdAt:17.82,
-action:"Progessing",
-tilePos:{x:-1,y:0},
-startPos:{x:0,y:0},
-endPos:{x:-0.12,y:-5.245366E-09},
-},
-{
-name:"MovementEvent",
-createdAt:17.9,
-action:"Progessing",
-tilePos:{x:-1,y:0},
-startPos:{x:-0.12,y:-5.245366E-09},
-endPos:{x:-0.24,y:-1.049073E-08},
-},
-{
-name:"KeyEvent",
-createdAt:17.96601,
-action:"KeyUp",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:18.4,
-action:"Stopped",
-tilePos:{x:-1,y:0},
-startPos:{x:-0.239,y:-2.868919E-08},
-endPos:{x:-0.239,y:-2.868919E-08},
-},
-{
-name:"KeyEvent",
-createdAt:18.75832,
-action:"KeyDown",
-keyCode:"D",
-},
-{
-name:"KeyEvent",
-createdAt:18.94624,
-action:"KeyUp",
-keyCode:"D",
-},
-{
-name:"KeyEvent",
-createdAt:19.20159,
-action:"KeyDown",
-keyCode:"D",
-},
-{
-name:"KeyEvent",
-createdAt:19.36411,
-action:"KeyUp",
-keyCode:"D",
-},
-{
-name:"KeyEvent",
-createdAt:19.54856,
-action:"KeyDown",
-keyCode:"D",
-},
-{
-name:"KeyEvent",
-createdAt:19.65472,
-action:"KeyUp",
-keyCode:"D",
-},
-{
-name:"KeyEvent",
-createdAt:20.02463,
-action:"KeyDown",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:20.06,
-action:"Started",
-tilePos:{x:-1,y:0},
-startPos:{x:-0.239,y:0.008571399},
-endPos:{x:-0.239,y:0.008571399},
-},
-{
-name:"KeyEvent",
-createdAt:20.07545,
-action:"KeyDown",
-keyCode:"D",
-},
-{
-name:"MovementEvent",
-createdAt:20.16,
-action:"Progessing",
-tilePos:{x:-1,y:0},
-startPos:{x:-0.239,y:0.008571399},
-endPos:{x:-0.2178339,y:0.1092893},
-},
-{
-name:"MovementEvent",
-createdAt:20.24,
-action:"Progessing",
-tilePos:{x:-1,y:0},
-startPos:{x:-0.2178339,y:0.1092893},
-endPos:{x:-0.1679426,y:0.208553},
-},
-{
-name:"KeyEvent",
-createdAt:20.25763,
-action:"KeyUp",
-keyCode:"D",
-},
-{
-name:"MovementEvent",
-createdAt:20.32,
-action:"Progessing",
-tilePos:{x:-1,y:0},
-startPos:{x:-0.1679426,y:0.208553},
-endPos:{x:-0.110574,y:0.3112633},
-},
-{
-name:"MovementEvent",
-createdAt:20.4,
-action:"Progessing",
-tilePos:{x:-1,y:0},
-startPos:{x:-0.110574,y:0.3112633},
-endPos:{x:-0.05125903,y:0.4148706},
-},
-{
-name:"KeyEvent",
-createdAt:20.43333,
-action:"KeyUp",
-keyCode:"W",
-},
-{
-name:"KeyEvent",
-createdAt:20.48707,
-action:"KeyDown",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:20.5,
-action:"Progessing",
-tilePos:{x:-1,y:0},
-startPos:{x:-0.05125903,y:0.4148706},
-endPos:{x:0.002378558,y:0.5080231},
-},
-{
-name:"KeyEvent",
-createdAt:20.62176,
-action:"KeyUp",
-keyCode:"A",
-},
-{
-name:"KeyEvent",
-createdAt:21.04194,
-action:"KeyDown",
-keyCode:"W",
-},
-{
-name:"KeyEvent",
-createdAt:21.1404,
-action:"KeyUp",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:21.16,
-action:"Progessing",
-tilePos:{x:-1,y:0},
-startPos:{x:0.002378558,y:0.5080231},
-endPos:{x:0.0159997,y:0.6206176},
-},
-{
-name:"KeyEvent",
-createdAt:21.37072,
-action:"KeyDown",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:21.44,
-action:"Progessing",
-tilePos:{x:-1,y:0},
-startPos:{x:0.0159997,y:0.6206176},
-endPos:{x:0.0159999,y:0.7234557},
-},
-{
-name:"MovementEvent",
-createdAt:21.52,
-action:"Progessing",
-tilePos:{x:-1,y:0},
-startPos:{x:0.0159999,y:0.7234557},
-endPos:{x:0.01599989,y:0.8236446},
-},
-{
-name:"MovementEvent",
-createdAt:21.6,
-action:"Progessing",
-tilePos:{x:-1,y:0},
-startPos:{x:0.01599989,y:0.8236446},
-endPos:{x:0.01599988,y:0.9384876},
-},
-{
-name:"MovementEvent",
-createdAt:21.68,
-action:"Progessing",
-tilePos:{x:-1,y:1},
-startPos:{x:0.01599988,y:0.9384876},
-endPos:{x:0.01599988,y:1.057145},
-},
-{
-name:"MovementEvent",
-createdAt:21.76,
-action:"Progessing",
-tilePos:{x:-1,y:1},
-startPos:{x:0.01599988,y:1.057145},
-endPos:{x:0.01599987,y:1.176796},
-},
-{
-name:"MovementEvent",
-createdAt:21.84,
-action:"Progessing",
-tilePos:{x:-1,y:1},
-startPos:{x:0.01599987,y:1.176796},
-endPos:{x:0.01599986,y:1.296705},
-},
-{
-name:"MovementEvent",
-createdAt:21.92,
-action:"Progessing",
-tilePos:{x:-1,y:1},
-startPos:{x:0.01599986,y:1.296705},
-endPos:{x:0.01599985,y:1.416681},
-},
-{
-name:"MovementEvent",
-createdAt:22,
-action:"Progessing",
-tilePos:{x:-1,y:1},
-startPos:{x:0.01599985,y:1.416681},
-endPos:{x:0.01599985,y:1.536675},
-},
-{
-name:"MovementEvent",
-createdAt:22.08,
-action:"Progessing",
-tilePos:{x:-1,y:1},
-startPos:{x:0.01599985,y:1.536675},
-endPos:{x:0.01599984,y:1.656674},
-},
-{
-name:"MovementEvent",
-createdAt:22.16,
-action:"Progessing",
-tilePos:{x:-1,y:1},
-startPos:{x:0.01599984,y:1.656674},
-endPos:{x:0.01599983,y:1.776673},
-},
-{
-name:"MovementEvent",
-createdAt:22.24,
-action:"Progessing",
-tilePos:{x:-1,y:1},
-startPos:{x:0.01599983,y:1.776673},
-endPos:{x:0.01599982,y:1.896673},
-},
-{
-name:"MovementEvent",
-createdAt:22.32,
-action:"Progessing",
-tilePos:{x:-1,y:2},
-startPos:{x:0.01599982,y:1.896673},
-endPos:{x:0.01599982,y:2.016673},
-},
-{
-name:"MovementEvent",
-createdAt:22.4,
-action:"Progessing",
-tilePos:{x:-1,y:2},
-startPos:{x:0.01599982,y:2.016673},
-endPos:{x:0.01599981,y:2.136673},
-},
-{
-name:"MovementEvent",
-createdAt:22.48,
-action:"Progessing",
-tilePos:{x:-1,y:2},
-startPos:{x:0.01599981,y:2.136673},
-endPos:{x:0.0159998,y:2.256673},
-},
-{
-name:"MovementEvent",
-createdAt:22.56,
-action:"Progessing",
-tilePos:{x:-1,y:2},
-startPos:{x:0.0159998,y:2.256673},
-endPos:{x:0.01599979,y:2.376673},
-},
-{
-name:"MovementEvent",
-createdAt:22.64,
-action:"Progessing",
-tilePos:{x:-1,y:2},
-startPos:{x:0.01599979,y:2.376673},
-endPos:{x:0.01599979,y:2.496673},
-},
-{
-name:"MovementEvent",
-createdAt:22.72,
-action:"Progessing",
-tilePos:{x:-1,y:2},
-startPos:{x:0.01599979,y:2.496673},
-endPos:{x:0.01599978,y:2.616673},
-},
-{
-name:"MovementEvent",
-createdAt:22.8,
-action:"Progessing",
-tilePos:{x:-1,y:2},
-startPos:{x:0.01599978,y:2.616673},
-endPos:{x:0.01599977,y:2.736672},
-},
-{
-name:"MovementEvent",
-createdAt:22.88,
-action:"Progessing",
-tilePos:{x:-1,y:2},
-startPos:{x:0.01599977,y:2.736672},
-endPos:{x:0.01599976,y:2.856672},
-},
-{
-name:"MovementEvent",
-createdAt:22.96,
-action:"Progessing",
-tilePos:{x:-1,y:2},
-startPos:{x:0.01599976,y:2.856672},
-endPos:{x:0.01599976,y:2.976672},
-},
-{
-name:"MovementEvent",
-createdAt:23.04,
-action:"Progessing",
-tilePos:{x:-1,y:3},
-startPos:{x:0.01599976,y:2.976672},
-endPos:{x:0.01599975,y:3.096672},
-},
-{
-name:"KeyEvent",
-createdAt:23.09196,
-action:"KeyUp",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:23.12,
-action:"Progessing",
-tilePos:{x:-1,y:3},
-startPos:{x:0.01599975,y:3.096672},
-endPos:{x:0.01599974,y:3.208101},
-},
-{
-name:"MovementEvent",
-createdAt:23.88,
-action:"Stopped",
-tilePos:{x:-1,y:3},
-startPos:{x:0.01599974,y:3.261671},
-endPos:{x:0.01599974,y:3.261671},
-},
-{
-name:"KeyEvent",
-createdAt:26.50509,
-action:"KeyDown",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:26.54,
-action:"Started",
-tilePos:{x:-1,y:3},
-startPos:{x:0.01599974,y:3.270243},
-endPos:{x:0.01599974,y:3.270243},
-},
-{
-name:"MovementEvent",
-createdAt:26.64,
-action:"Progessing",
-tilePos:{x:-1,y:3},
-startPos:{x:0.01599974,y:3.270243},
-endPos:{x:0.01599973,y:3.376632},
-},
-{
-name:"MovementEvent",
-createdAt:26.72,
-action:"Progessing",
-tilePos:{x:-1,y:3},
-startPos:{x:0.01599973,y:3.376632},
-endPos:{x:0.01599972,y:3.489264},
-},
-{
-name:"MovementEvent",
-createdAt:26.8,
-action:"Progessing",
-tilePos:{x:-1,y:3},
-startPos:{x:0.01599972,y:3.489264},
-endPos:{x:0.01599971,y:3.607347},
-},
-{
-name:"MovementEvent",
-createdAt:26.88,
-action:"Progessing",
-tilePos:{x:-1,y:3},
-startPos:{x:0.01599971,y:3.607347},
-endPos:{x:0.01599971,y:3.726847},
-},
-{
-name:"MovementEvent",
-createdAt:26.96,
-action:"Progessing",
-tilePos:{x:-1,y:3},
-startPos:{x:0.01599971,y:3.726847},
-endPos:{x:0.0159997,y:3.846717},
-},
-{
-name:"MovementEvent",
-createdAt:27.04,
-action:"Progessing",
-tilePos:{x:-1,y:3},
-startPos:{x:0.0159997,y:3.846717},
-endPos:{x:0.01599969,y:3.966683},
-},
-{
-name:"MovementEvent",
-createdAt:27.12,
-action:"Progessing",
-tilePos:{x:-1,y:4},
-startPos:{x:0.01599969,y:3.966683},
-endPos:{x:0.01599968,y:4.086674},
-},
-{
-name:"MovementEvent",
-createdAt:27.2,
-action:"Progessing",
-tilePos:{x:-1,y:4},
-startPos:{x:0.01599968,y:4.086674},
-endPos:{x:0.01599968,y:4.206672},
-},
-{
-name:"MovementEvent",
-createdAt:27.28,
-action:"Progessing",
-tilePos:{x:-1,y:4},
-startPos:{x:0.01599968,y:4.206672},
-endPos:{x:0.01599967,y:4.326671},
-},
-{
-name:"MovementEvent",
-createdAt:27.36,
-action:"Progessing",
-tilePos:{x:-1,y:4},
-startPos:{x:0.01599967,y:4.326671},
-endPos:{x:0.01599966,y:4.446671},
-},
-{
-name:"MovementEvent",
-createdAt:27.44,
-action:"Progessing",
-tilePos:{x:-1,y:4},
-startPos:{x:0.01599966,y:4.446671},
-endPos:{x:0.01599965,y:4.566672},
-},
-{
-name:"MovementEvent",
-createdAt:27.52,
-action:"Progessing",
-tilePos:{x:-1,y:4},
-startPos:{x:0.01599965,y:4.566672},
-endPos:{x:0.01599965,y:4.686673},
-},
-{
-name:"MovementEvent",
-createdAt:27.6,
-action:"Progessing",
-tilePos:{x:-1,y:4},
-startPos:{x:0.01599965,y:4.686673},
-endPos:{x:0.01599964,y:4.806674},
-},
-{
-name:"MovementEvent",
-createdAt:27.68,
-action:"Progessing",
-tilePos:{x:-1,y:4},
-startPos:{x:0.01599964,y:4.806674},
-endPos:{x:0.01599963,y:4.926674},
-},
-{
-name:"MovementEvent",
-createdAt:27.76,
-action:"Progessing",
-tilePos:{x:-1,y:5},
-startPos:{x:0.01599963,y:4.926674},
-endPos:{x:0.01599962,y:5.046675},
-},
-{
-name:"MovementEvent",
-createdAt:27.84,
-action:"Progessing",
-tilePos:{x:-1,y:5},
-startPos:{x:0.01599962,y:5.046675},
-endPos:{x:0.01599962,y:5.166676},
-},
-{
-name:"MovementEvent",
-createdAt:27.92,
-action:"Progessing",
-tilePos:{x:-1,y:5},
-startPos:{x:0.01599962,y:5.166676},
-endPos:{x:0.01599961,y:5.286677},
-},
-{
-name:"MovementEvent",
-createdAt:28,
-action:"Progessing",
-tilePos:{x:-1,y:5},
-startPos:{x:0.01599961,y:5.286677},
-endPos:{x:0.0159996,y:5.406678},
-},
-{
-name:"MovementEvent",
-createdAt:28.08,
-action:"Progessing",
-tilePos:{x:-1,y:5},
-startPos:{x:0.0159996,y:5.406678},
-endPos:{x:0.01599959,y:5.526679},
-},
-{
-name:"MovementEvent",
-createdAt:28.16,
-action:"Progessing",
-tilePos:{x:-1,y:5},
-startPos:{x:0.01599959,y:5.526679},
-endPos:{x:0.01599959,y:5.646679},
-},
-{
-name:"MovementEvent",
-createdAt:28.24,
-action:"Progessing",
-tilePos:{x:-1,y:5},
-startPos:{x:0.01599959,y:5.646679},
-endPos:{x:0.01599958,y:5.76668},
-},
-{
-name:"MovementEvent",
-createdAt:28.32,
-action:"Progessing",
-tilePos:{x:-1,y:5},
-startPos:{x:0.01599958,y:5.76668},
-endPos:{x:0.01599957,y:5.886681},
-},
-{
-name:"KeyEvent",
-createdAt:28.34507,
-action:"KeyUp",
-keyCode:"W",
-},
-{
-name:"KeyEvent",
-createdAt:28.36399,
-action:"KeyDown",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:28.4,
-action:"Progessing",
-tilePos:{x:-1,y:5},
-startPos:{x:0.01599957,y:5.886681},
-endPos:{x:0.01599956,y:5.991988},
-},
-{
-name:"KeyEvent",
-createdAt:28.41303,
-action:"KeyUp",
-keyCode:"W",
-},
-{
-name:"KeyEvent",
-createdAt:28.92996,
-action:"KeyDown",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:28.98,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:0.01599956,y:5.991988},
-endPos:{x:0.01599956,y:6.104942},
-},
-{
-name:"KeyEvent",
-createdAt:29.03304,
-action:"KeyUp",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:29.1,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:0.01599956,y:6.104942},
-endPos:{x:0.01599955,y:6.209432},
-},
-{
-name:"MovementEvent",
-createdAt:29.82,
-action:"Stopped",
-tilePos:{x:-1,y:6},
-startPos:{x:0.01599955,y:6.231682},
-endPos:{x:0.01599955,y:6.231682},
-},
-{
-name:"KeyEvent",
-createdAt:31.23695,
-action:"KeyDown",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:31.26,
-action:"Started",
-tilePos:{x:-1,y:6},
-startPos:{x:0.01599955,y:6.240254},
-endPos:{x:0.01599955,y:6.240254},
-},
-{
-name:"KeyEvent",
-createdAt:31.31434,
-action:"KeyDown",
-keyCode:"D",
-},
-{
-name:"MovementEvent",
-createdAt:31.36,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:0.01599955,y:6.240254},
-endPos:{x:0.02028525,y:6.345495},
-},
-{
-name:"MovementEvent",
-createdAt:31.44,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:0.02028525,y:6.345495},
-endPos:{x:0.06047207,y:6.44736},
-},
-{
-name:"MovementEvent",
-createdAt:31.52,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:0.06047207,y:6.44736},
-endPos:{x:0.1153145,y:6.550746},
-},
-{
-name:"MovementEvent",
-createdAt:31.6,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:0.1153145,y:6.550746},
-endPos:{x:0.1824877,y:6.646014},
-},
-{
-name:"MovementEvent",
-createdAt:31.68,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:0.1824877,y:6.646014},
-endPos:{x:0.2757011,y:6.716338},
-},
-{
-name:"MovementEvent",
-createdAt:31.76,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:0.2757011,y:6.716338},
-endPos:{x:0.3768364,y:6.744835},
-},
-{
-name:"KeyEvent",
-createdAt:31.82199,
-action:"KeyUp",
-keyCode:"D",
-},
-{
-name:"MovementEvent",
-createdAt:31.84,
-action:"Progessing",
-tilePos:{x:-1,y:6},
-startPos:{x:0.3768364,y:6.744835},
-endPos:{x:0.4879953,y:6.737602},
-},
-{
-name:"MovementEvent",
-createdAt:31.92,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:0.4879953,y:6.737602},
-endPos:{x:0.6046088,y:6.729491},
-},
-{
-name:"MovementEvent",
-createdAt:32,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:0.6046088,y:6.729491},
-endPos:{x:0.7237273,y:6.72738},
-},
-{
-name:"KeyEvent",
-createdAt:32.01139,
-action:"KeyDown",
-keyCode:"D",
-},
-{
-name:"MovementEvent",
-createdAt:32.08,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:0.7237273,y:6.72738},
-endPos:{x:0.8403809,y:6.715198},
-},
-{
-name:"KeyEvent",
-createdAt:32.13418,
-action:"KeyUp",
-keyCode:"D",
-},
-{
-name:"MovementEvent",
-createdAt:32.16,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:0.8403809,y:6.715198},
-endPos:{x:0.9480363,y:6.669207},
-},
-{
-name:"MovementEvent",
-createdAt:32.24,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:0.9480363,y:6.669207},
-endPos:{x:1.052931,y:6.612854},
-},
-{
-name:"MovementEvent",
-createdAt:32.32,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:1.052931,y:6.612854},
-endPos:{x:1.157107,y:6.553803},
-},
-{
-name:"MovementEvent",
-createdAt:32.4,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:1.157107,y:6.553803},
-endPos:{x:1.261096,y:6.494051},
-},
-{
-name:"MovementEvent",
-createdAt:32.48,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:1.261096,y:6.494051},
-endPos:{x:1.365036,y:6.434115},
-},
-{
-name:"KeyEvent",
-createdAt:32.50647,
-action:"KeyDown",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:32.56,
-action:"Progessing",
-tilePos:{x:0,y:6},
-startPos:{x:1.365036,y:6.434115},
-endPos:{x:1.470112,y:6.378417},
-},
-{
-name:"MovementEvent",
-createdAt:32.64,
-action:"Progessing",
-tilePos:{x:1,y:6},
-startPos:{x:1.470112,y:6.378417},
-endPos:{x:1.584804,y:6.358609},
-},
-{
-name:"KeyEvent",
-createdAt:32.65511,
-action:"KeyUp",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:32.72,
-action:"Progessing",
-tilePos:{x:1,y:6},
-startPos:{x:1.584804,y:6.358609},
-endPos:{x:1.703423,y:6.353452},
-},
-{
-name:"MovementEvent",
-createdAt:32.8,
-action:"Progessing",
-tilePos:{x:1,y:6},
-startPos:{x:1.703423,y:6.353452},
-endPos:{x:1.823063,y:6.35211},
-},
-{
-name:"MovementEvent",
-createdAt:32.88,
-action:"Progessing",
-tilePos:{x:1,y:6},
-startPos:{x:1.823063,y:6.35211},
-endPos:{x:1.94297,y:6.351761},
-},
-{
-name:"KeyEvent",
-createdAt:32.9417,
-action:"KeyUp",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:32.96,
-action:"Progessing",
-tilePos:{x:1,y:6},
-startPos:{x:1.94297,y:6.351761},
-endPos:{x:2.062945,y:6.351669},
-},
-{
-name:"MovementEvent",
-createdAt:33.74,
-action:"Stopped",
-tilePos:{x:1,y:6},
-startPos:{x:2.137936,y:6.351637},
-endPos:{x:2.137936,y:6.351637},
-},
-{
-name:"KeyEvent",
-createdAt:33.9506,
-action:"KeyDown",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:33.98,
-action:"Started",
-tilePos:{x:1,y:6},
-startPos:{x:2.146508,y:6.351637},
-endPos:{x:2.146508,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:34.08,
-action:"Progessing",
-tilePos:{x:1,y:6},
-startPos:{x:2.146508,y:6.351637},
-endPos:{x:2.252897,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:34.16,
-action:"Progessing",
-tilePos:{x:1,y:6},
-startPos:{x:2.252897,y:6.351637},
-endPos:{x:2.365529,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:34.24,
-action:"Progessing",
-tilePos:{x:1,y:6},
-startPos:{x:2.365529,y:6.351637},
-endPos:{x:2.483612,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:34.32,
-action:"Progessing",
-tilePos:{x:2,y:6},
-startPos:{x:2.483612,y:6.351637},
-endPos:{x:2.603112,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:34.4,
-action:"Progessing",
-tilePos:{x:2,y:6},
-startPos:{x:2.603112,y:6.351637},
-endPos:{x:2.722982,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:34.48,
-action:"Progessing",
-tilePos:{x:2,y:6},
-startPos:{x:2.722982,y:6.351637},
-endPos:{x:2.842948,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:34.56,
-action:"Progessing",
-tilePos:{x:2,y:6},
-startPos:{x:2.842948,y:6.351637},
-endPos:{x:2.96294,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:34.64,
-action:"Progessing",
-tilePos:{x:2,y:6},
-startPos:{x:2.96294,y:6.351637},
-endPos:{x:3.082937,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:34.72,
-action:"Progessing",
-tilePos:{x:2,y:6},
-startPos:{x:3.082937,y:6.351637},
-endPos:{x:3.202936,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:34.8,
-action:"Progessing",
-tilePos:{x:2,y:6},
-startPos:{x:3.202936,y:6.351637},
-endPos:{x:3.322936,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:34.88,
-action:"Progessing",
-tilePos:{x:2,y:6},
-startPos:{x:3.322936,y:6.351637},
-endPos:{x:3.442936,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:34.96,
-action:"Progessing",
-tilePos:{x:3,y:6},
-startPos:{x:3.442936,y:6.351637},
-endPos:{x:3.562936,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:35.04,
-action:"Progessing",
-tilePos:{x:3,y:6},
-startPos:{x:3.562936,y:6.351637},
-endPos:{x:3.682936,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:35.12,
-action:"Progessing",
-tilePos:{x:3,y:6},
-startPos:{x:3.682936,y:6.351637},
-endPos:{x:3.802936,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:35.2,
-action:"Progessing",
-tilePos:{x:3,y:6},
-startPos:{x:3.802936,y:6.351637},
-endPos:{x:3.922936,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:35.28,
-action:"Progessing",
-tilePos:{x:3,y:6},
-startPos:{x:3.922936,y:6.351637},
-endPos:{x:4.042936,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:35.36,
-action:"Progessing",
-tilePos:{x:3,y:6},
-startPos:{x:4.042936,y:6.351637},
-endPos:{x:4.162937,y:6.351637},
-},
-{
-name:"MovementEvent",
-createdAt:35.44,
-action:"Progessing",
-tilePos:{x:3,y:6},
-startPos:{x:4.162937,y:6.351637},
-endPos:{x:4.282938,y:6.351637},
-},
-{
-name:"KeyEvent",
-createdAt:35.45852,
-action:"KeyDown",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:35.52,
-action:"Progessing",
-tilePos:{x:3,y:6},
-startPos:{x:4.282938,y:6.351637},
-endPos:{x:4.399821,y:6.36327},
-},
-{
-name:"KeyEvent",
-createdAt:35.58728,
-action:"KeyUp",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:35.6,
-action:"Progessing",
-tilePos:{x:4,y:6},
-startPos:{x:4.399821,y:6.36327},
-endPos:{x:4.507536,y:6.409118},
-},
-{
-name:"KeyEvent",
-createdAt:35.66745,
-action:"KeyDown",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:35.68,
-action:"Progessing",
-tilePos:{x:4,y:6},
-startPos:{x:4.507536,y:6.409118},
-endPos:{x:4.612446,y:6.465434},
-},
-{
-name:"MovementEvent",
-createdAt:35.76,
-action:"Progessing",
-tilePos:{x:4,y:6},
-startPos:{x:4.612446,y:6.465434},
-endPos:{x:4.701132,y:6.539969},
-},
-{
-name:"MovementEvent",
-createdAt:35.84,
-action:"Progessing",
-tilePos:{x:4,y:6},
-startPos:{x:4.701132,y:6.539969},
-endPos:{x:4.768599,y:6.636242},
-},
-{
-name:"KeyEvent",
-createdAt:35.85162,
-action:"KeyUp",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:35.92,
-action:"Progessing",
-tilePos:{x:4,y:6},
-startPos:{x:4.768599,y:6.636242},
-endPos:{x:4.830543,y:6.738174},
-},
-{
-name:"MovementEvent",
-createdAt:36,
-action:"Progessing",
-tilePos:{x:4,y:6},
-startPos:{x:4.830543,y:6.738174},
-endPos:{x:4.891049,y:6.841579},
-},
-{
-name:"MovementEvent",
-createdAt:36.08,
-action:"Progessing",
-tilePos:{x:4,y:6},
-startPos:{x:4.891049,y:6.841579},
-endPos:{x:4.95118,y:6.945368},
-},
-{
-name:"MovementEvent",
-createdAt:36.16,
-action:"Progessing",
-tilePos:{x:4,y:7},
-startPos:{x:4.95118,y:6.945368},
-endPos:{x:5.011214,y:7.049255},
-},
-{
-name:"MovementEvent",
-createdAt:36.24,
-action:"Progessing",
-tilePos:{x:4,y:7},
-startPos:{x:5.011214,y:7.049255},
-endPos:{x:5.071223,y:7.153169},
-},
-{
-name:"KeyEvent",
-createdAt:36.3064,
-action:"KeyDown",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:36.32,
-action:"Progessing",
-tilePos:{x:4,y:7},
-startPos:{x:5.071223,y:7.153169},
-endPos:{x:5.131225,y:7.25709},
-},
-{
-name:"MovementEvent",
-createdAt:36.4,
-action:"Progessing",
-tilePos:{x:4,y:7},
-startPos:{x:5.131225,y:7.25709},
-endPos:{x:5.17006,y:7.366684},
-},
-{
-name:"KeyEvent",
-createdAt:36.41885,
-action:"KeyUp",
-keyCode:"A",
-},
-{
-name:"MovementEvent",
-createdAt:36.48,
-action:"Progessing",
-tilePos:{x:4,y:7},
-startPos:{x:5.17006,y:7.366684},
-endPos:{x:5.180169,y:7.483975},
-},
-{
-name:"MovementEvent",
-createdAt:36.56,
-action:"Progessing",
-tilePos:{x:4,y:7},
-startPos:{x:5.180169,y:7.483975},
-endPos:{x:5.182801,y:7.60327},
-},
-{
-name:"MovementEvent",
-createdAt:36.64,
-action:"Progessing",
-tilePos:{x:4,y:7},
-startPos:{x:5.182801,y:7.60327},
-endPos:{x:5.183486,y:7.723086},
-},
-{
-name:"MovementEvent",
-createdAt:36.72,
-action:"Progessing",
-tilePos:{x:4,y:7},
-startPos:{x:5.183486,y:7.723086},
-endPos:{x:5.183664,y:7.843039},
-},
-{
-name:"MovementEvent",
-createdAt:36.8,
-action:"Progessing",
-tilePos:{x:4,y:7},
-startPos:{x:5.183664,y:7.843039},
-endPos:{x:5.183711,y:7.963026},
-},
-{
-name:"MovementEvent",
-createdAt:36.88,
-action:"Progessing",
-tilePos:{x:4,y:8},
-startPos:{x:5.183711,y:7.963026},
-endPos:{x:5.183723,y:8.083023},
-},
-{
-name:"MovementEvent",
-createdAt:36.96,
-action:"Progessing",
-tilePos:{x:4,y:8},
-startPos:{x:5.183723,y:8.083023},
-endPos:{x:5.183726,y:8.203022},
-},
-{
-name:"MovementEvent",
-createdAt:37.04,
-action:"Progessing",
-tilePos:{x:4,y:8},
-startPos:{x:5.183726,y:8.203022},
-endPos:{x:5.183727,y:8.323021},
-},
-{
-name:"MovementEvent",
-createdAt:37.12,
-action:"Progessing",
-tilePos:{x:4,y:8},
-startPos:{x:5.183727,y:8.323021},
-endPos:{x:5.183727,y:8.44302},
-},
-{
-name:"MovementEvent",
-createdAt:37.2,
-action:"Progessing",
-tilePos:{x:4,y:8},
-startPos:{x:5.183727,y:8.44302},
-endPos:{x:5.183727,y:8.563019},
-},
-{
-name:"KeyEvent",
-createdAt:37.23741,
-action:"KeyUp",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:37.3,
-action:"Progessing",
-tilePos:{x:4,y:8},
-startPos:{x:5.183727,y:8.563019},
-endPos:{x:5.183727,y:8.670686},
-},
-{
-name:"KeyEvent",
-createdAt:37.51168,
-action:"KeyDown",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:37.62,
-action:"Progessing",
-tilePos:{x:4,y:8},
-startPos:{x:5.183727,y:8.670686},
-endPos:{x:5.183727,y:8.786839},
-},
-{
-name:"MovementEvent",
-createdAt:37.7,
-action:"Progessing",
-tilePos:{x:4,y:8},
-startPos:{x:5.183727,y:8.786839},
-endPos:{x:5.183727,y:8.896616},
-},
-{
-name:"KeyEvent",
-createdAt:37.73289,
-action:"KeyUp",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:37.8,
-action:"Progessing",
-tilePos:{x:4,y:9},
-startPos:{x:5.183727,y:8.896616},
-endPos:{x:5.183727,y:9.001355},
-},
-{
-name:"KeyEvent",
-createdAt:38.12378,
-action:"KeyDown",
-keyCode:"W",
-},
-{
-name:"KeyEvent",
-createdAt:38.23146,
-action:"KeyUp",
-keyCode:"W",
-},
-{
-name:"MovementEvent",
-createdAt:38.24,
-action:"Progessing",
-tilePos:{x:4,y:9},
-startPos:{x:5.183727,y:9.001355},
-endPos:{x:5.183727,y:9.116947},
-},
-{
-name:"MovementEvent",
-createdAt:39.02,
-action:"Stopped",
-tilePos:{x:4,y:9},
-startPos:{x:5.183727,y:9.178022},
-endPos:{x:5.183727,y:9.178022},
-},
+"name": "LevelEvent",
+"createdAt": 0,
+"levelName": "Level3(Clone)"
+},
+{
+"name": "KeyEvent",
+"createdAt": 0.5566543,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 0.58,
+"action": "Started",
+"tilePos": {
+"x": -1,
+"y": 0
+},
+"startPos": {
+"x": 0,
+"y": 0.008571428
+},
+"endPos": {
+"x": 0,
+"y": 0.008571428
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 0.68,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 0
+},
+"startPos": {
+"x": 0,
+"y": 0.008571428
+},
+"endPos": {
+"x": 0,
+"y": 0.1149608
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 0.76,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 0
+},
+"startPos": {
+"x": 0,
+"y": 0.1149608
+},
+"endPos": {
+"x": 0,
+"y": 0.2275929
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 0.84,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 0
+},
+"startPos": {
+"x": 0,
+"y": 0.2275929
+},
+"endPos": {
+"x": 0,
+"y": 0.3456749
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 0.92,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 0
+},
+"startPos": {
+"x": 0,
+"y": 0.3456749
+},
+"endPos": {
+"x": 0,
+"y": 0.4651757
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 1,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 0
+},
+"startPos": {
+"x": 0,
+"y": 0.4651757
+},
+"endPos": {
+"x": 0,
+"y": 0.5850458
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 1.08,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 0
+},
+"startPos": {
+"x": 0,
+"y": 0.5850458
+},
+"endPos": {
+"x": 0,
+"y": 0.705012
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 1.16,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 0
+},
+"startPos": {
+"x": 0,
+"y": 0.705012
+},
+"endPos": {
+"x": 0,
+"y": 0.8250031
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 1.24,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 0
+},
+"startPos": {
+"x": 0,
+"y": 0.8250031
+},
+"endPos": {
+"x": 0,
+"y": 0.9450009
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 1.32,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 1
+},
+"startPos": {
+"x": 0,
+"y": 0.9450009
+},
+"endPos": {
+"x": 0,
+"y": 1.065
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 1.4,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 1
+},
+"startPos": {
+"x": 0,
+"y": 1.065
+},
+"endPos": {
+"x": 0,
+"y": 1.185
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 1.48,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 1
+},
+"startPos": {
+"x": 0,
+"y": 1.185
+},
+"endPos": {
+"x": 0,
+"y": 1.305
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 1.56,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 1
+},
+"startPos": {
+"x": 0,
+"y": 1.305
+},
+"endPos": {
+"x": 0,
+"y": 1.425
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 1.64,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 1
+},
+"startPos": {
+"x": 0,
+"y": 1.425
+},
+"endPos": {
+"x": 0,
+"y": 1.545
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 1.72,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 1
+},
+"startPos": {
+"x": 0,
+"y": 1.545
+},
+"endPos": {
+"x": 0,
+"y": 1.665
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 1.8,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 1
+},
+"startPos": {
+"x": 0,
+"y": 1.665
+},
+"endPos": {
+"x": 0,
+"y": 1.785
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 1.88,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 1
+},
+"startPos": {
+"x": 0,
+"y": 1.785
+},
+"endPos": {
+"x": 0,
+"y": 1.904999
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 1.96,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 1.904999
+},
+"endPos": {
+"x": 0,
+"y": 2.024999
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 2.04,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.024999
+},
+"endPos": {
+"x": 0,
+"y": 2.144999
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 2.12,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.144999
+},
+"endPos": {
+"x": 0,
+"y": 2.264999
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 2.2,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.264999
+},
+"endPos": {
+"x": 0,
+"y": 2.384999
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 2.28,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.384999
+},
+"endPos": {
+"x": 0,
+"y": 2.504999
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 2.36,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.504999
+},
+"endPos": {
+"x": 0,
+"y": 2.624999
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 2.44,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.624999
+},
+"endPos": {
+"x": 0,
+"y": 2.744999
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 2.52,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.744999
+},
+"endPos": {
+"x": 0,
+"y": 2.864999
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 2.6,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.864999
+},
+"endPos": {
+"x": 0,
+"y": 2.984998
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 2.68,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 2.984998
+},
+"endPos": {
+"x": 0,
+"y": 3.104998
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 2.76,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.104998
+},
+"endPos": {
+"x": 0,
+"y": 3.224998
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 2.84,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.224998
+},
+"endPos": {
+"x": 0,
+"y": 3.344998
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 2.92,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.344998
+},
+"endPos": {
+"x": 0,
+"y": 3.464998
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.464998
+},
+"endPos": {
+"x": 0,
+"y": 3.584998
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3.08,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.584998
+},
+"endPos": {
+"x": 0,
+"y": 3.704998
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3.16,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.704998
+},
+"endPos": {
+"x": 0,
+"y": 3.824998
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3.24,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.824998
+},
+"endPos": {
+"x": 0,
+"y": 3.944998
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3.32,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 3.944998
+},
+"endPos": {
+"x": 0,
+"y": 4.064998
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3.4,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.064998
+},
+"endPos": {
+"x": 0,
+"y": 4.184999
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3.48,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.184999
+},
+"endPos": {
+"x": 0,
+"y": 4.305
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3.56,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.305
+},
+"endPos": {
+"x": 0,
+"y": 4.425001
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3.64,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.425001
+},
+"endPos": {
+"x": 0,
+"y": 4.545002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3.72,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.545002
+},
+"endPos": {
+"x": 0,
+"y": 4.665002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3.8,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.665002
+},
+"endPos": {
+"x": 0,
+"y": 4.785003
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3.88,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.785003
+},
+"endPos": {
+"x": 0,
+"y": 4.905004
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3.96,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0,
+"y": 4.905004
+},
+"endPos": {
+"x": 0,
+"y": 5.025005
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 3.96798,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 4.087132,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 4.12,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0,
+"y": 5.025005
+},
+"endPos": {
+"x": 0,
+"y": 5.131462
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 4.22,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0,
+"y": 5.131462
+},
+"endPos": {
+"x": 0,
+"y": 5.243643
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 4.3,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0,
+"y": 5.243643
+},
+"endPos": {
+"x": 0,
+"y": 5.357254
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 4.38,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0,
+"y": 5.357254
+},
+"endPos": {
+"x": 0,
+"y": 5.47559
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 4.4522,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 4.46,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0,
+"y": 5.47559
+},
+"endPos": {
+"x": 0,
+"y": 5.595158
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 5.24,
+"action": "Stopped",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0,
+"y": 5.670004
+},
+"endPos": {
+"x": 0,
+"y": 5.670004
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 5.470837,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 5.625007,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 5.820611,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 5.941315,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 5.98,
+"action": "Started",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.007423074,
+"y": 5.67429
+},
+"endPos": {
+"x": 0.007423074,
+"y": 5.67429
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 6.08,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.007423074,
+"y": 5.67429
+},
+"endPos": {
+"x": 0.1007073,
+"y": 5.723199
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 6.16,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.1007073,
+"y": 5.723199
+},
+"endPos": {
+"x": 0.2090176,
+"y": 5.739328
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 6.445535,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 6.46,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.2090176,
+"y": 5.739328
+},
+"endPos": {
+"x": 0.2378422,
+"y": 5.63117
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 6.551437,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 7.061224,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 7.253151,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 7.461759,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 7.916833,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 8.077968,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.24,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.2378422,
+"y": 5.63117
+},
+"endPos": {
+"x": 0.2378422,
+"y": 5.737744
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 8.333573,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.38,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.2378422,
+"y": 5.737744
+},
+"endPos": {
+"x": 0.2378422,
+"y": 5.845664
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 8.448538,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.48,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.2378422,
+"y": 5.845664
+},
+"endPos": {
+"x": 0.2378422,
+"y": 5.959587
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.559999,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.2378422,
+"y": 5.959587
+},
+"endPos": {
+"x": 0.242296,
+"y": 6.06122
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 8.610587,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.639999,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.242296,
+"y": 6.06122
+},
+"endPos": {
+"x": 0.2752015,
+"y": 6.157915
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 8.68149,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 8.68149,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.78,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.2752015,
+"y": 6.157915
+},
+"endPos": {
+"x": 0.3399372,
+"y": 6.240354
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 8.820689,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.86,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.3399372,
+"y": 6.240354
+},
+"endPos": {
+"x": 0.4305559,
+"y": 6.298508
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.94,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 0.4305559,
+"y": 6.298508
+},
+"endPos": {
+"x": 0.5310157,
+"y": 6.358027
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.02,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 0.5310157,
+"y": 6.358027
+},
+"endPos": {
+"x": 0.6340373,
+"y": 6.417902
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 9.063767,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.099999,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 0.6340373,
+"y": 6.417902
+},
+"endPos": {
+"x": 0.7377257,
+"y": 6.47787
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.179999,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 0.7377257,
+"y": 6.47787
+},
+"endPos": {
+"x": 0.8502321,
+"y": 6.5056
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 9.188292,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.26,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 0.8502321,
+"y": 6.5056
+},
+"endPos": {
+"x": 0.9682814,
+"y": 6.512818
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.34,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 0.9682814,
+"y": 6.512818
+},
+"endPos": {
+"x": 1.087774,
+"y": 6.514698
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.42,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 1.087774,
+"y": 6.514698
+},
+"endPos": {
+"x": 1.207642,
+"y": 6.515186
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.5,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 1.207642,
+"y": 6.515186
+},
+"endPos": {
+"x": 1.327607,
+"y": 6.515314
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.58,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 1.327607,
+"y": 6.515314
+},
+"endPos": {
+"x": 1.447598,
+"y": 6.515347
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.66,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.447598,
+"y": 6.515347
+},
+"endPos": {
+"x": 1.567596,
+"y": 6.515357
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.74,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.567596,
+"y": 6.515357
+},
+"endPos": {
+"x": 1.687595,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.82,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.687595,
+"y": 6.515359
+},
+"endPos": {
+"x": 1.807595,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.9,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.807595,
+"y": 6.515359
+},
+"endPos": {
+"x": 1.927595,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.98,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.927595,
+"y": 6.515359
+},
+"endPos": {
+"x": 2.047595,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 10.06,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.047595,
+"y": 6.515359
+},
+"endPos": {
+"x": 2.167595,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 10.14,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.167595,
+"y": 6.515359
+},
+"endPos": {
+"x": 2.287595,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 10.22,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.287595,
+"y": 6.515359
+},
+"endPos": {
+"x": 2.407595,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 10.3,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 2.407595,
+"y": 6.515359
+},
+"endPos": {
+"x": 2.527595,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 10.38,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 2.527595,
+"y": 6.515359
+},
+"endPos": {
+"x": 2.647594,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 10.46,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 2.647594,
+"y": 6.515359
+},
+"endPos": {
+"x": 2.767594,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 10.54,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 2.767594,
+"y": 6.515359
+},
+"endPos": {
+"x": 2.887594,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 10.62,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 2.887594,
+"y": 6.515359
+},
+"endPos": {
+"x": 3.007594,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 10.7,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 3.007594,
+"y": 6.515359
+},
+"endPos": {
+"x": 3.127594,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 10.78,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 3.127594,
+"y": 6.515359
+},
+"endPos": {
+"x": 3.247594,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 10.86,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 3.247594,
+"y": 6.515359
+},
+"endPos": {
+"x": 3.367594,
+"y": 6.515359
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 10.90926,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 10.94,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 3.367594,
+"y": 6.515359
+},
+"endPos": {
+"x": 3.487594,
+"y": 6.515359
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 11.02,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 3.487594,
+"y": 6.515359
+},
+"endPos": {
+"x": 3.598949,
+"y": 6.547621
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 11.07907,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 11.1,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 3.598949,
+"y": 6.547621
+},
+"endPos": {
+"x": 3.704807,
+"y": 6.6004
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 11.18,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 3.704807,
+"y": 6.6004
+},
+"endPos": {
+"x": 3.809234,
+"y": 6.65852
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 11.26,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 3.809234,
+"y": 6.65852
+},
+"endPos": {
+"x": 3.913288,
+"y": 6.718031
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 11.34,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 3.913288,
+"y": 6.718031
+},
+"endPos": {
+"x": 4.017246,
+"y": 6.744726
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 11.42,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 4.017246,
+"y": 6.744726
+},
+"endPos": {
+"x": 4.121178,
+"y": 6.741345
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 11.5,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 4.121178,
+"y": 6.741345
+},
+"endPos": {
+"x": 4.225103,
+"y": 6.73996
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 11.58,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 4.225103,
+"y": 6.73996
+},
+"endPos": {
+"x": 4.329027,
+"y": 6.739393
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 11.66,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 4.329027,
+"y": 6.739393
+},
+"endPos": {
+"x": 4.43295,
+"y": 6.739161
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 11.74,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 6
+},
+"startPos": {
+"x": 4.43295,
+"y": 6.739161
+},
+"endPos": {
+"x": 4.537007,
+"y": 6.740172
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 11.7896,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 11.82,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 6
+},
+"startPos": {
+"x": 4.537007,
+"y": 6.740172
+},
+"endPos": {
+"x": 4.641918,
+"y": 6.77
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 11.9,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 6
+},
+"startPos": {
+"x": 4.641918,
+"y": 6.77
+},
+"endPos": {
+"x": 4.722523,
+"y": 6.845594
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 11.98,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 6
+},
+"startPos": {
+"x": 4.722523,
+"y": 6.845594
+},
+"endPos": {
+"x": 4.787887,
+"y": 6.942143
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 12.06,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.787887,
+"y": 6.942143
+},
+"endPos": {
+"x": 4.83765,
+"y": 7.047264
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 12.14,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.83765,
+"y": 7.047264
+},
+"endPos": {
+"x": 4.852166,
+"y": 7.162972
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 12.22,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.852166,
+"y": 7.162972
+},
+"endPos": {
+"x": 4.855944,
+"y": 7.281856
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 12.3,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.855944,
+"y": 7.281856
+},
+"endPos": {
+"x": 4.824666,
+"y": 7.39292
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 12.38,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.824666,
+"y": 7.39292
+},
+"endPos": {
+"x": 4.772143,
+"y": 7.498703
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 12.48,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.772143,
+"y": 7.498703
+},
+"endPos": {
+"x": 4.759728,
+"y": 7.613645
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 12.62,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.759728,
+"y": 7.613645
+},
+"endPos": {
+"x": 4.760734,
+"y": 7.72781
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 12.7,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 13.22358,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 13.38,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.760734,
+"y": 7.72781
+},
+"endPos": {
+"x": 4.760999,
+"y": 7.838751
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 13.52,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.760999,
+"y": 7.838751
+},
+"endPos": {
+"x": 4.760999,
+"y": 7.954738
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 13.62,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.760999,
+"y": 7.954738
+},
+"endPos": {
+"x": 4.76391,
+"y": 8.071306
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 13.7,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.76391,
+"y": 8.071306
+},
+"endPos": {
+"x": 4.76391,
+"y": 8.174047
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 13.78,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.76391,
+"y": 8.174047
+},
+"endPos": {
+"x": 4.76391,
+"y": 8.288132
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 13.86,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.76391,
+"y": 8.288132
+},
+"endPos": {
+"x": 4.76391,
+"y": 8.406592
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 13.94,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.76391,
+"y": 8.406592
+},
+"endPos": {
+"x": 4.785077,
+"y": 8.52052
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 14.02,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.785077,
+"y": 8.52052
+},
+"endPos": {
+"x": 4.834968,
+"y": 8.627048
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 14.1,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.834968,
+"y": 8.627048
+},
+"endPos": {
+"x": 4.892336,
+"y": 8.731648
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 14.18,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.892336,
+"y": 8.731648
+},
+"endPos": {
+"x": 4.975268,
+"y": 8.812131
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 14.24617,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 14.26,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.975268,
+"y": 8.812131
+},
+"endPos": {
+"x": 5.073727,
+"y": 8.877462
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 14.34,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 5.073727,
+"y": 8.877462
+},
+"endPos": {
+"x": 5.176228,
+"y": 8.938849
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 14.46,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.176228,
+"y": 8.938849
+},
+"endPos": {
+"x": 5.241402,
+"y": 9.025006
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 14.6,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.241402,
+"y": 9.025006
+},
+"endPos": {
+"x": 5.239503,
+"y": 9.127952
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 14.74,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.239503,
+"y": 9.127952
+},
+"endPos": {
+"x": 5.239106,
+"y": 9.232758
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 14.88,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.239106,
+"y": 9.232758
+},
+"endPos": {
+"x": 5.239022,
+"y": 9.33774
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 14.90083,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 15,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.239022,
+"y": 9.33774
+},
+"endPos": {
+"x": 5.239006,
+"y": 9.443233
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 15.1,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.239006,
+"y": 9.443233
+},
+"endPos": {
+"x": 5.239002,
+"y": 9.564992
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 15.15728,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 15.18,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.239002,
+"y": 9.564992
+},
+"endPos": {
+"x": 5.239001,
+"y": 9.670657
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 15.6796,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 15.70208,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 15.82161,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 15.84787,
+"action": "KeyDown",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 16.04,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.239001,
+"y": 9.670657
+},
+"endPos": {
+"x": 5.236152,
+"y": 9.566994
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 16.12,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.236152,
+"y": 9.566994
+},
+"endPos": {
+"x": 5.236152,
+"y": 9.465396
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 16.2,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.236152,
+"y": 9.465396
+},
+"endPos": {
+"x": 5.236152,
+"y": 9.362078
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 16.28,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.236152,
+"y": 9.362078
+},
+"endPos": {
+"x": 5.236152,
+"y": 9.258312
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 16.36,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.236152,
+"y": 9.258312
+},
+"endPos": {
+"x": 5.236152,
+"y": 9.15443
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 16.43075,
+"action": "KeyUp",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 16.44,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.236152,
+"y": 9.15443
+},
+"endPos": {
+"x": 5.236152,
+"y": 9.050518
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 16.67782,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 16.84,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.236152,
+"y": 9.050518
+},
+"endPos": {
+"x": 5.14558,
+"y": 9.133612
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 16.92,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.14558,
+"y": 9.133612
+},
+"endPos": {
+"x": 5.087453,
+"y": 9.234222
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 17,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.087453,
+"y": 9.234222
+},
+"endPos": {
+"x": 5.027941,
+"y": 9.337284
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 17.05563,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 17.08,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.027941,
+"y": 9.337284
+},
+"endPos": {
+"x": 4.968068,
+"y": 9.440983
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 17.16,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.968068,
+"y": 9.440983
+},
+"endPos": {
+"x": 4.940362,
+"y": 9.553492
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 17.24,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.940362,
+"y": 9.553492
+},
+"endPos": {
+"x": 4.93315,
+"y": 9.671541
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 17.46,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.93315,
+"y": 9.671541
+},
+"endPos": {
+"x": 5.015716,
+"y": 9.740899
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 17.50167,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 17.58,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.015716,
+"y": 9.740899
+},
+"endPos": {
+"x": 5.127075,
+"y": 9.739498
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 17.68,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.127075,
+"y": 9.739498
+},
+"endPos": {
+"x": 5.25088,
+"y": 9.739163
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 17.7,
+"action": "Stopped",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.246603,
+"y": 9.739105
+},
+"endPos": {
+"x": 5.246603,
+"y": 9.739105
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 17.80802,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 17.84728,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 18.40863,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 18.44,
+"action": "Started",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.234716,
+"y": 9.739002
+},
+"endPos": {
+"x": 5.234716,
+"y": 9.739002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 18.6,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.234716,
+"y": 9.739002
+},
+"endPos": {
+"x": 5.11607,
+"y": 9.739002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 18.7,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 5.11607,
+"y": 9.739002
+},
+"endPos": {
+"x": 4.993461,
+"y": 9.739002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 18.78,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.993461,
+"y": 9.739002
+},
+"endPos": {
+"x": 4.887653,
+"y": 9.739002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 18.86,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.887653,
+"y": 9.739002
+},
+"endPos": {
+"x": 4.771766,
+"y": 9.739002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 18.94,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.771766,
+"y": 9.739002
+},
+"endPos": {
+"x": 4.652837,
+"y": 9.739002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 19.02,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.652837,
+"y": 9.739002
+},
+"endPos": {
+"x": 4.54176,
+"y": 9.70674
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 19.08817,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 19.1,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.54176,
+"y": 9.70674
+},
+"endPos": {
+"x": 4.435975,
+"y": 9.65396
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 19.18,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.435975,
+"y": 9.65396
+},
+"endPos": {
+"x": 4.331567,
+"y": 9.59584
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 19.22078,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 19.26,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.331567,
+"y": 9.59584
+},
+"endPos": {
+"x": 4.227518,
+"y": 9.53633
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 19.34,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.227518,
+"y": 9.53633
+},
+"endPos": {
+"x": 4.147179,
+"y": 9.452841
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 19.42,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.147179,
+"y": 9.452841
+},
+"endPos": {
+"x": 4.081885,
+"y": 9.354237
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 19.5,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.081885,
+"y": 9.354237
+},
+"endPos": {
+"x": 4.032139,
+"y": 9.248581
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 19.67149,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 19.9,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.032139,
+"y": 9.248581
+},
+"endPos": {
+"x": 4.140971,
+"y": 9.260885
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 20.04,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.140971,
+"y": 9.260885
+},
+"endPos": {
+"x": 4.245112,
+"y": 9.260975
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 20.04661,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 20.09586,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 20.37341,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 20.5,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.245112,
+"y": 9.260975
+},
+"endPos": {
+"x": 4.356963,
+"y": 9.260998
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 20.54873,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 20.66,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.356963,
+"y": 9.260998
+},
+"endPos": {
+"x": 4.470494,
+"y": 9.260998
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 20.8,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.470494,
+"y": 9.260998
+},
+"endPos": {
+"x": 4.580763,
+"y": 9.250858
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 20.88053,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 20.9,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.580763,
+"y": 9.250858
+},
+"endPos": {
+"x": 4.675435,
+"y": 9.199866
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 20.98,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.675435,
+"y": 9.199866
+},
+"endPos": {
+"x": 4.761608,
+"y": 9.135242
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 21.0385,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 21.06,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.761608,
+"y": 9.135242
+},
+"endPos": {
+"x": 4.86091,
+"y": 9.074039
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 21.14,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.86091,
+"y": 9.074039
+},
+"endPos": {
+"x": 4.963631,
+"y": 9.013725
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 21.22,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.963631,
+"y": 9.013725
+},
+"endPos": {
+"x": 5.067241,
+"y": 8.953643
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 21.3,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 5.067241,
+"y": 8.953643
+},
+"endPos": {
+"x": 5.171082,
+"y": 8.893621
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 21.38316,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 21.4,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 5.171082,
+"y": 8.893621
+},
+"endPos": {
+"x": 5.244123,
+"y": 8.818616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 21.52,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 5.244123,
+"y": 8.818616
+},
+"endPos": {
+"x": 5.240343,
+"y": 8.696058
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 21.59015,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 21.6,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 5.240343,
+"y": 8.696058
+},
+"endPos": {
+"x": 5.23955,
+"y": 8.595909
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 21.68,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 5.23955,
+"y": 8.595909
+},
+"endPos": {
+"x": 5.239225,
+"y": 8.492969
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 21.76,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 5.239225,
+"y": 8.492969
+},
+"endPos": {
+"x": 5.239092,
+"y": 8.389301
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 21.84,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 5.239092,
+"y": 8.389301
+},
+"endPos": {
+"x": 5.239038,
+"y": 8.285444
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 21.88532,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 21.92,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 5.239038,
+"y": 8.285444
+},
+"endPos": {
+"x": 5.239015,
+"y": 8.181539
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 22,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 5.239015,
+"y": 8.181539
+},
+"endPos": {
+"x": 5.239007,
+"y": 8.068975
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 22.02882,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 22.08,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.239007,
+"y": 8.068975
+},
+"endPos": {
+"x": 5.229255,
+"y": 7.952395
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 22.16,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.229255,
+"y": 7.952395
+},
+"endPos": {
+"x": 5.225119,
+"y": 7.833529
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 22.18964,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 22.24,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.225119,
+"y": 7.833529
+},
+"endPos": {
+"x": 5.219757,
+"y": 7.714972
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 22.31118,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 22.32,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.219757,
+"y": 7.714972
+},
+"endPos": {
+"x": 5.179289,
+"y": 7.605817
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 22.4,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.179289,
+"y": 7.605817
+},
+"endPos": {
+"x": 5.124374,
+"y": 7.500531
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 22.46897,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 22.48,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.124374,
+"y": 7.500531
+},
+"endPos": {
+"x": 5.065698,
+"y": 7.396254
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 22.56,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.065698,
+"y": 7.396254
+},
+"endPos": {
+"x": 4.990548,
+"y": 7.307733
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 22.57559,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 22.64,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.990548,
+"y": 7.307733
+},
+"endPos": {
+"x": 4.894114,
+"y": 7.240309
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 22.70394,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 22.72,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.894114,
+"y": 7.240309
+},
+"endPos": {
+"x": 4.792141,
+"y": 7.178376
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 22.82214,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 22.9987,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 23.28,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.792141,
+"y": 7.178376
+},
+"endPos": {
+"x": 4.760967,
+"y": 7.291687
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 23.38,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.760967,
+"y": 7.291687
+},
+"endPos": {
+"x": 4.760989,
+"y": 7.409801
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 23.46,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.760989,
+"y": 7.409801
+},
+"endPos": {
+"x": 4.760996,
+"y": 7.511733
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 23.54,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.760996,
+"y": 7.511733
+},
+"endPos": {
+"x": 4.760998,
+"y": 7.623782
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 23.57985,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 23.62,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.760998,
+"y": 7.623782
+},
+"endPos": {
+"x": 4.760999,
+"y": 7.741712
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 23.7,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.760999,
+"y": 7.741712
+},
+"endPos": {
+"x": 4.760999,
+"y": 7.861174
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 23.78,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.760999,
+"y": 7.861174
+},
+"endPos": {
+"x": 4.76643,
+"y": 7.980015
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 23.86,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.76643,
+"y": 7.980015
+},
+"endPos": {
+"x": 4.776474,
+"y": 8.098096
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 23.94,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.776474,
+"y": 8.098096
+},
+"endPos": {
+"x": 4.779089,
+"y": 8.217597
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 24.02,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.779089,
+"y": 8.217597
+},
+"endPos": {
+"x": 4.779769,
+"y": 8.337467
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 24.1,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.779769,
+"y": 8.337467
+},
+"endPos": {
+"x": 4.779947,
+"y": 8.457433
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 24.18,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.779947,
+"y": 8.457433
+},
+"endPos": {
+"x": 4.779993,
+"y": 8.577424
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 24.24407,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 24.26,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.779993,
+"y": 8.577424
+},
+"endPos": {
+"x": 4.780005,
+"y": 8.697422
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 24.34,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.780005,
+"y": 8.697422
+},
+"endPos": {
+"x": 4.758843,
+"y": 8.81175
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 24.40836,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 24.42,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.758843,
+"y": 8.81175
+},
+"endPos": {
+"x": 4.760117,
+"y": 8.918382
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 24.5,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.760117,
+"y": 8.918382
+},
+"endPos": {
+"x": 4.760638,
+"y": 9.023009
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 24.58,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.760638,
+"y": 9.023009
+},
+"endPos": {
+"x": 4.735598,
+"y": 9.127978
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 24.66,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.735598,
+"y": 9.127978
+},
+"endPos": {
+"x": 4.68507,
+"y": 9.232248
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 24.74,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.68507,
+"y": 9.232248
+},
+"endPos": {
+"x": 4.627535,
+"y": 9.336261
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 24.82,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.627535,
+"y": 9.336261
+},
+"endPos": {
+"x": 4.568177,
+"y": 9.440207
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 24.9,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.568177,
+"y": 9.440207
+},
+"endPos": {
+"x": 4.508344,
+"y": 9.544137
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 24.98,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.508344,
+"y": 9.544137
+},
+"endPos": {
+"x": 4.448388,
+"y": 9.648061
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 25.06,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.448388,
+"y": 9.648061
+},
+"endPos": {
+"x": 4.388399,
+"y": 9.751985
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 25.2,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.388399,
+"y": 9.751985
+},
+"endPos": {
+"x": 4.283402,
+"y": 9.740744
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 25.34,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.283402,
+"y": 9.740744
+},
+"endPos": {
+"x": 4.178403,
+"y": 9.739366
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 25.48,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.178403,
+"y": 9.739366
+},
+"endPos": {
+"x": 4.073404,
+"y": 9.739078
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 25.62,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.073404,
+"y": 9.739078
+},
+"endPos": {
+"x": 3.968405,
+"y": 9.739017
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 25.70891,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 25.8,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.968405,
+"y": 9.739017
+},
+"endPos": {
+"x": 3.865666,
+"y": 9.739002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 26.46,
+"action": "Stopped",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.855905,
+"y": 9.739002
+},
+"endPos": {
+"x": 3.855905,
+"y": 9.739002
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 27.13524,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 27.16,
+"action": "Started",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.851619,
+"y": 9.739002
+},
+"endPos": {
+"x": 3.851619,
+"y": 9.739002
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 27.30223,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 27.34,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.851619,
+"y": 9.739002
+},
+"endPos": {
+"x": 3.746394,
+"y": 9.739002
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 27.38425,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 27.5027,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 27.58,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.746394,
+"y": 9.739002
+},
+"endPos": {
+"x": 3.643206,
+"y": 9.739002
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 27.59069,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 27.71095,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 27.79689,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 27.84,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.643206,
+"y": 9.739002
+},
+"endPos": {
+"x": 3.537823,
+"y": 9.736883
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 27.92492,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 27.99201,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 28.06,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.537823,
+"y": 9.736883
+},
+"endPos": {
+"x": 3.436678,
+"y": 9.734801
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 28.1178,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 28.19829,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 28.28,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.436678,
+"y": 9.734801
+},
+"endPos": {
+"x": 3.333659,
+"y": 9.734801
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 28.30847,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 28.41225,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 28.52,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.333659,
+"y": 9.734801
+},
+"endPos": {
+"x": 3.230306,
+"y": 9.734801
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 28.68,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.230306,
+"y": 9.734801
+},
+"endPos": {
+"x": 3.11572,
+"y": 9.734801
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 28.82,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.11572,
+"y": 9.734801
+},
+"endPos": {
+"x": 3.011076,
+"y": 9.734801
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 28.96,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.011076,
+"y": 9.734801
+},
+"endPos": {
+"x": 2.90611,
+"y": 9.734801
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 29.1,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.90611,
+"y": 9.734801
+},
+"endPos": {
+"x": 2.801113,
+"y": 9.734801
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 29.24,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.801113,
+"y": 9.734801
+},
+"endPos": {
+"x": 2.696114,
+"y": 9.734801
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 29.38,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.696114,
+"y": 9.734801
+},
+"endPos": {
+"x": 2.591114,
+"y": 9.734801
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 29.49268,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 29.52,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.591114,
+"y": 9.734801
+},
+"endPos": {
+"x": 2.490399,
+"y": 9.734801
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 29.70243,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 29.83176,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 29.93496,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 29.94,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.490399,
+"y": 9.734801
+},
+"endPos": {
+"x": 2.382861,
+"y": 9.759785
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 29.99067,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 30.04,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.382861,
+"y": 9.759785
+},
+"endPos": {
+"x": 2.281355,
+"y": 9.810025
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 30.07678,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 30.18,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.281355,
+"y": 9.810025
+},
+"endPos": {
+"x": 2.176037,
+"y": 9.869102
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 30.26,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.176037,
+"y": 9.869102
+},
+"endPos": {
+"x": 2.078854,
+"y": 9.925076
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 30.30014,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 30.34,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.078854,
+"y": 9.925076
+},
+"endPos": {
+"x": 1.984108,
+"y": 9.979742
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 30.68015,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 30.78,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.984108,
+"y": 9.979742
+},
+"endPos": {
+"x": 1.882481,
+"y": 10.0384
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 30.82906,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 30.86,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.882481,
+"y": 10.0384
+},
+"endPos": {
+"x": 1.791044,
+"y": 10.0912
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 30.94591,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 30.94591,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 31.5193,
+"action": "KeyDown",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 31.66,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.791044,
+"y": 10.0912
+},
+"endPos": {
+"x": 1.907285,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 31.74,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.907285,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.022022,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 31.82,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.022022,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.140652,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 31.9,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.140652,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.260295,
+"y": 10.12616
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 32.02896,
+"action": "KeyUp",
+"keyCode": "DownArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 32.12896,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 32.24,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.260295,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.150804,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 32.32,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.150804,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.041119,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 32.4,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.041119,
+"y": 10.12616
+},
+"endPos": {
+"x": 1.923804,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 32.48,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.923804,
+"y": 10.12616
+},
+"endPos": {
+"x": 1.804503,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 32.8,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.804503,
+"y": 10.12616
+},
+"endPos": {
+"x": 1.928334,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 32.88,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.928334,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.044575,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 32.96,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.044575,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.163597,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 33.3,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.163597,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.051957,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 33.48,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.051957,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.174515,
+"y": 10.12616
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 33.76791,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 33.88675,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 34.06,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.174515,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.069109,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 34.14,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.069109,
+"y": 10.12616
+},
+"endPos": {
+"x": 1.952868,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 34.22,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.952868,
+"y": 10.12616
+},
+"endPos": {
+"x": 1.833847,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 34.56,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.833847,
+"y": 10.12616
+},
+"endPos": {
+"x": 1.956079,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 34.64,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.956079,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.073394,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 34.72,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.073394,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.192694,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 35.08,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.192694,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.070376,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 35.16,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.070376,
+"y": 10.12616
+},
+"endPos": {
+"x": 1.954135,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 35.24,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.954135,
+"y": 10.12616
+},
+"endPos": {
+"x": 1.835113,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 35.58,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.835113,
+"y": 10.12616
+},
+"endPos": {
+"x": 1.956344,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 35.66,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.956344,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.073659,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 35.74,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.073659,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.19296,
+"y": 10.12616
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 35.8715,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 36.04,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.19296,
+"y": 10.12616
+},
+"endPos": {
+"x": 2.07182,
+"y": 10.12616
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 36.12,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.07182,
+"y": 10.12616
+},
+"endPos": {
+"x": 1.95558,
+"y": 10.12616
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 36.19691,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 36.2,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.95558,
+"y": 10.12616
+},
+"endPos": {
+"x": 1.836558,
+"y": 10.12616
+}
+}
 ]

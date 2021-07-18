@@ -31,7 +31,7 @@ public class MusicControllerFMOD : MonoBehaviour
             music = musicStr;
             player = pl;
             cachedRigidBody = pl.GetComponent<Rigidbody2D>();
-            //musicEV.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(pl.gameObject, cachedRigidBody));
+            // musicEV.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(pl.gameObject, cachedRigidBody));
             musicEV = FMODUnity.RuntimeManager.CreateInstance(musicStr);
             musicEV.start();
             musicEV.getPlaybackState(out plb);
@@ -55,7 +55,7 @@ public class MusicControllerFMOD : MonoBehaviour
         {
             
             //Debug.Log(player);
-            //Debug.Log(player.GoalOrientation);
+            // Debug.Log(player.distancePercentage);
             musicEV.setParameterByName("progress", 1-player.distancePercentage);
             musicEV.setParameterByName("orientation", player.GoalOrientation);
 
