@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Sonification - Audio Maze</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-time.v2.min.js"></script>
+    <script src="https://d3js.org/d3-time-format.v3.min.js"></script>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      header {
+        padding: 0 1em;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+        flex: 1 1 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!--
+map view
+diagram -> speed of player
+diagram -> key presses
+-->
+    </header>
+
+    <h1 id="loadingIndicator" style="text-align: center">Loading...</h1>
+    <svg
+      id="chart"
+      version="1.1"
+      baseProfile="full"
+      xmlns="http://www.w3.org/2000/svg"
+    ></svg>
+
+    <script>
+      const width = 2000;
+      const height = 800;
+      const padding = 10;
+      const yAxisTextWidth = 40;
+      const xAxisTextHeight = 35;
+
+      const keyVisualizerSize = 15;
+      const keyVisualizerHeight = keyVisualizerSize + 8;
+
+      d3.json("log.json")
+        .then((allEvents) => {
+          let movementEvents = allEvents.filter(
+            (evt) => evt.name == "MovementEvent"
+          );
+          let previousTime = null;
+          for (let evt of movementEvents) {
+            let dx = evt.endPos.x - evt.startPos.x;
+            let dy = evt.endPos.y - evt.startPos.y;
+            evt.distance = Math.sqrt(dx * dx + dy * dy);
+            if (evt.action == "Progressing") {
+              evt.deltaT = evt.createdAt - previousTime;
+              evt.speed = evt.distance / evt.deltaT;
+            } else {
+              evt.speed = 0.0;
+            }
+            previousTime = evt.createdAt;
+          }
+          return {
+            allEvents,
+            movementEvents,
+          };
+        })
+        .then(({ allEvents, movementEvents }) => {
+          document.getElementById("loadingIndicator").remove();
+
+          const totalWidth = 2 * padding + yAxisTextWidth + width;
+          const totalHeight =
+            2 * padding + height + xAxisTextHeight + keyVisualizerHeight;
+
+          const svg = d3
+            .select("#chart")
+            .attr("width", totalWidth)
+            .attr("height", totalHeight)
+            .attr("viewBox", [0, 0, totalWidth, totalHeight])
+            .style("font-family", "Arial, Helvetica, sans-serif");
+
+          const xAxis = d3
+            .scaleLinear()
+            .domain(d3.extent(allEvents, (evt) => evt.createdAt))
+            .range([0, width]);
+          const yAxis = d3
+            .scaleLinear()
+            .domain([0, d3.max(movementEvents, (evt) => evt.speed)])
+            .range([height, 0])
+            .nice();
+
+          const axesGroup = svg
+            .append("g")
+            .attr("id", "axes")
+            .attr(
+              "transform",
+              () =>
+                `translate(${padding + yAxisTextWidth}, ${
+                  padding + keyVisualizerHeight
+                })`
+            );
+
+          const xAxisGen = d3.axisBottom(xAxis);
+          const yAxisGen = d3.axisLeft(yAxis);
+
+          axesGroup
+            .append("rect")
+            .attr("width", width)
+            .attr("height", height)
+            .style("fill", "lightgray");
+          axesGroup
+            .append("text")
+            .text("speed of player")
+            .classed("label", true)
+            .attr("x", -height / 2)
+            .attr("y", -yAxisTextWidth * 0.8)
+            .style("transform", `rotate(-90deg)`)
+            .style("font-weight", "bold")
+            .style("text-anchor", "middle");
+          axesGroup
+            .append("text")
+            .text("time since level start")
+            .classed("label", true)
+            .attr("x", width / 2)
+            .attr("y", height + xAxisTextHeight)
+            .style("font-weight", "bold")
+            .style("text-anchor", "middle");
+
+          const xAxisGroup = axesGroup
+            .append("g")
+            .attr("id", "x-axis")
+            .attr("transform", `translate(0, ${height})`)
+            .call(xAxisGen);
+          const yAxisGroup = axesGroup
+            .append("g")
+            .attr("id", "y-axis")
+            .call(yAxisGen);
+
+          const dataGroup = svg
+            .append("g")
+            .attr(
+              "transform",
+              `translate(${padding + yAxisTextWidth}, ${
+                padding + keyVisualizerHeight
+              })`
+            )
+            .attr("id", "data");
+
+          dataGroup
+            .append("g")
+            .attr("id", "allEvents")
+            .selectAll("line")
+            .data(allEvents)
+            .enter()
+            .append("line")
+            .attr("x1", (evt) => xAxis(evt.createdAt))
+            .attr("y1", (evt) =>
+              evt.name == "KeyEvent"
+                ? -(keyVisualizerHeight - keyVisualizerSize) / 2
+                : 0
+            )
+            .attr("x2", (evt) => xAxis(evt.createdAt))
+            .attr("y2", (evt) => height)
+            .attr("stroke", (evt) =>
+              evt.name == "MovementEvent" ? "none" : "#BBB"
+            );
+          dataGroup
+            .append("g")
+            .attr("id", "movementSpeed")
+            .append("path")
+            .attr("d", (_) =>
+              d3.line()(
+                movementEvents.map((evt) => {
+                  return [xAxis(evt.createdAt), yAxis(evt.speed)];
+                })
+              )
+            )
+            .style("stroke", "black")
+            .style("fill", "none");
+
+          function charForKeyCode(keyCode) {
+            switch (keyCode) {
+              case "LeftArrow":
+                return "🡄";
+              case "UpArrow":
+                return "🡅";
+              case "RightArrow":
+                return "🡆";
+              case "DownArrow":
+                return "🡇";
+            }
+          }
+          const keyEvents = allEvents.filter((evt) => evt.name == "KeyEvent");
+          dataGroup
+            .append("g")
+            .attr("id", "keyVisualization")
+            .attr("transform", `translate(0, ${-keyVisualizerHeight})`)
+            .selectAll("g")
+            .data(keyEvents)
+            .enter()
+            .append("g")
+            .each(function (evt, i) {
+              const g = d3
+                .select(this)
+                .attr(
+                  "transform",
+                  `translate(${xAxis(evt.createdAt)}, ${
+                    (keyVisualizerHeight - keyVisualizerSize) / 2
+                  })`
+                );
+
+              if (evt.action == "KeyDown") {
+                let matchingEvt;
+                for (let j = i + 1; j < keyEvents.length; j++) {
+                  matchingEvt = keyEvents[j];
+                  if (
+                    matchingEvt.action == "KeyUp" &&
+                    matchingEvt.keyCode == evt.keyCode
+                  ) {
+                    break;
+                  }
+                }
+
+                g.append("line")
+                  .attr("x1", (evt) => 0)
+                  .attr("y1", keyVisualizerSize / 2)
+                  .attr(
+                    "x2",
+                    (evt) => xAxis(matchingEvt.createdAt) - xAxis(evt.createdAt)
+                  )
+                  .attr("y2", keyVisualizerSize / 2)
+                  .attr("stroke", (evt) =>
+                    evt.name == "MovementEvent" ? "#B99" : "#BBB"
+                  );
+              }
+
+              g.append("rect")
+                .attr("x", -keyVisualizerSize / 2)
+                .attr("y", 0)
+                .attr("width", keyVisualizerSize)
+                .attr("height", keyVisualizerSize)
+                .attr("rx", 2)
+                .style("stroke", "black")
+                .style("fill", evt.action == "KeyUp" ? "white" : "black");
+              g.append("rect")
+                .attr("x", -keyVisualizerSize / 2)
+                .attr("y", 0)
+                .attr("width", keyVisualizerSize)
+                .attr("height", keyVisualizerSize)
+                .attr("rx", 2)
+                .style("stroke", "black")
+                .style("fill", evt.action == "KeyUp" ? "white" : "black");
+              g.append("text")
+                .text(charForKeyCode(evt.keyCode))
+                .attr("x", 2 - keyVisualizerSize / 2)
+                .attr("y", 2)
+                .attr("textLength", keyVisualizerSize)
+                .style("dominant-baseline", "hanging")
+                .style("fill", evt.action == "KeyUp" ? "black" : "white");
+            });
+        });
+    </script>
+  </body>
+</html>
