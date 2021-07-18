@@ -6,13 +6,13 @@
 },
 {
 "name": "KeyEvent",
-"createdAt": 0.5566543,
+"createdAt": 0.1715307,
 "action": "KeyDown",
 "keyCode": "UpArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 0.58,
+"createdAt": 0.2,
 "action": "Started",
 "tilePos": {
 "x": -1,
@@ -29,7 +29,7 @@
 },
 {
 "name": "MovementEvent",
-"createdAt": 0.68,
+"createdAt": 0.3,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -46,7 +46,7 @@
 },
 {
 "name": "MovementEvent",
-"createdAt": 0.76,
+"createdAt": 0.38,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -63,7 +63,7 @@
 },
 {
 "name": "MovementEvent",
-"createdAt": 0.84,
+"createdAt": 0.46,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -80,7 +80,7 @@
 },
 {
 "name": "MovementEvent",
-"createdAt": 0.92,
+"createdAt": 0.54,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -97,7 +97,7 @@
 },
 {
 "name": "MovementEvent",
-"createdAt": 1,
+"createdAt": 0.62,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -114,7 +114,7 @@
 },
 {
 "name": "MovementEvent",
-"createdAt": 1.08,
+"createdAt": 0.7,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -130,8 +130,14 @@
 }
 },
 {
+"name": "KeyEvent",
+"createdAt": 0.7431279,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
 "name": "MovementEvent",
-"createdAt": 1.16,
+"createdAt": 0.78,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -143,12 +149,18 @@
 },
 "endPos": {
 "x": 0,
-"y": 0.8250031
+"y": 0.8164317
 }
 },
 {
+"name": "KeyEvent",
+"createdAt": 0.9506817,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
 "name": "MovementEvent",
-"createdAt": 1.24,
+"createdAt": 1.04,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -156,16 +168,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 0.8250031
+"y": 0.8164317
 },
 "endPos": {
 "x": 0,
-"y": 0.9450009
+"y": 0.9338482
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 1.32,
+"createdAt": 1.12,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -173,16 +185,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 0.9450009
+"y": 0.9338482
 },
 "endPos": {
 "x": 0,
-"y": 1.065
+"y": 1.039906
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 1.4,
+"createdAt": 1.2,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -190,16 +202,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 1.065
+"y": 1.039906
 },
 "endPos": {
 "x": 0,
-"y": 1.185
+"y": 1.156277
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 1.48,
+"createdAt": 1.28,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -207,16 +219,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 1.185
+"y": 1.156277
 },
 "endPos": {
 "x": 0,
-"y": 1.305
+"y": 1.275333
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 1.56,
+"createdAt": 1.36,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -224,16 +236,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 1.305
+"y": 1.275333
 },
 "endPos": {
 "x": 0,
-"y": 1.425
+"y": 1.395087
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 1.64,
+"createdAt": 1.44,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -241,16 +253,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 1.425
+"y": 1.395087
 },
 "endPos": {
 "x": 0,
-"y": 1.545
+"y": 1.515023
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 1.72,
+"createdAt": 1.52,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -258,16 +270,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 1.545
+"y": 1.515023
 },
 "endPos": {
 "x": 0,
-"y": 1.665
+"y": 1.635006
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 1.8,
+"createdAt": 1.6,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -275,16 +287,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 1.665
+"y": 1.635006
 },
 "endPos": {
 "x": 0,
-"y": 1.785
+"y": 1.755002
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 1.88,
+"createdAt": 1.68,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -292,16 +304,33 @@
 },
 "startPos": {
 "x": 0,
-"y": 1.785
+"y": 1.755002
 },
 "endPos": {
 "x": 0,
-"y": 1.904999
+"y": 1.875001
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 1.96,
+"createdAt": 1.76,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 1
+},
+"startPos": {
+"x": 0,
+"y": 1.875001
+},
+"endPos": {
+"x": 0,
+"y": 1.995
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 1.84,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -309,16 +338,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 1.904999
+"y": 1.995
 },
 "endPos": {
 "x": 0,
-"y": 2.024999
+"y": 2.115
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 2.04,
+"createdAt": 1.92,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -326,16 +355,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 2.024999
+"y": 2.115
 },
 "endPos": {
 "x": 0,
-"y": 2.144999
+"y": 2.235
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 2.12,
+"createdAt": 2,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -343,16 +372,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 2.144999
+"y": 2.235
 },
 "endPos": {
 "x": 0,
-"y": 2.264999
+"y": 2.355
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 2.2,
+"createdAt": 2.08,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -360,16 +389,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 2.264999
+"y": 2.355
 },
 "endPos": {
 "x": 0,
-"y": 2.384999
+"y": 2.475
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 2.28,
+"createdAt": 2.16,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -377,16 +406,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 2.384999
+"y": 2.475
 },
 "endPos": {
 "x": 0,
-"y": 2.504999
+"y": 2.595
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 2.36,
+"createdAt": 2.24,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -394,16 +423,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 2.504999
+"y": 2.595
 },
 "endPos": {
 "x": 0,
-"y": 2.624999
+"y": 2.715
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 2.44,
+"createdAt": 2.32,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -411,16 +440,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 2.624999
+"y": 2.715
 },
 "endPos": {
 "x": 0,
-"y": 2.744999
+"y": 2.835
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 2.52,
+"createdAt": 2.4,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -428,33 +457,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 2.744999
+"y": 2.835
 },
 "endPos": {
 "x": 0,
-"y": 2.864999
+"y": 2.954999
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 2.6,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 2
-},
-"startPos": {
-"x": 0,
-"y": 2.864999
-},
-"endPos": {
-"x": 0,
-"y": 2.984998
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 2.68,
+"createdAt": 2.48,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -462,16 +474,16 @@
 },
 "startPos": {
 "x": 0,
-"y": 2.984998
+"y": 2.954999
 },
 "endPos": {
 "x": 0,
-"y": 3.104998
+"y": 3.074999
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 2.76,
+"createdAt": 2.56,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -479,16 +491,22 @@
 },
 "startPos": {
 "x": 0,
-"y": 3.104998
+"y": 3.074999
 },
 "endPos": {
 "x": 0,
-"y": 3.224998
+"y": 3.194999
 }
 },
 {
+"name": "KeyEvent",
+"createdAt": 2.582631,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
 "name": "MovementEvent",
-"createdAt": 2.84,
+"createdAt": 2.66,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
@@ -496,451 +514,496 @@
 },
 "startPos": {
 "x": 0,
-"y": 3.224998
+"y": 3.194999
 },
 "endPos": {
 "x": 0,
-"y": 3.344998
+"y": 3.302667
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 2.92,
-"action": "Progressing",
+"createdAt": 3.38,
+"action": "Stopped",
 "tilePos": {
 "x": -1,
 "y": 3
 },
 "startPos": {
 "x": 0,
-"y": 3.344998
+"y": 3.329998
 },
 "endPos": {
 "x": 0,
-"y": 3.464998
+"y": 3.329998
 }
 },
 {
-"name": "MovementEvent",
-"createdAt": 3,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 3
-},
-"startPos": {
-"x": 0,
-"y": 3.464998
-},
-"endPos": {
-"x": 0,
-"y": 3.584998
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 3.08,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 3
-},
-"startPos": {
-"x": 0,
-"y": 3.584998
-},
-"endPos": {
-"x": 0,
-"y": 3.704998
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 3.16,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 3
-},
-"startPos": {
-"x": 0,
-"y": 3.704998
-},
-"endPos": {
-"x": 0,
-"y": 3.824998
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 3.24,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 3
-},
-"startPos": {
-"x": 0,
-"y": 3.824998
-},
-"endPos": {
-"x": 0,
-"y": 3.944998
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 3.32,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 4
-},
-"startPos": {
-"x": 0,
-"y": 3.944998
-},
-"endPos": {
-"x": 0,
-"y": 4.064998
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 3.4,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 4
-},
-"startPos": {
-"x": 0,
-"y": 4.064998
-},
-"endPos": {
-"x": 0,
-"y": 4.184999
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 3.48,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 4
-},
-"startPos": {
-"x": 0,
-"y": 4.184999
-},
-"endPos": {
-"x": 0,
-"y": 4.305
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 3.56,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 4
-},
-"startPos": {
-"x": 0,
-"y": 4.305
-},
-"endPos": {
-"x": 0,
-"y": 4.425001
-}
+"name": "KeyEvent",
+"createdAt": 3.606042,
+"action": "KeyDown",
+"keyCode": "DownArrow"
 },
 {
 "name": "MovementEvent",
 "createdAt": 3.64,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 4
-},
-"startPos": {
-"x": 0,
-"y": 4.425001
-},
-"endPos": {
-"x": 0,
-"y": 4.545002
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 3.72,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 4
-},
-"startPos": {
-"x": 0,
-"y": 4.545002
-},
-"endPos": {
-"x": 0,
-"y": 4.665002
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 3.8,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 4
-},
-"startPos": {
-"x": 0,
-"y": 4.665002
-},
-"endPos": {
-"x": 0,
-"y": 4.785003
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 3.88,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 4
-},
-"startPos": {
-"x": 0,
-"y": 4.785003
-},
-"endPos": {
-"x": 0,
-"y": 4.905004
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 3.96,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 5
-},
-"startPos": {
-"x": 0,
-"y": 4.905004
-},
-"endPos": {
-"x": 0,
-"y": 5.025005
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 3.96798,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 4.087132,
-"action": "KeyDown",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 4.12,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 5
-},
-"startPos": {
-"x": 0,
-"y": 5.025005
-},
-"endPos": {
-"x": 0,
-"y": 5.131462
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 4.22,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 5
-},
-"startPos": {
-"x": 0,
-"y": 5.131462
-},
-"endPos": {
-"x": 0,
-"y": 5.243643
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 4.3,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 5
-},
-"startPos": {
-"x": 0,
-"y": 5.243643
-},
-"endPos": {
-"x": 0,
-"y": 5.357254
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 4.38,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 5
-},
-"startPos": {
-"x": 0,
-"y": 5.357254
-},
-"endPos": {
-"x": 0,
-"y": 5.47559
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 4.4522,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 4.46,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 5
-},
-"startPos": {
-"x": 0,
-"y": 5.47559
-},
-"endPos": {
-"x": 0,
-"y": 5.595158
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 5.24,
-"action": "Stopped",
-"tilePos": {
-"x": -1,
-"y": 5
-},
-"startPos": {
-"x": 0,
-"y": 5.670004
-},
-"endPos": {
-"x": 0,
-"y": 5.670004
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 5.470837,
-"action": "KeyDown",
-"keyCode": "RightArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 5.625007,
-"action": "KeyUp",
-"keyCode": "RightArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 5.820611,
-"action": "KeyDown",
-"keyCode": "RightArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 5.941315,
-"action": "KeyDown",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 5.98,
 "action": "Started",
 "tilePos": {
 "x": -1,
-"y": 5
+"y": 3
 },
 "startPos": {
-"x": 0.007423074,
-"y": 5.67429
+"x": 0,
+"y": 3.321427
 },
 "endPos": {
-"x": 0.007423074,
-"y": 5.67429
+"x": 0,
+"y": 3.321427
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 6.08,
+"createdAt": 3.74,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
-"y": 5
+"y": 3
 },
 "startPos": {
-"x": 0.007423074,
-"y": 5.67429
+"x": 0,
+"y": 3.321427
 },
 "endPos": {
-"x": 0.1007073,
-"y": 5.723199
+"x": 0,
+"y": 3.215038
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 6.16,
+"createdAt": 3.82,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
-"y": 5
+"y": 3
 },
 "startPos": {
-"x": 0.1007073,
-"y": 5.723199
+"x": 0,
+"y": 3.215038
 },
 "endPos": {
-"x": 0.2090176,
-"y": 5.739328
+"x": 0,
+"y": 3.102406
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3.9,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 3.102406
+},
+"endPos": {
+"x": 0,
+"y": 2.984323
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 3.98,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.984323
+},
+"endPos": {
+"x": 0,
+"y": 2.864823
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 4.06,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.864823
+},
+"endPos": {
+"x": 0,
+"y": 2.744953
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 4.14,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.744953
+},
+"endPos": {
+"x": 0,
+"y": 2.624987
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 6.445535,
+"createdAt": 4.150795,
+"action": "KeyUp",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 4.34,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.624987
+},
+"endPos": {
+"x": 0,
+"y": 2.523628
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 4.381577,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 4.52,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.523628
+},
+"endPos": {
+"x": 0,
+"y": 2.635135
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 4.6,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.635135
+},
+"endPos": {
+"x": 0,
+"y": 2.747637
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 4.68,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.747637
+},
+"endPos": {
+"x": 0,
+"y": 2.865686
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 4.76,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.865686
+},
+"endPos": {
+"x": 0,
+"y": 2.985178
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 4.84,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 2.985178
+},
+"endPos": {
+"x": 0,
+"y": 3.105045
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 4.92,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.105045
+},
+"endPos": {
+"x": 0,
+"y": 3.225011
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 5,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.225011
+},
+"endPos": {
+"x": 0,
+"y": 3.345002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 5.08,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.345002
+},
+"endPos": {
+"x": 0,
+"y": 3.465
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 5.086355,
 "action": "KeyUp",
 "keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 5.28,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.465
+},
+"endPos": {
+"x": 0,
+"y": 3.566369
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 5.470178,
+"action": "KeyDown",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 5.6,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.566369
+},
+"endPos": {
+"x": 0,
+"y": 3.455021
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 5.68,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.455021
+},
+"endPos": {
+"x": 0,
+"y": 3.342402
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 5.76,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.342402
+},
+"endPos": {
+"x": 0,
+"y": 3.224323
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 5.84,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.224323
+},
+"endPos": {
+"x": 0,
+"y": 3.104823
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 5.92,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 3.104823
+},
+"endPos": {
+"x": 0,
+"y": 2.984953
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 6,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.984953
+},
+"endPos": {
+"x": 0,
+"y": 2.864987
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 6.020998,
+"action": "KeyUp",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 6.1,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.864987
+},
+"endPos": {
+"x": 0,
+"y": 2.757329
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 6.228794,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 6.38,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.757329
+},
+"endPos": {
+"x": 0,
+"y": 2.872359
+}
 },
 {
 "name": "MovementEvent",
@@ -948,490 +1011,578 @@
 "action": "Progressing",
 "tilePos": {
 "x": -1,
-"y": 5
+"y": 2
 },
 "startPos": {
-"x": 0.2090176,
-"y": 5.739328
+"x": 0,
+"y": 2.872359
 },
 "endPos": {
-"x": 0.2378422,
-"y": 5.63117
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 6.551437,
-"action": "KeyUp",
-"keyCode": "RightArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 7.061224,
-"action": "KeyDown",
-"keyCode": "LeftArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 7.253151,
-"action": "KeyDown",
-"keyCode": "UpArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 7.461759,
-"action": "KeyUp",
-"keyCode": "LeftArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 7.916833,
-"action": "KeyDown",
-"keyCode": "LeftArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 8.077968,
-"action": "KeyUp",
-"keyCode": "LeftArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 8.24,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 5
-},
-"startPos": {
-"x": 0.2378422,
-"y": 5.63117
-},
-"endPos": {
-"x": 0.2378422,
-"y": 5.737744
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 8.333573,
-"action": "KeyDown",
-"keyCode": "LeftArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 8.38,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 5
-},
-"startPos": {
-"x": 0.2378422,
-"y": 5.737744
-},
-"endPos": {
-"x": 0.2378422,
-"y": 5.845664
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 8.448538,
-"action": "KeyUp",
-"keyCode": "LeftArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 8.48,
-"action": "Progressing",
-"tilePos": {
-"x": -1,
-"y": 5
-},
-"startPos": {
-"x": 0.2378422,
-"y": 5.845664
-},
-"endPos": {
-"x": 0.2378422,
-"y": 5.959587
+"x": 0,
+"y": 2.986914
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 8.559999,
+"createdAt": 6.54,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
-"y": 6
+"y": 3
 },
 "startPos": {
-"x": 0.2378422,
-"y": 5.959587
+"x": 0,
+"y": 2.986914
 },
 "endPos": {
-"x": 0.242296,
-"y": 6.06122
+"x": 0,
+"y": 3.105497
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 6.62,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.105497
+},
+"endPos": {
+"x": 0,
+"y": 3.225128
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 6.7,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.225128
+},
+"endPos": {
+"x": 0,
+"y": 3.345032
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 6.78,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.345032
+},
+"endPos": {
+"x": 0,
+"y": 3.465007
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 8.610587,
+"createdAt": 6.822181,
 "action": "KeyUp",
 "keyCode": "UpArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 8.639999,
+"createdAt": 6.86,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
-"y": 6
+"y": 3
 },
 "startPos": {
-"x": 0.242296,
-"y": 6.06122
+"x": 0,
+"y": 3.465007
 },
 "endPos": {
-"x": 0.2752015,
-"y": 6.157915
+"x": 0,
+"y": 3.576429
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 8.68149,
+"createdAt": 7.52831,
 "action": "KeyDown",
-"keyCode": "RightArrow"
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 7.7,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.576429
+},
+"endPos": {
+"x": 0,
+"y": 3.459916
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 7.78,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.459916
+},
+"endPos": {
+"x": 0,
+"y": 3.343675
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 7.86,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.343675
+},
+"endPos": {
+"x": 0,
+"y": 3.224653
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 7.94,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.224653
+},
+"endPos": {
+"x": 0,
+"y": 3.104908
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.02,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 3.104908
+},
+"endPos": {
+"x": 0,
+"y": 2.984975
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.099999,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.984975
+},
+"endPos": {
+"x": 0,
+"y": 2.864992
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.179999,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.864992
+},
+"endPos": {
+"x": 0,
+"y": 2.744997
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.26,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.744997
+},
+"endPos": {
+"x": 0,
+"y": 2.624998
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.34,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.624998
+},
+"endPos": {
+"x": 0,
+"y": 2.504998
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.42,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.504998
+},
+"endPos": {
+"x": 0,
+"y": 2.384998
+}
 },
 {
 "name": "KeyEvent",
-"createdAt": 8.68149,
+"createdAt": 8.423485,
+"action": "KeyUp",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 8.62,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.384998
+},
+"endPos": {
+"x": 0,
+"y": 2.283628
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 8.700883,
 "action": "KeyDown",
 "keyCode": "UpArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 8.78,
+"createdAt": 8.84,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
-"y": 6
+"y": 2
 },
 "startPos": {
-"x": 0.2752015,
-"y": 6.157915
+"x": 0,
+"y": 2.283628
 },
 "endPos": {
-"x": 0.3399372,
-"y": 6.240354
+"x": 0,
+"y": 2.395049
 }
 },
 {
-"name": "KeyEvent",
-"createdAt": 8.820689,
-"action": "KeyUp",
-"keyCode": "RightArrow"
-},
-{
 "name": "MovementEvent",
-"createdAt": 8.86,
+"createdAt": 8.92,
 "action": "Progressing",
 "tilePos": {
 "x": -1,
-"y": 6
+"y": 2
 },
 "startPos": {
-"x": 0.3399372,
-"y": 6.240354
+"x": 0,
+"y": 2.395049
 },
 "endPos": {
-"x": 0.4305559,
-"y": 6.298508
+"x": 0,
+"y": 2.507615
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 8.94,
+"createdAt": 9,
 "action": "Progressing",
 "tilePos": {
-"x": 0,
-"y": 6
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 0.4305559,
-"y": 6.298508
+"x": 0,
+"y": 2.507615
 },
 "endPos": {
-"x": 0.5310157,
-"y": 6.358027
+"x": 0,
+"y": 2.62568
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 9.02,
+"createdAt": 9.08,
 "action": "Progressing",
 "tilePos": {
-"x": 0,
-"y": 6
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 0.5310157,
-"y": 6.358027
+"x": 0,
+"y": 2.62568
 },
 "endPos": {
-"x": 0.6340373,
-"y": 6.417902
+"x": 0,
+"y": 2.745176
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.16,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.745176
+},
+"endPos": {
+"x": 0,
+"y": 2.865045
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.24,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.865045
+},
+"endPos": {
+"x": 0,
+"y": 2.985011
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.32,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 2.985011
+},
+"endPos": {
+"x": 0,
+"y": 3.105002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.4,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.105002
+},
+"endPos": {
+"x": 0,
+"y": 3.225
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.48,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.225
+},
+"endPos": {
+"x": 0,
+"y": 3.344999
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.559999,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.344999
+},
+"endPos": {
+"x": 0,
+"y": 3.464999
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.639999,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.464999
+},
+"endPos": {
+"x": 0,
+"y": 3.584999
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.719999,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.584999
+},
+"endPos": {
+"x": 0,
+"y": 3.704999
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 9.8,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.704999
+},
+"endPos": {
+"x": 0,
+"y": 3.824999
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 9.063767,
-"action": "KeyDown",
-"keyCode": "RightArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 9.099999,
-"action": "Progressing",
-"tilePos": {
-"x": 0,
-"y": 6
-},
-"startPos": {
-"x": 0.6340373,
-"y": 6.417902
-},
-"endPos": {
-"x": 0.7377257,
-"y": 6.47787
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 9.179999,
-"action": "Progressing",
-"tilePos": {
-"x": 0,
-"y": 6
-},
-"startPos": {
-"x": 0.7377257,
-"y": 6.47787
-},
-"endPos": {
-"x": 0.8502321,
-"y": 6.5056
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 9.188292,
+"createdAt": 9.83708,
 "action": "KeyUp",
-"keyCode": "RightArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 9.26,
-"action": "Progressing",
-"tilePos": {
-"x": 0,
-"y": 6
-},
-"startPos": {
-"x": 0.8502321,
-"y": 6.5056
-},
-"endPos": {
-"x": 0.9682814,
-"y": 6.512818
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 9.34,
-"action": "Progressing",
-"tilePos": {
-"x": 0,
-"y": 6
-},
-"startPos": {
-"x": 0.9682814,
-"y": 6.512818
-},
-"endPos": {
-"x": 1.087774,
-"y": 6.514698
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 9.42,
-"action": "Progressing",
-"tilePos": {
-"x": 0,
-"y": 6
-},
-"startPos": {
-"x": 1.087774,
-"y": 6.514698
-},
-"endPos": {
-"x": 1.207642,
-"y": 6.515186
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 9.5,
-"action": "Progressing",
-"tilePos": {
-"x": 0,
-"y": 6
-},
-"startPos": {
-"x": 1.207642,
-"y": 6.515186
-},
-"endPos": {
-"x": 1.327607,
-"y": 6.515314
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 9.58,
-"action": "Progressing",
-"tilePos": {
-"x": 0,
-"y": 6
-},
-"startPos": {
-"x": 1.327607,
-"y": 6.515314
-},
-"endPos": {
-"x": 1.447598,
-"y": 6.515347
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 9.66,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 6
-},
-"startPos": {
-"x": 1.447598,
-"y": 6.515347
-},
-"endPos": {
-"x": 1.567596,
-"y": 6.515357
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 9.74,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 6
-},
-"startPos": {
-"x": 1.567596,
-"y": 6.515357
-},
-"endPos": {
-"x": 1.687595,
-"y": 6.515359
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 9.82,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 6
-},
-"startPos": {
-"x": 1.687595,
-"y": 6.515359
-},
-"endPos": {
-"x": 1.807595,
-"y": 6.515359
-}
+"keyCode": "UpArrow"
 },
 {
 "name": "MovementEvent",
 "createdAt": 9.9,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 6
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 1.807595,
-"y": 6.515359
+"x": 0,
+"y": 3.824999
 },
 "endPos": {
-"x": 1.927595,
-"y": 6.515359
+"x": 0,
+"y": 3.932667
 }
 },
 {
-"name": "MovementEvent",
-"createdAt": 9.98,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 6
-},
-"startPos": {
-"x": 1.927595,
-"y": 6.515359
-},
-"endPos": {
-"x": 2.047595,
-"y": 6.515359
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 10.06,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 6
-},
-"startPos": {
-"x": 2.047595,
-"y": 6.515359
-},
-"endPos": {
-"x": 2.167595,
-"y": 6.515359
-}
+"name": "KeyEvent",
+"createdAt": 9.997854,
+"action": "KeyDown",
+"keyCode": "DownArrow"
 },
 {
 "name": "MovementEvent",
 "createdAt": 10.14,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 6
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 2.167595,
-"y": 6.515359
+"x": 0,
+"y": 3.932667
 },
 "endPos": {
-"x": 2.287595,
-"y": 6.515359
+"x": 0,
+"y": 3.817402
 }
 },
 {
@@ -1439,16 +1590,16 @@
 "createdAt": 10.22,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 6
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 2.287595,
-"y": 6.515359
+"x": 0,
+"y": 3.817402
 },
 "endPos": {
-"x": 2.407595,
-"y": 6.515359
+"x": 0,
+"y": 3.703022
 }
 },
 {
@@ -1456,16 +1607,16 @@
 "createdAt": 10.3,
 "action": "Progressing",
 "tilePos": {
-"x": 2,
-"y": 6
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 2.407595,
-"y": 6.515359
+"x": 0,
+"y": 3.703022
 },
 "endPos": {
-"x": 2.527595,
-"y": 6.515359
+"x": 0,
+"y": 3.584485
 }
 },
 {
@@ -1473,16 +1624,16 @@
 "createdAt": 10.38,
 "action": "Progressing",
 "tilePos": {
-"x": 2,
-"y": 6
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 2.527595,
-"y": 6.515359
+"x": 0,
+"y": 3.584485
 },
 "endPos": {
-"x": 2.647594,
-"y": 6.515359
+"x": 0,
+"y": 3.464866
 }
 },
 {
@@ -1490,16 +1641,16 @@
 "createdAt": 10.46,
 "action": "Progressing",
 "tilePos": {
-"x": 2,
-"y": 6
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 2.647594,
-"y": 6.515359
+"x": 0,
+"y": 3.464866
 },
 "endPos": {
-"x": 2.767594,
-"y": 6.515359
+"x": 0,
+"y": 3.344965
 }
 },
 {
@@ -1507,16 +1658,16 @@
 "createdAt": 10.54,
 "action": "Progressing",
 "tilePos": {
-"x": 2,
-"y": 6
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 2.767594,
-"y": 6.515359
+"x": 0,
+"y": 3.344965
 },
 "endPos": {
-"x": 2.887594,
-"y": 6.515359
+"x": 0,
+"y": 3.224991
 }
 },
 {
@@ -1524,16 +1675,16 @@
 "createdAt": 10.62,
 "action": "Progressing",
 "tilePos": {
-"x": 2,
-"y": 6
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 2.887594,
-"y": 6.515359
+"x": 0,
+"y": 3.224991
 },
 "endPos": {
-"x": 3.007594,
-"y": 6.515359
+"x": 0,
+"y": 3.104997
 }
 },
 {
@@ -1541,16 +1692,16 @@
 "createdAt": 10.7,
 "action": "Progressing",
 "tilePos": {
-"x": 2,
-"y": 6
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 3.007594,
-"y": 6.515359
+"x": 0,
+"y": 3.104997
 },
 "endPos": {
-"x": 3.127594,
-"y": 6.515359
+"x": 0,
+"y": 2.984999
 }
 },
 {
@@ -1558,16 +1709,16 @@
 "createdAt": 10.78,
 "action": "Progressing",
 "tilePos": {
-"x": 2,
-"y": 6
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 3.127594,
-"y": 6.515359
+"x": 0,
+"y": 2.984999
 },
 "endPos": {
-"x": 3.247594,
-"y": 6.515359
+"x": 0,
+"y": 2.865
 }
 },
 {
@@ -1575,39 +1726,33 @@
 "createdAt": 10.86,
 "action": "Progressing",
 "tilePos": {
-"x": 2,
-"y": 6
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 3.247594,
-"y": 6.515359
+"x": 0,
+"y": 2.865
 },
 "endPos": {
-"x": 3.367594,
-"y": 6.515359
+"x": 0,
+"y": 2.745
 }
-},
-{
-"name": "KeyEvent",
-"createdAt": 10.90926,
-"action": "KeyDown",
-"keyCode": "LeftArrow"
 },
 {
 "name": "MovementEvent",
 "createdAt": 10.94,
 "action": "Progressing",
 "tilePos": {
-"x": 2,
-"y": 6
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 3.367594,
-"y": 6.515359
+"x": 0,
+"y": 2.745
 },
 "endPos": {
-"x": 3.487594,
-"y": 6.515359
+"x": 0,
+"y": 2.625
 }
 },
 {
@@ -1615,590 +1760,426 @@
 "createdAt": 11.02,
 "action": "Progressing",
 "tilePos": {
-"x": 3,
-"y": 6
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 3.487594,
-"y": 6.515359
+"x": 0,
+"y": 2.625
 },
 "endPos": {
-"x": 3.598949,
-"y": 6.547621
+"x": 0,
+"y": 2.505
 }
-},
-{
-"name": "KeyEvent",
-"createdAt": 11.07907,
-"action": "KeyUp",
-"keyCode": "LeftArrow"
 },
 {
 "name": "MovementEvent",
 "createdAt": 11.1,
 "action": "Progressing",
 "tilePos": {
-"x": 3,
-"y": 6
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 3.598949,
-"y": 6.547621
+"x": 0,
+"y": 2.505
 },
 "endPos": {
-"x": 3.704807,
-"y": 6.6004
+"x": 0,
+"y": 2.385
 }
+},
+{
+"name": "KeyEvent",
+"createdAt": 11.16836,
+"action": "KeyUp",
+"keyCode": "DownArrow"
 },
 {
 "name": "MovementEvent",
 "createdAt": 11.18,
 "action": "Progressing",
 "tilePos": {
-"x": 3,
-"y": 6
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 3.704807,
-"y": 6.6004
+"x": 0,
+"y": 2.385
 },
 "endPos": {
-"x": 3.809234,
-"y": 6.65852
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 11.26,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 6
-},
-"startPos": {
-"x": 3.809234,
-"y": 6.65852
-},
-"endPos": {
-"x": 3.913288,
-"y": 6.718031
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 11.34,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 6
-},
-"startPos": {
-"x": 3.913288,
-"y": 6.718031
-},
-"endPos": {
-"x": 4.017246,
-"y": 6.744726
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 11.42,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 6
-},
-"startPos": {
-"x": 4.017246,
-"y": 6.744726
-},
-"endPos": {
-"x": 4.121178,
-"y": 6.741345
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 11.5,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 6
-},
-"startPos": {
-"x": 4.121178,
-"y": 6.741345
-},
-"endPos": {
-"x": 4.225103,
-"y": 6.73996
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 11.58,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 6
-},
-"startPos": {
-"x": 4.225103,
-"y": 6.73996
-},
-"endPos": {
-"x": 4.329027,
-"y": 6.739393
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 11.66,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 6
-},
-"startPos": {
-"x": 4.329027,
-"y": 6.739393
-},
-"endPos": {
-"x": 4.43295,
-"y": 6.739161
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 11.74,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 6
-},
-"startPos": {
-"x": 4.43295,
-"y": 6.739161
-},
-"endPos": {
-"x": 4.537007,
-"y": 6.740172
+"x": 0,
+"y": 2.265
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 11.7896,
+"createdAt": 11.84875,
 "action": "KeyDown",
-"keyCode": "LeftArrow"
+"keyCode": "UpArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 11.82,
+"createdAt": 12.04,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 6
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 4.537007,
-"y": 6.740172
+"x": 0,
+"y": 2.265
 },
 "endPos": {
-"x": 4.641918,
-"y": 6.77
+"x": 0,
+"y": 2.388631
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 11.9,
+"createdAt": 12.12,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 6
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 4.641918,
-"y": 6.77
+"x": 0,
+"y": 2.388631
 },
 "endPos": {
-"x": 4.722523,
-"y": 6.845594
+"x": 0,
+"y": 2.505946
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 11.98,
+"createdAt": 12.2,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 6
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 4.722523,
-"y": 6.845594
+"x": 0,
+"y": 2.505946
 },
 "endPos": {
-"x": 4.787887,
-"y": 6.942143
+"x": 0,
+"y": 2.625247
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 12.06,
+"createdAt": 12.28,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 7
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 4.787887,
-"y": 6.942143
+"x": 0,
+"y": 2.625247
 },
 "endPos": {
-"x": 4.83765,
-"y": 7.047264
+"x": 0,
+"y": 2.745065
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 12.14,
+"createdAt": 12.36,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 7
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 4.83765,
-"y": 7.047264
+"x": 0,
+"y": 2.745065
 },
 "endPos": {
-"x": 4.852166,
-"y": 7.162972
+"x": 0,
+"y": 2.865017
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 12.22,
+"createdAt": 12.44,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 7
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 4.852166,
-"y": 7.162972
+"x": 0,
+"y": 2.865017
 },
 "endPos": {
-"x": 4.855944,
-"y": 7.281856
+"x": 0,
+"y": 2.985005
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 12.3,
+"createdAt": 12.52,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 7
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 4.855944,
-"y": 7.281856
+"x": 0,
+"y": 2.985005
 },
 "endPos": {
-"x": 4.824666,
-"y": 7.39292
+"x": 0,
+"y": 3.105001
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 12.38,
+"createdAt": 12.6,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 7
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 4.824666,
-"y": 7.39292
+"x": 0,
+"y": 3.105001
 },
 "endPos": {
-"x": 4.772143,
-"y": 7.498703
+"x": 0,
+"y": 3.225001
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 12.48,
+"createdAt": 12.68,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 7
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 4.772143,
-"y": 7.498703
+"x": 0,
+"y": 3.225001
 },
 "endPos": {
-"x": 4.759728,
-"y": 7.613645
+"x": 0,
+"y": 3.345001
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 12.62,
+"createdAt": 12.76,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 7
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 4.759728,
-"y": 7.613645
+"x": 0,
+"y": 3.345001
 },
 "endPos": {
-"x": 4.760734,
-"y": 7.72781
+"x": 0,
+"y": 3.465
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 12.84,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.465
+},
+"endPos": {
+"x": 0,
+"y": 3.585
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 12.92,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.585
+},
+"endPos": {
+"x": 0,
+"y": 3.705
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 13,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.705
+},
+"endPos": {
+"x": 0,
+"y": 3.825
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 13.08,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.825
+},
+"endPos": {
+"x": 0,
+"y": 3.945
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 13.16,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 3.945
+},
+"endPos": {
+"x": 0,
+"y": 4.065001
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 12.7,
+"createdAt": 13.19227,
 "action": "KeyUp",
-"keyCode": "LeftArrow"
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 13.26,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.065001
+},
+"endPos": {
+"x": 0,
+"y": 4.172668
+}
 },
 {
 "name": "KeyEvent",
-"createdAt": 13.22358,
+"createdAt": 13.48729,
 "action": "KeyDown",
-"keyCode": "RightArrow"
+"keyCode": "DownArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 13.38,
+"createdAt": 13.64,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 7
+"x": -1,
+"y": 4
 },
 "startPos": {
-"x": 4.760734,
-"y": 7.72781
+"x": 0,
+"y": 4.172668
 },
 "endPos": {
-"x": 4.760999,
-"y": 7.838751
+"x": 0,
+"y": 4.05784
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 13.52,
+"createdAt": 13.72,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 7
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 4.760999,
-"y": 7.838751
+"x": 0,
+"y": 4.05784
 },
 "endPos": {
-"x": 4.760999,
-"y": 7.954738
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 13.62,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.760999,
-"y": 7.954738
-},
-"endPos": {
-"x": 4.76391,
-"y": 8.071306
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 13.7,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.76391,
-"y": 8.071306
-},
-"endPos": {
-"x": 4.76391,
-"y": 8.174047
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 13.78,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.76391,
-"y": 8.174047
-},
-"endPos": {
-"x": 4.76391,
-"y": 8.288132
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 13.86,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.76391,
-"y": 8.288132
-},
-"endPos": {
-"x": 4.76391,
-"y": 8.406592
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 13.94,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.76391,
-"y": 8.406592
-},
-"endPos": {
-"x": 4.785077,
-"y": 8.52052
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 14.02,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.785077,
-"y": 8.52052
-},
-"endPos": {
-"x": 4.834968,
-"y": 8.627048
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 14.1,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.834968,
-"y": 8.627048
-},
-"endPos": {
-"x": 4.892336,
-"y": 8.731648
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 14.18,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.892336,
-"y": 8.731648
-},
-"endPos": {
-"x": 4.975268,
-"y": 8.812131
+"x": 0,
+"y": 3.943137
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 14.24617,
+"createdAt": 13.74869,
 "action": "KeyUp",
-"keyCode": "RightArrow"
+"keyCode": "DownArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 14.26,
+"createdAt": 13.82,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 8
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 4.975268,
-"y": 8.812131
+"x": 0,
+"y": 3.943137
 },
 "endPos": {
-"x": 5.073727,
-"y": 8.877462
+"x": 0,
+"y": 3.836987
 }
 },
 {
-"name": "MovementEvent",
-"createdAt": 14.34,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 5.073727,
-"y": 8.877462
-},
-"endPos": {
-"x": 5.176228,
-"y": 8.938849
-}
+"name": "KeyEvent",
+"createdAt": 14.40841,
+"action": "KeyDown",
+"keyCode": "DownArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 14.46,
+"createdAt": 14.52,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 5.176228,
-"y": 8.938849
+"x": 0,
+"y": 3.836987
 },
 "endPos": {
-"x": 5.241402,
-"y": 9.025006
+"x": 0,
+"y": 3.721056
 }
 },
 {
@@ -2206,519 +2187,545 @@
 "createdAt": 14.6,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 5.241402,
-"y": 9.025006
+"x": 0,
+"y": 3.721056
 },
 "endPos": {
-"x": 5.239503,
-"y": 9.127952
+"x": 0,
+"y": 3.611371
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 14.74,
+"createdAt": 14.68,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 5.239503,
-"y": 9.127952
+"x": 0,
+"y": 3.611371
 },
 "endPos": {
-"x": 5.239106,
-"y": 9.232758
+"x": 0,
+"y": 3.494056
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 14.88,
+"createdAt": 14.76,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 5.239106,
-"y": 9.232758
+"x": 0,
+"y": 3.494056
 },
 "endPos": {
-"x": 5.239022,
-"y": 9.33774
+"x": 0,
+"y": 3.374755
 }
 },
 {
-"name": "KeyEvent",
-"createdAt": 14.90083,
-"action": "KeyDown",
-"keyCode": "LeftArrow"
+"name": "MovementEvent",
+"createdAt": 14.84,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.374755
+},
+"endPos": {
+"x": 0,
+"y": 3.254937
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 14.92,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.254937
+},
+"endPos": {
+"x": 0,
+"y": 3.134984
+}
 },
 {
 "name": "MovementEvent",
 "createdAt": 15,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 5.239022,
-"y": 9.33774
+"x": 0,
+"y": 3.134984
 },
 "endPos": {
-"x": 5.239006,
-"y": 9.443233
+"x": 0,
+"y": 3.014997
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 15.1,
+"createdAt": 15.08,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 5.239006,
-"y": 9.443233
+"x": 0,
+"y": 3.014997
 },
 "endPos": {
-"x": 5.239002,
-"y": 9.564992
+"x": 0,
+"y": 2.895
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 15.16,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.895
+},
+"endPos": {
+"x": 0,
+"y": 2.775001
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 15.24,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.775001
+},
+"endPos": {
+"x": 0,
+"y": 2.655001
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 15.32,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.655001
+},
+"endPos": {
+"x": 0,
+"y": 2.535001
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 15.4,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.535001
+},
+"endPos": {
+"x": 0,
+"y": 2.415001
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 15.48,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.415001
+},
+"endPos": {
+"x": 0,
+"y": 2.295001
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 15.56,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.295001
+},
+"endPos": {
+"x": 0,
+"y": 2.175001
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 15.15728,
-"action": "KeyUp",
-"keyCode": "LeftArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 15.18,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 5.239002,
-"y": 9.564992
-},
-"endPos": {
-"x": 5.239001,
-"y": 9.670657
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 15.6796,
-"action": "KeyDown",
-"keyCode": "LeftArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 15.70208,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 15.82161,
-"action": "KeyUp",
-"keyCode": "LeftArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 15.84787,
-"action": "KeyDown",
-"keyCode": "DownArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 16.04,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 5.239001,
-"y": 9.670657
-},
-"endPos": {
-"x": 5.236152,
-"y": 9.566994
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 16.12,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 5.236152,
-"y": 9.566994
-},
-"endPos": {
-"x": 5.236152,
-"y": 9.465396
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 16.2,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 5.236152,
-"y": 9.465396
-},
-"endPos": {
-"x": 5.236152,
-"y": 9.362078
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 16.28,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 5.236152,
-"y": 9.362078
-},
-"endPos": {
-"x": 5.236152,
-"y": 9.258312
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 16.36,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 5.236152,
-"y": 9.258312
-},
-"endPos": {
-"x": 5.236152,
-"y": 9.15443
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 16.43075,
+"createdAt": 15.61275,
 "action": "KeyUp",
 "keyCode": "DownArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 16.44,
+"createdAt": 15.64,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 5.236152,
-"y": 9.15443
+"x": 0,
+"y": 2.175001
 },
 "endPos": {
-"x": 5.236152,
-"y": 9.050518
+"x": 0,
+"y": 2.063573
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 16.67782,
+"createdAt": 16.36116,
 "action": "KeyDown",
 "keyCode": "UpArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 16.84,
+"createdAt": 16.54,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 5.236152,
-"y": 9.050518
+"x": 0,
+"y": 2.063573
 },
 "endPos": {
-"x": 5.14558,
-"y": 9.133612
+"x": 0,
+"y": 2.180084
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 16.92,
+"createdAt": 16.62,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 5.14558,
-"y": 9.133612
+"x": 0,
+"y": 2.180084
 },
 "endPos": {
-"x": 5.087453,
-"y": 9.234222
+"x": 0,
+"y": 2.296325
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 17,
+"createdAt": 16.7,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 5.087453,
-"y": 9.234222
+"x": 0,
+"y": 2.296325
 },
 "endPos": {
-"x": 5.027941,
-"y": 9.337284
+"x": 0,
+"y": 2.415346
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 16.78,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.415346
+},
+"endPos": {
+"x": 0,
+"y": 2.535092
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 16.86,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.535092
+},
+"endPos": {
+"x": 0,
+"y": 2.655025
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 16.94,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.655025
+},
+"endPos": {
+"x": 0,
+"y": 2.775008
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 17.02,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.775008
+},
+"endPos": {
+"x": 0,
+"y": 2.895003
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 17.1,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 2.895003
+},
+"endPos": {
+"x": 0,
+"y": 3.015002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 17.18,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.015002
+},
+"endPos": {
+"x": 0,
+"y": 3.135002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 17.26,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.135002
+},
+"endPos": {
+"x": 0,
+"y": 3.255002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 17.34,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.255002
+},
+"endPos": {
+"x": 0,
+"y": 3.375002
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 17.42,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.375002
+},
+"endPos": {
+"x": 0,
+"y": 3.495002
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 17.05563,
-"action": "KeyDown",
-"keyCode": "RightArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 17.08,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 5.027941,
-"y": 9.337284
-},
-"endPos": {
-"x": 4.968068,
-"y": 9.440983
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 17.16,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.968068,
-"y": 9.440983
-},
-"endPos": {
-"x": 4.940362,
-"y": 9.553492
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 17.24,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.940362,
-"y": 9.553492
-},
-"endPos": {
-"x": 4.93315,
-"y": 9.671541
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 17.46,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.93315,
-"y": 9.671541
-},
-"endPos": {
-"x": 5.015716,
-"y": 9.740899
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 17.50167,
+"createdAt": 17.44711,
 "action": "KeyUp",
-"keyCode": "RightArrow"
+"keyCode": "UpArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 17.58,
+"createdAt": 17.52,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 5.015716,
-"y": 9.740899
+"x": 0,
+"y": 3.495002
 },
 "endPos": {
-"x": 5.127075,
-"y": 9.739498
+"x": 0,
+"y": 3.602669
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 17.69275,
+"action": "KeyDown",
+"keyCode": "DownArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 17.82286,
+"action": "KeyUp",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 17.84,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.602669
+},
+"endPos": {
+"x": 0,
+"y": 3.487761
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 17.68,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 5.127075,
-"y": 9.739498
-},
-"endPos": {
-"x": 5.25088,
-"y": 9.739163
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 17.7,
+"createdAt": 18.62,
 "action": "Stopped",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 5.246603,
-"y": 9.739105
+"x": 0,
+"y": 3.420002
 },
 "endPos": {
-"x": 5.246603,
-"y": 9.739105
+"x": 0,
+"y": 3.420002
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 17.80802,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 17.84728,
+"createdAt": 18.72009,
 "action": "KeyDown",
-"keyCode": "LeftArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 18.40863,
-"action": "KeyDown",
-"keyCode": "UpArrow"
+"keyCode": "DownArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 18.44,
+"createdAt": 18.76,
 "action": "Started",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 5.234716,
-"y": 9.739002
+"x": 0,
+"y": 3.411431
 },
 "endPos": {
-"x": 5.234716,
-"y": 9.739002
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 18.6,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 5.234716,
-"y": 9.739002
-},
-"endPos": {
-"x": 5.11607,
-"y": 9.739002
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 18.7,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 5.11607,
-"y": 9.739002
-},
-"endPos": {
-"x": 4.993461,
-"y": 9.739002
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 18.78,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.993461,
-"y": 9.739002
-},
-"endPos": {
-"x": 4.887653,
-"y": 9.739002
+"x": 0,
+"y": 3.411431
 }
 },
 {
@@ -2726,16 +2733,16 @@
 "createdAt": 18.86,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 4.887653,
-"y": 9.739002
+"x": 0,
+"y": 3.411431
 },
 "endPos": {
-"x": 4.771766,
-"y": 9.739002
+"x": 0,
+"y": 3.305042
 }
 },
 {
@@ -2743,16 +2750,16 @@
 "createdAt": 18.94,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 4.771766,
-"y": 9.739002
+"x": 0,
+"y": 3.305042
 },
 "endPos": {
-"x": 4.652837,
-"y": 9.739002
+"x": 0,
+"y": 3.19241
 }
 },
 {
@@ -2760,39 +2767,33 @@
 "createdAt": 19.02,
 "action": "Progressing",
 "tilePos": {
-"x": 4,
-"y": 9
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 4.652837,
-"y": 9.739002
+"x": 0,
+"y": 3.19241
 },
 "endPos": {
-"x": 4.54176,
-"y": 9.70674
+"x": 0,
+"y": 3.074327
 }
-},
-{
-"name": "KeyEvent",
-"createdAt": 19.08817,
-"action": "KeyUp",
-"keyCode": "LeftArrow"
 },
 {
 "name": "MovementEvent",
 "createdAt": 19.1,
 "action": "Progressing",
 "tilePos": {
-"x": 3,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 4.54176,
-"y": 9.70674
+"x": 0,
+"y": 3.074327
 },
 "endPos": {
-"x": 4.435975,
-"y": 9.65396
+"x": 0,
+"y": 2.954827
 }
 },
 {
@@ -2800,39 +2801,33 @@
 "createdAt": 19.18,
 "action": "Progressing",
 "tilePos": {
-"x": 3,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 4.435975,
-"y": 9.65396
+"x": 0,
+"y": 2.954827
 },
 "endPos": {
-"x": 4.331567,
-"y": 9.59584
+"x": 0,
+"y": 2.834957
 }
-},
-{
-"name": "KeyEvent",
-"createdAt": 19.22078,
-"action": "KeyDown",
-"keyCode": "LeftArrow"
 },
 {
 "name": "MovementEvent",
 "createdAt": 19.26,
 "action": "Progressing",
 "tilePos": {
-"x": 3,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 4.331567,
-"y": 9.59584
+"x": 0,
+"y": 2.834957
 },
 "endPos": {
-"x": 4.227518,
-"y": 9.53633
+"x": 0,
+"y": 2.714991
 }
 },
 {
@@ -2840,16 +2835,16 @@
 "createdAt": 19.34,
 "action": "Progressing",
 "tilePos": {
-"x": 3,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 4.227518,
-"y": 9.53633
+"x": 0,
+"y": 2.714991
 },
 "endPos": {
-"x": 4.147179,
-"y": 9.452841
+"x": 0,
+"y": 2.594999
 }
 },
 {
@@ -2857,16 +2852,16 @@
 "createdAt": 19.42,
 "action": "Progressing",
 "tilePos": {
-"x": 3,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 4.147179,
-"y": 9.452841
+"x": 0,
+"y": 2.594999
 },
 "endPos": {
-"x": 4.081885,
-"y": 9.354237
+"x": 0,
+"y": 2.475002
 }
 },
 {
@@ -2874,1721 +2869,210 @@
 "createdAt": 19.5,
 "action": "Progressing",
 "tilePos": {
-"x": 3,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 4.081885,
-"y": 9.354237
+"x": 0,
+"y": 2.475002
 },
 "endPos": {
-"x": 4.032139,
-"y": 9.248581
+"x": 0,
+"y": 2.355002
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 19.67149,
+"createdAt": 19.53492,
 "action": "KeyUp",
-"keyCode": "LeftArrow"
+"keyCode": "DownArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 19.9,
+"createdAt": 19.6,
 "action": "Progressing",
 "tilePos": {
-"x": 3,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 4.032139,
-"y": 9.248581
+"x": 0,
+"y": 2.355002
 },
 "endPos": {
-"x": 4.140971,
-"y": 9.260885
+"x": 0,
+"y": 2.247335
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 20.04,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 9
-},
-"startPos": {
-"x": 4.140971,
-"y": 9.260885
-},
-"endPos": {
-"x": 4.245112,
-"y": 9.260975
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 20.04661,
-"action": "KeyDown",
-"keyCode": "RightArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 20.09586,
-"action": "KeyUp",
-"keyCode": "RightArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 20.37341,
-"action": "KeyDown",
-"keyCode": "LeftArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 20.5,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 9
-},
-"startPos": {
-"x": 4.245112,
-"y": 9.260975
-},
-"endPos": {
-"x": 4.356963,
-"y": 9.260998
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 20.54873,
-"action": "KeyUp",
-"keyCode": "LeftArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 20.66,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 9
-},
-"startPos": {
-"x": 4.356963,
-"y": 9.260998
-},
-"endPos": {
-"x": 4.470494,
-"y": 9.260998
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 20.8,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.470494,
-"y": 9.260998
-},
-"endPos": {
-"x": 4.580763,
-"y": 9.250858
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 20.88053,
-"action": "KeyDown",
-"keyCode": "LeftArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 20.9,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.580763,
-"y": 9.250858
-},
-"endPos": {
-"x": 4.675435,
-"y": 9.199866
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 20.98,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.675435,
-"y": 9.199866
-},
-"endPos": {
-"x": 4.761608,
-"y": 9.135242
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 21.0385,
-"action": "KeyUp",
-"keyCode": "LeftArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 21.06,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.761608,
-"y": 9.135242
-},
-"endPos": {
-"x": 4.86091,
-"y": 9.074039
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 21.14,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.86091,
-"y": 9.074039
-},
-"endPos": {
-"x": 4.963631,
-"y": 9.013725
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 21.22,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.963631,
-"y": 9.013725
-},
-"endPos": {
-"x": 5.067241,
-"y": 8.953643
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 21.3,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 5.067241,
-"y": 8.953643
-},
-"endPos": {
-"x": 5.171082,
-"y": 8.893621
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 21.38316,
-"action": "KeyDown",
-"keyCode": "RightArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 21.4,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 5.171082,
-"y": 8.893621
-},
-"endPos": {
-"x": 5.244123,
-"y": 8.818616
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 21.52,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 5.244123,
-"y": 8.818616
-},
-"endPos": {
-"x": 5.240343,
-"y": 8.696058
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 21.59015,
-"action": "KeyUp",
-"keyCode": "RightArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 21.6,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 5.240343,
-"y": 8.696058
-},
-"endPos": {
-"x": 5.23955,
-"y": 8.595909
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 21.68,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 5.23955,
-"y": 8.595909
-},
-"endPos": {
-"x": 5.239225,
-"y": 8.492969
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 21.76,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 5.239225,
-"y": 8.492969
-},
-"endPos": {
-"x": 5.239092,
-"y": 8.389301
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 21.84,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 5.239092,
-"y": 8.389301
-},
-"endPos": {
-"x": 5.239038,
-"y": 8.285444
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 21.88532,
-"action": "KeyDown",
-"keyCode": "RightArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 21.92,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 5.239038,
-"y": 8.285444
-},
-"endPos": {
-"x": 5.239015,
-"y": 8.181539
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 22,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 5.239015,
-"y": 8.181539
-},
-"endPos": {
-"x": 5.239007,
-"y": 8.068975
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 22.02882,
-"action": "KeyUp",
-"keyCode": "RightArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 22.08,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 5.239007,
-"y": 8.068975
-},
-"endPos": {
-"x": 5.229255,
-"y": 7.952395
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 22.16,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 5.229255,
-"y": 7.952395
-},
-"endPos": {
-"x": 5.225119,
-"y": 7.833529
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 22.18964,
-"action": "KeyDown",
-"keyCode": "RightArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 22.24,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 5.225119,
-"y": 7.833529
-},
-"endPos": {
-"x": 5.219757,
-"y": 7.714972
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 22.31118,
-"action": "KeyUp",
-"keyCode": "RightArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 22.32,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 5.219757,
-"y": 7.714972
-},
-"endPos": {
-"x": 5.179289,
-"y": 7.605817
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 22.4,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 5.179289,
-"y": 7.605817
-},
-"endPos": {
-"x": 5.124374,
-"y": 7.500531
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 22.46897,
-"action": "KeyDown",
-"keyCode": "RightArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 22.48,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 5.124374,
-"y": 7.500531
-},
-"endPos": {
-"x": 5.065698,
-"y": 7.396254
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 22.56,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 5.065698,
-"y": 7.396254
-},
-"endPos": {
-"x": 4.990548,
-"y": 7.307733
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 22.57559,
-"action": "KeyUp",
-"keyCode": "RightArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 22.64,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 4.990548,
-"y": 7.307733
-},
-"endPos": {
-"x": 4.894114,
-"y": 7.240309
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 22.70394,
-"action": "KeyDown",
-"keyCode": "RightArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 22.72,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 4.894114,
-"y": 7.240309
-},
-"endPos": {
-"x": 4.792141,
-"y": 7.178376
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 22.82214,
-"action": "KeyUp",
-"keyCode": "RightArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 22.9987,
-"action": "KeyDown",
-"keyCode": "RightArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 23.28,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 4.792141,
-"y": 7.178376
-},
-"endPos": {
-"x": 4.760967,
-"y": 7.291687
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 23.38,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 4.760967,
-"y": 7.291687
-},
-"endPos": {
-"x": 4.760989,
-"y": 7.409801
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 23.46,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 4.760989,
-"y": 7.409801
-},
-"endPos": {
-"x": 4.760996,
-"y": 7.511733
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 23.54,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 4.760996,
-"y": 7.511733
-},
-"endPos": {
-"x": 4.760998,
-"y": 7.623782
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 23.57985,
-"action": "KeyUp",
-"keyCode": "RightArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 23.62,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 4.760998,
-"y": 7.623782
-},
-"endPos": {
-"x": 4.760999,
-"y": 7.741712
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 23.7,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 4.760999,
-"y": 7.741712
-},
-"endPos": {
-"x": 4.760999,
-"y": 7.861174
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 23.78,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 7
-},
-"startPos": {
-"x": 4.760999,
-"y": 7.861174
-},
-"endPos": {
-"x": 4.76643,
-"y": 7.980015
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 23.86,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.76643,
-"y": 7.980015
-},
-"endPos": {
-"x": 4.776474,
-"y": 8.098096
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 23.94,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.776474,
-"y": 8.098096
-},
-"endPos": {
-"x": 4.779089,
-"y": 8.217597
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 24.02,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.779089,
-"y": 8.217597
-},
-"endPos": {
-"x": 4.779769,
-"y": 8.337467
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 24.1,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.779769,
-"y": 8.337467
-},
-"endPos": {
-"x": 4.779947,
-"y": 8.457433
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 24.18,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.779947,
-"y": 8.457433
-},
-"endPos": {
-"x": 4.779993,
-"y": 8.577424
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 24.24407,
-"action": "KeyDown",
-"keyCode": "LeftArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 24.26,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.779993,
-"y": 8.577424
-},
-"endPos": {
-"x": 4.780005,
-"y": 8.697422
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 24.34,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.780005,
-"y": 8.697422
-},
-"endPos": {
-"x": 4.758843,
-"y": 8.81175
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 24.40836,
-"action": "KeyUp",
-"keyCode": "LeftArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 24.42,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 8
-},
-"startPos": {
-"x": 4.758843,
-"y": 8.81175
-},
-"endPos": {
-"x": 4.760117,
-"y": 8.918382
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 24.5,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.760117,
-"y": 8.918382
-},
-"endPos": {
-"x": 4.760638,
-"y": 9.023009
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 24.58,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.760638,
-"y": 9.023009
-},
-"endPos": {
-"x": 4.735598,
-"y": 9.127978
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 24.66,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.735598,
-"y": 9.127978
-},
-"endPos": {
-"x": 4.68507,
-"y": 9.232248
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 24.74,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.68507,
-"y": 9.232248
-},
-"endPos": {
-"x": 4.627535,
-"y": 9.336261
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 24.82,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.627535,
-"y": 9.336261
-},
-"endPos": {
-"x": 4.568177,
-"y": 9.440207
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 24.9,
-"action": "Progressing",
-"tilePos": {
-"x": 4,
-"y": 9
-},
-"startPos": {
-"x": 4.568177,
-"y": 9.440207
-},
-"endPos": {
-"x": 4.508344,
-"y": 9.544137
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 24.98,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 9
-},
-"startPos": {
-"x": 4.508344,
-"y": 9.544137
-},
-"endPos": {
-"x": 4.448388,
-"y": 9.648061
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 25.06,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 9
-},
-"startPos": {
-"x": 4.448388,
-"y": 9.648061
-},
-"endPos": {
-"x": 4.388399,
-"y": 9.751985
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 25.2,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 9
-},
-"startPos": {
-"x": 4.388399,
-"y": 9.751985
-},
-"endPos": {
-"x": 4.283402,
-"y": 9.740744
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 25.34,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 9
-},
-"startPos": {
-"x": 4.283402,
-"y": 9.740744
-},
-"endPos": {
-"x": 4.178403,
-"y": 9.739366
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 25.48,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 9
-},
-"startPos": {
-"x": 4.178403,
-"y": 9.739366
-},
-"endPos": {
-"x": 4.073404,
-"y": 9.739078
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 25.62,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 9
-},
-"startPos": {
-"x": 4.073404,
-"y": 9.739078
-},
-"endPos": {
-"x": 3.968405,
-"y": 9.739017
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 25.70891,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 25.8,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 9
-},
-"startPos": {
-"x": 3.968405,
-"y": 9.739017
-},
-"endPos": {
-"x": 3.865666,
-"y": 9.739002
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 26.46,
+"createdAt": 20.32,
 "action": "Stopped",
 "tilePos": {
-"x": 3,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 3.855905,
-"y": 9.739002
+"x": 0,
+"y": 2.220003
 },
 "endPos": {
-"x": 3.855905,
-"y": 9.739002
+"x": 0,
+"y": 2.220003
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 27.13524,
+"createdAt": 29.5638,
 "action": "KeyDown",
-"keyCode": "UpArrow"
+"keyCode": "DownArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 27.16,
+"createdAt": 29.6,
 "action": "Started",
 "tilePos": {
-"x": 3,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 3.851619,
-"y": 9.739002
+"x": 0,
+"y": 2.211432
 },
 "endPos": {
-"x": 3.851619,
-"y": 9.739002
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 27.30223,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 27.34,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 9
-},
-"startPos": {
-"x": 3.851619,
-"y": 9.739002
-},
-"endPos": {
-"x": 3.746394,
-"y": 9.739002
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 27.38425,
-"action": "KeyDown",
-"keyCode": "UpArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 27.5027,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 27.58,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 9
-},
-"startPos": {
-"x": 3.746394,
-"y": 9.739002
-},
-"endPos": {
-"x": 3.643206,
-"y": 9.739002
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 27.59069,
-"action": "KeyDown",
-"keyCode": "UpArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 27.71095,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 27.79689,
-"action": "KeyDown",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 27.84,
-"action": "Progressing",
-"tilePos": {
-"x": 3,
-"y": 9
-},
-"startPos": {
-"x": 3.643206,
-"y": 9.739002
-},
-"endPos": {
-"x": 3.537823,
-"y": 9.736883
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 27.92492,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 27.99201,
-"action": "KeyDown",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 28.06,
-"action": "Progressing",
-"tilePos": {
-"x": 2,
-"y": 9
-},
-"startPos": {
-"x": 3.537823,
-"y": 9.736883
-},
-"endPos": {
-"x": 3.436678,
-"y": 9.734801
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 28.1178,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 28.19829,
-"action": "KeyDown",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 28.28,
-"action": "Progressing",
-"tilePos": {
-"x": 2,
-"y": 9
-},
-"startPos": {
-"x": 3.436678,
-"y": 9.734801
-},
-"endPos": {
-"x": 3.333659,
-"y": 9.734801
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 28.30847,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 28.41225,
-"action": "KeyDown",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 28.52,
-"action": "Progressing",
-"tilePos": {
-"x": 2,
-"y": 9
-},
-"startPos": {
-"x": 3.333659,
-"y": 9.734801
-},
-"endPos": {
-"x": 3.230306,
-"y": 9.734801
+"x": 0,
+"y": 2.211432
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 28.68,
+"createdAt": 29.7,
 "action": "Progressing",
 "tilePos": {
-"x": 2,
-"y": 9
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 3.230306,
-"y": 9.734801
+"x": 0,
+"y": 2.211432
 },
 "endPos": {
-"x": 3.11572,
-"y": 9.734801
+"x": 0,
+"y": 2.105042
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 28.82,
+"createdAt": 29.78,
 "action": "Progressing",
 "tilePos": {
-"x": 2,
-"y": 9
+"x": -1,
+"y": 1
 },
 "startPos": {
-"x": 3.11572,
-"y": 9.734801
+"x": 0,
+"y": 2.105042
 },
 "endPos": {
-"x": 3.011076,
-"y": 9.734801
+"x": 0,
+"y": 1.99241
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 28.96,
+"createdAt": 29.86,
 "action": "Progressing",
 "tilePos": {
-"x": 2,
-"y": 9
+"x": -1,
+"y": 1
 },
 "startPos": {
-"x": 3.011076,
-"y": 9.734801
+"x": 0,
+"y": 1.99241
 },
 "endPos": {
-"x": 2.90611,
-"y": 9.734801
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 29.1,
-"action": "Progressing",
-"tilePos": {
-"x": 2,
-"y": 9
-},
-"startPos": {
-"x": 2.90611,
-"y": 9.734801
-},
-"endPos": {
-"x": 2.801113,
-"y": 9.734801
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 29.24,
-"action": "Progressing",
-"tilePos": {
-"x": 2,
-"y": 9
-},
-"startPos": {
-"x": 2.801113,
-"y": 9.734801
-},
-"endPos": {
-"x": 2.696114,
-"y": 9.734801
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 29.38,
-"action": "Progressing",
-"tilePos": {
-"x": 2,
-"y": 9
-},
-"startPos": {
-"x": 2.696114,
-"y": 9.734801
-},
-"endPos": {
-"x": 2.591114,
-"y": 9.734801
+"x": 0,
+"y": 1.874328
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 29.49268,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 29.52,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 9
-},
-"startPos": {
-"x": 2.591114,
-"y": 9.734801
-},
-"endPos": {
-"x": 2.490399,
-"y": 9.734801
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 29.70243,
-"action": "KeyDown",
-"keyCode": "LeftArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 29.83176,
-"action": "KeyDown",
-"keyCode": "UpArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 29.93496,
-"action": "KeyUp",
-"keyCode": "LeftArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 29.94,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 9
-},
-"startPos": {
-"x": 2.490399,
-"y": 9.734801
-},
-"endPos": {
-"x": 2.382861,
-"y": 9.759785
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 29.99067,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 30.04,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 9
-},
-"startPos": {
-"x": 2.382861,
-"y": 9.759785
-},
-"endPos": {
-"x": 2.281355,
-"y": 9.810025
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 30.07678,
-"action": "KeyDown",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 30.18,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 9
-},
-"startPos": {
-"x": 2.281355,
-"y": 9.810025
-},
-"endPos": {
-"x": 2.176037,
-"y": 9.869102
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 30.26,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 9
-},
-"startPos": {
-"x": 2.176037,
-"y": 9.869102
-},
-"endPos": {
-"x": 2.078854,
-"y": 9.925076
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 30.30014,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 30.34,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 9
-},
-"startPos": {
-"x": 2.078854,
-"y": 9.925076
-},
-"endPos": {
-"x": 1.984108,
-"y": 9.979742
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 30.68015,
-"action": "KeyDown",
-"keyCode": "UpArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 30.78,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 10
-},
-"startPos": {
-"x": 1.984108,
-"y": 9.979742
-},
-"endPos": {
-"x": 1.882481,
-"y": 10.0384
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 30.82906,
-"action": "KeyDown",
-"keyCode": "LeftArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 30.86,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 10
-},
-"startPos": {
-"x": 1.882481,
-"y": 10.0384
-},
-"endPos": {
-"x": 1.791044,
-"y": 10.0912
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 30.94591,
-"action": "KeyUp",
-"keyCode": "LeftArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 30.94591,
-"action": "KeyUp",
-"keyCode": "UpArrow"
-},
-{
-"name": "KeyEvent",
-"createdAt": 31.5193,
-"action": "KeyDown",
-"keyCode": "DownArrow"
-},
-{
-"name": "MovementEvent",
-"createdAt": 31.66,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 10
-},
-"startPos": {
-"x": 1.791044,
-"y": 10.0912
-},
-"endPos": {
-"x": 1.907285,
-"y": 10.12616
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 31.74,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 10
-},
-"startPos": {
-"x": 1.907285,
-"y": 10.12616
-},
-"endPos": {
-"x": 2.022022,
-"y": 10.12616
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 31.82,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 10
-},
-"startPos": {
-"x": 2.022022,
-"y": 10.12616
-},
-"endPos": {
-"x": 2.140652,
-"y": 10.12616
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 31.9,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 10
-},
-"startPos": {
-"x": 2.140652,
-"y": 10.12616
-},
-"endPos": {
-"x": 2.260295,
-"y": 10.12616
-}
-},
-{
-"name": "KeyEvent",
-"createdAt": 32.02896,
+"createdAt": 29.89812,
 "action": "KeyUp",
 "keyCode": "DownArrow"
 },
 {
+"name": "MovementEvent",
+"createdAt": 29.96,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 1
+},
+"startPos": {
+"x": 0,
+"y": 1.874328
+},
+"endPos": {
+"x": 0,
+"y": 1.76721
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 30.68,
+"action": "Stopped",
+"tilePos": {
+"x": -1,
+"y": 1
+},
+"startPos": {
+"x": 0,
+"y": 1.740004
+},
+"endPos": {
+"x": 0,
+"y": 1.740004
+}
+},
+{
 "name": "KeyEvent",
-"createdAt": 32.12896,
+"createdAt": 32.10631,
 "action": "KeyDown",
 "keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 32.14,
+"action": "Started",
+"tilePos": {
+"x": -1,
+"y": 1
+},
+"startPos": {
+"x": 0,
+"y": 1.748575
+},
+"endPos": {
+"x": 0,
+"y": 1.748575
+}
 },
 {
 "name": "MovementEvent",
 "createdAt": 32.24,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 1
 },
 "startPos": {
-"x": 2.260295,
-"y": 10.12616
+"x": 0,
+"y": 1.748575
 },
 "endPos": {
-"x": 2.150804,
-"y": 10.12616
+"x": 0,
+"y": 1.854964
 }
 },
 {
@@ -4596,16 +3080,16 @@
 "createdAt": 32.32,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 1
 },
 "startPos": {
-"x": 2.150804,
-"y": 10.12616
+"x": 0,
+"y": 1.854964
 },
 "endPos": {
-"x": 2.041119,
-"y": 10.12616
+"x": 0,
+"y": 1.967596
 }
 },
 {
@@ -4613,16 +3097,16 @@
 "createdAt": 32.4,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 2.041119,
-"y": 10.12616
+"x": 0,
+"y": 1.967596
 },
 "endPos": {
-"x": 1.923804,
-"y": 10.12616
+"x": 0,
+"y": 2.085679
 }
 },
 {
@@ -4630,16 +3114,67 @@
 "createdAt": 32.48,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 1.923804,
-"y": 10.12616
+"x": 0,
+"y": 2.085679
 },
 "endPos": {
-"x": 1.804503,
-"y": 10.12616
+"x": 0,
+"y": 2.205179
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 32.56,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.205179
+},
+"endPos": {
+"x": 0,
+"y": 2.325049
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 32.64,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.325049
+},
+"endPos": {
+"x": 0,
+"y": 2.445015
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 32.72,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.445015
+},
+"endPos": {
+"x": 0,
+"y": 2.565006
 }
 },
 {
@@ -4647,16 +3182,16 @@
 "createdAt": 32.8,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 1.804503,
-"y": 10.12616
+"x": 0,
+"y": 2.565006
 },
 "endPos": {
-"x": 1.928334,
-"y": 10.12616
+"x": 0,
+"y": 2.685004
 }
 },
 {
@@ -4664,16 +3199,16 @@
 "createdAt": 32.88,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 1.928334,
-"y": 10.12616
+"x": 0,
+"y": 2.685004
 },
 "endPos": {
-"x": 2.044575,
-"y": 10.12616
+"x": 0,
+"y": 2.805003
 }
 },
 {
@@ -4681,215 +3216,249 @@
 "createdAt": 32.96,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 2.044575,
-"y": 10.12616
+"x": 0,
+"y": 2.805003
 },
 "endPos": {
-"x": 2.163597,
-"y": 10.12616
+"x": 0,
+"y": 2.925003
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 33.3,
+"createdAt": 33.04,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 2.163597,
-"y": 10.12616
+"x": 0,
+"y": 2.925003
 },
 "endPos": {
-"x": 2.051957,
-"y": 10.12616
+"x": 0,
+"y": 3.045003
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 33.48,
+"createdAt": 33.12,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 2.051957,
-"y": 10.12616
+"x": 0,
+"y": 3.045003
 },
 "endPos": {
-"x": 2.174515,
-"y": 10.12616
+"x": 0,
+"y": 3.165003
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 33.2,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.165003
+},
+"endPos": {
+"x": 0,
+"y": 3.285003
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 33.76791,
+"createdAt": 33.24537,
 "action": "KeyUp",
 "keyCode": "UpArrow"
 },
 {
+"name": "MovementEvent",
+"createdAt": 33.28,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.285003
+},
+"endPos": {
+"x": 0,
+"y": 3.396431
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 34.04,
+"action": "Stopped",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.450002
+},
+"endPos": {
+"x": 0,
+"y": 3.450002
+}
+},
+{
 "name": "KeyEvent",
-"createdAt": 33.88675,
+"createdAt": 34.89153,
 "action": "KeyDown",
-"keyCode": "UpArrow"
+"keyCode": "DownArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 34.06,
-"action": "Progressing",
+"createdAt": 34.92,
+"action": "Started",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 2.174515,
-"y": 10.12616
+"x": 0,
+"y": 3.441431
 },
 "endPos": {
-"x": 2.069109,
-"y": 10.12616
+"x": 0,
+"y": 3.441431
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 34.14,
+"createdAt": 35.02,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 2.069109,
-"y": 10.12616
+"x": 0,
+"y": 3.441431
 },
 "endPos": {
-"x": 1.952868,
-"y": 10.12616
+"x": 0,
+"y": 3.335041
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 34.22,
+"createdAt": 35.1,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 1.952868,
-"y": 10.12616
+"x": 0,
+"y": 3.335041
 },
 "endPos": {
-"x": 1.833847,
-"y": 10.12616
+"x": 0,
+"y": 3.222409
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 34.56,
+"createdAt": 35.18,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 3
 },
 "startPos": {
-"x": 1.833847,
-"y": 10.12616
+"x": 0,
+"y": 3.222409
 },
 "endPos": {
-"x": 1.956079,
-"y": 10.12616
+"x": 0,
+"y": 3.104327
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 34.64,
+"createdAt": 35.26,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 1.956079,
-"y": 10.12616
+"x": 0,
+"y": 3.104327
 },
 "endPos": {
-"x": 2.073394,
-"y": 10.12616
+"x": 0,
+"y": 2.984827
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 34.72,
+"createdAt": 35.34,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 2.073394,
-"y": 10.12616
+"x": 0,
+"y": 2.984827
 },
 "endPos": {
-"x": 2.192694,
-"y": 10.12616
+"x": 0,
+"y": 2.864956
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 35.08,
+"createdAt": 35.42,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 2.192694,
-"y": 10.12616
+"x": 0,
+"y": 2.864956
 },
 "endPos": {
-"x": 2.070376,
-"y": 10.12616
+"x": 0,
+"y": 2.74499
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 35.16,
+"createdAt": 35.5,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 2.070376,
-"y": 10.12616
+"x": 0,
+"y": 2.74499
 },
 "endPos": {
-"x": 1.954135,
-"y": 10.12616
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 35.24,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 10
-},
-"startPos": {
-"x": 1.954135,
-"y": 10.12616
-},
-"endPos": {
-"x": 1.835113,
-"y": 10.12616
+"x": 0,
+"y": 2.624999
 }
 },
 {
@@ -4897,113 +3466,5799 @@
 "createdAt": 35.58,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 1.835113,
-"y": 10.12616
+"x": 0,
+"y": 2.624999
 },
 "endPos": {
-"x": 1.956344,
-"y": 10.12616
+"x": 0,
+"y": 2.505002
 }
+},
+{
+"name": "KeyEvent",
+"createdAt": 35.65213,
+"action": "KeyUp",
+"keyCode": "DownArrow"
 },
 {
 "name": "MovementEvent",
 "createdAt": 35.66,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 1.956344,
-"y": 10.12616
+"x": 0,
+"y": 2.505002
 },
 "endPos": {
-"x": 2.073659,
-"y": 10.12616
-}
-},
-{
-"name": "MovementEvent",
-"createdAt": 35.74,
-"action": "Progressing",
-"tilePos": {
-"x": 1,
-"y": 10
-},
-"startPos": {
-"x": 2.073659,
-"y": 10.12616
-},
-"endPos": {
-"x": 2.19296,
-"y": 10.12616
+"x": 0,
+"y": 2.385002
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 35.8715,
+"createdAt": 36.28395,
 "action": "KeyDown",
 "keyCode": "UpArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 36.04,
+"createdAt": 36.48,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 2.19296,
-"y": 10.12616
+"x": 0,
+"y": 2.385002
 },
 "endPos": {
-"x": 2.07182,
-"y": 10.12616
+"x": 0,
+"y": 2.508633
 }
 },
 {
 "name": "MovementEvent",
-"createdAt": 36.12,
+"createdAt": 36.56,
 "action": "Progressing",
 "tilePos": {
-"x": 1,
-"y": 10
+"x": -1,
+"y": 2
 },
 "startPos": {
-"x": 2.07182,
-"y": 10.12616
+"x": 0,
+"y": 2.508633
 },
 "endPos": {
-"x": 1.95558,
-"y": 10.12616
+"x": 0,
+"y": 2.625948
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 36.64,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.625948
+},
+"endPos": {
+"x": 0,
+"y": 2.745249
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 36.72,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.745249
+},
+"endPos": {
+"x": 0,
+"y": 2.865067
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 36.8,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.865067
+},
+"endPos": {
+"x": 0,
+"y": 2.985019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 36.88,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 2.985019
+},
+"endPos": {
+"x": 0,
+"y": 3.105007
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 36.96,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.105007
+},
+"endPos": {
+"x": 0,
+"y": 3.225003
 }
 },
 {
 "name": "KeyEvent",
-"createdAt": 36.19691,
+"createdAt": 37.0121,
 "action": "KeyUp",
 "keyCode": "UpArrow"
 },
 {
 "name": "MovementEvent",
-"createdAt": 36.2,
+"createdAt": 37.04,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.225003
+},
+"endPos": {
+"x": 0,
+"y": 3.336431
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 37.8,
+"action": "Stopped",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.390002
+},
+"endPos": {
+"x": 0,
+"y": 3.390002
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 37.91599,
+"action": "KeyDown",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 37.94,
+"action": "Started",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.38143
+},
+"endPos": {
+"x": 0,
+"y": 3.38143
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 38.04,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.38143
+},
+"endPos": {
+"x": 0,
+"y": 3.275041
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 38.12,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.275041
+},
+"endPos": {
+"x": 0,
+"y": 3.162409
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 38.2,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.162409
+},
+"endPos": {
+"x": 0,
+"y": 3.044326
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 38.28,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 3.044326
+},
+"endPos": {
+"x": 0,
+"y": 2.924826
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 38.36,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.924826
+},
+"endPos": {
+"x": 0,
+"y": 2.804956
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 38.44,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.804956
+},
+"endPos": {
+"x": 0,
+"y": 2.68499
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 38.52,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.68499
+},
+"endPos": {
+"x": 0,
+"y": 2.564998
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 38.56423,
+"action": "KeyUp",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 38.6,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.564998
+},
+"endPos": {
+"x": 0,
+"y": 2.453572
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 38.66766,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 38.84,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.453572
+},
+"endPos": {
+"x": 0,
+"y": 2.571029
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 38.92,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.571029
+},
+"endPos": {
+"x": 0,
+"y": 2.686571
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 39,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.686571
+},
+"endPos": {
+"x": 0,
+"y": 2.80541
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 39.08,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.80541
+},
+"endPos": {
+"x": 0,
+"y": 2.925108
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 39.16,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 2.925108
+},
+"endPos": {
+"x": 0,
+"y": 3.04503
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 39.17795,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 39.36,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.04503
+},
+"endPos": {
+"x": 0,
+"y": 3.146373
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 39.96,
+"action": "Stopped",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.150002
+},
+"endPos": {
+"x": 0,
+"y": 3.150002
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 42.12444,
+"action": "KeyDown",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 42.16,
+"action": "Started",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.141431
+},
+"endPos": {
+"x": 0,
+"y": 3.141431
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 42.26,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.141431
+},
+"endPos": {
+"x": 0,
+"y": 3.035041
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 42.34,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 3.035041
+},
+"endPos": {
+"x": 0,
+"y": 2.922409
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 42.42,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.922409
+},
+"endPos": {
+"x": 0,
+"y": 2.804327
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 42.5,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.804327
+},
+"endPos": {
+"x": 0,
+"y": 2.684826
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 42.58,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.684826
+},
+"endPos": {
+"x": 0,
+"y": 2.564956
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 42.58708,
+"action": "KeyUp",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 42.78,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.564956
+},
+"endPos": {
+"x": 0,
+"y": 2.46363
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 42.79487,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 42.92,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.46363
+},
+"endPos": {
+"x": 0,
+"y": 2.575306
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 43,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.575306
+},
+"endPos": {
+"x": 0,
+"y": 2.687684
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 43.08,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.687684
+},
+"endPos": {
+"x": 0,
+"y": 2.8057
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 43.16,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 2.8057
+},
+"endPos": {
+"x": 0,
+"y": 2.925183
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 43.24,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 2.925183
+},
+"endPos": {
+"x": 0,
+"y": 3.045049
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 43.32,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.045049
+},
+"endPos": {
+"x": 0,
+"y": 3.165014
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 43.4,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.165014
+},
+"endPos": {
+"x": 0,
+"y": 3.285005
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 43.48,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.285005
+},
+"endPos": {
+"x": 0,
+"y": 3.405002
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 43.5114,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 43.58,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.405002
+},
+"endPos": {
+"x": 0,
+"y": 3.512669
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 44.3,
+"action": "Stopped",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.54
+},
+"endPos": {
+"x": 0,
+"y": 3.54
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 44.35431,
+"action": "KeyDown",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 44.38,
+"action": "Started",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.531429
+},
+"endPos": {
+"x": 0,
+"y": 3.531429
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 44.48,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.531429
+},
+"endPos": {
+"x": 0,
+"y": 3.42504
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 44.56,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.42504
+},
+"endPos": {
+"x": 0,
+"y": 3.312407
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 44.64,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.312407
+},
+"endPos": {
+"x": 0,
+"y": 3.194325
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 44.72,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.194325
+},
+"endPos": {
+"x": 0,
+"y": 3.074825
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 44.78881,
+"action": "KeyUp",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 44.8,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 2
+},
+"startPos": {
+"x": 0,
+"y": 3.074825
+},
+"endPos": {
+"x": 0,
+"y": 2.954955
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 44.82131,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 45.02,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 2.954955
+},
+"endPos": {
+"x": 0,
+"y": 3.080482
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 45.1,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.080482
+},
+"endPos": {
+"x": 0,
+"y": 3.196427
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 45.18,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.196427
+},
+"endPos": {
+"x": 0,
+"y": 3.315372
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 45.21013,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 45.28,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.315372
+},
+"endPos": {
+"x": 0,
+"y": 3.422737
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 46,
+"action": "Stopped",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.450001
+},
+"endPos": {
+"x": 0,
+"y": 3.450001
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 47.11535,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 47.14,
+"action": "Started",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.458572
+},
+"endPos": {
+"x": 0,
+"y": 3.458572
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 47.24,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.458572
+},
+"endPos": {
+"x": 0,
+"y": 3.564961
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 47.32,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.564961
+},
+"endPos": {
+"x": 0,
+"y": 3.677593
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 47.4,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.677593
+},
+"endPos": {
+"x": 0,
+"y": 3.795676
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 47.48,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 3
+},
+"startPos": {
+"x": 0,
+"y": 3.795676
+},
+"endPos": {
+"x": 0,
+"y": 3.915176
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 47.56,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 3.915176
+},
+"endPos": {
+"x": 0,
+"y": 4.035046
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 47.64,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.035046
+},
+"endPos": {
+"x": 0,
+"y": 4.155013
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 47.72,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.155013
+},
+"endPos": {
+"x": 0,
+"y": 4.275003
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 47.8,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.275003
+},
+"endPos": {
+"x": 0,
+"y": 4.395001
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 47.88,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.395001
+},
+"endPos": {
+"x": 0,
+"y": 4.515
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 47.96,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.515
+},
+"endPos": {
+"x": 0,
+"y": 4.635
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 48.04,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.635
+},
+"endPos": {
+"x": 0,
+"y": 4.755001
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 48.12,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.755001
+},
+"endPos": {
+"x": 0,
+"y": 4.875001
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 48.13288,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 48.16253,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 48.2,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 4
+},
+"startPos": {
+"x": 0,
+"y": 4.875001
+},
+"endPos": {
+"x": 0.01163265,
+"y": 4.991885
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 48.28,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.01163265,
+"y": 4.991885
+},
+"endPos": {
+"x": 0.05748039,
+"y": 5.0996
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 48.36,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.05748039,
+"y": 5.0996
+},
+"endPos": {
+"x": 0.1137964,
+"y": 5.20451
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 48.44,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.1137964,
+"y": 5.20451
+},
+"endPos": {
+"x": 0.1728375,
+"y": 5.30869
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 48.52,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.1728375,
+"y": 5.30869
+},
+"endPos": {
+"x": 0.2325878,
+"y": 5.41268
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 48.6,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.2325878,
+"y": 5.41268
+},
+"endPos": {
+"x": 0.2433841,
+"y": 5.516621
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 48.65305,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 48.68,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.2433841,
+"y": 5.516621
+},
+"endPos": {
+"x": 0.2407957,
+"y": 5.620548
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 48.75566,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 48.76,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.2407957,
+"y": 5.620548
+},
+"endPos": {
+"x": 0.2397355,
+"y": 5.733117
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 48.84,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.2397355,
+"y": 5.733117
+},
+"endPos": {
+"x": 0.2393013,
+"y": 5.851182
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 48.92,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.2393013,
+"y": 5.851182
+},
+"endPos": {
+"x": 0.2391234,
+"y": 5.970678
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 48.98797,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 48.98797,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 49,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.2391234,
+"y": 5.970678
+},
+"endPos": {
+"x": 0.2390935,
+"y": 6.090547
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 49.18813,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 49.33916,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 50.25249,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 50.68,
+"action": "Stopped",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.2390935,
+"y": 6.165501
+},
+"endPos": {
+"x": 0.2390935,
+"y": 6.165501
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 50.96217,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 51.05266,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 51.26781,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 51.3,
+"action": "Started",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.2348078,
+"y": 6.158078
+},
+"endPos": {
+"x": 0.2348078,
+"y": 6.158078
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 51.4,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.2348078,
+"y": 6.158078
+},
+"endPos": {
+"x": 0.1816131,
+"y": 6.065942
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 51.48,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.1816131,
+"y": 6.065942
+},
+"endPos": {
+"x": 0.1252971,
+"y": 5.9684
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 51.49874,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 51.54097,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 51.56,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.1252971,
+"y": 5.9684
+},
+"endPos": {
+"x": 0.0778887,
+"y": 5.86302
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 51.62579,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 51.64,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.0778887,
+"y": 5.86302
+},
+"endPos": {
+"x": 0.06398605,
+"y": 5.747245
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 52.12368,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 53.13996,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 53.39384,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 53.52297,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 53.9,
+"action": "Stopped",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.05909349,
+"y": 5.673731
+},
+"endPos": {
+"x": 0.05909349,
+"y": 5.673731
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 53.9895,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 54.02,
+"action": "Started",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.05909349,
+"y": 5.682302
+},
+"endPos": {
+"x": 0.05909349,
+"y": 5.682302
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 54.12,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.05909349,
+"y": 5.682302
+},
+"endPos": {
+"x": 0.0590935,
+"y": 5.788692
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 54.2,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 5
+},
+"startPos": {
+"x": 0.0590935,
+"y": 5.788692
+},
+"endPos": {
+"x": 0.05909352,
+"y": 5.901323
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 54.28,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.05909352,
+"y": 5.901323
+},
+"endPos": {
+"x": 0.05909353,
+"y": 6.019405
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 54.36,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.05909353,
+"y": 6.019405
+},
+"endPos": {
+"x": 0.05909355,
+"y": 6.138906
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 54.37216,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 54.44,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.05909355,
+"y": 6.138906
+},
+"endPos": {
+"x": 0.07072622,
+"y": 6.255659
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 54.52,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.07072622,
+"y": 6.255659
+},
+"endPos": {
+"x": 0.116574,
+"y": 6.36334
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 54.53178,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 54.6,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.116574,
+"y": 6.36334
+},
+"endPos": {
+"x": 0.17289,
+"y": 6.468242
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 54.68,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.17289,
+"y": 6.468242
+},
+"endPos": {
+"x": 0.2319311,
+"y": 6.57242
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 54.6854,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 54.76,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.2319311,
+"y": 6.57242
+},
+"endPos": {
+"x": 0.3001971,
+"y": 6.667893
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 54.84,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.3001971,
+"y": 6.667893
+},
+"endPos": {
+"x": 0.393695,
+"y": 6.738271
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 54.92,
+"action": "Progressing",
+"tilePos": {
+"x": -1,
+"y": 6
+},
+"startPos": {
+"x": 0.393695,
+"y": 6.738271
+},
+"endPos": {
+"x": 0.4940613,
+"y": 6.735367
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 54.97858,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 55,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 0.4940613,
+"y": 6.735367
+},
+"endPos": {
+"x": 0.6012291,
+"y": 6.733912
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 55.08,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 0.6012291,
+"y": 6.733912
+},
+"endPos": {
+"x": 0.7178888,
+"y": 6.733533
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 55.16,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 0.7178888,
+"y": 6.733533
+},
+"endPos": {
+"x": 0.8370193,
+"y": 6.733434
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 55.24,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 0.8370193,
+"y": 6.733434
+},
+"endPos": {
+"x": 0.956793,
+"y": 6.733408
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 55.32,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 0.956793,
+"y": 6.733408
+},
+"endPos": {
+"x": 1.076734,
+"y": 6.733401
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 55.35594,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 55.4,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 1.076734,
+"y": 6.733401
+},
+"endPos": {
+"x": 1.195571,
+"y": 6.729114
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 55.48,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 1.195571,
+"y": 6.729114
+},
+"endPos": {
+"x": 1.304798,
+"y": 6.688927
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 55.48229,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 55.56,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 6
+},
+"startPos": {
+"x": 1.304798,
+"y": 6.688927
+},
+"endPos": {
+"x": 1.410102,
+"y": 6.634084
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 55.64,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.410102,
+"y": 6.634084
+},
+"endPos": {
+"x": 1.514385,
+"y": 6.575427
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 55.72,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.514385,
+"y": 6.575427
+},
+"endPos": {
+"x": 1.618402,
+"y": 6.515776
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 55.8,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.618402,
+"y": 6.515776
+},
+"endPos": {
+"x": 1.722349,
+"y": 6.455867
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 55.88,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.722349,
+"y": 6.455867
+},
+"endPos": {
+"x": 1.826278,
+"y": 6.39589
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 55.92997,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 55.96,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.826278,
+"y": 6.39589
+},
+"endPos": {
+"x": 1.930203,
+"y": 6.335896
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 56.04,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.930203,
+"y": 6.335896
+},
+"endPos": {
+"x": 2.042771,
+"y": 6.30816
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 56.12,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.042771,
+"y": 6.30816
+},
+"endPos": {
+"x": 2.160836,
+"y": 6.30094
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 56.14768,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 56.2,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.160836,
+"y": 6.30094
+},
+"endPos": {
+"x": 2.277215,
+"y": 6.310693
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 56.24209,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 56.28,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.277215,
+"y": 6.310693
+},
+"endPos": {
+"x": 2.377376,
+"y": 6.351766
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 56.6605,
+"action": "KeyDown",
+"keyCode": "DownArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 56.74107,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 56.74107,
+"action": "KeyUp",
+"keyCode": "DownArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 56.77176,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 57.37841,
+"action": "KeyDown",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 57.44,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.377376,
+"y": 6.351766
+},
+"endPos": {
+"x": 2.278804,
+"y": 6.313401
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 57.54,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.278804,
+"y": 6.313401
+},
+"endPos": {
+"x": 2.151054,
+"y": 6.313401
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 57.62,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.151054,
+"y": 6.313401
+},
+"endPos": {
+"x": 2.034813,
+"y": 6.313401
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 57.7,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.034813,
+"y": 6.313401
+},
+"endPos": {
+"x": 1.915791,
+"y": 6.313401
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 57.74824,
+"action": "KeyUp",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 57.78,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.915791,
+"y": 6.313401
+},
+"endPos": {
+"x": 1.804617,
+"y": 6.313401
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 58.54,
+"action": "Stopped",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.751136,
+"y": 6.313401
+},
+"endPos": {
+"x": 1.751136,
+"y": 6.313401
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 59.17086,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 59.23044,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 59.79428,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 59.95572,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 60.40575,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 60.50158,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 61.20323,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 61.24,
+"action": "Started",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.758559,
+"y": 6.309115
+},
+"endPos": {
+"x": 1.758559,
+"y": 6.309115
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 61.34,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.758559,
+"y": 6.309115
+},
+"endPos": {
+"x": 1.850694,
+"y": 6.25592
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 61.42,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.850694,
+"y": 6.25592
+},
+"endPos": {
+"x": 1.948237,
+"y": 6.199604
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 61.4766,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 61.5,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 1.948237,
+"y": 6.199604
+},
+"endPos": {
+"x": 2.043076,
+"y": 6.144849
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 62.10812,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 62.50687,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 62.84,
+"action": "Stopped",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.088885,
+"y": 6.1184
+},
+"endPos": {
+"x": 2.088885,
+"y": 6.1184
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 63.02602,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 63.06,
+"action": "Started",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.096308,
+"y": 6.122686
+},
+"endPos": {
+"x": 2.096308,
+"y": 6.122686
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 63.16,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.096308,
+"y": 6.122686
+},
+"endPos": {
+"x": 2.188445,
+"y": 6.17588
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 63.24,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.188445,
+"y": 6.17588
+},
+"endPos": {
+"x": 2.285987,
+"y": 6.232197
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 63.282,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 63.32,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.285987,
+"y": 6.232197
+},
+"endPos": {
+"x": 2.388249,
+"y": 6.291237
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 63.37994,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 63.4,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 6
+},
+"startPos": {
+"x": 2.388249,
+"y": 6.291237
+},
+"endPos": {
+"x": 2.491812,
+"y": 6.318726
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 63.58804,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 63.77876,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 63.86,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 2.491812,
+"y": 6.318726
+},
+"endPos": {
+"x": 2.598473,
+"y": 6.296134
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 63.96,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 2.598473,
+"y": 6.296134
+},
+"endPos": {
+"x": 2.714631,
+"y": 6.258658
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 63.97846,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 64.04,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 2.714631,
+"y": 6.258658
+},
+"endPos": {
+"x": 2.819349,
+"y": 6.260041
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 64.12,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 2.819349,
+"y": 6.260041
+},
+"endPos": {
+"x": 2.934952,
+"y": 6.260607
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 64.2,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 2.934952,
+"y": 6.260607
+},
+"endPos": {
+"x": 3.053807,
+"y": 6.260839
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 64.25009,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 64.28,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 3.053807,
+"y": 6.260839
+},
+"endPos": {
+"x": 3.164865,
+"y": 6.293101
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 64.36,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 3.164865,
+"y": 6.293101
+},
+"endPos": {
+"x": 3.270645,
+"y": 6.34588
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 64.43999,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 3.270645,
+"y": 6.34588
+},
+"endPos": {
+"x": 3.375052,
+"y": 6.404
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 64.52,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 6
+},
+"startPos": {
+"x": 3.375052,
+"y": 6.404
+},
+"endPos": {
+"x": 3.479101,
+"y": 6.463511
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 64.6,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 3.479101,
+"y": 6.463511
+},
+"endPos": {
+"x": 3.583057,
+"y": 6.523384
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 64.61226,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 64.68,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 3.583057,
+"y": 6.523384
+},
+"endPos": {
+"x": 3.690105,
+"y": 6.571718
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 64.73107,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 64.76,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 3.690105,
+"y": 6.571718
+},
+"endPos": {
+"x": 3.806315,
+"y": 6.585862
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 64.84,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 3.806315,
+"y": 6.585862
+},
+"endPos": {
+"x": 3.925329,
+"y": 6.589543
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 64.92,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 3.925329,
+"y": 6.589543
+},
+"endPos": {
+"x": 4.045072,
+"y": 6.590502
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 65,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 4.045072,
+"y": 6.590502
+},
+"endPos": {
+"x": 4.165005,
+"y": 6.590751
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 65.08,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 4.165005,
+"y": 6.590751
+},
+"endPos": {
+"x": 4.284987,
+"y": 6.590816
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 65.16,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 6
+},
+"startPos": {
+"x": 4.284987,
+"y": 6.590816
+},
+"endPos": {
+"x": 4.404983,
+"y": 6.590834
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 65.24,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 6
+},
+"startPos": {
+"x": 4.404983,
+"y": 6.590834
+},
+"endPos": {
+"x": 4.524981,
+"y": 6.590838
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 65.28206,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 65.32,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 6
+},
+"startPos": {
+"x": 4.524981,
+"y": 6.590838
+},
+"endPos": {
+"x": 4.64498,
+"y": 6.590839
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 65.4,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 6
+},
+"startPos": {
+"x": 4.64498,
+"y": 6.590839
+},
+"endPos": {
+"x": 4.756336,
+"y": 6.623101
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 65.48,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 6
+},
+"startPos": {
+"x": 4.756336,
+"y": 6.623101
+},
+"endPos": {
+"x": 4.862194,
+"y": 6.67588
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 65.56,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 6
+},
+"startPos": {
+"x": 4.862194,
+"y": 6.67588
+},
+"endPos": {
+"x": 4.963483,
+"y": 6.737138
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 65.64,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 6
+},
+"startPos": {
+"x": 4.963483,
+"y": 6.737138
+},
+"endPos": {
+"x": 5.038119,
+"y": 6.826067
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 65.72,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 6
+},
+"startPos": {
+"x": 5.038119,
+"y": 6.826067
+},
+"endPos": {
+"x": 5.101929,
+"y": 6.926087
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 65.7953,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 65.8,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.101929,
+"y": 6.926087
+},
+"endPos": {
+"x": 5.151288,
+"y": 7.032112
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 65.88,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.151288,
+"y": 7.032112
+},
+"endPos": {
+"x": 5.165698,
+"y": 7.148055
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 65.96,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.165698,
+"y": 7.148055
+},
+"endPos": {
+"x": 5.169449,
+"y": 7.266999
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 66.02889,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 66.04,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.169449,
+"y": 7.266999
+},
+"endPos": {
+"x": 5.170425,
+"y": 7.386724
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 66.12,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.170425,
+"y": 7.386724
+},
+"endPos": {
+"x": 5.149513,
+"y": 7.500982
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 66.14851,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 66.2,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.149513,
+"y": 7.500982
+},
+"endPos": {
+"x": 5.099688,
+"y": 7.607595
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 66.28,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.099688,
+"y": 7.607595
+},
+"endPos": {
+"x": 5.042336,
+"y": 7.712218
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 66.36,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 5.042336,
+"y": 7.712218
+},
+"endPos": {
+"x": 4.983026,
+"y": 7.816323
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 66.43382,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 66.43999,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 7
+},
+"startPos": {
+"x": 4.983026,
+"y": 7.816323
+},
+"endPos": {
+"x": 4.923206,
+"y": 7.920294
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 66.52,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.923206,
+"y": 7.920294
+},
+"endPos": {
+"x": 4.884419,
+"y": 8.029901
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 66.55669,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 66.6,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.884419,
+"y": 8.029901
+},
+"endPos": {
+"x": 4.874322,
+"y": 8.147196
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 66.68,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.874322,
+"y": 8.147196
+},
+"endPos": {
+"x": 4.871694,
+"y": 8.266492
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 66.76,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.871694,
+"y": 8.266492
+},
+"endPos": {
+"x": 4.87101,
+"y": 8.386308
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 66.84,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.87101,
+"y": 8.386308
+},
+"endPos": {
+"x": 4.870831,
+"y": 8.506259
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 66.92,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.870831,
+"y": 8.506259
+},
+"endPos": {
+"x": 4.870785,
+"y": 8.626246
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 67,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.870785,
+"y": 8.626246
+},
+"endPos": {
+"x": 4.870772,
+"y": 8.746243
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 67.05456,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 67.08,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.870772,
+"y": 8.746243
+},
+"endPos": {
+"x": 4.870769,
+"y": 8.857671
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 67.0859,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 67.20221,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 67.68977,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 67.80465,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 67.83585,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 67.92,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 8
+},
+"startPos": {
+"x": 4.870769,
+"y": 8.857671
+},
+"endPos": {
+"x": 4.870769,
+"y": 8.975768
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 68,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.870769,
+"y": 8.975768
+},
+"endPos": {
+"x": 4.870769,
+"y": 9.081326
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 68.00287,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 68.08,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.870769,
+"y": 9.081326
+},
+"endPos": {
+"x": 4.859136,
+"y": 9.19445
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 68.10932,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 68.16,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.859136,
+"y": 9.19445
+},
+"endPos": {
+"x": 4.813288,
+"y": 9.301187
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 68.24,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.813288,
+"y": 9.301187
+},
+"endPos": {
+"x": 4.756972,
+"y": 9.405842
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 68.26819,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 68.2846,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 68.32269,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 68.34,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.756972,
+"y": 9.405842
+},
+"endPos": {
+"x": 4.704194,
+"y": 9.499295
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 68.97824,
+"action": "KeyDown",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 69.12,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.704194,
+"y": 9.499295
+},
+"endPos": {
+"x": 4.813843,
+"y": 9.451955
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 69.18704,
+"action": "KeyUp",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 69.2,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.813843,
+"y": 9.451955
+},
+"endPos": {
+"x": 4.913208,
+"y": 9.394587
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 69.98,
+"action": "Stopped",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.976556,
+"y": 9.358017
+},
+"endPos": {
+"x": 4.976556,
+"y": 9.358017
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 70.08242,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 70.09897,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 70.12,
+"action": "Started",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.969133,
+"y": 9.362303
+},
+"endPos": {
+"x": 4.969133,
+"y": 9.362303
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 70.22,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.969133,
+"y": 9.362303
+},
+"endPos": {
+"x": 4.86508,
+"y": 9.371026
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 70.25339,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 70.3,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.86508,
+"y": 9.371026
+},
+"endPos": {
+"x": 4.752843,
+"y": 9.3725
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 70.38,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.752843,
+"y": 9.3725
+},
+"endPos": {
+"x": 4.634864,
+"y": 9.372884
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 70.46,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.634864,
+"y": 9.372884
+},
+"endPos": {
+"x": 4.515391,
+"y": 9.372984
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 70.54,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.515391,
+"y": 9.372984
+},
+"endPos": {
+"x": 4.395528,
+"y": 9.373011
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 70.62,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.395528,
+"y": 9.373011
+},
+"endPos": {
+"x": 4.275563,
+"y": 9.373017
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 70.7,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.275563,
+"y": 9.373017
+},
+"endPos": {
+"x": 4.155572,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 70.78,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.155572,
+"y": 9.373019
+},
+"endPos": {
+"x": 4.035574,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 70.86,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.035574,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.915575,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 70.93999,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.915575,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.795575,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 71.02,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.795575,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.675575,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 71.1,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.675575,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.555575,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 71.18,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.555575,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.435575,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 71.26,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.435575,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.315576,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 71.34,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.315576,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.195576,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 71.42,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.195576,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.075576,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 71.5,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.075576,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.955576,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 71.58,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.955576,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.835576,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 71.66,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.835576,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.715576,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 71.74,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.715576,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.595576,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 71.82,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.595576,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.475576,
+"y": 9.373019
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 71.85319,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 71.92,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.475576,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.367909,
+"y": 9.373019
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 72.36437,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 72.42733,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 72.52,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.367909,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.262986,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 73.2,
+"action": "Stopped",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.250577,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.250577,
+"y": 9.373019
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 73.53204,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 73.66623,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 74.46635,
+"action": "KeyDown",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 74.65469,
+"action": "KeyUp",
+"keyCode": "LeftArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 74.86034,
+"action": "KeyDown",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 74.9,
+"action": "Started",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.259149,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.259149,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 75,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.259149,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.365538,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 75.08,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.365538,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.47817,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 75.16,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.47817,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.596252,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 75.24,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.596252,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.715753,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 75.32,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.715753,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.835623,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 75.4,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.835623,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.955589,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 75.48,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.955589,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.07558,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 75.56,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.07558,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.195578,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 75.64,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.195578,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.315577,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 75.72,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.315577,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.435577,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 75.8,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.435577,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.555577,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 75.88,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.555577,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.675577,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 75.96,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.675577,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.795577,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 76.04,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.795577,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.915577,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 76.12,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.915577,
+"y": 9.373019
+},
+"endPos": {
+"x": 4.035577,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 76.2,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.035577,
+"y": 9.373019
+},
+"endPos": {
+"x": 4.155578,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 76.28,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.155578,
+"y": 9.373019
+},
+"endPos": {
+"x": 4.275578,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 76.36,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.275578,
+"y": 9.373019
+},
+"endPos": {
+"x": 4.395579,
+"y": 9.373019
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 76.42886,
+"action": "KeyUp",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 76.43999,
+"action": "Progressing",
+"tilePos": {
+"x": 4,
+"y": 9
+},
+"startPos": {
+"x": 4.395579,
+"y": 9.373019
+},
+"endPos": {
+"x": 4.51558,
+"y": 9.373019
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 76.65878,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 76.84,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.51558,
+"y": 9.373019
+},
+"endPos": {
+"x": 4.39186,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 76.92,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.39186,
+"y": 9.373019
+},
+"endPos": {
+"x": 4.274611,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 77,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.274611,
+"y": 9.373019
+},
+"endPos": {
+"x": 4.155328,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 77.08,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.155328,
+"y": 9.373019
+},
+"endPos": {
+"x": 4.035513,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 77.16,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.035513,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.915562,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 77.24,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.915562,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.795574,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 77.32,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.795574,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.675578,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 77.4,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.675578,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.555579,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 77.48,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.555579,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.435579,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 77.56,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.435579,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.315579,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 77.64,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.315579,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.195579,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 77.72,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.195579,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.075579,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 77.8,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.075579,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.955579,
+"y": 9.373019
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 77.82813,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 77.9,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.955579,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.847912,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 78.62,
+"action": "Stopped",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.82058,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.82058,
+"y": 9.373019
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 80.30608,
+"action": "KeyDown",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 80.34,
+"action": "Started",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.829151,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.829151,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 80.43999,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.829151,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.935541,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 80.52,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.935541,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.048173,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 80.6,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.048173,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.166255,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 80.68,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.166255,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.285756,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 80.75999,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.285756,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.405626,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 80.84,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.405626,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.525592,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 80.92,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.525592,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.645583,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 81,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.645583,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.765581,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 81.08,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.765581,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.88558,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 81.16,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.88558,
+"y": 9.373019
+},
+"endPos": {
+"x": 4.00558,
+"y": 9.373019
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 81.21973,
+"action": "KeyUp",
+"keyCode": "DownArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 81.24,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.00558,
+"y": 9.373019
+},
+"endPos": {
+"x": 4.117009,
+"y": 9.373019
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 81.63439,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 81.8,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.117009,
+"y": 9.373019
+},
+"endPos": {
+"x": 4.000494,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 81.88,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 4.000494,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.884256,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 81.96,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.884256,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.765235,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 82.04,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.765235,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.64549,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 82.12,
+"action": "Progressing",
+"tilePos": {
+"x": 3,
+"y": 9
+},
+"startPos": {
+"x": 3.64549,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.525557,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 82.2,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.525557,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.405574,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 82.28,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.405574,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.285578,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 82.36,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.285578,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.16558,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 82.43999,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.16558,
+"y": 9.373019
+},
+"endPos": {
+"x": 3.04558,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 82.52,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 3.04558,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.92558,
+"y": 9.373019
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 82.6,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.92558,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.80558,
+"y": 9.373019
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 82.62886,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 82.7,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.80558,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.697912,
+"y": 9.373019
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 83.12254,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "KeyEvent",
+"createdAt": 83.14664,
+"action": "KeyDown",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 83.25999,
+"action": "Progressing",
+"tilePos": {
+"x": 2,
+"y": 9
+},
+"startPos": {
+"x": 2.697912,
+"y": 9.373019
+},
+"endPos": {
+"x": 2.593554,
+"y": 9.417492
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 83.34,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.593554,
+"y": 9.417492
+},
+"endPos": {
+"x": 2.498562,
+"y": 9.472335
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 83.42,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.498562,
+"y": 9.472335
+},
+"endPos": {
+"x": 2.412459,
+"y": 9.546488
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 83.5,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.412459,
+"y": 9.546488
+},
+"endPos": {
+"x": 2.345664,
+"y": 9.642661
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 83.52303,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 83.58,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.345664,
+"y": 9.642661
+},
+"endPos": {
+"x": 2.283895,
+"y": 9.744567
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 83.66,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.283895,
+"y": 9.744567
+},
+"endPos": {
+"x": 2.223435,
+"y": 9.847964
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 83.74,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 9
+},
+"startPos": {
+"x": 2.223435,
+"y": 9.847964
+},
+"endPos": {
+"x": 2.163315,
+"y": 9.951751
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 83.82,
 "action": "Progressing",
 "tilePos": {
 "x": 1,
 "y": 10
 },
 "startPos": {
-"x": 1.95558,
-"y": 10.12616
+"x": 2.163315,
+"y": 9.951751
 },
 "endPos": {
-"x": 1.836558,
-"y": 10.12616
+"x": 2.103284,
+"y": 10.05564
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 83.9,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.103284,
+"y": 10.05564
+},
+"endPos": {
+"x": 2.043276,
+"y": 10.15955
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 83.98,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 2.043276,
+"y": 10.15955
+},
+"endPos": {
+"x": 1.983274,
+"y": 10.26347
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 84.03557,
+"action": "KeyDown",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 84.06,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.983274,
+"y": 10.26347
+},
+"endPos": {
+"x": 1.923273,
+"y": 10.3674
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 84.14,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.923273,
+"y": 10.3674
+},
+"endPos": {
+"x": 1.895535,
+"y": 10.47996
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 84.1871,
+"action": "KeyUp",
+"keyCode": "RightArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 84.22,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.895535,
+"y": 10.47996
+},
+"endPos": {
+"x": 1.888314,
+"y": 10.59803
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 84.3,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.888314,
+"y": 10.59803
+},
+"endPos": {
+"x": 1.886434,
+"y": 10.71752
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 84.38,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.886434,
+"y": 10.71752
+},
+"endPos": {
+"x": 1.885945,
+"y": 10.83739
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 84.46,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 10
+},
+"startPos": {
+"x": 1.885945,
+"y": 10.83739
+},
+"endPos": {
+"x": 1.885818,
+"y": 10.95736
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 84.54,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 11
+},
+"startPos": {
+"x": 1.885818,
+"y": 10.95736
+},
+"endPos": {
+"x": 1.885785,
+"y": 11.07735
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 84.62,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 11
+},
+"startPos": {
+"x": 1.885785,
+"y": 11.07735
+},
+"endPos": {
+"x": 1.885776,
+"y": 11.19735
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 84.7,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 11
+},
+"startPos": {
+"x": 1.885776,
+"y": 11.19735
+},
+"endPos": {
+"x": 1.885774,
+"y": 11.31735
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 84.78,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 11
+},
+"startPos": {
+"x": 1.885774,
+"y": 11.31735
+},
+"endPos": {
+"x": 1.885773,
+"y": 11.43734
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 84.86,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 11
+},
+"startPos": {
+"x": 1.885773,
+"y": 11.43734
+},
+"endPos": {
+"x": 1.885773,
+"y": 11.55734
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 84.93999,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 11
+},
+"startPos": {
+"x": 1.885773,
+"y": 11.55734
+},
+"endPos": {
+"x": 1.885773,
+"y": 11.67734
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 85.02,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 11
+},
+"startPos": {
+"x": 1.885773,
+"y": 11.67734
+},
+"endPos": {
+"x": 1.885773,
+"y": 11.79734
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 85.1,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 11
+},
+"startPos": {
+"x": 1.885773,
+"y": 11.79734
+},
+"endPos": {
+"x": 1.885773,
+"y": 11.91734
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 85.18,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 12
+},
+"startPos": {
+"x": 1.885773,
+"y": 11.91734
+},
+"endPos": {
+"x": 1.885773,
+"y": 12.03734
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 85.25999,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 12
+},
+"startPos": {
+"x": 1.885773,
+"y": 12.03734
+},
+"endPos": {
+"x": 1.885773,
+"y": 12.15734
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 85.34,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 12
+},
+"startPos": {
+"x": 1.885773,
+"y": 12.15734
+},
+"endPos": {
+"x": 1.885773,
+"y": 12.27734
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 85.42,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 12
+},
+"startPos": {
+"x": 1.885773,
+"y": 12.27734
+},
+"endPos": {
+"x": 1.885773,
+"y": 12.39734
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 85.5,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 12
+},
+"startPos": {
+"x": 1.885773,
+"y": 12.39734
+},
+"endPos": {
+"x": 1.885773,
+"y": 12.51733
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 85.58,
+"action": "Progressing",
+"tilePos": {
+"x": 1,
+"y": 12
+},
+"startPos": {
+"x": 1.885773,
+"y": 12.51733
+},
+"endPos": {
+"x": 1.885773,
+"y": 12.63733
+}
+},
+{
+"name": "LevelEvent",
+"createdAt": 85.64,
+"levelName": "Level2(Clone)"
+},
+{
+"name": "MovementEvent",
+"createdAt": 85.74,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 0
+},
+"startPos": {
+"x": 0,
+"y": 0
+},
+"endPos": {
+"x": -1.381774E-08,
+"y": 0.12
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 85.82,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 0
+},
+"startPos": {
+"x": -1.381774E-08,
+"y": 0.12
+},
+"endPos": {
+"x": -2.763543E-08,
+"y": 0.24
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 85.9,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 0
+},
+"startPos": {
+"x": -2.763543E-08,
+"y": 0.24
+},
+"endPos": {
+"x": -4.145311E-08,
+"y": 0.36
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 85.98,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 0
+},
+"startPos": {
+"x": -4.145311E-08,
+"y": 0.36
+},
+"endPos": {
+"x": -5.52708E-08,
+"y": 0.48
+}
+},
+{
+"name": "KeyEvent",
+"createdAt": 86.0372,
+"action": "KeyUp",
+"keyCode": "UpArrow"
+},
+{
+"name": "MovementEvent",
+"createdAt": 86.06,
+"action": "Progressing",
+"tilePos": {
+"x": 0,
+"y": 0
+},
+"startPos": {
+"x": -5.52708E-08,
+"y": 0.48
+},
+"endPos": {
+"x": -6.81015E-08,
+"y": 0.5914285
+}
+},
+{
+"name": "MovementEvent",
+"createdAt": 86.82,
+"action": "Stopped",
+"tilePos": {
+"x": 0,
+"y": 0
+},
+"startPos": {
+"x": -7.427005E-08,
+"y": 0.6449998
+},
+"endPos": {
+"x": -7.427005E-08,
+"y": 0.6449998
 }
 }
 ]
