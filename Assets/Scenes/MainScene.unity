@@ -187,6 +187,8 @@ MonoBehaviour:
   music: event:/MainMusic
   player: {fileID: 451097806}
   wos: {fileID: 1485934449}
+  smoothOpenSpeed: 1
+  smoothOrientationK: 0.99
 --- !u!1 &234525388
 GameObject:
   m_ObjectHideFlags: 0

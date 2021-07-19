@@ -17,6 +17,9 @@ public class MusicControllerFMOD : MonoBehaviour
     //private CallUpdate currentUpdate;
     FMOD.Studio.PLAYBACK_STATE plb;
 
+    public float smoothOpenSpeed, smoothOrientationK;
+    private float smoothOpenLeft, smoothOpenRight, smoothOrientation;
+
     public void NewMusicLevel(string musicStr, Player pl)
     {
         Debug.Log("instantiating music");
@@ -57,13 +60,22 @@ public class MusicControllerFMOD : MonoBehaviour
             //Debug.Log(player);
             // Debug.Log(player.distancePercentage);
             musicEV.setParameterByName("progress", 1-player.distancePercentage);
-            musicEV.setParameterByName("orientation", player.GoalOrientation);
-
-
+            // var goalOrientation = player.GoalOrientation;
+            // var factor = goalOrientation < smoothOrientation ? -1 : 1;
+            // smoothOrientation += factor * smoothOrientationK * Time.deltaTime;
+            // if (factor > 0) smoothOrientation = Mathf.Min(smoothOrientation, goalOrientation);
+            // if (factor < 0) smoothOrientation = Mathf.Max(smoothOrientation, goalOrientation);
+            smoothOrientation = smoothOrientation * smoothOrientationK +
+                                player.GoalOrientation * (1 - smoothOrientationK);
+            musicEV.setParameterByName("orientation", smoothOrientation);
         }
         wos.UpdateBools(out var left, out var right);
-        musicEV.setParameterByName("OpenLeft", left?1:0);
-        musicEV.setParameterByName("OpenRight", right?1:0);
+
+
+        smoothOpenLeft = Mathf.Clamp01(smoothOpenLeft + (left ? 1 : -1) * smoothOpenSpeed * Time.deltaTime);
+        smoothOpenRight = Mathf.Clamp01(smoothOpenRight + (right ? 1 : -1) * smoothOpenSpeed * Time.deltaTime);
+        musicEV.setParameterByName("OpenLeft", smoothOpenLeft);
+        musicEV.setParameterByName("OpenRight", smoothOpenRight);
     }
 
     /*
