@@ -2,36 +2,25 @@
 
 public class RotationClicker : MonoBehaviour
 {
+    public string Rotation;
 
-    [Range(0, 1)] public float veryStrongClickVolume;
-    [Range(-3, 3)] public float veryStrongClickPitch;
-    [Range(0, 1)] public float strongClickVolume;
-    [Range(-3, 3)] public float strongClickPitch;
-    [Range(0, 1)] public float normalClickVolume;
-    [Range(-3, 3)] public float normalClickPitch;
-
-    private AudioSource _audioSource;
-
+    FMOD.Studio.EventInstance rotationEV;
     void Start()
     {
-        
-        _audioSource = GetComponent<AudioSource>();
+        rotationEV = FMODUnity.RuntimeManager.CreateInstance(Rotation);
     }
 
     public void RotationChanged(int newRotation)
     {
         // Debug.Log(newRotation);
         if(newRotation % 360 == 0) {
-            _audioSource.pitch = veryStrongClickPitch;
-            _audioSource.volume = veryStrongClickVolume;
+            rotationEV.setParameterByName("rotationVal",1);
         } else if(newRotation % 90 == 0) {
-            _audioSource.pitch = strongClickPitch;
-            _audioSource.volume = strongClickVolume;
+            rotationEV.setParameterByName("rotationVal", 0.5f);
         } else {
-            _audioSource.pitch = normalClickPitch;
-            _audioSource.volume = normalClickVolume;
+            rotationEV.setParameterByName("rotationVal", 0);
         }
-        _audioSource.Play();
+        rotationEV.start();
     }
 
 }
