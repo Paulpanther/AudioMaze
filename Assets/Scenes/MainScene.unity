@@ -158,6 +158,7 @@ MonoBehaviour:
   - {fileID: 4230833137422956955, guid: 771c5ca59a2fc8549a16235d75c2da16, type: 3}
   - {fileID: 4230833137422956955, guid: 771c5ca59a2fc8549a16235d75c2da16, type: 3}
   fmodmusic: {fileID: 50078800}
+  LevelEvent: event:/LevelCompleted
 --- !u!4 &50078799
 Transform:
   m_ObjectHideFlags: 0

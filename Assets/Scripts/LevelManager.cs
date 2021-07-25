@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
 	public MusicControllerFMOD fmodmusic;
 	private int currentLevelIndex = -1;
 	private Level currentLevel = null;
+	public string LevelEvent = "";
 
 	private void Start()
 	{
@@ -30,7 +31,8 @@ public class LevelManager : MonoBehaviour
 
 		if (currentLevel != null) 
 		{ 
-			currentLevel.Destroy(); 
+			currentLevel.Destroy();
+			FMODUnity.RuntimeManager.PlayOneShot(LevelEvent, transform.position);
 		}
 		currentLevel = Instantiate(levels[++currentLevelIndex]);
 		Debug.Log("calling music inst");
