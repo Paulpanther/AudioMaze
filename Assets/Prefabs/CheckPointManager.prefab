@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 20783549268175686}
-  - component: {fileID: 20783549268175685}
-  - component: {fileID: 20783549268175687}
   - component: {fileID: 20783549268175704}
   m_Layer: 0
   m_Name: CheckPointManager
@@ -33,39 +31,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &20783549268175685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20783549268175684}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb564aabe4fae06429bf1c63b15a3406, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sources:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!114 &20783549268175687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20783549268175684}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba04ad8059e5de428cb343f92600ea5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mixer: {fileID: 24100000, guid: dfd2f4652d53b5c42864b479a68b8f6c, type: 2}
-  pl: {fileID: 0}
 --- !u!114 &20783549268175704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,12 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: event:/MainMusic
-  sources:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  cachedRigidBody: {fileID: 0}
+  player: {fileID: 0}
+  wos: {fileID: 0}
+  smoothOpenSpeed: 0
+  smoothOrientationK: 0

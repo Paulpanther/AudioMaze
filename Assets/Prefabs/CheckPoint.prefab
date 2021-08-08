@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3469257485455735422}
   - component: {fileID: 3469257485455735423}
   - component: {fileID: 3469257485455735420}
-  - component: {fileID: 3469257485455735421}
   m_Layer: 0
   m_Name: CheckPoint
   m_TagString: Checkpoint
@@ -156,20 +155,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &3469257485455735421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3469257485455735410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05c2ffbce7d65a24e81d789d03790643, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CheckPointNumber: 0
-  goal: {fileID: 0}
-  prevCheckpoint: {fileID: 0}
-  maze: {fileID: 0}
-  player: {fileID: 0}
