@@ -51,14 +51,15 @@ public class Player : MonoBehaviour
         _rotationClicker = GetComponentInChildren<RotationClicker>();
         
     }
+
     private void LevelChange()
     {
+        transform.rotation = Quaternion.Euler(Vector3.up);
         _startGoalDistance = maze.GetAccurateDistanceFrom(goal, transform.position);
         Debug.Log(_startGoalDistance);
         MovementEvent.previousPosition = new Vector2(transform.position.x, transform.position.y);
-
-        
     }
+
     private void Update()
     {
         _horizontal = Input.GetAxisRaw("Horizontal");
