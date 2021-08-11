@@ -10,7 +10,7 @@ public class EventLogging : MonoBehaviour {
     public bool log2Console = false;
     public string logFile = "log.json";
     public bool verboseLogging = true;
-    public HashSet<string> consoleEnabledEvents = new HashSet<string> { "KeyEvent", "MovementEvent" };
+    public HashSet<string> consoleDisabledEvents = new HashSet<string> { "KeyEvent", "MovementEvent" };
 
     private SimpleJsonWriter _jsonOut;
     
@@ -29,7 +29,7 @@ public class EventLogging : MonoBehaviour {
 
     public void logToConsole(AbstractEvent evt, bool verbose)
     {
-        if (verbose || consoleEnabledEvents.Contains(evt.getName())){
+        if (verbose || !consoleDisabledEvents.Contains(evt.getName())){
             Debug.Log(evt.message());
         }
     }
@@ -161,11 +161,11 @@ namespace SimpleJson {
 
         public class SimpleAutoclosingJsonScope : SimpleJsonScope {
             public SimpleAutoclosingJsonScope(SimpleJsonFileWriter writer) : base(writer, null) {}
-            public new SimpleJsonWriter WriteArrayScope() {
+            public SimpleJsonWriter WriteArrayScope() {
                 _writer.WriteOpenArrayLiteral();
                 return new SimpleJsonArrayScope(_writer, null);
             }
-            public new SimpleJsonWriter WriteObjectScope() {
+            public SimpleJsonWriter WriteObjectScope() {
                 _writer.WriteOpenObjectLiteral();
                 return new SimpleJsonObjectScope(_writer, null);
             }
@@ -304,7 +304,7 @@ class LevelEvent : AbstractEvent
     }
 }
 
-abstract class SoundEvent : AbstractEvent
+public abstract class SoundEvent : AbstractEvent
 {
     protected string soundName;
 
@@ -318,7 +318,7 @@ abstract class SoundEvent : AbstractEvent
         evtScope.WriteKeyValue("soundName", soundName);
     }
 
-    class Oneshot : SoundEvent
+    public class Oneshot : SoundEvent
     {
         public Oneshot(string soundName) : base(soundName) {}
         
@@ -334,18 +334,18 @@ abstract class SoundEvent : AbstractEvent
         }
     }
 
-    class Loop : SoundEvent
+    public class Instance : SoundEvent
     {
         protected Action action;
 
-        public Loop(string soundName, Action action) : base(soundName)
+        public Instance(string soundName, Action action) : base(soundName)
         {
             this.action = action;
         }
         
         protected override void _writeJson(SimpleJsonWriter evtScope)
         {
-            evtScope.WriteKeyValue("type", "LOOP");
+            evtScope.WriteKeyValue("type", "INSTANCE");
             evtScope.WriteKeyValue("action", action.ToString());
             base._writeJson(evtScope);
         }
@@ -353,9 +353,9 @@ abstract class SoundEvent : AbstractEvent
         protected override string _message()
         {
             if(action == Action.Started) {
-                return "audio loop \"" + soundName + "\" started";
+                return "audio instance \"" + soundName + "\" started";
             } else {
-                return "audio loop \"" + soundName + "\" stopped";
+                return "audio instance \"" + soundName + "\" stopped";
             }
         }
     }

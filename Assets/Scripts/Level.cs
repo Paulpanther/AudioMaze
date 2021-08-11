@@ -10,7 +10,7 @@ public class Level : MonoBehaviour
 	public Tilemap map => GetComponentInChildren<Tilemap>();
 	public Win win => GetComponentInChildren<Win>();
 
-	public string music;
+	public string musicName = "MainMusic";
 
 	//[NonSerialized] 
 	public Player player;
