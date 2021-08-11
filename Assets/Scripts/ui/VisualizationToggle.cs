@@ -20,7 +20,7 @@ public class VisualizationToggle : MonoBehaviour
     private int _maskUi;
     private int _maskPlayer;
 
-    private void Start()
+    private void Awake()
     {
         _maskUi = 1 << LayerMask.NameToLayer("UI");
         _maskPlayer = 1 << LayerMask.NameToLayer("Player");

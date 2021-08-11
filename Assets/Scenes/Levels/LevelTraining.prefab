@@ -1809,6 +1809,11 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[85].second.m_AllTileFlags
       value: 1073741825
       objectReference: {fileID: 0}
+    - target: {fileID: 2739102421690490915, guid: 74f96bd7b5a35154ab9b79a6356919c8,
+        type: 3}
+      propertyPath: isVisible
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4692981639339121533, guid: 74f96bd7b5a35154ab9b79a6356919c8,
         type: 3}
       propertyPath: showMapQuestion

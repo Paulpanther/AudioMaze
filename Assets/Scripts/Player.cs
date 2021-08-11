@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
 
     public ControlSystem controlSystem = ControlSystem.Relative;
     public bool walkingAgainstWall = false;
+    public VisualizationToggle visualization;
 
     private Rigidbody2D _body;
     private WalkingSound _walkingSound;

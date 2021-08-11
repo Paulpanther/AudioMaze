@@ -393,6 +393,7 @@ MonoBehaviour:
   useRelativeGoalOrientation: 1
   controlSystem: 0
   walkingAgainstWall: 0
+  visualization: {fileID: 519420030}
 --- !u!212 &451097807
 SpriteRenderer:
   m_ObjectHideFlags: 0
