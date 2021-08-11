@@ -6,12 +6,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class StartScript : MonoBehaviour
-{
+public class StartScript : MonoBehaviour {
+    public static string levelCode;
 
     public string winTitleText;
     public string winButtonText;
     public TextMeshProUGUI title;
+    public TMP_InputField levelCodeInput;
     public Button button;
 
     void Start()
@@ -26,6 +27,7 @@ public class StartScript : MonoBehaviour
     public void OnClick()
     {
         Win.IsWin = false;
+        levelCode = levelCodeInput.text;
         SceneManager.LoadScene("MainScene");
     }
 }

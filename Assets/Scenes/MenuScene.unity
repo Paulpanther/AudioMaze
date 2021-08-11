@@ -1177,6 +1177,7 @@ MonoBehaviour:
   winTitleText: You won
   winButtonText: Play again
   title: {fileID: 67041024}
+  levelCodeInput: {fileID: 257701134}
   button: {fileID: 458998980}
 --- !u!1 &1586378912
 GameObject:

@@ -153,10 +153,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 451097806}
   menu: MenuScene
-  levels:
-  - {fileID: 2385848506745926316, guid: bdbc23540df47234ab037a8a3159f2a3, type: 3}
-  - {fileID: 4230833137422956955, guid: 771c5ca59a2fc8549a16235d75c2da16, type: 3}
-  - {fileID: 4230833137422956955, guid: 771c5ca59a2fc8549a16235d75c2da16, type: 3}
+  training: {fileID: 2712314071774464082, guid: eb18385df90fd5f41a93666b0aaedb0a,
+    type: 3}
+  level1: {fileID: 2385848506745926316, guid: bdbc23540df47234ab037a8a3159f2a3, type: 3}
+  levels2:
+  - {fileID: 405273024172393104, guid: dfca146fb78594840aa884ce827eda0e, type: 3}
+  - {fileID: 7741322123542669762, guid: c029443755a09484e9e8b43a64fb95a6, type: 3}
+  levels3:
+  - {fileID: 968134527356768268, guid: cf036614cbaa30a4a8b7fd7700dd471e, type: 3}
+  - {fileID: 8760919907329964748, guid: 0f5d260196d3f934980b8247d027d438, type: 3}
+  levels4:
+  - {fileID: 7753408286132372834, guid: 7180352a1516b9543a88c15163f034e0, type: 3}
+  - {fileID: 9073177640714486295, guid: 3fc8624c32779d94fb152c60d217c8ac, type: 3}
   fmodmusic: {fileID: 50078800}
   levelCompletedSoundName: LevelCompleted
 --- !u!4 &50078799
@@ -382,6 +390,7 @@ MonoBehaviour:
   distanceChange: 0
   distancePercentage: 1
   speed: 0
+  useRelativeGoalOrientation: 1
   controlSystem: 0
   walkingAgainstWall: 0
 --- !u!212 &451097807
@@ -581,6 +590,72 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationClickSoundName: Rotations
+--- !u!1 &508534541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 508534544}
+  - component: {fileID: 508534543}
+  - component: {fileID: 508534542}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &508534542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508534541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &508534543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508534541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &508534544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508534541}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
 
     private float _previousSpeed;
     public float speed;
+    public bool useRelativeGoalOrientation = true;
 
     private Level level;
 
@@ -147,12 +148,30 @@ public class Player : MonoBehaviour
         _walkingSound.SetWalking(speed / maxSpeed);
     }
 
-    public float GoalOrientation {
+    public float RelativeGoalOrientation {
         get {
             var dir = maze.GetBestDirectionFor(goal, transform.position);
             var angle = Vector3.Angle(transform.up, dir);
             // Debug.Log(angle);
             return angle / 180;
+        }
+    }
+
+    public float AbsoluteGoalOrientation {
+        get {
+            var angle = Vector3.Angle(transform.up, (goal.position - transform.position).normalized);
+            return angle / 180;
+        }
+    }
+
+    public float CurrentGoalOrientation {
+        get {
+            if (useRelativeGoalOrientation) {
+                return RelativeGoalOrientation;
+            }
+            else {
+                return AbsoluteGoalOrientation;
+            }
         }
     }
 

@@ -16,12 +16,13 @@ public class LevelManager : MonoBehaviour
 	private Level[] levels;
 	private int currentLevelIndex = -1;
 	private Level currentLevel = null;
+	private bool firstScenarioIs1;
 	public string levelCompletedSoundName = "LevelCompleted";
 
 	private void Start()
 	{
-        var levelString = "1aba";
-        var firstScenarioIs1 = levelString[0] == '1';
+        var levelString = StartScript.levelCode;
+        firstScenarioIs1 = levelString[0] == '1';
         var secondLevelIsA = levelString[1] == 'a';
         var thirdLevelIsA = levelString[2] == 'a';
         var fourthLevelIsA = levelString[3] == 'a';
@@ -54,6 +55,14 @@ public class LevelManager : MonoBehaviour
 			currentLevel.Destroy();
 			PlayLevelCompletedSound();
 		}
+
+		var scenario1 = firstScenarioIs1;
+		if (currentLevelIndex + 1 >= 5) {
+			scenario1 = !scenario1;
+		}
+
+		player.useRelativeGoalOrientation = !scenario1;
+
 		currentLevel = Instantiate(levels[++currentLevelIndex]);
         EventLogging.logEvent(new LevelEvent(currentLevel.name));
 		fmodmusic.UpdateBackgroundMusic(currentLevel.musicName, player);
