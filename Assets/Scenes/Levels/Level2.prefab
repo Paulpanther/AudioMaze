@@ -1150,7 +1150,7 @@ PrefabInstance:
     - target: {fileID: 2739102421690490915, guid: 74f96bd7b5a35154ab9b79a6356919c8,
         type: 3}
       propertyPath: music
-      value: event:/MainMusic
+      value: MainMusic
       objectReference: {fileID: 0}
     - target: {fileID: 4692981639339121532, guid: 74f96bd7b5a35154ab9b79a6356919c8,
         type: 3}

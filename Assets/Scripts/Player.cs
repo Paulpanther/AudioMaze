@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D _body;
     private WalkingSound _walkingSound;
-    private RotationClicker _rotationClicker;
+    private RotationClickerSound _rotationClicker;
     private float _horizontal, _vertical;
 
     private float? _lastDistance;
@@ -48,17 +48,16 @@ public class Player : MonoBehaviour
     {
         _body = GetComponent<Rigidbody2D>();
         _walkingSound = GetComponent<WalkingSound>();
-        _rotationClicker = GetComponentInChildren<RotationClicker>();
-        
+        _rotationClicker = GetComponentInChildren<RotationClickerSound>();
     }
+
     private void LevelChange()
     {
         _startGoalDistance = maze.GetAccurateDistanceFrom(goal, transform.position);
-        Debug.Log(_startGoalDistance);
         MovementEvent.previousPosition = new Vector2(transform.position.x, transform.position.y);
-
-        
+        Debug.Log("Distance to goal: " + _startGoalDistance);
     }
+
     private void Update()
     {
         _horizontal = Input.GetAxisRaw("Horizontal");

@@ -15,17 +15,16 @@ internal class Side
 	}
 }
 
-public class WallOpeningSound : MonoBehaviour
+public class WallOpeningDetector : MonoBehaviour
 {
-	public Player player;
+	private Player player;
 
 	private Tilemap map => player.map;
-	private FMODUnity.StudioEventEmitter emitter;
 	private Side[] sides;
 
 	private void Start()
 	{
-		emitter = GetComponent<FMODUnity.StudioEventEmitter>();
+		player = gameObject.GetComponent<Player>();
 		sides = new[] {
 			new Side(() => -player.transform.right + player.transform.position, "OpenLeft"),
 			new Side(() => player.transform.right + player.transform.position, "OpenRight"),
@@ -33,14 +32,13 @@ public class WallOpeningSound : MonoBehaviour
 		};
 	}
 
-	public void UpdateBools(out bool left, out bool right)
+	public void GetSideStatus(out bool left, out bool right)
 	{
-		left = Holy(sides[0]);
-		right = Holy(sides[1]);
-		// Debug.Log(map.WorldToCell(sides[0].position()) + " " + map.WorldToCell(sides[1].position())+ " " + map.WorldToCell(sides[2].position()));
+		left = IsHoly(sides[0]);
+		right = IsHoly(sides[1]);
 	}
 
-	private bool Holy(Side side)
+	private bool IsHoly(Side side)
     {
 		var hasHole = HasHole(side.position());
 		return hasHole;

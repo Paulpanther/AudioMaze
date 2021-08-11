@@ -8,10 +8,10 @@ public class LevelManager : MonoBehaviour
 	public Player player;
 	public string menu;
 	public Level[] levels;
-	public MusicControllerFMOD fmodmusic;
+	public BackgroundMusic fmodmusic;
 	private int currentLevelIndex = -1;
 	private Level currentLevel = null;
-	public string LevelEvent = "";
+	public string levelCompletedSoundName = "LevelCompleted";
 
 	private void Start()
 	{
@@ -20,26 +20,26 @@ public class LevelManager : MonoBehaviour
 
 	private void NextLevel()
 	{
-		Debug.Log("Next Level");
 		if (currentLevelIndex + 1 >= levels.Length)
 		{
+        	EventLogging.logEvent(new LevelEvent("<COMPLETED>"));
 			SceneManager.LoadScene(menu);
-			Debug.Log("loading menu");
-			fmodmusic.NewMusicLevel(null,null);
 			return;
 		}
 
-		if (currentLevel != null) 
-		{ 
+		if (currentLevel != null) {
+			fmodmusic.StopBackgroundMusic();
 			currentLevel.Destroy();
-			FMODUnity.RuntimeManager.PlayOneShot(LevelEvent, transform.position);
+			PlayLevelCompletedSound();
 		}
 		currentLevel = Instantiate(levels[++currentLevelIndex]);
-		Debug.Log("calling music inst");
-		fmodmusic.NewMusicLevel(currentLevel.music, player);
+        EventLogging.logEvent(new LevelEvent(currentLevel.name));
+		fmodmusic.UpdateBackgroundMusic(currentLevel.musicName, player);
 		currentLevel.win.RegisterWinCallback(NextLevel);
 		player.RegisterLevel(currentLevel);
-        EventLogging.logEvent(new LevelEvent(currentLevel.name));
-		
 	}
+
+    private void PlayLevelCompletedSound() {
+        AudioOut.PlayOneShotAttached(levelCompletedSoundName, player.gameObject);
+    }
 }
