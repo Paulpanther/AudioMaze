@@ -44,7 +44,13 @@ public class BackgroundMusic : MonoBehaviour
         // if (factor < 0) smoothOrientation = Mathf.Max(smoothOrientation, goalOrientation);
         smoothOrientation = smoothOrientation * smoothOrientationK +
                             player.CurrentGoalOrientation * (1 - smoothOrientationK);
-        musicInstance.fmodInstance.setParameterByName("orientation", smoothOrientation);
+        if (player.useRelativeGoalOrientation) {
+            musicInstance.fmodInstance.setParameterByName("orientation2", smoothOrientation);
+        }
+        else
+        {
+            musicInstance.fmodInstance.setParameterByName("orientation1", smoothOrientation);
+        }
 
         wallOpeningDetector.GetSideStatus(out var left, out var right);
 
