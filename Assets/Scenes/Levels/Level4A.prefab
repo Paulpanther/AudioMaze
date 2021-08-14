@@ -1909,6 +1909,16 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[88].second.m_AllTileFlags
       value: 1073741825
       objectReference: {fileID: 0}
+    - target: {fileID: 4692981639339121535, guid: 74f96bd7b5a35154ab9b79a6356919c8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692981639339121535, guid: 74f96bd7b5a35154ab9b79a6356919c8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5523420134889962623, guid: 74f96bd7b5a35154ab9b79a6356919c8,
         type: 3}
       propertyPath: m_Name
@@ -1969,5 +1979,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6335212969371397936, guid: 74f96bd7b5a35154ab9b79a6356919c8,
+        type: 3}
+      propertyPath: startObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335212969371397936, guid: 74f96bd7b5a35154ab9b79a6356919c8,
+        type: 3}
+      propertyPath: startObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 917130194954141246}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74f96bd7b5a35154ab9b79a6356919c8, type: 3}
+--- !u!4 &917130194954141246 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4692981639339121535, guid: 74f96bd7b5a35154ab9b79a6356919c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 5591954382435099969}
+  m_PrefabAsset: {fileID: 0}

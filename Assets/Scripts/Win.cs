@@ -8,6 +8,7 @@ public class Win : MonoBehaviour
     public static bool IsWin = false;
     public Canvas mapQuestionCanvas;
     public bool showMapQuestion = true;
+	public string levelCompletedSoundName = "LevelCompleted";
     private Action winCallback = () => {};
 
     private void Start() {
@@ -19,6 +20,7 @@ public class Win : MonoBehaviour
         IsWin = true;
         if (showMapQuestion) {
             mapQuestionCanvas.enabled = true;
+            AudioOut.PlayOneShotAttached(levelCompletedSoundName, gameObject);
         }
         else {
             winCallback();

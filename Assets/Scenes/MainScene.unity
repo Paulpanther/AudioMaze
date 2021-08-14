@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42c7afb2c2452a346b200a5fe9b5c69e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothOpenSpeed: 1
+  smoothOpenSpeed: 2
   smoothOrientationK: 0.99
 --- !u!1 &234525388
 GameObject:
