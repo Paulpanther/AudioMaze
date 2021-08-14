@@ -105,7 +105,7 @@ public class Player : MonoBehaviour
             //_body.AddTorque(-_horizontal * rotationAcceleration);
             if (Mathf.Abs(_horizontal) > 0 && DateTime.Now >= _nextAllowedRotationTime)
             {
-                transform.Rotate(0, 0, -30 * _horizontal);
+                transform.Rotate(0, 0, -90 * _horizontal);
                 _nextAllowedRotationTime = DateTime.Now.AddMilliseconds(200);
                 _rotationClicker.RotationChanged((int)Mathf.Round(transform.rotation.eulerAngles.z)); ;
             }
