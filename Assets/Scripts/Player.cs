@@ -58,6 +58,7 @@ public class Player : MonoBehaviour
         transform.rotation = Quaternion.Euler(Vector3.up);
         _startGoalDistance = maze.GetAccurateDistanceFrom(goal, transform.position);
         MovementEvent.previousPosition = new Vector2(transform.position.x, transform.position.y);
+        EventLogging.logEvent(new ControlSystemChangedEvent(controlSystem));
     }
 
     private void Update()
@@ -72,7 +73,11 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown("m"))
         {
-            controlSystem = (controlSystem == ControlSystem.Relative) ? ControlSystem.Absolute : ControlSystem.Relative;
+            controlSystem = (controlSystem == ControlSystem.Relative)
+                ? ControlSystem.Absolute
+                : ControlSystem.Relative;
+        
+        	EventLogging.logEvent(new ControlSystemChangedEvent(controlSystem));
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))

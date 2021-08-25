@@ -441,6 +441,30 @@ class KeyEvent : AbstractEvent
     }
 }
 
+class ControlSystemChangedEvent : AbstractEvent
+{
+    protected Player.ControlSystem controlSystem;
+
+    public ControlSystemChangedEvent(Player.ControlSystem controlSystem) : base("ControlSystemChangedEvent")
+    {
+        this.controlSystem = controlSystem;
+    }
+
+    protected override void _writeJson(SimpleJsonWriter evtScope)
+    {
+        evtScope.WriteKeyValue(
+            "controlSystem",
+            controlSystem == Player.ControlSystem.Relative
+                ? "R"
+                : "A"
+        );
+    }
+
+    protected override string _message()
+    {
+        return "control system changed to \"" + controlSystem + "\"";
+    }
+}
 class MovementEvent : AbstractEvent
 {
     public static Vector2 previousPosition;
