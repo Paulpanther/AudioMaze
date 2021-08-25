@@ -62,7 +62,8 @@ public class LevelManager : MonoBehaviour
 			scenario1 = !scenario1;
 		}
 
-		player.useRelativeGoalOrientation = !scenario1;
+		if(!scenario1) player.SetRelativeGoalOrientation();
+		else           player.SetAbsoluteGoalOrientation();
 
 		currentLevel = Instantiate(levels[++currentLevelIndex]);
         EventLogging.logEvent(new LevelEvent(currentLevel));

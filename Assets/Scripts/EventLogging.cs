@@ -443,26 +443,41 @@ class KeyEvent : AbstractEvent
 
 class ControlSystemChangedEvent : AbstractEvent
 {
-    protected Player.ControlSystem controlSystem;
+    protected bool relative;
 
     public ControlSystemChangedEvent(Player.ControlSystem controlSystem) : base("ControlSystemChangedEvent")
     {
-        this.controlSystem = controlSystem;
+        this.relative = controlSystem == Player.ControlSystem.Relative;
     }
 
     protected override void _writeJson(SimpleJsonWriter evtScope)
     {
-        evtScope.WriteKeyValue(
-            "controlSystem",
-            controlSystem == Player.ControlSystem.Relative
-                ? "R"
-                : "A"
-        );
+        evtScope.WriteKeyValue("controlSystem", relative ? "R" : "A");
     }
 
     protected override string _message()
     {
-        return "control system changed to \"" + controlSystem + "\"";
+        return "control system changed to \"" + (relative ? "relative" : "absolute") + "\"";
+    }
+}
+
+class GoalOrientationChangedEvent : AbstractEvent
+{
+    protected bool relative;
+
+    public GoalOrientationChangedEvent(bool relative) : base("GoalOrientationChangedEvent")
+    {
+        this.relative = relative;
+    }
+
+    protected override void _writeJson(SimpleJsonWriter evtScope)
+    {
+        evtScope.WriteKeyValue("goalOrientation", relative ? "R" : "A");
+    }
+
+    protected override string _message()
+    {
+        return "goal orientation changed to \"" + (relative ? "relative" : "absolute") + "\"";
     }
 }
 

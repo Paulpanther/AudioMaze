@@ -180,6 +180,15 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void SetRelativeGoalOrientation() {
+        useRelativeGoalOrientation = true;
+        EventLogging.logEvent(new GoalOrientationChangedEvent(useRelativeGoalOrientation));
+    }
+    public void SetAbsoluteGoalOrientation() {
+        useRelativeGoalOrientation = false;
+        EventLogging.logEvent(new GoalOrientationChangedEvent(useRelativeGoalOrientation));
+    }
+
     public float CurrentGoalOrientation {
         get {
             if (useRelativeGoalOrientation) {
