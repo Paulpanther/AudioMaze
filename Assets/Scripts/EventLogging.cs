@@ -465,6 +465,30 @@ class ControlSystemChangedEvent : AbstractEvent
         return "control system changed to \"" + controlSystem + "\"";
     }
 }
+
+class RotationEvent : AbstractEvent
+{
+    public static int previousOrientation;
+
+    protected int orientationInDegrees;
+
+    public RotationEvent(int orientationInDegrees) : base("RotationEvent")
+    {
+        this.orientationInDegrees = orientationInDegrees;
+        previousOrientation = orientationInDegrees;
+    }
+
+    protected override void _writeJson(SimpleJsonWriter evtScope)
+    {
+        evtScope.WriteKeyValue("orientation", orientationInDegrees);
+    }
+
+    protected override string _message()
+    {
+        return "player rotated to " + orientationInDegrees + "°";
+    }
+}
+
 class MovementEvent : AbstractEvent
 {
     public static Vector2 previousPosition;

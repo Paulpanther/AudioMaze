@@ -102,17 +102,27 @@ public class Player : MonoBehaviour
             {
                 var velocityNormalized = _body.velocity.normalized;
                 _body.SetRotation(Mathf.Atan2(velocityNormalized.y, velocityNormalized.x) * Mathf.Rad2Deg - 90);
+            
+                if(DateTime.Now >= _nextAllowedRotationTime) {
+                    // use _nextAllowedRotationTime to reduce log spam
+                    _nextAllowedRotationTime = DateTime.Now.AddMilliseconds(100);
+                    int degrees = (int)Mathf.Round(transform.rotation.eulerAngles.z);
+                    if(RotationEvent.previousOrientation != degrees) {
+                        EventLogging.logEvent(new RotationEvent(degrees));
+                    }
+                }
             }
             walkingAgainstWall = (_horizontal != 0 || _vertical != 0) && _body.velocity.magnitude < 0.01;
         }
         else
         {
-            //_body.AddTorque(-_horizontal * rotationAcceleration);
             if (Mathf.Abs(_horizontal) > 0 && DateTime.Now >= _nextAllowedRotationTime)
             {
                 transform.Rotate(0, 0, -90 * _horizontal);
                 _nextAllowedRotationTime = DateTime.Now.AddMilliseconds(200);
-                _rotationClicker.RotationChanged((int)Mathf.Round(transform.rotation.eulerAngles.z)); ;
+                int degrees = (int)Mathf.Round(transform.rotation.eulerAngles.z);
+                EventLogging.logEvent(new RotationEvent(degrees));
+                _rotationClicker.RotationChanged(degrees);
             }
 
             _body.AddRelativeForce(new Vector2(0, _vertical * movementAcceleration));
