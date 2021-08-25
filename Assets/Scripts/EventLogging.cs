@@ -284,6 +284,26 @@ public abstract class AbstractEvent
     }
 }
 
+class GameStartEvent : AbstractEvent
+{
+    protected string levelCode;
+
+    public GameStartEvent(string levelCode) : base("GameStartEvent")
+    {
+        this.levelCode = levelCode;
+    }
+
+    protected override void _writeJson(SimpleJsonWriter evtScope)
+    {
+        evtScope.WriteKeyValue("levelCode", levelCode);
+    }
+
+    protected override string _message()
+    {
+        return "game started with code \"" + levelCode + "\"";
+    }
+}
+
 class LevelEvent : AbstractEvent
 {
     protected string levelName;

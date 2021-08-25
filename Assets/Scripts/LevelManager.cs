@@ -38,6 +38,7 @@ public class LevelManager : MonoBehaviour
 	        !thirdLevelIsA ? levels3[0] : levels3[1],
 	        !fourthLevelIsA ? levels4[0] : levels4[1],
         };
+		EventLogging.logEvent(new GameStartEvent(levelString));
         NextLevel();
 	}
 
