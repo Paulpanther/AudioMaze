@@ -313,7 +313,7 @@ class LevelEvent : AbstractEvent
     {
         if(level != null) {
             this.levelName = level.name;
-            // todo generate level path descriptor / lookup array
+            // TODO: generate level path descriptor / lookup array
         } else {
             // finished
             this.levelName = "<COMPLETED>";
@@ -531,6 +531,7 @@ class RotationEvent : AbstractEvent
 
 class MovementEvent : AbstractEvent
 {
+    // TODO: distance to target (absolute & relative)
     public static Vector2 previousPosition;
 
     protected Action action;
