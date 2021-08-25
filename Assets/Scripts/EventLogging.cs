@@ -481,6 +481,26 @@ class GoalOrientationChangedEvent : AbstractEvent
     }
 }
 
+class CollisionEvent : AbstractEvent
+{
+    protected Action action;
+
+    public CollisionEvent(Action action) : base("CollisionEvent")
+    {
+        this.action = action;
+    }
+
+    protected override void _writeJson(SimpleJsonWriter evtScope)
+    {
+        evtScope.WriteKeyValue("action", action.ToString());
+    }
+
+    protected override string _message()
+    {
+        return "collision " + action;
+    }
+}
+
 class RotationEvent : AbstractEvent
 {
     public static int previousOrientation;

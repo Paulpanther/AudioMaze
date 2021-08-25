@@ -50,6 +50,7 @@ public class WallCollisionSounds : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+        EventLogging.logEvent(new CollisionEvent(AbstractEvent.Action.Started));
         if (Time.fixedTime <= timeOfLastWallContact + hitCooldown)
             return;
 
@@ -59,17 +60,16 @@ public class WallCollisionSounds : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D other)
     {
-        
         if (Time.fixedTime <= timeOfWallHit + scrapingDelay)
             return;
         if (!wallScratchInstance.IsPlaying()) {
             wallScratchInstance.Start();
         }
-      
     }
 
     private void OnCollisionExit2D(Collision2D other)
     {
+        EventLogging.logEvent(new CollisionEvent(AbstractEvent.Action.Stopped));
         wallScratchInstance.Stop();
         timeOfLastWallContact = Time.fixedTime;
     }
