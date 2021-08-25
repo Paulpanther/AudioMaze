@@ -108,7 +108,8 @@ public class Player : MonoBehaviour
                     _nextAllowedRotationTime = DateTime.Now.AddMilliseconds(100);
                     int degrees = (int)Mathf.Round(transform.rotation.eulerAngles.z);
                     if(RotationEvent.previousOrientation != degrees) {
-                        EventLogging.logEvent(new RotationEvent(degrees));
+                        int goalDegrees = (int)(CurrentGoalOrientation * 180);
+                        EventLogging.logEvent(new RotationEvent(degrees, goalDegrees));
                     }
                 }
             }
@@ -121,7 +122,8 @@ public class Player : MonoBehaviour
                 transform.Rotate(0, 0, -90 * _horizontal);
                 _nextAllowedRotationTime = DateTime.Now.AddMilliseconds(200);
                 int degrees = (int)Mathf.Round(transform.rotation.eulerAngles.z);
-                EventLogging.logEvent(new RotationEvent(degrees));
+                int goalDegrees = (int)(CurrentGoalOrientation * 180);
+                EventLogging.logEvent(new RotationEvent(degrees, goalDegrees));
                 _rotationClicker.RotationChanged(degrees);
             }
 
@@ -168,7 +170,6 @@ public class Player : MonoBehaviour
         get {
             var dir = maze.GetBestDirectionFor(goal, transform.position);
             var angle = Vector3.Angle(transform.up, dir);
-            // Debug.Log(angle);
             return angle / 180;
         }
     }
