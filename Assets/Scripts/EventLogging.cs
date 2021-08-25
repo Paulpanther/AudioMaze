@@ -8,7 +8,6 @@ using SimpleJson;
 
 public class EventLogging : MonoBehaviour {
     public bool log2Console = false;
-    public string logFile = "log.json";
     public bool verboseLogging = true;
     public HashSet<string> consoleDisabledEvents = new HashSet<string> { "KeyEvent", "MovementEvent" };
 
@@ -19,7 +18,9 @@ public class EventLogging : MonoBehaviour {
     private void Awake()
     {
         INSTANCE = this;
-        _jsonOut = SimpleJsonFileWriter.openJsonWriter(/*Application.persistentDataPath +*/ logFile).WriteArrayScope();
+        Directory.CreateDirectory("logs/");
+        var logFile = "logs/" + (DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss")) + ".json";
+        _jsonOut = SimpleJsonFileWriter.openJsonWriter(logFile).WriteArrayScope();
     }
 
     private void OnDestroy()
