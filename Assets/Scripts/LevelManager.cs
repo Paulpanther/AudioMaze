@@ -45,7 +45,7 @@ public class LevelManager : MonoBehaviour
 	{
 		if (currentLevelIndex + 1 >= levels.Length)
 		{
-        	EventLogging.logEvent(new LevelEvent("<COMPLETED>"));
+        	EventLogging.logEvent(new LevelEvent(null));
 			SceneManager.LoadScene(menu);
 			return;
 		}
@@ -64,7 +64,7 @@ public class LevelManager : MonoBehaviour
 		player.useRelativeGoalOrientation = !scenario1;
 
 		currentLevel = Instantiate(levels[++currentLevelIndex]);
-        EventLogging.logEvent(new LevelEvent(currentLevel.name));
+        EventLogging.logEvent(new LevelEvent(currentLevel));
 		fmodmusic.UpdateBackgroundMusic(currentLevel.musicName, player);
 		currentLevel.win.RegisterWinCallback(NextLevel);
 		player.RegisterLevel(currentLevel);

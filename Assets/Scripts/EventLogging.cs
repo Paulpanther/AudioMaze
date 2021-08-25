@@ -288,9 +288,15 @@ class LevelEvent : AbstractEvent
 {
     protected string levelName;
 
-    public LevelEvent(string levelName) : base("LevelEvent")
+    public LevelEvent(Level level) : base("LevelEvent")
     {
-        this.levelName = levelName;
+        if(level != null) {
+            this.levelName = level.name;
+            // todo generate level path descriptor / lookup array
+        } else {
+            // finished
+            this.levelName = "<COMPLETED>";
+        }
     }
 
     protected override void _writeJson(SimpleJsonWriter evtScope)
