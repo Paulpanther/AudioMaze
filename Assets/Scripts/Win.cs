@@ -29,7 +29,7 @@ public class Win : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        EventLogging.logEvent(new WinEvent());
+        EventLogging.logEvent(new LevelCompletedEvent());
         IsWin = true;
         AudioOut.PlayOneShotAttached(levelCompletedSoundName, gameObject);
         overlay.SetActive(true);

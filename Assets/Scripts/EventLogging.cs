@@ -305,11 +305,11 @@ class GameStartEvent : AbstractEvent
     }
 }
 
-class LevelEvent : AbstractEvent
+class LevelChangedEvent : AbstractEvent
 {
     protected string levelName;
 
-    public LevelEvent(Level level) : base("LevelEvent")
+    public LevelChangedEvent(Level level) : base("LevelChangedEvent")
     {
         if(level != null) {
             this.levelName = level.name;
@@ -331,9 +331,9 @@ class LevelEvent : AbstractEvent
     }
 }
 
-class WinEvent : AbstractEvent
+class LevelCompletedEvent : AbstractEvent
 {
-    public WinEvent() : base("WinEvent") {}
+    public LevelCompletedEvent() : base("LevelCompletedEvent") {}
 
     protected override void _writeJson(SimpleJsonWriter evtScope) {}
 
