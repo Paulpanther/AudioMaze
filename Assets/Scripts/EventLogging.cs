@@ -331,6 +331,54 @@ class LevelEvent : AbstractEvent
     }
 }
 
+class WinEvent : AbstractEvent
+{
+    public WinEvent() : base("WinEvent") {}
+
+    protected override void _writeJson(SimpleJsonWriter evtScope) {}
+
+    protected override string _message()
+    {
+        return "goal entered";
+    }
+}
+
+class SurveyStartedEvent : AbstractEvent
+{
+
+    public SurveyStartedEvent() : base("SurveyStartedEvent") {}
+
+    protected override void _writeJson(SimpleJsonWriter evtScope) {}
+
+    protected override string _message()
+    {
+        return "survey started";
+    }
+}
+
+class SurveySubmittedEvent : AbstractEvent
+{
+    protected string selectedLevelImage;
+    protected int selectedConfidence;
+
+    public SurveySubmittedEvent(string selectedLevelImage, int selectedConfidence) : base("SurveySubmittedEvent")
+    {
+        this.selectedLevelImage = selectedLevelImage;
+        this.selectedConfidence = selectedConfidence;
+    }
+
+    protected override void _writeJson(SimpleJsonWriter evtScope)
+    {
+        evtScope.WriteKeyValue("selectedLevelImage", selectedLevelImage);
+        evtScope.WriteKeyValue("selectedConfidence", selectedConfidence);
+    }
+
+    protected override string _message()
+    {
+        return "survey submitted with selection: level=\"" + selectedLevelImage + "\", confidence=" + selectedConfidence;
+    }
+}
+
 public abstract class SoundEvent : AbstractEvent
 {
     protected string soundName;
