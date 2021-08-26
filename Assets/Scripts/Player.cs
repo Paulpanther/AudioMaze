@@ -80,6 +80,12 @@ public class Player : MonoBehaviour
         	EventLogging.logEvent(new ControlSystemChangedEvent(controlSystem));
         }
 
+        if (Input.GetKeyDown("s") && Input.GetKeyDown("k") && Input.GetKeyDown("i") && Input.GetKeyDown("p"))
+        {
+            // "win" the level
+            transform.position = win.transform.position;
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
