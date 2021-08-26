@@ -17,7 +17,6 @@ public class LevelManager : MonoBehaviour
 	private int currentLevelIndex = -1;
 	private Level currentLevel = null;
 	private bool firstScenarioIs1;
-	public string levelCompletedSoundName = "LevelCompleted";
 
 	private void Start()
 	{
@@ -47,6 +46,7 @@ public class LevelManager : MonoBehaviour
 		if (currentLevelIndex + 1 >= levels.Length)
 		{
         	EventLogging.logEvent(new LevelEvent(null));
+			fmodmusic.StopBackgroundMusic();
 			SceneManager.LoadScene(menu);
 			return;
 		}
@@ -54,7 +54,6 @@ public class LevelManager : MonoBehaviour
 		if (currentLevel != null) {
 			fmodmusic.StopBackgroundMusic();
 			currentLevel.Destroy();
-			PlayLevelCompletedSound();
 		}
 
 		var scenario1 = firstScenarioIs1;
@@ -71,8 +70,4 @@ public class LevelManager : MonoBehaviour
 		currentLevel.win.RegisterWinCallback(NextLevel);
 		player.RegisterLevel(currentLevel);
 	}
-
-    private void PlayLevelCompletedSound() {
-        AudioOut.PlayOneShotAttached(levelCompletedSoundName, player.gameObject);
-    }
 }
