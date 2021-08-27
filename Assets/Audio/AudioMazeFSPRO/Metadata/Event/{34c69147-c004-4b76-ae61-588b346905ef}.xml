@@ -155,7 +155,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>4.1204819277108431</value>
+			<value>3.5</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{cdab69ab-919e-48e6-8256-143aebcd8f24}</destination>
@@ -236,18 +236,18 @@
 	</object>
 	<object class="AutomationPoint" id="{74c56a90-0e39-471a-95b8-61e7795429d3}">
 		<property name="position">
-			<value>0.97999999999999998</value>
+			<value>1</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-80</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{28c8bf2a-2141-4871-8dc0-7751851b2bf5}">
 		<property name="position">
-			<value>0.28000000000000003</value>
+			<value>0.26000000000000001</value>
 		</property>
 		<property name="value">
-			<value>-8</value>
+			<value>-80</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{d53a6b59-8d94-4961-93c0-96686b2f8e2f}">
