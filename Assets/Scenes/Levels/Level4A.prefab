@@ -1909,6 +1909,12 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[88].second.m_AllTileFlags
       value: 1073741825
       objectReference: {fileID: 0}
+    - target: {fileID: 2972936002109001766, guid: 74f96bd7b5a35154ab9b79a6356919c8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 394629d0fb1392c47b16f5c79d5a0d39,
+        type: 3}
     - target: {fileID: 4692981639339121535, guid: 74f96bd7b5a35154ab9b79a6356919c8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1919,6 +1925,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 7.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4712787239384347495, guid: 74f96bd7b5a35154ab9b79a6356919c8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 766d12b080618a24da07c853d644e80a,
+        type: 3}
+    - target: {fileID: 4774098153961580589, guid: 74f96bd7b5a35154ab9b79a6356919c8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a0e4d59ae22efd643bb80d4a051a7f34,
+        type: 3}
     - target: {fileID: 5523420134889962623, guid: 74f96bd7b5a35154ab9b79a6356919c8,
         type: 3}
       propertyPath: m_Name

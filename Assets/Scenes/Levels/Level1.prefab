@@ -1179,6 +1179,12 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[47].first.x
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2972936002109001766, guid: 74f96bd7b5a35154ab9b79a6356919c8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 38e242ee3c7427941b654e529b055258,
+        type: 3}
     - target: {fileID: 4692981639339121532, guid: 74f96bd7b5a35154ab9b79a6356919c8,
         type: 3}
       propertyPath: m_Size.x
@@ -1194,6 +1200,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4712787239384347495, guid: 74f96bd7b5a35154ab9b79a6356919c8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d6f5ca72855ec964f9cb379433fbd9ed,
+        type: 3}
+    - target: {fileID: 4774098153961580589, guid: 74f96bd7b5a35154ab9b79a6356919c8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: da5e886d58d6ee44295d30ea10419898,
+        type: 3}
     - target: {fileID: 5523420134889962623, guid: 74f96bd7b5a35154ab9b79a6356919c8,
         type: 3}
       propertyPath: m_Name
